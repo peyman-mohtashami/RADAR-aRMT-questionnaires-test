@@ -1,0 +1,378 @@
+[
+    {
+        "field_name": "symposium_1",
+        "form_name": "symposium",
+        "section_header": "",
+        "field_type": "range",
+        "field_label": "How awake are/were you this morning?",
+        "select_choices_or_calculations": [
+            {
+                "code": "1",
+                "label": "1 Not at all"
+            },
+            {
+                "code": "2",
+                "label": "2"
+            },
+            {
+                "code": "3",
+                "label": "3"
+            },
+            {
+                "code": "4",
+                "label": "4"
+            },
+            {
+                "code": "5",
+                "label": "5"
+            }
+        ],
+        "field_note": "",
+        "text_validation_type_or_show_slider_number": "",
+        "text_validation_min": "",
+        "text_validation_max": "",
+        "identifier": "",
+        "branching_logic": "",
+        "required_field": "",
+        "custom_alignment": "",
+        "question_number": "",
+        "matrix_group_name": "symposium",
+        "matrix_ranking": "",
+        "field_annotation": "",
+        "evaluated_logic": ""
+    },
+    {
+        "field_name": "symposium_2",
+        "form_name": "symposium",
+        "section_header": "",
+        "field_type": "yesno",
+        "field_label": "Are you enjoying the event so far?",
+        "field_note": "",
+        "text_validation_type_or_show_slider_number": "",
+        "text_validation_min": "",
+        "text_validation_max": "",
+        "identifier": "",
+        "branching_logic": "",
+        "required_field": "",
+        "custom_alignment": "",
+        "question_number": "",
+        "matrix_group_name": "symposium",
+        "matrix_ranking": "",
+        "field_annotation": "",
+        "evaluated_logic": ""
+    },
+    {
+        "field_name": "symposium_3",
+        "form_name": "symposium",
+        "section_header": "",
+        "field_type": "yesno",
+        "field_label": "Are you going to join us to the pub for the networking drinks?",
+        "field_note": "",
+        "text_validation_type_or_show_slider_number": "",
+        "text_validation_min": "",
+        "text_validation_max": "",
+        "identifier": "",
+        "branching_logic": "",
+        "required_field": "",
+        "custom_alignment": "",
+        "question_number": "",
+        "matrix_group_name": "symposium",
+        "matrix_ranking": "",
+        "field_annotation": "",
+        "evaluated_logic": ""
+    },
+    {
+        "field_name": "symposium_4",
+        "form_name": "symposium",
+        "section_header": "",
+        "field_type": "range",
+        "field_label": "How satisfied are you with the networking opportunities?",
+        "select_choices_or_calculations": [
+            {
+                "code": "1",
+                "label": "1 Not at all"
+            },
+            {
+                "code": "2",
+                "label": "2"
+            },
+            {
+                "code": "3",
+                "label": "3"
+            },
+            {
+                "code": "4",
+                "label": "4"
+            },
+            {
+                "code": "5",
+                "label": "5 Very much"
+            }
+        ],
+        "field_note": "",
+        "text_validation_type_or_show_slider_number": "",
+        "text_validation_min": "",
+        "text_validation_max": "",
+        "identifier": "",
+        "branching_logic": "",
+        "required_field": "",
+        "custom_alignment": "",
+        "question_number": "",
+        "matrix_group_name": "symposium",
+        "matrix_ranking": "",
+        "field_annotation": "",
+        "evaluated_logic": ""
+    },
+    {
+        "field_name": "symposium_5",
+        "form_name": "symposium",
+        "section_header": "",
+        "field_type": "radio",
+        "field_label": "What do you like most about the event?",
+        "select_choices_or_calculations": [
+            {
+                "code": "1",
+                "label": "The networking"
+            },
+            {
+                "code": "2",
+                "label": "The great talks"
+            },
+            {
+                "code": "3",
+                "label": "The inspirational posters "
+            },
+            {
+                "code": "4",
+                "label": "The food"
+            }
+        ],
+        "field_note": "",
+        "text_validation_type_or_show_slider_number": "",
+        "text_validation_min": "",
+        "text_validation_max": "",
+        "identifier": "",
+        "branching_logic": "",
+        "required_field": "",
+        "custom_alignment": "",
+        "question_number": "",
+        "matrix_group_name": "symposium",
+        "matrix_ranking": "",
+        "field_annotation": "",
+        "evaluated_logic": ""
+    },
+    {
+        "field_name": "symposium_6",
+        "form_name": "symposium",
+        "section_header": "",
+        "field_type": "radio",
+        "field_label": "Which topics would you like to see covered at future RADAR-base meeting?",
+        "select_choices_or_calculations": [
+            {
+                "code": "1",
+                "label": "RADAR-base roadmap"
+            },
+            {
+                "code": "2",
+                "label": "Case studies"
+            },
+            {
+                "code": "3",
+                "label": "Hands-on sessions"
+            },
+            {
+                "code": "4",
+                "label": "New technical developments"
+            }
+        ],
+        "field_note": "",
+        "text_validation_type_or_show_slider_number": "",
+        "text_validation_min": "",
+        "text_validation_max": "",
+        "identifier": "",
+        "branching_logic": "",
+        "required_field": "",
+        "custom_alignment": "",
+        "question_number": "",
+        "matrix_group_name": "symposium",
+        "matrix_ranking": "",
+        "field_annotation": "",
+        "evaluated_logic": ""
+    },
+    {
+        "field_name": "symposium_7",
+        "form_name": "symposium",
+        "section_header": "",
+        "field_type": "range",
+        "field_label": "If you used RADAR-base for the first time, how do you rate the experience?",
+        "select_choices_or_calculations": [
+            {
+                "code": "0",
+                "label": "Not used"
+            },
+            {
+                "code": "1",
+                "label": "1"
+            },
+            {
+                "code": "2",
+                "label": "2"
+            },
+            {
+                "code": "3",
+                "label": "3"
+            },
+            {
+                "code": "4",
+                "label": "4"
+            },
+            {
+                "code": "5",
+                "label": "5"
+            }
+        ],
+        "field_note": "",
+        "text_validation_type_or_show_slider_number": "",
+        "text_validation_min": "",
+        "text_validation_max": "",
+        "identifier": "",
+        "branching_logic": "",
+        "required_field": "",
+        "custom_alignment": "",
+        "question_number": "",
+        "matrix_group_name": "symposium",
+        "matrix_ranking": "",
+        "field_annotation": "",
+        "evaluated_logic": ""
+    },
+    {
+        "field_name": "symposium_8",
+        "form_name": "symposium",
+        "section_header": "",
+        "field_type": "radio",
+        "field_label": "Which one was your favorite poster?",
+        "select_choices_or_calculations": [
+            {
+                "code": "0",
+                "label": "A. Petroula Laiou"
+            },
+            {
+                "code": "1",
+                "label": "B. Yatharth Ranjan"
+            },
+            {
+                "code": "2",
+                "label": "C. Heet Sankesara"
+            },
+            {
+                "code": "3",
+                "label": "D. Nazli Farajidavar"
+            },
+            {
+                "code": "4",
+                "label": "E. Malik Althobiani"
+            },
+            {
+                "code": "5",
+                "label": "F. Dorota Religa"
+            },
+            {
+                "code": "6",
+                "label": "G. Mark Begale"
+            },
+            {
+                "code": "7",
+                "label": "H. Valentina Ticcinelli"
+            }
+        ],
+        "field_note": "",
+        "text_validation_type_or_show_slider_number": "",
+        "text_validation_min": "",
+        "text_validation_max": "",
+        "identifier": "",
+        "branching_logic": "",
+        "required_field": "",
+        "custom_alignment": "",
+        "question_number": "",
+        "matrix_group_name": "symposium",
+        "matrix_ranking": "",
+        "field_annotation": "",
+        "evaluated_logic": ""
+    },
+    {
+        "field_name": "symposium_9",
+        "form_name": "symposium",
+        "section_header": "",
+        "field_type": "radio",
+        "field_label": "Which one was your favorite Lightning Talk: RADAR-base Platform Features (morning session)?",
+        "select_choices_or_calculations": [
+            {
+                "code": "0",
+                "label": "1. Peyman Mohtashami, aRMT app - The RADAR-base active data collection app: questionnaires and other things"
+            },
+            {
+                "code": "1",
+                "label": "2. Joris Borgdorff, pRMT app (sensors and devices) - The RADAR-base passive app: wearable and Phone sensor data collection"
+            },
+            {
+                "code": "2",
+                "label": "3. Pauline Conde, Dashboard functionality - Visualizing RADAR-base data through real time Dashboards"
+            },
+            {
+                "code": "3",
+                "label": "4. Yatharth Ranjan, Feedback mechanisms - Lung Disease Study: real-time data processing & interventions"
+            }
+        ],
+        "field_note": "",
+        "text_validation_type_or_show_slider_number": "",
+        "text_validation_min": "",
+        "text_validation_max": "",
+        "identifier": "",
+        "branching_logic": "",
+        "required_field": "",
+        "custom_alignment": "",
+        "question_number": "",
+        "matrix_group_name": "symposium",
+        "matrix_ranking": "",
+        "field_annotation": "",
+        "evaluated_logic": ""
+    },
+    {
+        "field_name": "symposium_10",
+        "form_name": "symposium",
+        "section_header": "",
+        "field_type": "radio",
+        "field_label": "Which one was your favorite Lightning Talk: Case Studies (afternoon session)?",
+        "select_choices_or_calculations": [
+            {
+                "code": "0",
+                "label": "1. Nickolas Cummins, Using remotely collected audio data"
+            },
+            {
+                "code": "1",
+                "label": "2. Shaoxiong Sun, Using RMT to monitor people with different medical conditions before and during COVID-19"
+            },
+            {
+                "code": "2",
+                "label": "3. Yatharth Ranjan, Integrating IoT Sensors into RADAR-base"
+            },
+            {
+                "code": "3",
+                "label": "4. Eleni Kapousidou, CHDR MORE"
+            }
+        ],
+        "field_note": "",
+        "text_validation_type_or_show_slider_number": "",
+        "text_validation_min": "",
+        "text_validation_max": "",
+        "identifier": "",
+        "branching_logic": "",
+        "required_field": "",
+        "custom_alignment": "",
+        "question_number": "",
+        "matrix_group_name": "symposium",
+        "matrix_ranking": "",
+        "field_annotation": "",
+        "evaluated_logic": ""
+    }
+]
