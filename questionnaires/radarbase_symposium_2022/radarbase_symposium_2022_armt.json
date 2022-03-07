@@ -261,39 +261,31 @@
         "field_label": "Which one was your favorite poster?",
         "select_choices_or_calculations": [
             {
-                "code": "0",
-                "label": "A. Petroula Laiou"
-            },
-            {
                 "code": "1",
-                "label": "B. Yatharth Ranjan"
+                "label": "Ranjan Y"
             },
             {
                 "code": "2",
-                "label": "C. Heet Sankesara"
+                "label": "Rashid Z"
             },
             {
                 "code": "3",
-                "label": "D. Nazli Farajidavar"
+                "label": "Steward C"
             },
             {
                 "code": "4",
-                "label": "E. Malik Althobiani"
+                "label": "Sun S"
             },
             {
                 "code": "5",
-                "label": "F. Dorota Religa"
+                "label": "Valentina Ticcinelli"
             },
             {
                 "code": "6",
-                "label": "G. Mark Begale"
+                "label": "Heet Sankesara"
             },
             {
                 "code": "7",
-                "label": "H. Valentina Ticcinelli"
-            },
-            {
-                "code": "8",
                 "label": "None of the above"
             }
         ],
