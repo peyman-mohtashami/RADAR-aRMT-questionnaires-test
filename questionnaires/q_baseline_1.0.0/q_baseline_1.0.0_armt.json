@@ -1,0 +1,5234 @@
+[
+    {
+        "field_label": "[10] <b><u>CURRENTLY</u></b> is your psoriasis:",
+        "field_type": "radio",
+        "field_name": "blpso_currently",
+        "required_field": "y",
+        "section_header": "Psoriasis",
+        "select_choices_or_calculations": [
+            {
+                "code": "0",
+                "label": "Clear"
+            },
+            {
+                "code": "1",
+                "label": "Nearly clear"
+            },
+            {
+                "code": "2",
+                "label": "Mild"
+            },
+            {
+                "code": "3",
+                "label": "Moderate"
+            },
+            {
+                "code": "4",
+                "label": "Moderate-severe"
+            },
+            {
+                "code": "5",
+                "label": "Severe"
+            }
+        ],
+        "report": {
+            "longitudinal": {
+                "name": "x_currently",
+                "title": "Your psoriasis status",
+                "type": "line_chart",
+                "value": "value",
+                "yaxis": {
+                    "min": 0,
+                    "max": 5,
+                    "step": 1,
+                    "fn": {
+                        "0": "Clear",
+                        "1": "Nearly clear",
+                        "2": "Mild",
+                        "3": "Moderate",
+                        "4": "Moderate-severe",
+                        "5": "Severe"
+                    }
+                }
+            }
+        }
+    },
+    {
+        "field_label": "[11] Over the last week, how itchy, sore, painful or stinging has your skin been?",
+        "field_type": "radio",
+        "field_name": "blpso_dlqi1",
+        "required_field": "y",
+        "section_header": " ",
+        "select_choices_or_calculations": [
+            {
+                "code": "1",
+                "label": "Very much"
+            },
+            {
+                "code": "2",
+                "label": "A lot"
+            },
+            {
+                "code": "3",
+                "label": "A little"
+            },
+            {
+                "code": "4",
+                "label": "Not at all"
+            },
+            {
+                "code": "5",
+                "label": "Not relevant"
+            }
+        ]
+    },
+    {
+        "field_label": "[12] Over the last week, how embarrassed or self-conscious have you been because of your skin?",
+        "field_type": "radio",
+        "field_name": "blpso_dlqi2",
+        "required_field": "y",
+        "select_choices_or_calculations": [
+            {
+                "code": "1",
+                "label": "Very much"
+            },
+            {
+                "code": "2",
+                "label": "A lot"
+            },
+            {
+                "code": "3",
+                "label": "A little"
+            },
+            {
+                "code": "4",
+                "label": "Not at all"
+            },
+            {
+                "code": "5",
+                "label": "Not relevant"
+            }
+        ],
+        "section_header": " "
+    },
+    {
+        "field_label": "[13] Over the last week, how much has your skin interfered with you going shopping or looking after your home or garden?",
+        "field_type": "radio",
+        "field_name": "blpso_dlqi3",
+        "required_field": "y",
+        "select_choices_or_calculations": [
+            {
+                "code": "1",
+                "label": "Very much"
+            },
+            {
+                "code": "2",
+                "label": "A lot"
+            },
+            {
+                "code": "3",
+                "label": "A little"
+            },
+            {
+                "code": "4",
+                "label": "Not at all"
+            },
+            {
+                "code": "5",
+                "label": "Not relevant"
+            }
+        ],
+        "section_header": " "
+    },
+    {
+        "field_label": "[14] Over the last week, how much has your skin influenced the clothes you wear?",
+        "field_type": "radio",
+        "field_name": "blpso_dlqi4",
+        "required_field": "y",
+        "select_choices_or_calculations": [
+            {
+                "code": "1",
+                "label": "Very much"
+            },
+            {
+                "code": "2",
+                "label": "A lot"
+            },
+            {
+                "code": "3",
+                "label": "A little"
+            },
+            {
+                "code": "4",
+                "label": "Not at all"
+            },
+            {
+                "code": "5",
+                "label": "Not relevant"
+            }
+        ],
+        "section_header": " "
+    },
+    {
+        "field_label": "[15] Over the last week, how much has your skin affected any social or leisure activities?",
+        "field_type": "radio",
+        "field_name": "blpso_dlqi5",
+        "required_field": "y",
+        "select_choices_or_calculations": [
+            {
+                "code": "1",
+                "label": "Very much"
+            },
+            {
+                "code": "2",
+                "label": "A lot"
+            },
+            {
+                "code": "3",
+                "label": "A little"
+            },
+            {
+                "code": "4",
+                "label": "Not at all"
+            },
+            {
+                "code": "5",
+                "label": "Not relevant"
+            }
+        ],
+        "section_header": " "
+    },
+    {
+        "field_label": "[16] Over the last week, how much has your skin made it difficult for you to do any sport?",
+        "field_type": "radio",
+        "field_name": "blpso_dlqi6",
+        "required_field": "y",
+        "select_choices_or_calculations": [
+            {
+                "code": "1",
+                "label": "Very much"
+            },
+            {
+                "code": "2",
+                "label": "A lot"
+            },
+            {
+                "code": "3",
+                "label": "A little"
+            },
+            {
+                "code": "4",
+                "label": "Not at all"
+            },
+            {
+                "code": "5",
+                "label": "Not relevant"
+            }
+        ],
+        "section_header": " "
+    },
+    {
+        "field_label": "[17] Over the last week, has your skin prevented you from working or studying?",
+        "field_type": "radio",
+        "field_name": "blpso_dlqi7",
+        "required_field": "y",
+        "select_choices_or_calculations": [
+            {
+                "code": "1",
+                "label": "Yes"
+            },
+            {
+                "code": "2",
+                "label": "No"
+            },
+            {
+                "code": "3",
+                "label": "Not relevant"
+            }
+        ],
+        "section_header": " "
+    },
+    {
+        "field_label": "[18] Over the last week how much has your skin been a problem at work or studying?",
+        "field_type": "radio",
+        "field_name": "blpso_dlqi7a",
+        "required_field": "y",
+        "select_choices_or_calculations": [
+            {
+                "code": "1",
+                "label": "Very much"
+            },
+            {
+                "code": "2",
+                "label": "A lot"
+            },
+            {
+                "code": "3",
+                "label": "A little"
+            },
+            {
+                "code": "4",
+                "label": "Not at all"
+            },
+            {
+                "code": "5",
+                "label": "Not relevant"
+            }
+        ],
+        "branching_logic": "[blpso_dlqi7]='2'",
+        "section_header": " "
+    },
+    {
+        "field_label": "[19] Over the last week, how much has your skin created problems with your partner or any of your close friends or relatives?",
+        "field_type": "radio",
+        "field_name": "blpso_dlqi8",
+        "required_field": "y",
+        "select_choices_or_calculations": [
+            {
+                "code": "1",
+                "label": "Very much"
+            },
+            {
+                "code": "2",
+                "label": "A lot"
+            },
+            {
+                "code": "3",
+                "label": "A little"
+            },
+            {
+                "code": "4",
+                "label": "Not at all"
+            },
+            {
+                "code": "5",
+                "label": "Not relevant"
+            }
+        ],
+        "section_header": " "
+    },
+    {
+        "field_label": "[20] Over the last week, how much has your skin caused any sexual difficulties?",
+        "field_type": "radio",
+        "field_name": "blpso_dlqi9",
+        "required_field": "y",
+        "select_choices_or_calculations": [
+            {
+                "code": "1",
+                "label": "Very much"
+            },
+            {
+                "code": "2",
+                "label": "A lot"
+            },
+            {
+                "code": "3",
+                "label": "A little"
+            },
+            {
+                "code": "4",
+                "label": "Not at all"
+            },
+            {
+                "code": "5",
+                "label": "Not relevant"
+            }
+        ],
+        "section_header": " "
+    },
+    {
+        "field_label": "[21] Over the last week, how much of a problem has the treatment for your skin been, for example by making your home messy, or by taking up time?",
+        "field_type": "radio",
+        "field_name": "blpso_dlqi10",
+        "required_field": "y",
+        "select_choices_or_calculations": [
+            {
+                "code": "1",
+                "label": "Very much"
+            },
+            {
+                "code": "2",
+                "label": "A lot"
+            },
+            {
+                "code": "3",
+                "label": "A little"
+            },
+            {
+                "code": "4",
+                "label": "Not at all"
+            },
+            {
+                "code": "5",
+                "label": "Not relevant"
+            }
+        ],
+        "section_header": " "
+    },
+    {
+        "field_label": "[21_calc] dlqi_calc",
+        "field_type": "calc",
+        "field_name": "blpso_dlqi_calc",
+        "required_field": "y",
+        "calculation_fn": "const sum = (+blpso_dlqi1 > 4 ? 4 : +blpso_dlqi1) +(+blpso_dlqi2 > 4 ? 4 : +blpso_dlqi2) +(+blpso_dlqi3 > 4 ? 4 : +blpso_dlqi3) +(+blpso_dlqi4 > 4 ? 4 : +blpso_dlqi4) +(+blpso_dlqi5 > 4 ? 4 : +blpso_dlqi5) +(+blpso_dlqi6 > 4 ? 4 : +blpso_dlqi6) +(+blpso_dlqi7a ? (+blpso_dlqi7a > 4 ? 4 : +blpso_dlqi7a) : 4) +(+blpso_dlqi8 > 4 ? 4 : +blpso_dlqi8) +(+blpso_dlqi9 > 4 ? 4 : +blpso_dlqi9) +(+blpso_dlqi10 > 4 ? 4 : +blpso_dlqi10);console.log('***** = ', sum);const res = 40 - sum;console.log('***** = ', res<0 ? 0 : res);return res<0 ? 0 : res;",
+        "calculation_args": "['blpso_dlqi1', 'blpso_dlqi2', 'blpso_dlqi3', 'blpso_dlqi4', 'blpso_dlqi5', 'blpso_dlqi6', 'blpso_dlqi7a', 'blpso_dlqi8', 'blpso_dlqi9', 'blpso_dlqi10']",
+        "report": {
+            "longitudinal": {
+                "name": "x_dlqi",
+                "title": "How much has your psoriasis affected your life over the last week?",
+                "type": "line_chart",
+                "value": "value",
+                "yaxis": {
+                    "min": 0,
+                    "max": 30,
+                    "step": 5,
+                    "title": "Quality-of-life score",
+                    "fn": {
+                        "0": "[min] 0",
+                        "5": "5",
+                        "10": "10",
+                        "15": "15",
+                        "20": "20",
+                        "25": "25",
+                        "30": "[max] 30"
+                    }
+                }
+            }
+        },
+        "section_header": " "
+    },
+    {
+        "field_label": "[22] How much does your psoriasis affect your life?",
+        "field_type": "radio",
+        "field_name": "blpso_bipq1",
+        "required_field": "y",
+        "section_header": "Please provide your views on your psoriasis:",
+        "select_choices_or_calculations": [
+            {
+                "code": "0",
+                "label": "0 - no effect at all"
+            },
+            {
+                "code": "1",
+                "label": "1"
+            },
+            {
+                "code": "2",
+                "label": "2"
+            },
+            {
+                "code": "3",
+                "label": "3"
+            },
+            {
+                "code": "4",
+                "label": "4"
+            },
+            {
+                "code": "5",
+                "label": "5"
+            },
+            {
+                "code": "6",
+                "label": "6"
+            },
+            {
+                "code": "7",
+                "label": "7"
+            },
+            {
+                "code": "8",
+                "label": "8"
+            },
+            {
+                "code": "9",
+                "label": "9"
+            },
+            {
+                "code": "10",
+                "label": "10 - severely affects my life"
+            }
+        ]
+    },
+    {
+        "field_label": "[23] How long do you think your psoriasis will continue?",
+        "field_type": "radio",
+        "field_name": "blpso_bipq2",
+        "required_field": "y",
+        "select_choices_or_calculations": [
+            {
+                "code": "0",
+                "label": "0 - a very short time"
+            },
+            {
+                "code": "1",
+                "label": "1"
+            },
+            {
+                "code": "2",
+                "label": "2"
+            },
+            {
+                "code": "3",
+                "label": "3"
+            },
+            {
+                "code": "4",
+                "label": "4"
+            },
+            {
+                "code": "5",
+                "label": "5"
+            },
+            {
+                "code": "6",
+                "label": "6"
+            },
+            {
+                "code": "7",
+                "label": "7"
+            },
+            {
+                "code": "8",
+                "label": "8"
+            },
+            {
+                "code": "9",
+                "label": "9"
+            },
+            {
+                "code": "10",
+                "label": "10 - forever"
+            }
+        ]
+    },
+    {
+        "field_label": "[24] How much control do you feel you have over your psoriasis?",
+        "field_type": "radio",
+        "field_name": "blpso_bipq3",
+        "required_field": "y",
+        "select_choices_or_calculations": [
+            {
+                "code": "0",
+                "label": "0 - absolutely no control"
+            },
+            {
+                "code": "1",
+                "label": "1"
+            },
+            {
+                "code": "2",
+                "label": "2"
+            },
+            {
+                "code": "3",
+                "label": "3"
+            },
+            {
+                "code": "4",
+                "label": "4"
+            },
+            {
+                "code": "5",
+                "label": "5"
+            },
+            {
+                "code": "6",
+                "label": "6"
+            },
+            {
+                "code": "7",
+                "label": "7"
+            },
+            {
+                "code": "8",
+                "label": "8"
+            },
+            {
+                "code": "9",
+                "label": "9"
+            },
+            {
+                "code": "10",
+                "label": "10 - extreme amount of control"
+            }
+        ]
+    },
+    {
+        "field_label": "[25] How much do you think your treatment can help your psoriasis?",
+        "field_type": "radio",
+        "field_name": "blpso_bipq4",
+        "required_field": "y",
+        "select_choices_or_calculations": [
+            {
+                "code": "0",
+                "label": "0 - not at all"
+            },
+            {
+                "code": "1",
+                "label": "1"
+            },
+            {
+                "code": "2",
+                "label": "2"
+            },
+            {
+                "code": "3",
+                "label": "3"
+            },
+            {
+                "code": "4",
+                "label": "4"
+            },
+            {
+                "code": "5",
+                "label": "5"
+            },
+            {
+                "code": "6",
+                "label": "6"
+            },
+            {
+                "code": "7",
+                "label": "7"
+            },
+            {
+                "code": "8",
+                "label": "8"
+            },
+            {
+                "code": "9",
+                "label": "9"
+            },
+            {
+                "code": "10",
+                "label": "10 - extremely helpful"
+            }
+        ]
+    },
+    {
+        "field_label": "[26] How much do you experience symptoms from your psoriasis?",
+        "field_type": "radio",
+        "field_name": "blpso_bipq5",
+        "required_field": "y",
+        "select_choices_or_calculations": [
+            {
+                "code": "0",
+                "label": "0 - no symptoms at all"
+            },
+            {
+                "code": "1",
+                "label": "1"
+            },
+            {
+                "code": "2",
+                "label": "2"
+            },
+            {
+                "code": "3",
+                "label": "3"
+            },
+            {
+                "code": "4",
+                "label": "4"
+            },
+            {
+                "code": "5",
+                "label": "5"
+            },
+            {
+                "code": "6",
+                "label": "6"
+            },
+            {
+                "code": "7",
+                "label": "7"
+            },
+            {
+                "code": "8",
+                "label": "8"
+            },
+            {
+                "code": "9",
+                "label": "9"
+            },
+            {
+                "code": "10",
+                "label": "10 - many severe symptoms"
+            }
+        ]
+    },
+    {
+        "field_label": "[27] How concerned are you about your psoriasis?",
+        "field_type": "radio",
+        "field_name": "blpso_bipq6",
+        "required_field": "y",
+        "select_choices_or_calculations": [
+            {
+                "code": "0",
+                "label": "0 - not at all concerned"
+            },
+            {
+                "code": "1",
+                "label": "1"
+            },
+            {
+                "code": "2",
+                "label": "2"
+            },
+            {
+                "code": "3",
+                "label": "3"
+            },
+            {
+                "code": "4",
+                "label": "4"
+            },
+            {
+                "code": "5",
+                "label": "5"
+            },
+            {
+                "code": "6",
+                "label": "6"
+            },
+            {
+                "code": "7",
+                "label": "7"
+            },
+            {
+                "code": "8",
+                "label": "8"
+            },
+            {
+                "code": "9",
+                "label": "9"
+            },
+            {
+                "code": "10",
+                "label": "10 - extremely concerned"
+            }
+        ]
+    },
+    {
+        "field_label": "[28] How well do you feel you understand your psoriasis?",
+        "field_type": "radio",
+        "field_name": "blpso_bipq7",
+        "required_field": "y",
+        "select_choices_or_calculations": [
+            {
+                "code": "0",
+                "label": "0 - don't understand at all"
+            },
+            {
+                "code": "1",
+                "label": "1"
+            },
+            {
+                "code": "2",
+                "label": "2"
+            },
+            {
+                "code": "3",
+                "label": "3"
+            },
+            {
+                "code": "4",
+                "label": "4"
+            },
+            {
+                "code": "5",
+                "label": "5"
+            },
+            {
+                "code": "6",
+                "label": "6"
+            },
+            {
+                "code": "7",
+                "label": "7"
+            },
+            {
+                "code": "8",
+                "label": "8"
+            },
+            {
+                "code": "9",
+                "label": "9"
+            },
+            {
+                "code": "10",
+                "label": "10 - understand very clearly"
+            }
+        ]
+    },
+    {
+        "field_label": "[29] How much does your psoriasis affect you emotionally? (e.g., does it make you angry, scared, upset or depressed?)",
+        "field_type": "radio",
+        "field_name": "blpso_bipq8",
+        "required_field": "y",
+        "select_choices_or_calculations": [
+            {
+                "code": "0",
+                "label": "0 - not at all affected emotionally"
+            },
+            {
+                "code": "1",
+                "label": "1"
+            },
+            {
+                "code": "2",
+                "label": "2"
+            },
+            {
+                "code": "3",
+                "label": "3"
+            },
+            {
+                "code": "4",
+                "label": "4"
+            },
+            {
+                "code": "5",
+                "label": "5"
+            },
+            {
+                "code": "6",
+                "label": "6"
+            },
+            {
+                "code": "7",
+                "label": "7"
+            },
+            {
+                "code": "8",
+                "label": "8"
+            },
+            {
+                "code": "9",
+                "label": "9"
+            },
+            {
+                "code": "10",
+                "label": "10 - extremely affected emotionally"
+            }
+        ]
+    },
+    {
+        "field_label": "[30] Select the number that best describes your worst level of itching due to psoriasis in the <b>PAST 24 HOURS</b>.",
+        "field_type": "radio",
+        "field_name": "blpso_itch",
+        "required_field": "y",
+        "select_choices_or_calculations": [
+            {
+                "code": "0",
+                "label": "0 - no itching"
+            },
+            {
+                "code": "1",
+                "label": "1"
+            },
+            {
+                "code": "2",
+                "label": "2"
+            },
+            {
+                "code": "3",
+                "label": "3"
+            },
+            {
+                "code": "4",
+                "label": "4"
+            },
+            {
+                "code": "5",
+                "label": "5"
+            },
+            {
+                "code": "6",
+                "label": "6"
+            },
+            {
+                "code": "7",
+                "label": "7"
+            },
+            {
+                "code": "8",
+                "label": "8"
+            },
+            {
+                "code": "9",
+                "label": "9"
+            },
+            {
+                "code": "10",
+                "label": "10 - worst itch imaginable"
+            }
+        ]
+    },
+    {
+        "field_label": "[31] Under each heading, please tick the ONE box that best describes your health <u>TODAY</u>",
+        "field_type": "descriptive",
+        "field_name": "blpso_eq5d_text",
+        "section_header": "Health-related quality of life"
+    },
+    {
+        "field_label": "[32] <b>Mobility</b>",
+        "field_type": "radio",
+        "field_name": "blpso_eq5d_mob",
+        "required_field": "y",
+        "select_choices_or_calculations": [
+            {
+                "code": "1",
+                "label": "I have no problems walking about"
+            },
+            {
+                "code": "2",
+                "label": "I have slight problems in walking about"
+            },
+            {
+                "code": "3",
+                "label": "I have moderate problems in walking about"
+            },
+            {
+                "code": "4",
+                "label": "I have severe problems in walking about"
+            },
+            {
+                "code": "5",
+                "label": "I am unable to walk about"
+            }
+        ]
+    },
+    {
+        "field_label": "[33] <b>Self-care</b>",
+        "field_type": "radio",
+        "field_name": "blpso_eq5d_scare",
+        "required_field": "y",
+        "select_choices_or_calculations": [
+            {
+                "code": "1",
+                "label": "I have no problems washing or dressing myself"
+            },
+            {
+                "code": "2",
+                "label": "I have slight problems washing or dressing myself"
+            },
+            {
+                "code": "3",
+                "label": "I have moderate problems washing or dressing myself"
+            },
+            {
+                "code": "4",
+                "label": "I have severe problems washing or dressing myself"
+            },
+            {
+                "code": "5",
+                "label": "I am unable to wash or dress myself"
+            }
+        ]
+    },
+    {
+        "field_label": "[34] <b>Usual activities (e.g., work, study, housework, family or leisure activities)</b>",
+        "field_type": "radio",
+        "field_name": "blpso_eq5d_uactive",
+        "required_field": "y",
+        "select_choices_or_calculations": [
+            {
+                "code": "1",
+                "label": "I have no problems doing my usual activities"
+            },
+            {
+                "code": "2",
+                "label": "I have slight problems doing my usual activities"
+            },
+            {
+                "code": "3",
+                "label": "I have moderate problems doing my usual activities"
+            },
+            {
+                "code": "4",
+                "label": "I have severe problems doing my usual activities"
+            },
+            {
+                "code": "5",
+                "label": "I am unable to do my usual activities"
+            }
+        ]
+    },
+    {
+        "field_label": "[35] Pain/discomfort",
+        "field_type": "radio",
+        "field_name": "blpso_eq5d_pain",
+        "required_field": "y",
+        "select_choices_or_calculations": [
+            {
+                "code": "1",
+                "label": "I have no pain or discomfort"
+            },
+            {
+                "code": "2",
+                "label": "I have slight pain or discomfort"
+            },
+            {
+                "code": "3",
+                "label": "I have moderate pain or discomfort"
+            },
+            {
+                "code": "4",
+                "label": "I have severe pain or discomfort"
+            },
+            {
+                "code": "5",
+                "label": "I have extreme pain or discomfort"
+            }
+        ]
+    },
+    {
+        "field_label": "[36] Anxiety/Depression",
+        "field_type": "radio",
+        "field_name": "blpso_eq5d_anx",
+        "required_field": "y",
+        "select_choices_or_calculations": [
+            {
+                "code": "1",
+                "label": "I am not anxious or depressed"
+            },
+            {
+                "code": "2",
+                "label": "I am slightly anxious or depressed"
+            },
+            {
+                "code": "3",
+                "label": "I am moderately anxious or depressed"
+            },
+            {
+                "code": "4",
+                "label": "I am severely anxious or depressed"
+            },
+            {
+                "code": "5",
+                "label": "I am extremely anxious or depressed"
+            }
+        ]
+    },
+    {
+        "field_label": "[37] We would like to know how good or bad your health is <u>TODAY</u>. The scale is numbered from 0 to 100. 100 means the best health you can imagine. 0 means the worst health you can imagine. Select on the scale to indicate how your health is today.",
+        "field_type": "slider",
+        "field_name": "blpso_eq5d_vas",
+        "required_field": "y",
+        "text_validation_type_or_show_slider_number": "number",
+        "select_choices_or_calculations": [
+            {
+                "code": "0",
+                "label": "Worst health"
+            },
+            {
+                "code": "100",
+                "label": "Best health"
+            }
+        ]
+    },
+    {
+        "field_label": "[38] Has a doctor ever told you that you have psoriatic arthritis?",
+        "field_type": "radio",
+        "field_name": "blpso_psoarth_doc",
+        "required_field": "y",
+        "section_header": "Psoriatic arthritis",
+        "select_choices_or_calculations": [
+            {
+                "code": "1",
+                "label": "Yes"
+            },
+            {
+                "code": "0",
+                "label": "No"
+            },
+            {
+                "code": "2",
+                "label": "Not sure"
+            }
+        ]
+    },
+    {
+        "field_label": "[39] How old were you when you first developed psoriatic arthritis? ",
+        "field_type": "text",
+        "field_name": "blpso_psoarth_age",
+        "field_note": "years",
+        "required_field": "y",
+        "text_validation_type_or_show_slider_number": "integer",
+        "branching_logic": "[blpso_psoarth_doc]='1'",
+        "validations": [
+            {
+                "name": "min",
+                "value": "0",
+                "error": "Enter a number greater than 0",
+                "hint": ""
+            },
+            {
+                "name": "max",
+                "value": "100",
+                "error": "Enter a number less than 100",
+                "hint": ""
+            },
+            {
+                "name": "less_than_age_year",
+                "value": "",
+                "error": "The age when you first developed psoriatic arthritis cannot be larger than your age.",
+                "hint": ""
+            }
+        ]
+    },
+    {
+        "field_label": "[42] Does your psoriatic arthritis affect your joints in your arms or legs (e.g. fingers, knees, shoulders)?",
+        "field_type": "radio",
+        "field_name": "blpso_psoarth_joint",
+        "required_field": "y",
+        "select_choices_or_calculations": [
+            {
+                "code": "1",
+                "label": "Yes"
+            },
+            {
+                "code": "0",
+                "label": "No"
+            },
+            {
+                "code": "2",
+                "label": "Not sure"
+            }
+        ],
+        "branching_logic": "[blpso_psoarth_doc]='1'"
+    },
+    {
+        "field_label": "[43] Does your psoriatic arthritis affect your spine (back) causing back pain and stiffness?",
+        "field_type": "radio",
+        "field_name": "blpso_psoarth_spine",
+        "required_field": "y",
+        "select_choices_or_calculations": [
+            {
+                "code": "1",
+                "label": "Yes"
+            },
+            {
+                "code": "0",
+                "label": "No"
+            },
+            {
+                "code": "2",
+                "label": "Not sure"
+            }
+        ],
+        "branching_logic": "[blpso_psoarth_doc]='1'"
+    },
+    {
+        "field_label": "[44] <p>1. Pain<br>Select the number that best describes the pain you felt due to your psoriatic arthritis during last week:</p>",
+        "field_type": "radio",
+        "field_name": "blpso_psaid1",
+        "select_choices_or_calculations": [
+            {
+                "code": "0",
+                "label": "0 - None"
+            },
+            {
+                "code": "1",
+                "label": "1"
+            },
+            {
+                "code": "2",
+                "label": "2"
+            },
+            {
+                "code": "3",
+                "label": "3"
+            },
+            {
+                "code": "4",
+                "label": "4"
+            },
+            {
+                "code": "5",
+                "label": "5"
+            },
+            {
+                "code": "6",
+                "label": "6"
+            },
+            {
+                "code": "7",
+                "label": "7"
+            },
+            {
+                "code": "8",
+                "label": "8"
+            },
+            {
+                "code": "9",
+                "label": "9"
+            },
+            {
+                "code": "10",
+                "label": "10 - Extreme"
+            }
+        ],
+        "branching_logic": "[blpso_psoarth_doc]='1'"
+    },
+    {
+        "field_label": "[46] <p>2. Fatigue<br>Select the number that best describes the overall level of fatigue due to your psoriatic arthritis you have experienced during the last week:</p>",
+        "field_type": "radio",
+        "field_name": "blpso_psaid2",
+        "select_choices_or_calculations": [
+            {
+                "code": "0",
+                "label": "0 - No fatigue"
+            },
+            {
+                "code": "1",
+                "label": "1"
+            },
+            {
+                "code": "2",
+                "label": "2"
+            },
+            {
+                "code": "3",
+                "label": "3"
+            },
+            {
+                "code": "4",
+                "label": "4"
+            },
+            {
+                "code": "5",
+                "label": "5"
+            },
+            {
+                "code": "6",
+                "label": "6"
+            },
+            {
+                "code": "7",
+                "label": "7"
+            },
+            {
+                "code": "8",
+                "label": "8"
+            },
+            {
+                "code": "9",
+                "label": "9"
+            },
+            {
+                "code": "10",
+                "label": "10 - Totally exhausted"
+            }
+        ],
+        "branching_logic": "[blpso_psoarth_doc]='1'"
+    },
+    {
+        "field_label": "[48] <p>3. Skin problems<br>Select the number that best describes the skin problems including itching you felt due to your psoriatic arthritis during last week:</p>",
+        "field_type": "radio",
+        "field_name": "blpso_psaid3",
+        "select_choices_or_calculations": [
+            {
+                "code": "0",
+                "label": "0 - None"
+            },
+            {
+                "code": "1",
+                "label": "1"
+            },
+            {
+                "code": "2",
+                "label": "2"
+            },
+            {
+                "code": "3",
+                "label": "3"
+            },
+            {
+                "code": "4",
+                "label": "4"
+            },
+            {
+                "code": "5",
+                "label": "5"
+            },
+            {
+                "code": "6",
+                "label": "6"
+            },
+            {
+                "code": "7",
+                "label": "7"
+            },
+            {
+                "code": "8",
+                "label": "8"
+            },
+            {
+                "code": "9",
+                "label": "9"
+            },
+            {
+                "code": "10",
+                "label": "10 - Extreme"
+            }
+        ],
+        "branching_logic": "[blpso_psoarth_doc]='1'"
+    },
+    {
+        "field_label": "[50] <p>4. Work and/or leisure activities<br>Select the number that best describes the difficulties you had to participate fully in work and/or leisure activities due to your psoriatic arthritis during last week:</p>",
+        "field_type": "radio",
+        "field_name": "blpso_psaid4",
+        "select_choices_or_calculations": [
+            {
+                "code": "0",
+                "label": "0 - None"
+            },
+            {
+                "code": "1",
+                "label": "1"
+            },
+            {
+                "code": "2",
+                "label": "2"
+            },
+            {
+                "code": "3",
+                "label": "3"
+            },
+            {
+                "code": "4",
+                "label": "4"
+            },
+            {
+                "code": "5",
+                "label": "5"
+            },
+            {
+                "code": "6",
+                "label": "6"
+            },
+            {
+                "code": "7",
+                "label": "7"
+            },
+            {
+                "code": "8",
+                "label": "8"
+            },
+            {
+                "code": "9",
+                "label": "9"
+            },
+            {
+                "code": "10",
+                "label": "10 - Extreme"
+            }
+        ],
+        "branching_logic": "[blpso_psoarth_doc]='1'"
+    },
+    {
+        "field_label": "[52] <p>5. Functional capacity<br>Select the number that best describes the difficulty you had in doing daily physical activities due to your psoriatic arthritis during the last week:</p>",
+        "field_type": "radio",
+        "form_name": "baseline",
+        "field_name": "blpso_psaid5",
+        "custom_alignment": "LH",
+        "select_choices_or_calculations": [
+            {
+                "code": "0",
+                "label": "0 - No difficulty"
+            },
+            {
+                "code": "1",
+                "label": "1"
+            },
+            {
+                "code": "2",
+                "label": "2"
+            },
+            {
+                "code": "3",
+                "label": "3"
+            },
+            {
+                "code": "4",
+                "label": "4"
+            },
+            {
+                "code": "5",
+                "label": "5"
+            },
+            {
+                "code": "6",
+                "label": "6"
+            },
+            {
+                "code": "7",
+                "label": "7"
+            },
+            {
+                "code": "8",
+                "label": "8"
+            },
+            {
+                "code": "9",
+                "label": "9"
+            },
+            {
+                "code": "10",
+                "label": "10 - Extreme difficulty"
+            }
+        ],
+        "branching_logic": "[blpso_psoarth_doc]='1'"
+    },
+    {
+        "field_label": "[54] <p>6. Discomfort<br>Select the number that best describes the feeling of discomfort and annoyance with everyday tasks due to your psoriatic arthritis during the last week:</p>",
+        "field_type": "radio",
+        "form_name": "baseline",
+        "field_name": "blpso_psaid6",
+        "custom_alignment": "LH",
+        "select_choices_or_calculations": [
+            {
+                "code": "0",
+                "label": "0 - None"
+            },
+            {
+                "code": "1",
+                "label": "1"
+            },
+            {
+                "code": "2",
+                "label": "2"
+            },
+            {
+                "code": "3",
+                "label": "3"
+            },
+            {
+                "code": "4",
+                "label": "4"
+            },
+            {
+                "code": "5",
+                "label": "5"
+            },
+            {
+                "code": "6",
+                "label": "6"
+            },
+            {
+                "code": "7",
+                "label": "7"
+            },
+            {
+                "code": "8",
+                "label": "8"
+            },
+            {
+                "code": "9",
+                "label": "9"
+            },
+            {
+                "code": "10",
+                "label": "10 - Extreme"
+            }
+        ],
+        "branching_logic": "[blpso_psoarth_doc]='1'"
+    },
+    {
+        "field_label": "[56] <p>7. Sleep disturbance<br>Select the number that best describes the sleep difficulties (i.e., resting at night) you felt due to your psoriatic arthritis during last week:</p>",
+        "field_type": "radio",
+        "form_name": "baseline",
+        "field_name": "blpso_psaid7",
+        "custom_alignment": "LH",
+        "select_choices_or_calculations": [
+            {
+                "code": "0",
+                "label": "0 - No difficulty"
+            },
+            {
+                "code": "1",
+                "label": "1"
+            },
+            {
+                "code": "2",
+                "label": "2"
+            },
+            {
+                "code": "3",
+                "label": "3"
+            },
+            {
+                "code": "4",
+                "label": "4"
+            },
+            {
+                "code": "5",
+                "label": "5"
+            },
+            {
+                "code": "6",
+                "label": "6"
+            },
+            {
+                "code": "7",
+                "label": "7"
+            },
+            {
+                "code": "8",
+                "label": "8"
+            },
+            {
+                "code": "9",
+                "label": "9"
+            },
+            {
+                "code": "10",
+                "label": "10 - Extreme difficulty"
+            }
+        ],
+        "branching_logic": "[blpso_psoarth_doc]='1'"
+    },
+    {
+        "field_label": "[58] <p>8. Coping<br>Considering your psoriatic arthritis overall, how well did you cope (manage, deal, make do) with your psoriatic arthritis during the last week?</p>",
+        "field_type": "radio",
+        "form_name": "baseline",
+        "field_name": "blpso_psaid8",
+        "custom_alignment": "LH",
+        "select_choices_or_calculations": [
+            {
+                "code": "0",
+                "label": "0 - Very well"
+            },
+            {
+                "code": "1",
+                "label": "1"
+            },
+            {
+                "code": "2",
+                "label": "2"
+            },
+            {
+                "code": "3",
+                "label": "3"
+            },
+            {
+                "code": "4",
+                "label": "4"
+            },
+            {
+                "code": "5",
+                "label": "5"
+            },
+            {
+                "code": "6",
+                "label": "6"
+            },
+            {
+                "code": "7",
+                "label": "7"
+            },
+            {
+                "code": "8",
+                "label": "8"
+            },
+            {
+                "code": "9",
+                "label": "9"
+            },
+            {
+                "code": "10",
+                "label": "10 - Very poorly"
+            }
+        ],
+        "branching_logic": "[blpso_psoarth_doc]='1'"
+    },
+    {
+        "field_label": "[60] <p>9. Anxiety, fear and uncertainty<br>Select the number that best describes the level of anxiety, fear and uncertainty (for example about the future, treatments, fears of loneliness) due to your psoriatic arthritis you have experienced during the last week:</p>",
+        "field_type": "radio",
+        "field_name": "blpso_psaid9",
+        "select_choices_or_calculations": [
+            {
+                "code": "0",
+                "label": "0 - None"
+            },
+            {
+                "code": "1",
+                "label": "1"
+            },
+            {
+                "code": "2",
+                "label": "2"
+            },
+            {
+                "code": "3",
+                "label": "3"
+            },
+            {
+                "code": "4",
+                "label": "4"
+            },
+            {
+                "code": "5",
+                "label": "5"
+            },
+            {
+                "code": "6",
+                "label": "6"
+            },
+            {
+                "code": "7",
+                "label": "7"
+            },
+            {
+                "code": "8",
+                "label": "8"
+            },
+            {
+                "code": "9",
+                "label": "9"
+            },
+            {
+                "code": "10",
+                "label": "10 - Extreme"
+            }
+        ],
+        "branching_logic": "[blpso_psoarth_doc]='1'"
+    },
+    {
+        "field_label": "[62] Psoriasis epidemiology screening tool",
+        "field_type": "checkbox",
+        "field_name": "blpest",
+        "select_choices_or_calculations": [
+            {
+                "code": "1",
+                "label": "Neck"
+            },
+            {
+                "code": "2",
+                "label": "Upper back"
+            },
+            {
+                "code": "3",
+                "label": "Lower back"
+            },
+            {
+                "code": "4",
+                "label": "Left shoulder"
+            },
+            {
+                "code": "5",
+                "label": "Left elbow"
+            },
+            {
+                "code": "6",
+                "label": "Left wrist"
+            },
+            {
+                "code": "7",
+                "label": "Left hand/fingers"
+            },
+            {
+                "code": "8",
+                "label": "Left thumb"
+            },
+            {
+                "code": "9",
+                "label": "Left foot/toes"
+            },
+            {
+                "code": "10",
+                "label": "Left ankle"
+            },
+            {
+                "code": "11",
+                "label": "Left knee"
+            },
+            {
+                "code": "12",
+                "label": "Left hip"
+            },
+            {
+                "code": "13",
+                "label": "Right shoulder"
+            },
+            {
+                "code": "14",
+                "label": "Right elbow"
+            },
+            {
+                "code": "15",
+                "label": "Right wrist"
+            },
+            {
+                "code": "16",
+                "label": "Right hand/fingers"
+            },
+            {
+                "code": "17",
+                "label": "Right thumb"
+            },
+            {
+                "code": "18",
+                "label": "Right hip"
+            },
+            {
+                "code": "19",
+                "label": "Right knee"
+            },
+            {
+                "code": "20",
+                "label": "Right ankle"
+            },
+            {
+                "code": "21",
+                "label": "Right foot/toes"
+            }
+        ],
+        "branching_logic": "[blpso_psoarth_doc]='0' or [blpso_psoarth_doc]='2'"
+    },
+    {
+        "field_label": "[64] Have you ever had a swollen joint (or joints)?",
+        "field_type": "yesno",
+        "field_name": "blpest_joint",
+        "required_field": "y",
+        "branching_logic": "[blpso_psoarth_doc]='0' or [blpso_psoarth_doc]='2'"
+    },
+    {
+        "field_label": "[65] Has a doctor ever told you that you have arthritis?",
+        "field_type": "yesno",
+        "field_name": "blpest_arth",
+        "required_field": "y",
+        "branching_logic": "[blpso_psoarth_doc]='0' or [blpso_psoarth_doc]='2'"
+    },
+    {
+        "field_label": "[66] Do your fingernails or toenails have holes or pits?",
+        "field_type": "yesno",
+        "field_name": "blpest_nailhole",
+        "required_field": "y",
+        "branching_logic": "[blpso_psoarth_doc]='0' or [blpso_psoarth_doc]='2'"
+    },
+    {
+        "field_label": "[67] Have you had pain in your heel?",
+        "field_type": "yesno",
+        "field_name": "blpest_heelpain",
+        "required_field": "y",
+        "branching_logic": "[blpso_psoarth_doc]='0' or [blpso_psoarth_doc]='2'"
+    },
+    {
+        "field_label": "[68] Have you had a finger or toe that was completely swollen and painful for no apparent reason?",
+        "field_type": "yesno",
+        "field_name": "blpest_swollen",
+        "required_field": "y",
+        "branching_logic": "[blpso_psoarth_doc]='0' or [blpso_psoarth_doc]='2'"
+    },
+    {
+        "field_label": "[69] Overall, how satisfied are you with your life nowadays?",
+        "field_type": "radio",
+        "field_name": "blwbg_satis",
+        "required_field": "y",
+        "section_header": "General health <u>Wellbeing</u>",
+        "select_choices_or_calculations": [
+            {
+                "code": "0",
+                "label": "0 - not at all"
+            },
+            {
+                "code": "1",
+                "label": "1"
+            },
+            {
+                "code": "2",
+                "label": "2"
+            },
+            {
+                "code": "3",
+                "label": "3"
+            },
+            {
+                "code": "4",
+                "label": "4"
+            },
+            {
+                "code": "5",
+                "label": "5"
+            },
+            {
+                "code": "6",
+                "label": "6"
+            },
+            {
+                "code": "7",
+                "label": "7"
+            },
+            {
+                "code": "8",
+                "label": "8"
+            },
+            {
+                "code": "9",
+                "label": "9"
+            },
+            {
+                "code": "10",
+                "label": "10 - completely"
+            }
+        ],
+        "report": {
+            "longitudinal": {
+                "name": "x_well_being",
+                "title": "Overall, how satisfied are you with your life nowadays?",
+                "type": "line_chart",
+                "value": "value",
+                "yaxis": {
+                    "min": 0,
+                    "max": 10,
+                    "step": 2,
+                    "fn": {
+                        "0": "Not at all - 0",
+                        "2": "2",
+                        "4": "4",
+                        "6": "6",
+                        "8": "8",
+                        "10": "Completely - 10"
+                    }
+                }
+            }
+        }
+    },
+    {
+        "field_label": "[70] Little interest or pleasure in doing things",
+        "field_type": "radio",
+        "field_name": "blwbg_lt2w_little",
+        "required_field": "y",
+        "matrix_group_name": "blwbg_lt2w",
+        "section_header": "<b>OVER THE LAST 2 WEEKS</b>, how often have you been bothered by the following problems?",
+        "select_choices_or_calculations": [
+            {
+                "code": "1",
+                "label": "Not at all"
+            },
+            {
+                "code": "2",
+                "label": "Several days"
+            },
+            {
+                "code": "3",
+                "label": "More than half the days"
+            },
+            {
+                "code": "4",
+                "label": "Nearly everyday"
+            }
+        ],
+        "report": {
+            "longitudinal": {
+                "name": "x_problem",
+                "title": "Little interest/pleasure in doing things",
+                "type": "line_chart",
+                "value": "value",
+                "group": {
+                    "name": "a",
+                    "title": "How often have you been bothered by.....?"
+                },
+                "height": "300",
+                "yaxis": {
+                    "min": 1,
+                    "max": 4,
+                    "step": 1,
+                    "fn": {
+                        "1": "Not at all",
+                        "2": "Several days",
+                        "3": "More than one half the days",
+                        "4": "Nearly everyday"
+                    }
+                }
+            }
+        }
+    },
+    {
+        "field_label": "[71] Feeling down, depressed, or hopeless",
+        "field_type": "radio",
+        "field_name": "blwbg_lt2w_down",
+        "required_field": "y",
+        "matrix_group_name": "blwbg_lt2w",
+        "select_choices_or_calculations": [
+            {
+                "code": "1",
+                "label": "Not at all"
+            },
+            {
+                "code": "2",
+                "label": "Several days"
+            },
+            {
+                "code": "3",
+                "label": "More than half the days"
+            },
+            {
+                "code": "4",
+                "label": "Nearly everyday"
+            }
+        ],
+        "report": {
+            "longitudinal": {
+                "name": "x_problem",
+                "title": "Feeling down, depressed or hopeless",
+                "type": "line_chart",
+                "value": "value",
+                "group": {
+                    "name": "a",
+                    "title": "How often have you been bothered by.....?"
+                },
+                "height": "300",
+                "yaxis": {
+                    "min": 1,
+                    "max": 4,
+                    "step": 1,
+                    "fn": {
+                        "1": "Not at all",
+                        "2": "Several days",
+                        "3": "More than one half the days",
+                        "4": "Nearly everyday"
+                    }
+                }
+            }
+        },
+        "section_header": "<b>OVER THE LAST 2 WEEKS</b>, how often have you been bothered by the following problems?"
+    },
+    {
+        "field_label": "[72] Feeling nervous, anxious or on edge",
+        "field_type": "radio",
+        "field_name": "blwbg_lt2w_nervous",
+        "required_field": "y",
+        "matrix_group_name": "blwbg_lt2w",
+        "select_choices_or_calculations": [
+            {
+                "code": "1",
+                "label": "Not at all"
+            },
+            {
+                "code": "2",
+                "label": "Several days"
+            },
+            {
+                "code": "3",
+                "label": "More than half the days"
+            },
+            {
+                "code": "4",
+                "label": "Nearly everyday"
+            }
+        ],
+        "report": {
+            "longitudinal": {
+                "name": "x_problem",
+                "title": "Feeling nervous, anxious or on edge",
+                "type": "line_chart",
+                "value": "value",
+                "group": {
+                    "name": "a",
+                    "title": "How often have you been bothered by.....?"
+                },
+                "height": "300",
+                "yaxis": {
+                    "min": 1,
+                    "max": 4,
+                    "step": 1,
+                    "fn": {
+                        "1": "Not at all",
+                        "2": "Several days",
+                        "3": "More than one half the days",
+                        "4": "Nearly everyday"
+                    }
+                }
+            }
+        },
+        "section_header": "<b>OVER THE LAST 2 WEEKS</b>, how often have you been bothered by the following problems?"
+    },
+    {
+        "field_label": "[73] Not being able to stop or control worrying",
+        "field_type": "radio",
+        "field_name": "blwbg_lt2w_worry",
+        "required_field": "y",
+        "matrix_group_name": "blwbg_lt2w",
+        "select_choices_or_calculations": [
+            {
+                "code": "1",
+                "label": "Not at all"
+            },
+            {
+                "code": "2",
+                "label": "Several days"
+            },
+            {
+                "code": "3",
+                "label": "More than half the days"
+            },
+            {
+                "code": "4",
+                "label": "Nearly everyday"
+            }
+        ],
+        "report": {
+            "longitudinal": {
+                "name": "x_problem",
+                "title": "Not being able to stop or control worrying",
+                "type": "line_chart",
+                "value": "value",
+                "group": {
+                    "name": "a",
+                    "title": "How often have you been bothered by.....?"
+                },
+                "height": "300",
+                "yaxis": {
+                    "min": 1,
+                    "max": 4,
+                    "step": 1,
+                    "fn": {
+                        "1": "Not at all",
+                        "2": "Several days",
+                        "3": "More than one half the days",
+                        "4": "Nearly everyday"
+                    }
+                }
+            }
+        },
+        "section_header": "<b>OVER THE LAST 2 WEEKS</b>, how often have you been bothered by the following problems?"
+    },
+    {
+        "field_label": "[74] <u>Smoking</u>",
+        "field_type": "descriptive",
+        "field_name": "blwbg_smk_txt",
+        "section_header": "Smoking and Alcohol"
+    },
+    {
+        "field_label": "[75] Do you or have you ever smoked tobacco?",
+        "field_type": "radio",
+        "field_name": "blwbg_smk",
+        "required_field": "y",
+        "select_choices_or_calculations": [
+            {
+                "code": "1",
+                "label": "Yes"
+            },
+            {
+                "code": "2",
+                "label": "Yes2"
+            },
+            {
+                "code": "0",
+                "label": "No"
+            },
+            {
+                "code": "4",
+                "label": "Not sure"
+            }
+        ]
+    },
+    {
+        "field_label": "[76] How many cigarettes do you smoke each <b><u>DAY</u></b>?",
+        "field_type": "text",
+        "field_name": "blwbg_smk_cig_no",
+        "required_field": "y",
+        "text_validation_type_or_show_slider_number": "integer",
+        "text_validation_max": "100",
+        "text_validation_min": "1",
+        "branching_logic": "[blwbg_smk]='1'",
+        "validations": [
+            {
+                "name": "min",
+                "value": "1",
+                "error": "Enter a number greater than 1"
+            },
+            {
+                "name": "max",
+                "value": "100",
+                "error": "Enter a number less than 100"
+            }
+        ]
+    },
+    {
+        "field_label": "[77] How old were you when you <u><b>STARTED</b></u> smoking?",
+        "field_type": "text",
+        "field_name": "blwbg_smk_cig_stage",
+        "field_note": "years",
+        "required_field": "y",
+        "text_validation_type_or_show_slider_number": "integer",
+        "text_validation_max": "100",
+        "text_validation_min": "0",
+        "branching_logic": "[blwbg_smk]='1'",
+        "validations": [
+            {
+                "name": "min",
+                "value": "0",
+                "error": "Enter a number greater than 0"
+            },
+            {
+                "name": "max",
+                "value": "100",
+                "error": "Enter a number less than 100"
+            },
+            {
+                "name": "less_than_age_year",
+                "value": "",
+                "error": "The age you started smoking can not be more than your current age."
+            }
+        ]
+    },
+    {
+        "field_label": "[78] What was the average number of cigarettes smoked each <b><u>DAY</u></b>?",
+        "field_type": "text",
+        "form_name": "baseline",
+        "field_name": "blwbg_smk_for_avg",
+        "required_field": "y",
+        "text_validation_type_or_show_slider_number": "integer",
+        "text_validation_min": "0",
+        "branching_logic": "[blwbg_smk]='2'",
+        "validations": [
+            {
+                "name": "min",
+                "value": "0",
+                "error": "Enter a number greater than 0"
+            }
+        ]
+    },
+    {
+        "field_label": "[79] How old were you when you <b><u>STARTED</u></b> smoking?",
+        "field_type": "text",
+        "form_name": "baseline",
+        "field_name": "blwbg_smk_for_stage",
+        "field_note": "years",
+        "required_field": "y",
+        "text_validation_type_or_show_slider_number": "integer",
+        "text_validation_max": "100",
+        "text_validation_min": "0",
+        "branching_logic": "[blwbg_smk]='2'",
+        "validations": [
+            {
+                "name": "min",
+                "value": "0",
+                "error": "Enter a number greater than 0"
+            },
+            {
+                "name": "max",
+                "value": "100",
+                "error": "Enter a number less than 100"
+            },
+            {
+                "name": "less_than_age_year",
+                "value": "",
+                "error": "The age you started smoking can not be more than your current age."
+            }
+        ]
+    },
+    {
+        "field_label": "[80] How old were you when you <b><u>STOPPED</u></b> smoking?",
+        "field_type": "text",
+        "form_name": "baseline",
+        "field_name": "blwbg_smk_for_spage",
+        "field_note": "years",
+        "required_field": "y",
+        "text_validation_type_or_show_slider_number": "integer",
+        "text_validation_max": "100",
+        "text_validation_min": "0",
+        "branching_logic": "[blwbg_smk]='2'",
+        "validations": [
+            {
+                "name": "min",
+                "value": "0",
+                "error": "Enter a number greater than 0"
+            },
+            {
+                "name": "max",
+                "value": "100",
+                "error": "Enter a number less than 100"
+            },
+            {
+                "name": "less_than_age_year",
+                "value": "",
+                "error": "The age you stopped smoking can not be more than your current age."
+            }
+        ]
+    },
+    {
+        "field_label": "[83] _blwbg_smk_for_spage_check2",
+        "field_type": "calc",
+        "form_name": "baseline",
+        "field_name": "blwbg_smk_for_spage_check2",
+        "field_annotation": "@HIDDEN",
+        "required_field": "y",
+        "calculation_fn": "if(blwbg_smk_for_spage>=blwbg_smk_for_stage){return '1'}else{return '0'}",
+        "calculation_args": "['blwbg_smk_for_spage', 'blwbg_smk_for_stage']",
+        "branching_logic": "[blwbg_smk]='2'"
+    },
+    {
+        "field_label": "[86] <p style='color: red;'>The age you stopped smoking can not be more than the age you started.</p>",
+        "field_type": "descriptive",
+        "form_name": "baseline",
+        "field_name": "blwbg_smk_for_spage_check2_text",
+        "branching_logic": "[blwbg_smk_for_spage_check2]='0'"
+    },
+    {
+        "field_label": "[87] Do you, or have you ever used e-cigarettes or vaping products?",
+        "field_type": "radio",
+        "form_name": "baseline",
+        "field_name": "blwbg_ecig",
+        "required_field": "false",
+        "select_choices_or_calculations": [
+            {
+                "code": "1",
+                "label": "Yes"
+            },
+            {
+                "code": "2",
+                "label": "Yes"
+            },
+            {
+                "code": "0",
+                "label": "No"
+            },
+            {
+                "code": "3",
+                "label": "Not sure"
+            }
+        ]
+    },
+    {
+        "field_label": "[88] <u>Alcohol</u>",
+        "field_type": "descriptive",
+        "field_name": "bkwbg_alch_txt"
+    },
+    {
+        "field_label": "[89] How often do you have a drink containing alcohol?",
+        "field_type": "radio",
+        "form_name": "baseline",
+        "field_name": "blwbg_alch",
+        "required_field": "y",
+        "select_choices_or_calculations": [
+            {
+                "code": "1",
+                "label": "Never"
+            },
+            {
+                "code": "2",
+                "label": "Monthly or less"
+            },
+            {
+                "code": "3",
+                "label": "2 to 4 times per month"
+            },
+            {
+                "code": "4",
+                "label": "2 to 3 times per week"
+            },
+            {
+                "code": "5",
+                "label": "4 or more times per week"
+            }
+        ]
+    },
+    {
+        "field_label": "[90] <p>How many units of alcohol do you drink on a typical <b><u>DAY</u></b> when you are drinking?</p><p>What is one unit? One unit is a standard glass of wine, half a pint of beer or lager, a single measure of spirits, a measure of sherry</p>",
+        "field_type": "radio",
+        "field_name": "blwbg_alch_dunits",
+        "required_field": "y",
+        "select_choices_or_calculations": [
+            {
+                "code": "1",
+                "label": "0 to 2"
+            },
+            {
+                "code": "2",
+                "label": "3 to 4"
+            },
+            {
+                "code": "3",
+                "label": "5 to 6"
+            },
+            {
+                "code": "4",
+                "label": "7 to 9"
+            },
+            {
+                "code": "5",
+                "label": "10 or more"
+            }
+        ],
+        "branching_logic": "[blwbg_alch]<>'1'"
+    },
+    {
+        "field_label": "[91] <p>How often have you had 6 or more units if female, or 8 or more if male, on a <b><u>SINGLE OCCASION</u></b> in the last year?</p><p>What is one unit? One unit is a standard glass of wine, half a pint of beer or larger, a single measure of spirits, a measure of sherry</p>",
+        "field_type": "radio",
+        "field_name": "blwbg_alch_singocc",
+        "required_field": "y",
+        "select_choices_or_calculations": [
+            {
+                "code": "1",
+                "label": "Never"
+            },
+            {
+                "code": "2",
+                "label": "Less than monthly"
+            },
+            {
+                "code": "3",
+                "label": "Monthly"
+            },
+            {
+                "code": "4",
+                "label": "Weekly"
+            },
+            {
+                "code": "5",
+                "label": "Daily or almost daily"
+            }
+        ],
+        "branching_logic": "[blwbg_alch]<>'1'"
+    },
+    {
+        "field_label": "[92] I completely understand how and when I should take my biologic injection during the study,",
+        "field_type": "radio",
+        "field_name": "blexp_blgtke",
+        "required_field": "y",
+        "section_header": "Experiences of treatment and healthcare",
+        "select_choices_or_calculations": [
+            {
+                "code": "1",
+                "label": "Strongly Agree"
+            },
+            {
+                "code": "2",
+                "label": "Agree"
+            },
+            {
+                "code": "3",
+                "label": "No opinion"
+            },
+            {
+                "code": "4",
+                "label": "Disagree"
+            },
+            {
+                "code": "5",
+                "label": "Strongly disagree"
+            }
+        ]
+    },
+    {
+        "field_label": "[93] In your usual dermatology centre, are you able to request an appointment with your psoriasis doctor when you need it (i.e., 'ad hoc' appointment or patient-initiated follow-up/PIFU)?",
+        "field_type": "yesno",
+        "field_name": "blexp_appt",
+        "required_field": "y",
+        "custom_alignment": "RH"
+    },
+    {
+        "field_label": "[94] Over the past 3 months, how many times did you request to have an appointment with your psoriasis doctor?",
+        "field_type": "radio",
+        "field_name": "blexp_appt_no",
+        "required_field": "y",
+        "select_choices_or_calculations": [
+            {
+                "code": "0",
+                "label": "0"
+            },
+            {
+                "code": "1",
+                "label": "1"
+            },
+            {
+                "code": "2",
+                "label": "2"
+            },
+            {
+                "code": "3",
+                "label": "3"
+            },
+            {
+                "code": "4",
+                "label": "4"
+            },
+            {
+                "code": "5",
+                "label": "5"
+            },
+            {
+                "code": "6",
+                "label": "6"
+            },
+            {
+                "code": "7",
+                "label": "7"
+            },
+            {
+                "code": "8",
+                "label": "8"
+            },
+            {
+                "code": "9",
+                "label": "9"
+            },
+            {
+                "code": "10",
+                "label": "10"
+            },
+            {
+                "code": "11",
+                "label": "11 or more"
+            }
+        ],
+        "branching_logic": "[blexp_appt]='1'"
+    },
+    {
+        "field_label": "[95] Why did you request this appointment(s)? Tick all that apply.",
+        "field_type": "checkbox",
+        "field_name": "blexp_appt_why",
+        "required_field": "y",
+        "select_choices_or_calculations": [
+            {
+                "code": "1",
+                "label": "My psoriasis got worse"
+            },
+            {
+                "code": "2",
+                "label": "I was worried about side effects from my psoriasis medication"
+            },
+            {
+                "code": "3",
+                "label": "I was worried that I had developed (new onset) psoriatic arthritis"
+            },
+            {
+                "code": "4",
+                "label": "My (existing) psoriatic arthritis had worsened"
+            },
+            {
+                "code": "5",
+                "label": "I developed a new skin problem (please state)"
+            },
+            {
+                "code": "6",
+                "label": "Other (please state)"
+            }
+        ],
+        "branching_logic": "[blexp_appt_no]<>'0'"
+    },
+    {
+        "field_label": "[96] <p>Why did you request this appointment(s)?<br><br></p><p>Please state new skin problem developed.</p>",
+        "field_type": "text",
+        "form_name": "baseline",
+        "field_name": "blexp_appt_why_skin",
+        "required_field": "y",
+        "branching_logic": "[blexp_appt_why]='5'"
+    },
+    {
+        "field_label": "[97] <p>Why did you request this appointment(s)?<br><br>Please state other.</p>",
+        "field_type": "text",
+        "form_name": "baseline",
+        "field_name": "blexp_appt_why_oth",
+        "required_field": "y",
+        "branching_logic": "[blexp_appt_why]='6'"
+    },
+    {
+        "field_label": "[98] Following your request for your appointment, were you invited to psoriasis clinic with 5 working days?",
+        "field_type": "radio",
+        "form_name": "baseline",
+        "field_name": "blexp_appt_inv5d",
+        "required_field": "y",
+        "select_choices_or_calculations": [
+            {
+                "code": "1",
+                "label": "Yes"
+            },
+            {
+                "code": "2",
+                "label": "No"
+            },
+            {
+                "code": "3",
+                "label": "No"
+            },
+            {
+                "code": "4",
+                "label": "Unsure"
+            }
+        ],
+        "branching_logic": "[blexp_appt_no]<>'0'"
+    },
+    {
+        "field_label": "[99] Was this clinic review by telephone or person?",
+        "field_type": "radio",
+        "form_name": "baseline",
+        "field_name": "blexp_appt_inv5d_crev",
+        "required_field": "y",
+        "custom_alignment": "RH",
+        "select_choices_or_calculations": [
+            {
+                "code": "1",
+                "label": "Telephone"
+            },
+            {
+                "code": "2",
+                "label": "In person"
+            }
+        ],
+        "branching_logic": "[blexp_appt_inv5d]='1' or [blexp_appt_inv5d]='2' or [blexp_appt_inv5d]='4'"
+    },
+    {
+        "field_label": "[100] Did you attend (either in person or by telephone) the appointment offered?",
+        "field_type": "yesno",
+        "form_name": "baseline",
+        "field_name": "blexp_appt_inv5d_atd",
+        "required_field": "y",
+        "custom_alignment": "RH",
+        "branching_logic": "[blexp_appt_inv5d]='1' or [blexp_appt_inv5d]='2' or [blexp_appt_inv5d]='4'"
+    },
+    {
+        "field_label": "[101] Why did you not attend? Tick all that apply.",
+        "field_type": "checkbox",
+        "form_name": "baseline",
+        "field_name": "blexp_appt_inv5d_atd_no",
+        "required_field": "y",
+        "select_choices_or_calculations": [
+            {
+                "code": "1",
+                "label": "My problem improved so I didn't think I needed the appointment anymore"
+            },
+            {
+                "code": "2",
+                "label": "I couldn't afford the time to attend"
+            },
+            {
+                "code": "3",
+                "label": "I didn't want to travel to the appointment"
+            },
+            {
+                "code": "4",
+                "label": "I didn't want to have blood tests"
+            },
+            {
+                "code": "5",
+                "label": "I don't enjoy the appointments"
+            },
+            {
+                "code": "6",
+                "label": "I forgot to attend"
+            },
+            {
+                "code": "7",
+                "label": "I didn't want to burden my healthcare team"
+            },
+            {
+                "code": "8",
+                "label": "Other (please state)"
+            }
+        ],
+        "branching_logic": "[blexp_appt_inv5d_atd]='0'"
+    },
+    {
+        "field_label": "[102] <p>Why did you not attend?<br><br>Other (please state)</p>",
+        "field_type": "text",
+        "form_name": "baseline",
+        "field_name": "blexp_appt_inv5d_atd_nooth",
+        "required_field": "y",
+        "branching_logic": "[blexp_appt_inv5d_atd_no]='8'"
+    },
+    {
+        "field_label": "[103] Over the last 3 months, did you delay or not book an appointment with your doctor, even when your psoriasis got worse?",
+        "field_type": "yesno",
+        "form_name": "baseline",
+        "field_name": "blexp_appt_dly",
+        "required_field": "y",
+        "custom_alignment": "RH",
+        "branching_logic": "[blexp_appt]='1'"
+    },
+    {
+        "field_label": "[104] Why did you delay or not book an appointment? Tick all that apply.",
+        "field_type": "checkbox",
+        "form_name": "baseline",
+        "field_name": "blexp_appt_dly_yes",
+        "required_field": "y",
+        "select_choices_or_calculations": [
+            {
+                "code": "1",
+                "label": "I didn't think I needed it"
+            },
+            {
+                "code": "2",
+                "label": "I couldn't afford the time to attend"
+            },
+            {
+                "code": "3",
+                "label": "I didn't want to travel to the appointment"
+            },
+            {
+                "code": "4",
+                "label": "I didn't want to have blood tests"
+            },
+            {
+                "code": "5",
+                "label": "I don't enjoy the appointments"
+            },
+            {
+                "code": "6",
+                "label": "I couldn't arrange an appointment"
+            },
+            {
+                "code": "7",
+                "label": "I didn't want to burden my healthcare team"
+            },
+            {
+                "code": "8",
+                "label": "Other (please state)"
+            }
+        ],
+        "branching_logic": "[blexp_appt_dly]='1'"
+    },
+    {
+        "field_label": "[105] <p>Why did you delay or not book an appointment?<br><br>Other (please state)</p>",
+        "field_type": "text",
+        "form_name": "baseline",
+        "field_name": "blexp_appt_dly_yesoth",
+        "required_field": "y",
+        "custom_alignment": "RH",
+        "branching_logic": "[blexp_appt_dly_yes]='8'"
+    },
+    {
+        "field_label": "[106] <u>Acceptability of treatment strategy</u>",
+        "field_type": "descriptive",
+        "form_name": "baseline",
+        "field_name": "blacpts_txt",
+        "section_header": "Acceptability"
+    },
+    {
+        "field_label": "[107] Do you like or dislike the biologic treatment plan selected for you in the study?",
+        "field_type": "radio",
+        "form_name": "baseline",
+        "field_name": "blacpts_blglke",
+        "required_field": "y",
+        "select_choices_or_calculations": [
+            {
+                "code": "1",
+                "label": "Strongly like"
+            },
+            {
+                "code": "2",
+                "label": "Like"
+            },
+            {
+                "code": "3",
+                "label": "No opinion"
+            },
+            {
+                "code": "4",
+                "label": "Dislike"
+            },
+            {
+                "code": "5",
+                "label": "Strongly dislike"
+            }
+        ]
+    },
+    {
+        "field_label": "[108] How much effort will it be to take your biologic injection according to your treatment plan?",
+        "field_type": "radio",
+        "form_name": "baseline",
+        "field_name": "blacpts_blgeft",
+        "required_field": "y",
+        "select_choices_or_calculations": [
+            {
+                "code": "1",
+                "label": "No effort at all"
+            },
+            {
+                "code": "2",
+                "label": "A little effort"
+            },
+            {
+                "code": "3",
+                "label": "No opinion"
+            },
+            {
+                "code": "4",
+                "label": "A lot of effort"
+            },
+            {
+                "code": "5",
+                "label": "Huge effort"
+            }
+        ]
+    },
+    {
+        "field_label": "[109] How fair is it (to people with psoriasis) to take your biologic injection according to your treatment plan?",
+        "field_type": "radio",
+        "form_name": "baseline",
+        "field_name": "blacpts_blgfre",
+        "required_field": "y",
+        "select_choices_or_calculations": [
+            {
+                "code": "1",
+                "label": "Very fair"
+            },
+            {
+                "code": "2",
+                "label": "Fair"
+            },
+            {
+                "code": "3",
+                "label": "No opinion"
+            },
+            {
+                "code": "4",
+                "label": "Unfair"
+            },
+            {
+                "code": "5",
+                "label": "Very unfair"
+            }
+        ]
+    },
+    {
+        "field_label": "[110] Taking my biologic injection according to my treatment plan will improve my health",
+        "field_type": "radio",
+        "form_name": "baseline",
+        "field_name": "blacpts_blgimp",
+        "required_field": "y",
+        "select_choices_or_calculations": [
+            {
+                "code": "1",
+                "label": "Strongly agree"
+            },
+            {
+                "code": "2",
+                "label": "Agree"
+            },
+            {
+                "code": "3",
+                "label": "No opinion"
+            },
+            {
+                "code": "4",
+                "label": "Disagree"
+            },
+            {
+                "code": "5",
+                "label": "Strongly disagree"
+            }
+        ]
+    },
+    {
+        "field_label": "[111] It is clear to me how my treatment plan could help improve my health",
+        "field_type": "radio",
+        "form_name": "baseline",
+        "field_name": "blacpts_trtimp",
+        "required_field": "y",
+        "select_choices_or_calculations": [
+            {
+                "code": "1",
+                "label": "Strongly agree"
+            },
+            {
+                "code": "2",
+                "label": "Agree"
+            },
+            {
+                "code": "3",
+                "label": "No opinion"
+            },
+            {
+                "code": "4",
+                "label": "Disagree"
+            },
+            {
+                "code": "5",
+                "label": "Strongly disagree"
+            }
+        ]
+    },
+    {
+        "field_label": "[112] How confident are you that you can take your biologic injection according to your treatment plan?",
+        "field_type": "radio",
+        "form_name": "baseline",
+        "field_name": "blacpts_blgcfd",
+        "required_field": "y",
+        "select_choices_or_calculations": [
+            {
+                "code": "1",
+                "label": "Very confident"
+            },
+            {
+                "code": "2",
+                "label": "Confident"
+            },
+            {
+                "code": "3",
+                "label": "No opinion"
+            },
+            {
+                "code": "4",
+                "label": "Unconfident"
+            },
+            {
+                "code": "5",
+                "label": "Very unconfident"
+            }
+        ]
+    },
+    {
+        "field_label": "[113] Taking my biologic injection according to my treatment plan will interfere with my other priorities",
+        "field_type": "radio",
+        "form_name": "baseline",
+        "field_name": "blacpts_blgitf",
+        "required_field": "y",
+        "select_choices_or_calculations": [
+            {
+                "code": "1",
+                "label": "Strongly agree"
+            },
+            {
+                "code": "2",
+                "label": "Agree"
+            },
+            {
+                "code": "3",
+                "label": "No opinion"
+            },
+            {
+                "code": "4",
+                "label": "Disagree"
+            },
+            {
+                "code": "5",
+                "label": "Strongly disagree"
+            }
+        ]
+    },
+    {
+        "field_label": "[114] How acceptable to you is taking your biologic injection according to your treatment plan?",
+        "field_type": "radio",
+        "form_name": "baseline",
+        "field_name": "blacpts_blgacp",
+        "required_field": "y",
+        "select_choices_or_calculations": [
+            {
+                "code": "1",
+                "label": "Completely acceptable"
+            },
+            {
+                "code": "2",
+                "label": "Acceptable"
+            },
+            {
+                "code": "3",
+                "label": "No opinion"
+            },
+            {
+                "code": "4",
+                "label": "Unacceptable"
+            },
+            {
+                "code": "5",
+                "label": "Completely unacceptable"
+            }
+        ]
+    },
+    {
+        "field_label": "[115] I would like to continue taking my biologic injection according to my treatment plan after the study ends",
+        "field_type": "radio",
+        "form_name": "baseline",
+        "field_name": "blacpts_blgaft",
+        "required_field": "y",
+        "select_choices_or_calculations": [
+            {
+                "code": "1",
+                "label": "Strongly agree"
+            },
+            {
+                "code": "2",
+                "label": "Agree"
+            },
+            {
+                "code": "3",
+                "label": "No opinion"
+            },
+            {
+                "code": "4",
+                "label": "Disagree"
+            },
+            {
+                "code": "5",
+                "label": "Strongly disagree"
+            }
+        ]
+    },
+    {
+        "field_label": "[116] How much control do you feel that you have over the treatment plan that you will be following during the study?",
+        "field_type": "radio",
+        "form_name": "baseline",
+        "field_name": "blacpts_blgctltp",
+        "required_field": "y",
+        "select_choices_or_calculations": [
+            {
+                "code": "1",
+                "label": "A great deal"
+            },
+            {
+                "code": "2",
+                "label": "Some"
+            },
+            {
+                "code": "3",
+                "label": "A little"
+            },
+            {
+                "code": "4",
+                "label": "None"
+            }
+        ]
+    },
+    {
+        "field_label": "[117] How much control do you feel that you have over your usual treatment strategy (before taking part in the study)?",
+        "field_type": "radio",
+        "form_name": "baseline",
+        "field_name": "blacpts_blgctlts",
+        "required_field": "y",
+        "select_choices_or_calculations": [
+            {
+                "code": "1",
+                "label": "A great deal"
+            },
+            {
+                "code": "2",
+                "label": "Some"
+            },
+            {
+                "code": "3",
+                "label": "A little"
+            },
+            {
+                "code": "4",
+                "label": "None"
+            }
+        ]
+    },
+    {
+        "field_label": "[118] <u>Acceptability of 'ad hoc' patient-initiated follow-up (PIFU)</u>",
+        "field_type": "descriptive",
+        "form_name": "baseline",
+        "field_name": "blacppifu_txt",
+        "section_header": " "
+    },
+    {
+        "field_label": "[119] Do you like or dislike being able to request an appointment with your psoriasis doctor when you need it?",
+        "field_type": "radio",
+        "form_name": "baseline",
+        "field_name": "blacppifu_lke",
+        "required_field": "y",
+        "select_choices_or_calculations": [
+            {
+                "code": "1",
+                "label": "Strongly like"
+            },
+            {
+                "code": "2",
+                "label": "Like"
+            },
+            {
+                "code": "3",
+                "label": "No opinion"
+            },
+            {
+                "code": "4",
+                "label": "Dislike"
+            },
+            {
+                "code": "5",
+                "label": "Strongly dislike"
+            }
+        ]
+    },
+    {
+        "field_label": "[120] How much effort is it to request your appointment with your psoriasis doctor when you need it?",
+        "field_type": "radio",
+        "form_name": "baseline",
+        "field_name": "blacppifu_eft",
+        "required_field": "y",
+        "select_choices_or_calculations": [
+            {
+                "code": "1",
+                "label": "No effort at all"
+            },
+            {
+                "code": "2",
+                "label": "A little effort"
+            },
+            {
+                "code": "3",
+                "label": "No opinion"
+            },
+            {
+                "code": "4",
+                "label": "A lot of effort"
+            },
+            {
+                "code": "5",
+                "label": "Huge effort"
+            }
+        ]
+    },
+    {
+        "field_label": "[121] How fair is it (to people with psoriasis) for you to request an appointment with your psoriasis doctor whenever you need it?",
+        "field_type": "radio",
+        "form_name": "baseline",
+        "field_name": "blacppifu_fre",
+        "select_choices_or_calculations": [
+            {
+                "code": "1",
+                "label": "Very fair"
+            },
+            {
+                "code": "2",
+                "label": "Fair"
+            },
+            {
+                "code": "3",
+                "label": "No opinion"
+            },
+            {
+                "code": "4",
+                "label": "Unfair"
+            },
+            {
+                "code": "5",
+                "label": "Very unfair"
+            }
+        ]
+    },
+    {
+        "field_label": "[122] Requesting an appointment with my psoriasis doctor whenever I need it improves my health",
+        "field_type": "radio",
+        "field_name": "blacppifu_whnappt_hlth",
+        "required_field": "y",
+        "select_choices_or_calculations": [
+            {
+                "code": "1",
+                "label": "Strongly agree"
+            },
+            {
+                "code": "2",
+                "label": "Agree"
+            },
+            {
+                "code": "3",
+                "label": "No opinion"
+            },
+            {
+                "code": "4",
+                "label": "Disagree"
+            },
+            {
+                "code": "5",
+                "label": "Strongly disagree"
+            }
+        ]
+    },
+    {
+        "field_label": "[123] It is clear to me how requesting an appointment with my psoriasis doctor whenever I need it could help improve my health",
+        "field_type": "radio",
+        "field_name": "blacppifu_reqappt_hlth",
+        "required_field": "y",
+        "select_choices_or_calculations": [
+            {
+                "code": "1",
+                "label": "Strongly agree"
+            },
+            {
+                "code": "2",
+                "label": "Agree"
+            },
+            {
+                "code": "3",
+                "label": "No opinion"
+            },
+            {
+                "code": "4",
+                "label": "Disagree"
+            },
+            {
+                "code": "5",
+                "label": "Strongly disagree"
+            }
+        ]
+    },
+    {
+        "field_label": "[124] How confident are you that you can request an appointment with your psoriasis doctor whenever you need one?",
+        "field_type": "radio",
+        "field_name": "blacppifu_reqappt_cfd",
+        "required_field": "y",
+        "select_choices_or_calculations": [
+            {
+                "code": "1",
+                "label": "Very confident"
+            },
+            {
+                "code": "2",
+                "label": "Confident"
+            },
+            {
+                "code": "3",
+                "label": "No opinion"
+            },
+            {
+                "code": "4",
+                "label": "Unconfident"
+            },
+            {
+                "code": "5",
+                "label": "Very unconfident"
+            }
+        ],
+        "branching_logic": "[blexp_appt]='1'"
+    },
+    {
+        "field_label": "[125] How confident are you that you can get an appointment with your psoriasis doctor whenever you need one?",
+        "field_type": "radio",
+        "field_name": "blacppifu_getappt_cfd",
+        "required_field": "y",
+        "select_choices_or_calculations": [
+            {
+                "code": "1",
+                "label": "Very confident"
+            },
+            {
+                "code": "2",
+                "label": "Confident"
+            },
+            {
+                "code": "3",
+                "label": "No opinion"
+            },
+            {
+                "code": "4",
+                "label": "Unconfident"
+            },
+            {
+                "code": "5",
+                "label": "Very unconfident"
+            }
+        ],
+        "branching_logic": "[blexp_appt]='1'"
+    },
+    {
+        "field_label": "[126] Requesting an appointment with my psoriasis doctor whenever I need it interferes with my other priorities",
+        "field_type": "radio",
+        "field_name": "blacppifu_appt_itf",
+        "required_field": "y",
+        "select_choices_or_calculations": [
+            {
+                "code": "1",
+                "label": "Strongly agree"
+            },
+            {
+                "code": "2",
+                "label": "Agree"
+            },
+            {
+                "code": "3",
+                "label": "No opinion"
+            },
+            {
+                "code": "4",
+                "label": "Disagree"
+            },
+            {
+                "code": "5",
+                "label": "Strongly disagree"
+            }
+        ]
+    },
+    {
+        "field_label": "[127] How acceptable to you is requesting an appointment with your psoriasis doctor whenever you need it?",
+        "field_type": "radio",
+        "field_name": "blacppifu_appt_whever",
+        "required_field": "y",
+        "select_choices_or_calculations": [
+            {
+                "code": "1",
+                "label": "Completely acceptable"
+            },
+            {
+                "code": "2",
+                "label": "Acceptable"
+            },
+            {
+                "code": "3",
+                "label": "No opinion"
+            },
+            {
+                "code": "4",
+                "label": "Unacceptable"
+            },
+            {
+                "code": "5",
+                "label": "Completely unacceptable"
+            }
+        ]
+    },
+    {
+        "field_label": "[128] I would like to choose when I can have an appointment with my psoriasis doctor",
+        "field_type": "radio",
+        "field_name": "blacppifu_apptchse",
+        "required_field": "y",
+        "select_choices_or_calculations": [
+            {
+                "code": "1",
+                "label": "Strongly Agree"
+            },
+            {
+                "code": "2",
+                "label": "Agree"
+            },
+            {
+                "code": "3",
+                "label": "No opinion"
+            },
+            {
+                "code": "4",
+                "label": "Disagree"
+            },
+            {
+                "code": "5",
+                "label": "Strongly disagree"
+            }
+        ]
+    },
+    {
+        "field_label": "[129] How much control do you feel that you currently have over when you have appointments (in routine care)?",
+        "field_type": "radio",
+        "field_name": "blacppifu_apptctl",
+        "required_field": "y",
+        "select_choices_or_calculations": [
+            {
+                "code": "1",
+                "label": "A great deal"
+            },
+            {
+                "code": "2",
+                "label": "Some"
+            },
+            {
+                "code": "3",
+                "label": "A little"
+            },
+            {
+                "code": "4",
+                "label": "None"
+            }
+        ]
+    },
+    {
+        "field_label": "[130] How acceptable to you is having a regular 12 monthly appointment with your psoriasis doctor?",
+        "field_type": "radio",
+        "field_name": "blacppifu_appt12m",
+        "required_field": "y",
+        "select_choices_or_calculations": [
+            {
+                "code": "1",
+                "label": "Completely acceptable"
+            },
+            {
+                "code": "2",
+                "label": "Acceptable"
+            },
+            {
+                "code": "3",
+                "label": "No opinion"
+            },
+            {
+                "code": "4",
+                "label": "Unacceptable"
+            },
+            {
+                "code": "5",
+                "label": "Completely unacceptable"
+            }
+        ]
+    },
+    {
+        "field_label": "[131] <p><u>Acceptability of genetic testing</u></p><p>Your blood sample is helping us investigate whether people's genes affect how they respond to different treatment strategies. In the future, this information may help us to better tailor different strategies according to a person's 'genetic makeup'. We will only look at genes related to psoriasis and other inflammatory disease research (e.g. arthritis, inflammatory bowel disease). Please answer the following questions about how you feel about providing this blood sample to look at your genes.</p>",
+        "field_type": "descriptive",
+        "field_name": "blaccpgt_txt",
+        "section_header": " "
+    },
+    {
+        "field_label": "[132] Do you like or dislike providing a blood sample to look at your genes?",
+        "field_type": "radio",
+        "field_name": "blacpgt_bldlke",
+        "required_field": "y",
+        "select_choices_or_calculations": [
+            {
+                "code": "1",
+                "label": "Strongly like"
+            },
+            {
+                "code": "2",
+                "label": "Like"
+            },
+            {
+                "code": "3",
+                "label": "No opinion"
+            },
+            {
+                "code": "4",
+                "label": "Dislike"
+            },
+            {
+                "code": "5",
+                "label": "Strongly dislike"
+            }
+        ]
+    },
+    {
+        "field_label": "[133] How much effort is it to provide a blood sample to look at your genes?",
+        "field_type": "radio",
+        "field_name": "blacpgt_bldeft",
+        "required_field": "y",
+        "select_choices_or_calculations": [
+            {
+                "code": "1",
+                "label": "No effort at all"
+            },
+            {
+                "code": "2",
+                "label": "A little effort"
+            },
+            {
+                "code": "3",
+                "label": "No opinion"
+            },
+            {
+                "code": "4",
+                "label": "A lot of effort"
+            },
+            {
+                "code": "5",
+                "label": "Huge effort"
+            }
+        ]
+    },
+    {
+        "field_label": "[134] How fair is it (to people with psoriasis) for you to provide a blood sample to look at your genes?",
+        "field_type": "radio",
+        "field_name": "blacpgt_bldfre",
+        "required_field": "y",
+        "select_choices_or_calculations": [
+            {
+                "code": "1",
+                "label": "Very fair"
+            },
+            {
+                "code": "2",
+                "label": "Fair"
+            },
+            {
+                "code": "3",
+                "label": "No opinion"
+            },
+            {
+                "code": "4",
+                "label": "Unfair"
+            },
+            {
+                "code": "5",
+                "label": "Very unfair"
+            }
+        ]
+    },
+    {
+        "field_label": "[135] How confident are you that you can provide a blood sample to look at your genes?",
+        "field_type": "radio",
+        "field_name": "bldacpgt_bldcfd",
+        "required_field": "y",
+        "select_choices_or_calculations": [
+            {
+                "code": "1",
+                "label": "Very confident"
+            },
+            {
+                "code": "2",
+                "label": "Confident"
+            },
+            {
+                "code": "3",
+                "label": "No opinion"
+            },
+            {
+                "code": "4",
+                "label": "Unconfident"
+            },
+            {
+                "code": "5",
+                "label": "Very unconfident"
+            }
+        ]
+    },
+    {
+        "field_label": "[136] Providing a blood sample to look at my genes could help improve my health",
+        "field_type": "radio",
+        "field_name": "blacpgt_bldimp",
+        "required_field": "y",
+        "select_choices_or_calculations": [
+            {
+                "code": "1",
+                "label": "Strongly Agree"
+            },
+            {
+                "code": "2",
+                "label": "Agree"
+            },
+            {
+                "code": "3",
+                "label": "No opinion"
+            },
+            {
+                "code": "4",
+                "label": "Disagree"
+            },
+            {
+                "code": "5",
+                "label": "Strongly disagree"
+            }
+        ]
+    },
+    {
+        "field_label": "[137] It is clear to me how providing a blood sample to look at my genes might improve my health",
+        "field_type": "radio",
+        "field_name": "blacpgt_bldimpclr",
+        "required_field": "y",
+        "select_choices_or_calculations": [
+            {
+                "code": "1",
+                "label": "Strongly Agree"
+            },
+            {
+                "code": "2",
+                "label": "Agree"
+            },
+            {
+                "code": "3",
+                "label": "No opinion"
+            },
+            {
+                "code": "4",
+                "label": "Disagree"
+            },
+            {
+                "code": "5",
+                "label": "Strongly disagree"
+            }
+        ]
+    },
+    {
+        "field_label": "[138] Providing a blood sample to look at my genes will interfere with my other priorities",
+        "field_type": "radio",
+        "field_name": "blacpgt_blditf",
+        "required_field": "y",
+        "select_choices_or_calculations": [
+            {
+                "code": "1",
+                "label": "Strongly Agree"
+            },
+            {
+                "code": "2",
+                "label": "Agree"
+            },
+            {
+                "code": "3",
+                "label": "No opinion"
+            },
+            {
+                "code": "4",
+                "label": "Disagree"
+            },
+            {
+                "code": "5",
+                "label": "Strongly disagree"
+            }
+        ]
+    },
+    {
+        "field_label": "[139] How acceptable to you is providing a blood test to look at your genes?",
+        "field_type": "radio",
+        "field_name": "blacpgt_bldacp",
+        "required_field": "y",
+        "select_choices_or_calculations": [
+            {
+                "code": "1",
+                "label": "Completely acceptable"
+            },
+            {
+                "code": "2",
+                "label": "Acceptable"
+            },
+            {
+                "code": "3",
+                "label": "No opinion"
+            },
+            {
+                "code": "4",
+                "label": "Unacceptable"
+            },
+            {
+                "code": "5",
+                "label": "Completely unacceptable"
+            }
+        ]
+    },
+    {
+        "field_label": "[140] With these next few questions, we are trying to find out about your health and care needs. If you are unsure, please put in your best estimate.\n\n<u>1) Community-based NHS services</u>",
+        "field_type": "descriptive",
+        "field_name": "blhcn_txt",
+        "section_header": "Health and care needs"
+    },
+    {
+        "field_label": "[141] <p>1a. In the last 3 months have you had an appointment with any <strong>community-based</strong> health professionals (e.g., GP, practice nurse, walk-in centre etc) <strong>as a result of your psoriasis or treatment for your psoriasis?</strong></p>",
+        "field_type": "yesno",
+        "field_name": "blhcn1a",
+        "required_field": "y"
+    },
+    {
+        "field_label": "[142] For each professional listed below, please state 'Yes' if you had an appointment with that professional as a result of your psoriasis or treatment for your psoriasis, and enter the number of visits (virtual/telephone and in-person visits). There is space for you to name other professionals you have seen via the NHS as a result of your psoriasis or treatment for your psoriasis.",
+        "field_type": "descriptive",
+        "field_name": "blhcn1a_txt",
+        "branching_logic": "[blhcn1a]='1'"
+    },
+    {
+        "field_label": "[143] General Practitioner",
+        "field_type": "yesno",
+        "field_name": "blhcn1a_gp",
+        "required_field": "y",
+        "branching_logic": "[blhcn1a]='1'"
+    },
+    {
+        "field_label": "[144] General Practitioner - Number of virtual/telephone visits in the last 3 months?",
+        "field_type": "text",
+        "field_name": "blhcn1a_gpvrt",
+        "required_field": "y",
+        "text_validation_type_or_show_slider_number": "integer",
+        "validations": [
+            {
+                "name": "min",
+                "value": "0",
+                "error": "Enter a number greater than 0",
+                "hint": ""
+            },
+            {
+                "name": "max",
+                "value": "50",
+                "error": "Enter a number less than 50",
+                "hint": ""
+            }
+        ],
+        "text_validation_max": "50",
+        "text_validation_min": "0",
+        "branching_logic": "[blhcn1a_gp]='1'"
+    },
+    {
+        "field_label": "[145] General Practitioner - Number of in-person visits in the last 3 months?",
+        "field_type": "text",
+        "field_name": "blhcn1a_gpipv",
+        "required_field": "y",
+        "text_validation_type_or_show_slider_number": "integer",
+        "text_validation_max": "50",
+        "text_validation_min": "0",
+        "validations": [
+            {
+                "name": "min",
+                "value": "0",
+                "error": "Enter a number greater than 0",
+                "hint": ""
+            },
+            {
+                "name": "max",
+                "value": "50",
+                "error": "Enter a number less than 50",
+                "hint": ""
+            }
+        ],
+        "branching_logic": "[blhcn1a_gp]='1'"
+    },
+    {
+        "field_label": "[146] Practice nurse",
+        "field_type": "yesno",
+        "field_name": "blhcn1a_pn",
+        "required_field": "y",
+        "branching_logic": "[blhcn1a]='1'"
+    },
+    {
+        "field_label": "[147] Practice nurse -Number of virtual/telephone visits in the last 3 months?",
+        "field_type": "text",
+        "field_name": "blhcn1a_pnvrt",
+        "required_field": "y",
+        "text_validation_type_or_show_slider_number": "integer",
+        "text_validation_max": "50",
+        "text_validation_min": "0",
+        "validations": [
+            {
+                "name": "min",
+                "value": "0",
+                "error": "Enter a number greater than 0",
+                "hint": ""
+            },
+            {
+                "name": "max",
+                "value": "50",
+                "error": "Enter a number less than 50",
+                "hint": ""
+            }
+        ],
+        "branching_logic": "[blhcn1a_pn]='1'"
+    },
+    {
+        "field_label": "[148] Practice nurse - Number of in-person visits in the last 3 months?",
+        "field_type": "text",
+        "field_name": "blhcn1a_pnipv",
+        "required_field": "y",
+        "text_validation_type_or_show_slider_number": "integer",
+        "text_validation_max": "50",
+        "text_validation_min": "0",
+        "validations": [
+            {
+                "name": "min",
+                "value": "0",
+                "error": "Enter a number greater than 0",
+                "hint": ""
+            },
+            {
+                "name": "max",
+                "value": "50",
+                "error": "Enter a number less than 50",
+                "hint": ""
+            }
+        ],
+        "branching_logic": "[blhcn1a_pn]='1'"
+    },
+    {
+        "field_label": "[149] Health care assistant",
+        "field_type": "yesno",
+        "field_name": "blhcn1a_hca",
+        "required_field": "y",
+        "branching_logic": "[blhcn1a]='1'"
+    },
+    {
+        "field_label": "[150] Health care assistant - Number of virtual/telephone visits in the last 3 months?",
+        "field_type": "text",
+        "field_name": "blhcn1a_hcavrt",
+        "required_field": "y",
+        "text_validation_type_or_show_slider_number": "integer",
+        "text_validation_min": "0",
+        "validations": [
+            {
+                "name": "min",
+                "value": "0",
+                "error": "Enter a number greater than 0",
+                "hint": ""
+            }
+        ],
+        "branching_logic": "[blhcn1a_hca]='1'"
+    },
+    {
+        "field_label": "[151] Health care assistant - Number of in-person visits in the last 3 months?",
+        "field_type": "text",
+        "field_name": "blhcn1a_hcaipv",
+        "required_field": "y",
+        "text_validation_type_or_show_slider_number": "integer",
+        "text_validation_max": "50",
+        "text_validation_min": "0",
+        "validations": [
+            {
+                "name": "min",
+                "value": "0",
+                "error": "Enter a number greater than 0",
+                "hint": ""
+            },
+            {
+                "name": "max",
+                "value": "50",
+                "error": "Enter a number less than 50",
+                "hint": ""
+            }
+        ],
+        "branching_logic": "[blhcn1a_hca]='1'"
+    },
+    {
+        "field_label": "[152] NHS Walk in centre",
+        "field_type": "yesno",
+        "field_name": "blhcn1a_nhs",
+        "required_field": "y",
+        "branching_logic": "[blhcn1a]='1'"
+    },
+    {
+        "field_label": "[153] NHS Walk in centre - Number of virtual/telephone visits in the last 3 months?",
+        "field_type": "text",
+        "field_name": "blhcn1a_nhsvrt",
+        "required_field": "y",
+        "text_validation_type_or_show_slider_number": "integer",
+        "text_validation_max": "50",
+        "text_validation_min": "0",
+        "validations": [
+            {
+                "name": "min",
+                "value": "0",
+                "error": "Enter a number greater than 0",
+                "hint": ""
+            },
+            {
+                "name": "max",
+                "value": "50",
+                "error": "Enter a number less than 50",
+                "hint": ""
+            }
+        ],
+        "branching_logic": "[blhcn1a_nhs]='1'"
+    },
+    {
+        "field_label": "[154] NHS Walk in centre - Number of in-person visits in the last 3 months?",
+        "field_type": "text",
+        "field_name": "blhcn1a_nhsipv",
+        "required_field": "y",
+        "text_validation_type_or_show_slider_number": "integer",
+        "text_validation_max": "50",
+        "text_validation_min": "0",
+        "validations": [
+            {
+                "name": "min",
+                "value": "0",
+                "error": "Enter a number greater than 0",
+                "hint": ""
+            },
+            {
+                "name": "max",
+                "value": "50",
+                "error": "Enter a number less than 50",
+                "hint": ""
+            }
+        ],
+        "branching_logic": "[blhcn1a_nhs]='1'"
+    },
+    {
+        "field_label": "[155] Community dermatology service",
+        "field_type": "yesno",
+        "field_name": "blhcn1a_cds",
+        "required_field": "y",
+        "branching_logic": "[blhcn1a]='1'"
+    },
+    {
+        "field_label": "[156] Community dermatology service - Number of virtual/telephone visits in the last 3 months?",
+        "field_type": "text",
+        "field_name": "blhcn1a_cdsvrt",
+        "required_field": "y",
+        "text_validation_type_or_show_slider_number": "integer",
+        "text_validation_max": "50",
+        "text_validation_min": "0",
+        "validations": [
+            {
+                "name": "min",
+                "value": "0",
+                "error": "Enter a number greater than 0",
+                "hint": ""
+            },
+            {
+                "name": "max",
+                "value": "50",
+                "error": "Enter a number less than 50",
+                "hint": ""
+            }
+        ],
+        "branching_logic": "[blhcn1a_cds]='1'"
+    },
+    {
+        "field_label": "[157] Community dermatology service - Number of in-person visits in the last 3 months?",
+        "field_type": "text",
+        "field_name": "blhcn1a_cdsipv",
+        "required_field": "y",
+        "text_validation_type_or_show_slider_number": "integer",
+        "text_validation_max": "50",
+        "text_validation_min": "0",
+        "validations": [
+            {
+                "name": "min",
+                "value": "0",
+                "error": "Enter a number greater than 0",
+                "hint": ""
+            },
+            {
+                "name": "max",
+                "value": "50",
+                "error": "Enter a number less than 50",
+                "hint": ""
+            }
+        ],
+        "branching_logic": "[blhcn1a_cds]='1'"
+    },
+    {
+        "field_label": "[158] 1. Other, please specify who:",
+        "field_type": "text",
+        "field_name": "blhcn1a_oth1_txt",
+        "branching_logic": "[blhcn1a]='1'"
+    },
+    {
+        "field_label": "[159] 1. [blhcn1a_oth1_txt]",
+        "field_type": "yesno",
+        "field_name": "blhcn1a_oth1",
+        "required_field": "y",
+        "branching_logic": "[blhcn1a_oth1_txt]<>'undefined' and [blhcn1a_oth1_txt]<>''"
+    },
+    {
+        "field_label": "[160] 1. [blhcn1a_oth1_txt] - How many times virtual/telephone?",
+        "field_type": "text",
+        "field_name": "blhcn1a_oth1vrt",
+        "required_field": "y",
+        "text_validation_type_or_show_slider_number": "integer",
+        "text_validation_min": "0",
+        "validations": [
+            {
+                "name": "min",
+                "value": "0",
+                "error": "Enter a number greater than 0",
+                "hint": ""
+            }
+        ],
+        "branching_logic": "[blhcn1a_oth1]='1'"
+    },
+    {
+        "field_label": "[161] 1. [blhcn1a_oth1_txt] - How many times in-person?",
+        "field_type": "text",
+        "field_name": "blhcn1a_oth1ipv",
+        "required_field": "y",
+        "text_validation_type_or_show_slider_number": "integer",
+        "text_validation_min": "0",
+        "validations": [
+            {
+                "name": "min",
+                "value": "0",
+                "error": "Enter a number greater than 0",
+                "hint": ""
+            }
+        ],
+        "branching_logic": "[blhcn1a_oth1]='1'"
+    },
+    {
+        "field_label": "[162] 2. Other, please specify who",
+        "field_type": "text",
+        "field_name": "blhcn1a_oth2_txt",
+        "branching_logic": "[blhcn1a_oth1_txt]<>'undefined' and [blhcn1a_oth1_txt]<>''"
+    },
+    {
+        "field_label": "[163] 2. [blhcn1a_oth2_txt]",
+        "field_type": "yesno",
+        "field_name": "blhcn1a_oth2",
+        "required_field": "y",
+        "branching_logic": "[blhcn1a_oth2_txt]<>'undefined' and [blhcn1a_oth2_txt]<>''"
+    },
+    {
+        "field_label": "[164] 2. [blhcn1a_oth2_txt] - How many times virtual/telephone?",
+        "field_type": "text",
+        "field_name": "blhcn1a_oth2vrt",
+        "required_field": "y",
+        "text_validation_type_or_show_slider_number": "integer",
+        "text_validation_min": "0",
+        "validations": [
+            {
+                "name": "min",
+                "value": "0",
+                "error": "Enter a number greater than 0",
+                "hint": ""
+            }
+        ],
+        "branching_logic": "[blhcn1a_oth2]='1'"
+    },
+    {
+        "field_label": "[165] 2. [blhcn1a_oth2_txt] - How many times in-person?",
+        "field_type": "text",
+        "field_name": "blhcn1a_oth2ipv",
+        "required_field": "y",
+        "text_validation_type_or_show_slider_number": "integer",
+        "text_validation_min": "0",
+        "validations": [
+            {
+                "name": "min",
+                "value": "0",
+                "error": "Enter a number greater than 0",
+                "hint": ""
+            }
+        ],
+        "branching_logic": "[blhcn1a_oth2]='1'"
+    },
+    {
+        "field_label": "[166] 3. Other, please specify who",
+        "field_type": "text",
+        "field_name": "blhcn1a_oth3_txt",
+        "branching_logic": "[blhcn1a_oth2_txt]<>'undefined' and [blhcn1a_oth2_txt]<>''"
+    },
+    {
+        "field_label": "[167] 3. [blhcn1a_oth3_txt]",
+        "field_type": "yesno",
+        "field_name": "blhcn1a_oth3",
+        "required_field": "y",
+        "branching_logic": "[blhcn1a_oth3_txt]<>'undefined' and [blhcn1a_oth3_txt]<>''"
+    },
+    {
+        "field_label": "[168] 3. [blhcn1a_oth3_txt] - How many times virtual/telephone?",
+        "field_type": "text",
+        "field_name": "blhcn1a_oth3vrt",
+        "required_field": "y",
+        "text_validation_type_or_show_slider_number": "integer",
+        "text_validation_min": "0",
+        "validations": [
+            {
+                "name": "min",
+                "value": "0",
+                "error": "Enter a number greater than 0",
+                "hint": ""
+            }
+        ],
+        "branching_logic": "[blhcn1a_oth3]='1'"
+    },
+    {
+        "field_label": "[169] 3. [blhcn1a_oth3_txt] - How many times in-person?",
+        "field_type": "text",
+        "field_name": "blhcn1a_oth3ipv",
+        "required_field": "y",
+        "text_validation_type_or_show_slider_number": "integer",
+        "text_validation_min": "0",
+        "validations": [
+            {
+                "name": "min",
+                "value": "0",
+                "error": "Enter a number greater than 0",
+                "hint": ""
+            }
+        ],
+        "branching_logic": "[blhcn1a_oth3]='1'"
+    },
+    {
+        "field_label": "[170] <p><u>2) Hospital-based services</u></p><p>2a. In the last 3 months have you had an outpatient hospital appointment (either virtual/telephone or in-person) as a result of your psoriasis or treatment for your psoriasis?",
+        "field_type": "yesno",
+        "field_name": "blhcn2a",
+        "required_field": "y",
+        "section_header": " "
+    },
+    {
+        "field_label": "[171] <p>For each outpatient visit you had at the hospital as a result of your psoriasis or treatment for your psoriasis, please record the type of healthcare professional you saw and the number of virtual/telephone and in-person visits.</p><p>Please do not include visits with any healthcare professionals that took place outside of the hospital.</p>",
+        "field_type": "descriptive",
+        "field_name": "blhcn2a_txt",
+        "branching_logic": "[blhcn2a]='1'"
+    },
+    {
+        "field_label": "[172] Dermatologist - Number of outpatient visits virtual/telephone",
+        "field_type": "text",
+        "field_name": "blhcn2a_dmvrt",
+        "required_field": "y",
+        "text_validation_type_or_show_slider_number": "integer",
+        "text_validation_min": "0",
+        "validations": [
+            {
+                "name": "min",
+                "value": "0",
+                "error": "Enter a number greater than 0",
+                "hint": ""
+            }
+        ],
+        "branching_logic": "[blhcn2a]='1'"
+    },
+    {
+        "field_label": "[173] Dermatologist - Number of outpatient visits in-person",
+        "field_type": "text",
+        "field_name": "blhcn2a_dmipv",
+        "required_field": "y",
+        "text_validation_type_or_show_slider_number": "integer",
+        "text_validation_min": "0",
+        "branching_logic": "[blhcn2a]='1'"
+    },
+    {
+        "field_label": "[174] Dermatology nurse - Number of outpatient visits virtual/telephone",
+        "field_type": "text",
+        "field_name": "blhcn2a_dmnvrt",
+        "required_field": "y",
+        "text_validation_type_or_show_slider_number": "integer",
+        "text_validation_min": "0",
+        "validations": [
+            {
+                "name": "min",
+                "value": "0",
+                "error": "Enter a number greater than 0",
+                "hint": ""
+            }
+        ],
+        "branching_logic": "[blhcn2a]='1'"
+    },
+    {
+        "field_label": "[175] Dermatology nurse - Number of outpatient visits in-person",
+        "field_type": "text",
+        "field_name": "blhcn2a_dmnipv",
+        "required_field": "y",
+        "text_validation_type_or_show_slider_number": "integer",
+        "text_validation_min": "0",
+        "validations": [
+            {
+                "name": "min",
+                "value": "0",
+                "error": "Enter a number greater than 0",
+                "hint": ""
+            }
+        ],
+        "branching_logic": "[blhcn2a]='1'"
+    },
+    {
+        "field_label": "[176] 1. Other, please specify other health professional you saw",
+        "field_type": "text",
+        "field_name": "blhcn2a_oth1_txt",
+        "branching_logic": "[blhcn2a]='1'",
+        "required_field": "false"
+    },
+    {
+        "field_label": "[177] 1. [blhcn2a_oth1_txt] - Number of virtual/telephone visits in the last 3 months",
+        "field_type": "text",
+        "field_name": "blhcn2a_oth1vrt",
+        "required_field": "y",
+        "text_validation_type_or_show_slider_number": "integer",
+        "text_validation_max": "50",
+        "text_validation_min": "0",
+        "validations": [
+            {
+                "name": "min",
+                "value": "0",
+                "error": "Enter a number greater than 0",
+                "hint": ""
+            },
+            {
+                "name": "max",
+                "value": "50",
+                "error": "Enter a number less than 50",
+                "hint": ""
+            }
+        ],
+        "branching_logic": "[blhcn2a_oth1_txt]<>'undefined' and [blhcn2a_oth1_txt]<>''"
+    },
+    {
+        "field_label": "[178] 1. [blhcn2a_oth1_txt] - Number of in-person visits in the last 3 months",
+        "field_type": "text",
+        "field_name": "blhcn2a_oth1ipv",
+        "required_field": "y",
+        "text_validation_type_or_show_slider_number": "integer",
+        "text_validation_max": "50",
+        "text_validation_min": "0",
+        "validations": [
+            {
+                "name": "min",
+                "value": "0",
+                "error": "Enter a number greater than 0",
+                "hint": ""
+            },
+            {
+                "name": "max",
+                "value": "50",
+                "error": "Enter a number less than 50",
+                "hint": ""
+            }
+        ],
+        "branching_logic": "[blhcn2a_oth1_txt]<>'undefined' and [blhcn2a_oth1_txt]<>''"
+    },
+    {
+        "field_label": "[179] 2. Other, please specify other health professional you saw",
+        "field_type": "text",
+        "field_name": "blhcn2a_oth2_txt",
+        "branching_logic": "[blhcn2a_oth1_txt]<>'undefined' and [blhcn2a_oth1_txt]<>''",
+        "required_field": "false"
+    },
+    {
+        "field_label": "[180] 2. [blhcn2a_oth2_txt] - Number of virtual/telephone visits in the last  3 months",
+        "field_type": "text",
+        "field_name": "blhcn2a_oth2vrt",
+        "required_field": "y",
+        "text_validation_type_or_show_slider_number": "integer",
+        "text_validation_max": "50",
+        "text_validation_min": "0",
+        "validations": [
+            {
+                "name": "min",
+                "value": "0",
+                "error": "Enter a number greater than 0",
+                "hint": ""
+            },
+            {
+                "name": "max",
+                "value": "50",
+                "error": "Enter a number less than 50",
+                "hint": ""
+            }
+        ],
+        "branching_logic": "[blhcn2a_oth2_txt]<>'undefined' and [blhcn2a_oth2_txt]<>''"
+    },
+    {
+        "field_label": "[181] 2. [blhcn2a_oth2_txt] - Number of in-person visits in the last 3 months",
+        "field_type": "text",
+        "field_name": "blhcn2a_oth2ipv",
+        "required_field": "y",
+        "text_validation_type_or_show_slider_number": "integer",
+        "text_validation_max": "50",
+        "text_validation_min": "0",
+        "validations": [
+            {
+                "name": "min",
+                "value": "0",
+                "error": "Enter a number greater than 0",
+                "hint": ""
+            },
+            {
+                "name": "max",
+                "value": "50",
+                "error": "Enter a number less than 50",
+                "hint": ""
+            }
+        ],
+        "branching_logic": "[blhcn2a_oth2_txt]<>'undefined' and [blhcn2a_oth2_txt]<>''"
+    },
+    {
+        "field_label": "[182] 3. Other, please specify other health professional you saw",
+        "field_type": "text",
+        "field_name": "blhcn2a_oth3_txt",
+        "branching_logic": "[blhcn2a_oth2_txt]<>'undefined' and [blhcn2a_oth2_txt]<>''",
+        "required_field": "false"
+    },
+    {
+        "field_label": "[183] 3. [blhcn2a_oth3_txt] - Number of virtual/telephone visits in the last 3 months",
+        "field_type": "text",
+        "field_name": "blhcn2a_oth3vrt",
+        "required_field": "y",
+        "text_validation_type_or_show_slider_number": "integer",
+        "text_validation_max": "50",
+        "text_validation_min": "0",
+        "validations": [
+            {
+                "name": "min",
+                "value": "0",
+                "error": "Enter a number greater than 0",
+                "hint": ""
+            },
+            {
+                "name": "max",
+                "value": "50",
+                "error": "Enter a number less than 50",
+                "hint": ""
+            }
+        ],
+        "branching_logic": "[blhcn2a_oth3_txt]<>'undefined' and [blhcn2a_oth3_txt]<>''"
+    },
+    {
+        "field_label": "[184] 3. [blhcn2a_oth3_txt] - Number of in-person visits in the last 3 months",
+        "field_type": "text",
+        "field_name": "blhcn2a_oth3ipv",
+        "required_field": "y",
+        "text_validation_type_or_show_slider_number": "integer",
+        "text_validation_max": "50",
+        "text_validation_min": "0",
+        "validations": [
+            {
+                "name": "min",
+                "value": "0",
+                "error": "Enter a number greater than 0",
+                "hint": ""
+            },
+            {
+                "name": "max",
+                "value": "50",
+                "error": "Enter a number less than 50",
+                "hint": ""
+            }
+        ],
+        "branching_logic": "[blhcn2a_oth3_txt]<>'undefined' and [blhcn2a_oth3_txt]<>''"
+    },
+    {
+        "field_label": "[185] 2b. In the last 3 months, did you attend Accident and Emergency Services as a result of your psoriasis or treatment for your psoriasis?",
+        "field_type": "yesno",
+        "field_name": "blhcn2b",
+        "required_field": "y"
+    },
+    {
+        "field_label": "[186] Number of A&E visits in the last 3 months:",
+        "field_type": "text",
+        "field_name": "blhcn2b_vsts",
+        "required_field": "y",
+        "text_validation_type_or_show_slider_number": "integer",
+        "text_validation_min": "0",
+        "validations": [
+            {
+                "name": "min",
+                "value": "0",
+                "error": "Enter a number greater than 0",
+                "hint": ""
+            }
+        ],
+        "branching_logic": "[blhcn2b]='1'"
+    },
+    {
+        "field_label": "[187] 2c. In the last 3 months, have you been admitted to hospital as a day case or inpatient as a result of your psoriasis or treatment for your psoriasis?",
+        "field_type": "yesno",
+        "field_name": "blhcn2c",
+        "required_field": "y"
+    },
+    {
+        "field_label": "[188] For each day case/inpatient visit you have had as a result of your psoriasis or treatment for your psoriasis, please record the type of ward you were admitted to and the duration of your stay. Please include any day case procedures.",
+        "field_type": "descriptive",
+        "field_name": "blhcn2c_txt",
+        "branching_logic": "[blhcn2c]='1'"
+    },
+    {
+        "field_label": "[189] Visit 1 - The type of department or ward  or reason for admission",
+        "field_type": "text",
+        "field_name": "blhcn2c_dep1txt",
+        "required_field": "y",
+        "branching_logic": "[blhcn2c]='1'"
+    },
+    {
+        "field_label": "[190] Visit 1 - Duration of stay (number of days) in [blhcn2c_dep1txt]",
+        "field_type": "text",
+        "field_name": "blhcn2c_dep1dys",
+        "required_field": "y",
+        "text_validation_type_or_show_slider_number": "integer",
+        "text_validation_min": "0",
+        "validations": [
+            {
+                "name": "min",
+                "value": "0",
+                "error": "Enter a number greater than 0",
+                "hint": ""
+            }
+        ],
+        "branching_logic": "[blhcn2c_dep1txt]<>'undefined' and [blhcn2c_dep1txt]<>''"
+    },
+    {
+        "field_label": "[191] Visit 2 - The type of department or ward  or reason for admission",
+        "field_type": "text",
+        "field_name": "blhcn2c_dep2txt",
+        "branching_logic": "[blhcn2c_dep1txt]<>'undefined' and [blhcn2c_dep1txt]<>''",
+        "required_field": "false"
+    },
+    {
+        "field_label": "[192] Visit 2 - Duration of stay (number of days) in [blhcn2c_dep2txt]",
+        "field_type": "text",
+        "field_name": "blhcn2c_dep2dys",
+        "required_field": "y",
+        "text_validation_type_or_show_slider_number": "integer",
+        "text_validation_min": "0",
+        "validations": [
+            {
+                "name": "min",
+                "value": "0",
+                "error": "Enter a number greater than 0",
+                "hint": ""
+            }
+        ],
+        "branching_logic": "[blhcn2c_dep2txt]<>'undefined' and [blhcn2c_dep2txt]<>''"
+    },
+    {
+        "field_label": "[193] Visit 3 - The type of department or ward  or reason for admission",
+        "field_type": "text",
+        "field_name": "blhcn2c_dep3txt",
+        "branching_logic": "[blhcn2c_dep2txt]<>'undefined' and [blhcn2c_dep2txt]<>''",
+        "required_field": "false"
+    },
+    {
+        "field_label": "[194] Visit 3 - Duration of stay (number of days) in [blhcn2c_dep3txt]",
+        "field_type": "text",
+        "field_name": "blhcn2c_dep3dys",
+        "required_field": "y",
+        "text_validation_type_or_show_slider_number": "integer",
+        "text_validation_min": "0",
+        "validations": [
+            {
+                "name": "min",
+                "value": "0",
+                "error": "Enter a number greater than 0",
+                "hint": ""
+            }
+        ],
+        "branching_logic": "[blhcn2c_dep3txt]<>'undefined' and [blhcn2c_dep3txt]<>''"
+    },
+    {
+        "field_label": "[195] <b><u>3) Other services</u></b>",
+        "field_type": "descriptive",
+        "field_name": "blhcn3_txt",
+        "section_header": " "
+    },
+    {
+        "field_label": "[196] 3. In the last 3 months have you received any other publicly provided services as a result of your psoriasis or treatment for your psoriasis?",
+        "field_type": "yesno",
+        "field_name": "blhcn3",
+        "required_field": "y",
+        "custom_alignment": "LH"
+    },
+    {
+        "field_label": "[197] Please give details including type and how many times received",
+        "field_type": "notes",
+        "field_name": "blhcn3_det",
+        "required_field": "y",
+        "branching_logic": "[blhcn3]='1'"
+    },
+    {
+        "field_label": "[198] <u>4) Personal Costs</u><p>With these next few questions, we are trying to find out more about the costs incurred by you and your family/friends as a result of your psoriasis or treatment for your psoriasis.</p>",
+        "field_type": "descriptive",
+        "field_name": "blhcn4_txt",
+        "section_header": " "
+    },
+    {
+        "field_label": "[199] 4a. In the last 3 months have you or your family/friends incurred any other costs as a result of your psoriasis or treatment for your psoriasis?",
+        "field_type": "yesno",
+        "field_name": "blhcn4a",
+        "required_field": "y"
+    },
+    {
+        "field_label": "[200] <p>Please state the details and the approximate cost of items purchased as a result of your psoriasis or treatment for your psoriasis.</p> <p>Example</p> <table class='text-sm'><thead><tr><th>Item</th><th>Number of items or visits</th><th>Overall cost (£)</th></tr></thead><tbody><tr><td>Homeopath</td><td>2 visits</td><td>£80 (2x£40)</td></tr></tbody></table>",
+        "field_type": "descriptive",
+        "field_name": "blhcn4a_txt",
+        "branching_logic": "[blhcn4a]='1'"
+    },
+    {
+        "field_label": "[201] Private health care or Complementary therapy - number of items or visits",
+        "field_type": "text",
+        "field_name": "blhcn4a_ph",
+        "text_validation_type_or_show_slider_number": "number",
+        "text_validation_min": "0",
+        "validations": [
+            {
+                "name": "min",
+                "value": "0",
+                "error": "Enter a number greater than 0",
+                "hint": ""
+            }
+        ],
+        "branching_logic": "[blhcn4a]='1'",
+        "required_field": "false"
+    },
+    {
+        "field_label": "[202] Private health care or Complementary therapy - overall cost (£)",
+        "field_type": "text",
+        "field_name": "blhcn4a_phcst",
+        "text_validation_type_or_show_slider_number": "number",
+        "text_validation_min": "0",
+        "validations": [
+            {
+                "name": "min",
+                "value": "0",
+                "error": "Enter a number greater than 0",
+                "hint": ""
+            }
+        ],
+        "branching_logic": "[blhcn4a]='1'",
+        "required_field": "false"
+    },
+    {
+        "field_label": "[203] Non-prescribed medication - number of items",
+        "field_type": "text",
+        "field_name": "blhcn4a_npm",
+        "text_validation_type_or_show_slider_number": "number",
+        "text_validation_min": "0",
+        "validations": [
+            {
+                "name": "min",
+                "value": "0",
+                "error": "Enter a number greater than 0",
+                "hint": ""
+            }
+        ],
+        "branching_logic": "[blhcn4a]='1'",
+        "required_field": "false"
+    },
+    {
+        "field_label": "[204] Non-prescribed medication - overall cost (£)",
+        "field_type": "text",
+        "field_name": "blhcn4a_npmcst",
+        "text_validation_type_or_show_slider_number": "number",
+        "text_validation_min": "0",
+        "validations": [
+            {
+                "name": "min",
+                "value": "0",
+                "error": "Enter a number greater than 0",
+                "hint": ""
+            }
+        ],
+        "branching_logic": "[blhcn4a]='1'",
+        "required_field": "false"
+    },
+    {
+        "field_label": "[205] Travel costs to health care appointments (including parking costs, petrol costs or bus/train fares for instance) - number of visits",
+        "field_type": "text",
+        "field_name": "blhcn4a_tvl",
+        "text_validation_type_or_show_slider_number": "number",
+        "text_validation_min": "0",
+        "validations": [
+            {
+                "name": "min",
+                "value": "0",
+                "error": "Enter a number greater than 0",
+                "hint": ""
+            }
+        ],
+        "branching_logic": "[blhcn4a]='1'",
+        "required_field": "false"
+    },
+    {
+        "field_label": "[206] Travel costs to health care appointments (including parking costs, petrol costs or bus/train fares for instance) - overall cost (£)",
+        "field_type": "text",
+        "field_name": "blhcn4a_tvlcst",
+        "text_validation_type_or_show_slider_number": "number",
+        "text_validation_min": "0",
+        "validations": [
+            {
+                "name": "min",
+                "value": "0",
+                "error": "Enter a number greater than 0",
+                "hint": ""
+            }
+        ],
+        "branching_logic": "[blhcn4a]='1'",
+        "required_field": "false"
+    },
+    {
+        "field_label": "[207] Cosmetic and skin care products - number of items or visits",
+        "field_type": "text",
+        "field_name": "blhcn4a_skc",
+        "text_validation_type_or_show_slider_number": "number",
+        "text_validation_min": "0",
+        "validations": [
+            {
+                "name": "min",
+                "value": "0",
+                "error": "Enter a number greater than 0",
+                "hint": ""
+            }
+        ],
+        "branching_logic": "[blhcn4a]='1'",
+        "required_field": "false"
+    },
+    {
+        "field_label": "[208] Cosmetic and skin care products - overall cost (£)",
+        "field_type": "text",
+        "field_name": "blhcn4a_skccst",
+        "text_validation_type_or_show_slider_number": "number",
+        "text_validation_min": "0",
+        "validations": [
+            {
+                "name": "min",
+                "value": "0",
+                "error": "Enter a number greater than 0",
+                "hint": ""
+            }
+        ],
+        "branching_logic": "[blhcn4a]='1'",
+        "required_field": "false"
+    },
+    {
+        "field_label": "[209] Special foods or dietary supplements (please specify)",
+        "field_type": "notes",
+        "field_name": "blhcn4a_sf_txt",
+        "branching_logic": "[blhcn4a]='1'",
+        "required_field": "false"
+    },
+    {
+        "field_label": "[210] Special foods or dietary supplements - number of items",
+        "field_type": "text",
+        "field_name": "blhcn4a_sf",
+        "text_validation_type_or_show_slider_number": "number",
+        "text_validation_min": "0",
+        "validations": [
+            {
+                "name": "min",
+                "value": "0",
+                "error": "Enter a number greater than 0",
+                "hint": ""
+            }
+        ],
+        "branching_logic": "[blhcn4a]='1'",
+        "required_field": "false"
+    },
+    {
+        "field_label": "[211] Special foods or dietary supplements - overall cost (£)",
+        "field_type": "text",
+        "field_name": "blhcn4a_sfcst",
+        "text_validation_type_or_show_slider_number": "number",
+        "text_validation_min": "0",
+        "validations": [
+            {
+                "name": "min",
+                "value": "0",
+                "error": "Enter a number greater than 0",
+                "hint": ""
+            }
+        ],
+        "branching_logic": "[blhcn4a]='1'",
+        "required_field": "false"
+    },
+    {
+        "field_label": "[212] Special clothing or bedding (please specify)",
+        "field_type": "notes",
+        "field_name": "blhcn4a_sc_txt",
+        "branching_logic": "[blhcn4a]='1'",
+        "required_field": "false"
+    },
+    {
+        "field_label": "[213] Special clothing or bedding - number of items",
+        "field_type": "text",
+        "field_name": "blhcn4a_sc",
+        "text_validation_type_or_show_slider_number": "number",
+        "text_validation_min": "0",
+        "validations": [
+            {
+                "name": "min",
+                "value": "0",
+                "error": "Enter a number greater than 0",
+                "hint": ""
+            }
+        ],
+        "branching_logic": "[blhcn4a]='1'",
+        "required_field": "false"
+    },
+    {
+        "field_label": "[214] Special clothing or bedding - overall cost (£)",
+        "field_type": "text",
+        "field_name": "blhcn4a_sccst",
+        "text_validation_type_or_show_slider_number": "number",
+        "text_validation_min": "0",
+        "validations": [
+            {
+                "name": "min",
+                "value": "0",
+                "error": "Enter a number greater than 0",
+                "hint": ""
+            }
+        ],
+        "branching_logic": "[blhcn4a]='1'",
+        "required_field": "false"
+    },
+    {
+        "field_label": "[215] Mental health support e.g., counselling (please specify)",
+        "field_type": "notes",
+        "field_name": "blhcn4a_mhs_txt",
+        "branching_logic": "[blhcn4a]='1'",
+        "required_field": "false"
+    },
+    {
+        "field_label": "[216] Mental health support e.g. counselling - number visits",
+        "field_type": "text",
+        "field_name": "blhcn4a_mhs",
+        "text_validation_type_or_show_slider_number": "number",
+        "text_validation_min": "0",
+        "validations": [
+            {
+                "name": "min",
+                "value": "0",
+                "error": "Enter a number greater than 0",
+                "hint": ""
+            }
+        ],
+        "required_field": "false",
+        "branching_logic": "[blhcn4a]='1'"
+    },
+    {
+        "field_label": "[217] Mental health  support e.g., counselling - overall cost (£)",
+        "field_type": "text",
+        "field_name": "blhcn4a_mhscst",
+        "text_validation_type_or_show_slider_number": "number",
+        "validations": [
+            {
+                "name": "min",
+                "value": "0",
+                "error": "Enter a number greater than 0",
+                "hint": ""
+            }
+        ],
+        "text_validation_min": "0",
+        "branching_logic": "[blhcn4a]='1'",
+        "required_field": "false"
+    },
+    {
+        "field_label": "[218] 1. Other (please specify)",
+        "field_type": "notes",
+        "field_name": "blhcn4a_oth1_txt",
+        "branching_logic": "[blhcn4a]='1'",
+        "required_field": "false"
+    },
+    {
+        "field_label": "[219] 1. Other - number of items or visits",
+        "field_type": "text",
+        "field_name": "blhcn4a_oth1",
+        "text_validation_type_or_show_slider_number": "number",
+        "text_validation_min": "0",
+        "validations": [
+            {
+                "name": "min",
+                "value": "0",
+                "error": "Enter a number greater than 0",
+                "hint": ""
+            }
+        ],
+        "branching_logic": "[blhcn4a_oth1_txt]<>'undefined' and [blhcn4a_oth1_txt]<>''",
+        "required_field": "false"
+    },
+    {
+        "field_label": "[220] 1. Other - overall cost (£)",
+        "field_type": "text",
+        "field_name": "blhcn4a_oth1cst",
+        "text_validation_type_or_show_slider_number": "number",
+        "text_validation_min": "0",
+        "validations": [
+            {
+                "name": "min",
+                "value": "0",
+                "error": "Enter a number greater than 0",
+                "hint": ""
+            }
+        ],
+        "branching_logic": "[blhcn4a_oth1_txt]<>'undefined' and [blhcn4a_oth1_txt]<>''",
+        "required_field": "false"
+    },
+    {
+        "field_label": "[221] 2. Other (please specify)",
+        "field_type": "notes",
+        "field_name": "blhcn4a_oth2_txt",
+        "branching_logic": "[blhcn4a_oth1_txt]<>'undefined' and [blhcn4a_oth1_txt]<>''",
+        "required_field": "false"
+    },
+    {
+        "field_label": "[222] 2. Other - number of items or visits",
+        "field_type": "text",
+        "field_name": "blhcn4a_oth2",
+        "text_validation_type_or_show_slider_number": "number",
+        "text_validation_min": "0",
+        "validations": [
+            {
+                "name": "min",
+                "value": "0",
+                "error": "Enter a number greater than 0",
+                "hint": ""
+            }
+        ],
+        "branching_logic": "[blhcn4a_oth2_txt]<>'undefined' and [blhcn4a_oth2_txt]<>''",
+        "required_field": "false"
+    },
+    {
+        "field_label": "[223] 2. Other - overall cost (£)",
+        "field_type": "text",
+        "field_name": "blhcn4a_oth2cst",
+        "text_validation_type_or_show_slider_number": "number",
+        "text_validation_min": "0",
+        "validations": [
+            {
+                "name": "min",
+                "value": "0",
+                "error": "Enter a number greater than 0",
+                "hint": ""
+            }
+        ],
+        "branching_logic": "[blhcn4a_oth2_txt]<>'undefined' and [blhcn4a_oth2_txt]<>''",
+        "required_field": "false"
+    },
+    {
+        "field_label": "[224] 3. Other (please specify)",
+        "field_type": "notes",
+        "field_name": "blhcn4a_oth3_txt",
+        "branching_logic": "[blhcn4a_oth2_txt]<>'undefined' and [blhcn4a_oth2_txt]<>''",
+        "required_field": "false"
+    },
+    {
+        "field_label": "[225] 3. Other - number of items or visits",
+        "field_type": "text",
+        "field_name": "blhcn4a_oth3",
+        "text_validation_type_or_show_slider_number": "number",
+        "text_validation_min": "0",
+        "validations": [
+            {
+                "name": "min",
+                "value": "0",
+                "error": "Enter a number greater than 0",
+                "hint": ""
+            }
+        ],
+        "branching_logic": "[blhcn4a_oth3_txt]<>'undefined' and [blhcn4a_oth3_txt]<>''",
+        "required_field": "false"
+    },
+    {
+        "field_label": "[226] 3. Other - overall cost (£)",
+        "field_type": "text",
+        "field_name": "blhcn4a_oth3cst",
+        "text_validation_type_or_show_slider_number": "number",
+        "text_validation_min": "0",
+        "validations": [
+            {
+                "name": "min",
+                "value": "0",
+                "error": "Enter a number greater than 0",
+                "hint": ""
+            }
+        ],
+        "branching_logic": "[blhcn4a_oth3_txt]<>'undefined' and [blhcn4a_oth3_txt]<>''",
+        "required_field": "false"
+    },
+    {
+        "field_label": "[227] 4b. In the last 3 months have you been in any type of paid employment?",
+        "field_type": "yesno",
+        "form_name": "baseline",
+        "field_name": "blhcn4b",
+        "required_field": "y",
+        "custom_alignment": "LH"
+    },
+    {
+        "field_label": "[228] ",
+        "field_type": "radio",
+        "form_name": "baseline",
+        "field_name": "blhcn4b_wrk",
+        "required_field": "y",
+        "custom_alignment": "LH",
+        "select_choices_or_calculations": [
+            {
+                "code": "1",
+                "label": "I work full-time"
+            },
+            {
+                "code": "2",
+                "label": "I work part-time"
+            }
+        ],
+        "branching_logic": "[blhcn4b]='1'"
+    },
+    {
+        "field_label": "[229] Which of the following best describes your situation?",
+        "field_type": "radio",
+        "form_name": "baseline",
+        "field_name": "blhcn4b_wrksit",
+        "required_field": "y",
+        "select_choices_or_calculations": [
+            {
+                "code": "1",
+                "label": "Unable to work because of my psoriasis"
+            },
+            {
+                "code": "2",
+                "label": "Unable to work because of other sickness or disability (NOT my psoriasis)"
+            },
+            {
+                "code": "3",
+                "label": "Doing unpaid or voluntary work"
+            },
+            {
+                "code": "4",
+                "label": "Full or part-time student"
+            },
+            {
+                "code": "5",
+                "label": "Looking after home and/or family/carer"
+            },
+            {
+                "code": "6",
+                "label": "Unemployed but looking for paid employment"
+            },
+            {
+                "code": "7",
+                "label": "Unemployed and NOT looking for paid employment"
+            },
+            {
+                "code": "8",
+                "label": "Full or part-time student"
+            },
+            {
+                "code": "9",
+                "label": "Retired"
+            },
+            {
+                "code": "10",
+                "label": "None of the above"
+            },
+            {
+                "code": "11",
+                "label": "Prefer not to say"
+            }
+        ],
+        "branching_logic": "[blhcn4b]='0'"
+    },
+    {
+        "field_label": "[230] <p><strong>In the last 3 months,</strong> how much did</span> <strong>your psoriasis </strong><strong>or treatment for your psoriasis</strong> affect your productivity <strong>while you were working</strong>?</p><p><i>Think about days you were limited in the amount or kind of work you could do, days you accomplished less than you would like, or days you could not do your work as carefully as usual. Choose a low number if your <strong>psoriasis </strong></i><strong><i>or treatment for your psoriasis affected your work only a little.</i></strong>Choose a high number if your<i> <strong>psoriasis </strong></i><strong><i>or treatment for your psoriasis affected your work a great deal.</i></strong>",
+        "field_type": "radio",
+        "form_name": "baseline",
+        "field_name": "blhcn4b_wrkafft",
+        "required_field": "y",
+        "custom_alignment": "LV",
+        "select_choices_or_calculations": [
+            {
+                "code": "0",
+                "label": "0 - Psoriasis or psoriasis treatment had no effect on my work"
+            },
+            {
+                "code": "1",
+                "label": "1"
+            },
+            {
+                "code": "2",
+                "label": "2"
+            },
+            {
+                "code": "3",
+                "label": "3"
+            },
+            {
+                "code": "4",
+                "label": "4"
+            },
+            {
+                "code": "5",
+                "label": "5"
+            },
+            {
+                "code": "6",
+                "label": "6"
+            },
+            {
+                "code": "7",
+                "label": "7"
+            },
+            {
+                "code": "8",
+                "label": "8"
+            },
+            {
+                "code": "9",
+                "label": "9"
+            },
+            {
+                "code": "10",
+                "label": "10 - Psoriasis or psoriasis treatment completely prevented me from working"
+            }
+        ],
+        "branching_logic": "[blhcn4b]='1'"
+    },
+    {
+        "field_label": "[231] In the last 3 months, has your psoriasis or treatment for your psoriasis resulted in you changing the number of hours you work?",
+        "field_type": "yesno",
+        "form_name": "baseline",
+        "field_name": "blhcn4b_wrk3mchg",
+        "required_field": "y",
+        "custom_alignment": "LH",
+        "branching_logic": "[blhcn4b]='1'"
+    },
+    {
+        "field_label": "[232] In the last 3 months, what has the impact on number of hours worked been as a result of your psoriasis or treatment for your psoriasis or treatment for your psoriasis (e.g., due to sick leave related to you psoriasis, to attend appointments etc)?",
+        "field_type": "radio",
+        "form_name": "baseline",
+        "field_name": "blhcn4b_wrk3m",
+        "required_field": "y",
+        "custom_alignment": "LV",
+        "select_choices_or_calculations": [
+            {
+                "code": "1",
+                "label": "I have worked LESS hours over the last 3 months (please specify)"
+            },
+            {
+                "code": "2",
+                "label": "I have worked MORE hours over the last 3 months (please specify)"
+            }
+        ],
+        "branching_logic": "[blhcn4b_wrk3mchg]='1'"
+    },
+    {
+        "field_label": "[233] Please specify how many LESS hours you have worked over the last 3 months",
+        "field_type": "text",
+        "form_name": "baseline",
+        "field_name": "blhcn4b_wrk3mles",
+        "field_note": "hours",
+        "required_field": "y",
+        "text_validation_type_or_show_slider_number": "number",
+        "custom_alignment": "RH",
+        "text_validation_min": "0",
+        "validations": [
+            {
+                "name": "min",
+                "value": "0",
+                "error": "Enter a number greater than 0",
+                "hint": ""
+            }
+        ],
+        "branching_logic": "[blhcn4b_wrk3m]='1'"
+    },
+    {
+        "field_label": "[234] Please specify how many MORE hours you have worked over the last 3 months",
+        "field_type": "text",
+        "form_name": "baseline",
+        "field_name": "blhcn4b_wrk3mmre",
+        "field_note": "hours",
+        "required_field": "y",
+        "text_validation_type_or_show_slider_number": "number",
+        "custom_alignment": "RH",
+        "text_validation_min": "0",
+        "validations": [
+            {
+                "name": "min",
+                "value": "0",
+                "error": "Enter a number greater than 0",
+                "hint": ""
+            }
+        ],
+        "branching_logic": "[blhcn4b_wrk3m]='2'"
+    },
+    {
+        "field_label": "[235] 4c. In the last 3 months, have you had a family member or friend who has had to take time off paid work to accompany you to health care appointments related to your psoriasis or treatment for your psoriasis?",
+        "field_type": "yesno",
+        "form_name": "baseline",
+        "field_name": "blhcn4c",
+        "required_field": "y",
+        "custom_alignment": "LH"
+    },
+    {
+        "field_label": "[236] In the last 3 months, how much leave have they had to take to accompany you to appointments related to your psoriasis or treatment for your psoriasis?",
+        "field_type": "text",
+        "field_name": "blhcn4c_hrs3m",
+        "field_note": "hours",
+        "required_field": "y",
+        "text_validation_type_or_show_slider_number": "number",
+        "text_validation_min": "0",
+        "validations": [
+            {
+                "name": "min",
+                "value": "0",
+                "error": "Enter a number greater than 0",
+                "hint": ""
+            }
+        ],
+        "branching_logic": "[blhcn4c]='1'"
+    },
+    {
+        "field_label": "[237] 4d. Support outside of official services (For example, charity support groups such as The Psoriasis Association, helplines etc)",
+        "field_type": "descriptive",
+        "field_name": "blhcn4d_txt"
+    },
+    {
+        "field_label": "[238] In the <b>last 3 months</b>, have you received support or attended support groups?",
+        "field_type": "yesno",
+        "field_name": "blhcn4d",
+        "required_field": "y"
+    },
+    {
+        "field_label": "[239] Please list what support you have accessed and state whether you incurred any costs as a result (e.g., membership fee, participation fee, telephone cost etc)",
+        "field_type": "descriptive",
+        "field_name": "blhcn4d_yes_txt",
+        "branching_logic": "[blhcn4d]='1'"
+    },
+    {
+        "field_label": "[240] 1. Type of support",
+        "field_type": "notes",
+        "field_name": "blhcn4d_sup1",
+        "branching_logic": "[blhcn4d]='1'",
+        "required_field": "false"
+    },
+    {
+        "field_label": "[241] 1. Cost incurred (£)",
+        "field_type": "text",
+        "field_name": "blhcn4d_sup1cst",
+        "text_validation_type_or_show_slider_number": "number",
+        "text_validation_min": "0",
+        "validations": [
+            {
+                "name": "min",
+                "value": "0",
+                "error": "Enter a number greater than 0",
+                "hint": ""
+            }
+        ],
+        "branching_logic": "[blhcn4d]='1'",
+        "required_field": "false"
+    },
+    {
+        "field_label": "[242] 2. Type of support",
+        "field_type": "notes",
+        "field_name": "blhcn4d_sup2",
+        "branching_logic": "[blhcn4d_sup1]<>'undefined' and [blhcn4d_sup1]<>''",
+        "required_field": "false"
+    },
+    {
+        "field_label": "[243] 2. Cost incurred (£)",
+        "field_type": "text",
+        "field_name": "blhcn4d_sup2cst",
+        "required_field": "false",
+        "text_validation_type_or_show_slider_number": "number",
+        "text_validation_min": "0",
+        "validations": [
+            {
+                "name": "min",
+                "value": "0",
+                "error": "Enter a number greater than 0",
+                "hint": ""
+            }
+        ],
+        "branching_logic": "[blhcn4d_sup1]<>'undefined' and [blhcn4d_sup1]<>''"
+    },
+    {
+        "field_label": "[244] Other studies",
+        "field_type": "descriptive",
+        "form_name": "baseline",
+        "field_name": "blostds_txt",
+        "section_header": " "
+    },
+    {
+        "field_label": "[245] Are you part of any of the following studies? Tick all that apply.",
+        "field_type": "checkbox",
+        "form_name": "baseline",
+        "field_name": "blostds",
+        "select_choices_or_calculations": [
+            {
+                "code": "1",
+                "label": "BSTOP"
+            },
+            {
+                "code": "2",
+                "label": "BADBIR"
+            },
+            {
+                "code": "3",
+                "label": "UK Biobank"
+            },
+            {
+                "code": "4",
+                "label": "Twins UK"
+            },
+            {
+                "code": "5",
+                "label": "Our Future Health"
+            }
+        ],
+        "required_field": "false"
+    },
+    {
+        "field_label": "[1001] Do you want to upload photo?",
+        "field_type": "radio",
+        "field_name": "photo_have",
+        "required_field": "y",
+        "section_header": "Psoriasis",
+        "select_choices_or_calculations": [
+            {
+                "code": "0",
+                "label": "No"
+            },
+            {
+                "code": "1",
+                "label": "Yes"
+            }
+        ]
+    },
+    {
+        "field_name": "photo_worst",
+        "section_header": "Uploading your photographs",
+        "field_type": "photo",
+        "field_label": "[1004] Upload the photograph of your worst affected site by clicking on the green 'upload file' link and select the best photo of your worst affected site from your photo library.",
+        "required_field": "true",
+        "branching_logic": "[photo_have='1']"
+    },
+    {
+        "field_name": "photo_inst2",
+        "section_header": "",
+        "field_type": "descriptive",
+        "field_label": "[1005] <p>2. Take a photo of your chest and stomach.</p><ul><li>Switch to the front-facing camera on your smartphone.</li><li>Hold your smartphone in front of you to take a photo of your chest and stomach. An example of the area to be photographed is shown below.</li><li>Check the image to ensure it is in focus and your entire chest and stomach are included as per the example below.</li><li>Once you are happy with the photo you have taken ensure it is saved to your photo library.</li></ul><img src='assets/imgs/upload_image_2.png' alt=''>",
+        "required_field": "true",
+        "branching_logic": "[photo_have='1']"
+    },
+    {
+        "field_name": "photo_chest",
+        "section_header": "Uploading your photographs",
+        "field_type": "photo",
+        "field_label": "[1006] Upload the photograph of your worst affected site by clicking on the green 'upload file' link and select the best photo of your worst affected site from your photo library.",
+        "required_field": "true",
+        "branching_logic": "[photo_have='1']"
+    },
+    {
+        "field_name": "photo_inst3",
+        "section_header": "",
+        "field_type": "descriptive",
+        "field_label": "[1007] <p>3. Take a photograph of both your legs.</p><ul><li>Hold your smartphone in front of you to take a photo of your legs. An example of the area to be photographed is\nshown below.</li><li>Hold your smartphone in front of you to take a photo of your chest and stomach. An example of the area to be photographed is shown below.</li><li>Check the image to ensure it is in focus and both your legs are included as per the example below.</li><li>Once you are happy with the photo you have taken ensure it is saved to your photo library.</li></ul><img src='assets/imgs/upload_image_3.png' alt=''>",
+        "required_field": "true",
+        "branching_logic": "[photo_have='1']"
+    },
+    {
+        "field_name": "worst_legs",
+        "section_header": "Uploading your photographs",
+        "field_type": "photo",
+        "field_label": "[1008] Upload the photograph of your worst affected site by clicking on the green 'upload file' link and select the best photo of your worst affected site from your photo library.",
+        "required_field": "true",
+        "branching_logic": "[photo_have='1']"
+    },
+    {
+        "field_label": "[1009] Select the area you took a photo of from the following list:",
+        "field_type": "radio",
+        "field_name": "photo_area",
+        "required_field": "y",
+        "select_choices_or_calculations": [
+            {
+                "code": "0",
+                "label": "Ankle (left)"
+            },
+            {
+                "code": "1",
+                "label": "Ankle (right)"
+            },
+            {
+                "code": "2",
+                "label": "Arm (left)"
+            },
+            {
+                "code": "3",
+                "label": "Arm (right)"
+            },
+            {
+                "code": "4",
+                "label": "Back (upper)"
+            },
+            {
+                "code": "5",
+                "label": "Back (lower)"
+            },
+            {
+                "code": "6",
+                "label": "Buttocks"
+            },
+            {
+                "code": "7",
+                "label": "Chest"
+            },
+            {
+                "code": "8",
+                "label": "Ear (left)"
+            },
+            {
+                "code": "9",
+                "label": "Ear (right)"
+            },
+            {
+                "code": "10",
+                "label": "Face"
+            },
+            {
+                "code": "11",
+                "label": "Foot (left, sole)"
+            },
+            {
+                "code": "12",
+                "label": "Foot (left, top of foot)"
+            },
+            {
+                "code": "13",
+                "label": "Foot (right, sole)"
+            },
+            {
+                "code": "14",
+                "label": "Foot (right, top of foot)"
+            },
+            {
+                "code": "15",
+                "label": "Groin (left)"
+            },
+            {
+                "code": "16",
+                "label": "Groin (right)"
+            },
+            {
+                "code": "17",
+                "label": "Hand (left, palm)"
+            },
+            {
+                "code": "18",
+                "label": "Hand (left, top of hand)"
+            },
+            {
+                "code": "19",
+                "label": "Hand (right, top of hand)"
+            },
+            {
+                "code": "20",
+                "label": "Hand (right, palm)"
+            },
+            {
+                "code": "21",
+                "label": "Head"
+            },
+            {
+                "code": "22",
+                "label": "Leg (left, upper leg)"
+            },
+            {
+                "code": "23",
+                "label": "Leg (left, knee)"
+            },
+            {
+                "code": "24",
+                "label": "Leg (left, lower leg)"
+            },
+            {
+                "code": "25",
+                "label": "Leg (right, upper leg)"
+            },
+            {
+                "code": "26",
+                "label": "Leg (right, knee)"
+            },
+            {
+                "code": "27",
+                "label": "Leg (right, lower leg)"
+            },
+            {
+                "code": "28",
+                "label": "Neck"
+            },
+            {
+                "code": "29",
+                "label": "Scalp"
+            },
+            {
+                "code": "30",
+                "label": "Shoulder (left)"
+            },
+            {
+                "code": "31",
+                "label": "Shoulder (right)"
+            },
+            {
+                "code": "32",
+                "label": "Stomach"
+            },
+            {
+                "code": "33",
+                "label": "Wrist (left)"
+            },
+            {
+                "code": "34",
+                "label": "Wrist (right)"
+            },
+            {
+                "code": "35",
+                "label": "Other: please enter"
+            }
+        ],
+        "branching_logic": "[photo_have='1']"
+    },
+    {
+        "field_label": "[1010] Please specify your body site which is WORST affected\nby psoriasis",
+        "field_type": "text",
+        "field_name": "photo_other",
+        "required_field": "y",
+        "branching_logic": "[photo_area]='35'"
+    },
+    {
+        "field_label": "[247] Do you have any other comments? We would be delighted to hear your feedback on the study.",
+        "field_type": "notes",
+        "field_name": "blcomment",
+        "required_field": "false"
+    }
+]

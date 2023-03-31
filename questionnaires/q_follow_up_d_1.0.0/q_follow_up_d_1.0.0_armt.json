@@ -1,0 +1,6054 @@
+[
+    {
+        "field_label": "[251] <b><u>CURRENTLY</u></b> is your psoriasis:",
+        "field_type": "radio",
+        "field_name": "fupso_currently",
+        "required_field": "y",
+        "section_header": "Psoriasis",
+        "select_choices_or_calculations": [
+            {
+                "code": "0",
+                "label": "0 - Clear"
+            },
+            {
+                "code": "1",
+                "label": "1 - Nearly clear"
+            },
+            {
+                "code": "2",
+                "label": "2 - Mild"
+            },
+            {
+                "code": "3",
+                "label": "3 - Moderate"
+            },
+            {
+                "code": "4",
+                "label": "4 - Moderate-severe"
+            },
+            {
+                "code": "5",
+                "label": "5 - Severe"
+            }
+        ],
+        "report": {
+            "longitudinal": {
+                "name": "x_currently",
+                "title": "Your psoriasis status",
+                "type": "line_chart",
+                "value": "value",
+                "yaxis": {
+                    "min": 0,
+                    "max": 5,
+                    "step": 1,
+                    "fn": {
+                        "0": "Clear",
+                        "1": "Nearly clear",
+                        "2": "Mild",
+                        "3": "Moderate",
+                        "4": "Moderate-severe",
+                        "5": "Severe"
+                    }
+                }
+            }
+        }
+    },
+    {
+        "field_label": "[252] Over the last week, how itchy, sore, painful or stinging has your skin been?",
+        "field_type": "radio",
+        "field_name": "fupso_dlqi1",
+        "required_field": "y",
+        "question_number": "1",
+        "section_header": " ",
+        "select_choices_or_calculations": [
+            {
+                "code": "1",
+                "label": "Very much"
+            },
+            {
+                "code": "2",
+                "label": "A lot"
+            },
+            {
+                "code": "3",
+                "label": "A little"
+            },
+            {
+                "code": "4",
+                "label": "Not at all"
+            },
+            {
+                "code": "5",
+                "label": "Not relevant"
+            }
+        ]
+    },
+    {
+        "field_label": "[253] Over the last week, how embarrassed or self-conscious have you been because of your skin?",
+        "field_type": "radio",
+        "field_name": "fupso_dlqi2",
+        "required_field": "y",
+        "question_number": "2",
+        "select_choices_or_calculations": [
+            {
+                "code": "1",
+                "label": "Very much"
+            },
+            {
+                "code": "2",
+                "label": "A lot"
+            },
+            {
+                "code": "3",
+                "label": "A little"
+            },
+            {
+                "code": "4",
+                "label": "Not at all"
+            },
+            {
+                "code": "5",
+                "label": "Not relevant"
+            }
+        ],
+        "section_header": " "
+    },
+    {
+        "field_label": "[254] Over the last week, how much has your skin interfered with you going shopping or looking after your home or garden?",
+        "field_type": "radio",
+        "form_name": "followup",
+        "field_name": "fupso_dlqi3",
+        "required_field": "y",
+        "question_number": "3",
+        "select_choices_or_calculations": [
+            {
+                "code": "1",
+                "label": "Very much"
+            },
+            {
+                "code": "2",
+                "label": "A lot"
+            },
+            {
+                "code": "3",
+                "label": "A little"
+            },
+            {
+                "code": "4",
+                "label": "Not at all"
+            },
+            {
+                "code": "5",
+                "label": "Not relevant"
+            }
+        ],
+        "section_header": " "
+    },
+    {
+        "field_label": "[255] Over the last week, how much has your skin influenced the clothes you wear?",
+        "field_type": "radio",
+        "form_name": "followup",
+        "field_name": "fupso_dlqi4",
+        "required_field": "y",
+        "question_number": "4",
+        "select_choices_or_calculations": [
+            {
+                "code": "1",
+                "label": "Very much"
+            },
+            {
+                "code": "2",
+                "label": "A lot"
+            },
+            {
+                "code": "3",
+                "label": "A little"
+            },
+            {
+                "code": "4",
+                "label": "Not at all"
+            },
+            {
+                "code": "5",
+                "label": "Not relevant"
+            }
+        ],
+        "section_header": " "
+    },
+    {
+        "field_label": "[256] Over the last week, how much has your skin affected any social or leisure activities?",
+        "field_type": "radio",
+        "form_name": "followup",
+        "field_name": "fupso_dlqi5",
+        "required_field": "y",
+        "question_number": "5",
+        "select_choices_or_calculations": [
+            {
+                "code": "1",
+                "label": "Very much"
+            },
+            {
+                "code": "2",
+                "label": "A lot"
+            },
+            {
+                "code": "3",
+                "label": "A little"
+            },
+            {
+                "code": "4",
+                "label": "Not at all"
+            },
+            {
+                "code": "5",
+                "label": "Not relevant"
+            }
+        ],
+        "section_header": " "
+    },
+    {
+        "field_label": "[257] Over the last week, how much has your skin made it difficult for you to do any sport?",
+        "field_type": "radio",
+        "form_name": "followup",
+        "field_name": "fupso_dlqi6",
+        "required_field": "y",
+        "question_number": "6",
+        "select_choices_or_calculations": [
+            {
+                "code": "1",
+                "label": "Very much"
+            },
+            {
+                "code": "2",
+                "label": "A lot"
+            },
+            {
+                "code": "3",
+                "label": "A little"
+            },
+            {
+                "code": "4",
+                "label": "Not at all"
+            },
+            {
+                "code": "5",
+                "label": "Not relevant"
+            }
+        ],
+        "section_header": " "
+    },
+    {
+        "field_label": "[258] Over the last week, has your skin prevented you from working or studying?",
+        "field_type": "radio",
+        "form_name": "followup",
+        "field_name": "fupso_dlqi7",
+        "required_field": "y",
+        "question_number": "7",
+        "select_choices_or_calculations": [
+            {
+                "code": "1",
+                "label": "Yes"
+            },
+            {
+                "code": "2",
+                "label": "No"
+            },
+            {
+                "code": "3",
+                "label": "Not relevant"
+            }
+        ],
+        "section_header": " "
+    },
+    {
+        "field_label": "[259] Over the last week how much has your skin been a problem at work or studying?",
+        "field_type": "radio",
+        "form_name": "followup",
+        "field_name": "fupso_dlqi7a",
+        "required_field": "y",
+        "select_choices_or_calculations": [
+            {
+                "code": "1",
+                "label": "Very much"
+            },
+            {
+                "code": "2",
+                "label": "A lot"
+            },
+            {
+                "code": "3",
+                "label": "A little"
+            },
+            {
+                "code": "4",
+                "label": "Not at all"
+            },
+            {
+                "code": "5",
+                "label": "Not relevant"
+            }
+        ],
+        "branching_logic": "[fupso_dlqi7]='2'",
+        "section_header": " "
+    },
+    {
+        "field_label": "[260] Over the last week, how much has your skin created problems with your partner or any of your close friends or relatives?",
+        "field_type": "radio",
+        "form_name": "followup",
+        "field_name": "fupso_dlqi8",
+        "required_field": "y",
+        "question_number": "8",
+        "select_choices_or_calculations": [
+            {
+                "code": "1",
+                "label": "Very much"
+            },
+            {
+                "code": "2",
+                "label": "A lot"
+            },
+            {
+                "code": "3",
+                "label": "A little"
+            },
+            {
+                "code": "4",
+                "label": "Not at all"
+            },
+            {
+                "code": "5",
+                "label": "Not relevant"
+            }
+        ],
+        "section_header": " "
+    },
+    {
+        "field_label": "[261] Over the last week, how much has your skin caused any sexual difficulties?",
+        "field_type": "radio",
+        "form_name": "followup",
+        "field_name": "fupso_dlqi9",
+        "required_field": "y",
+        "question_number": "9",
+        "select_choices_or_calculations": [
+            {
+                "code": "1",
+                "label": "Very much"
+            },
+            {
+                "code": "2",
+                "label": "A lot"
+            },
+            {
+                "code": "3",
+                "label": "A little"
+            },
+            {
+                "code": "4",
+                "label": "Not at all"
+            },
+            {
+                "code": "5",
+                "label": "Not relevant"
+            }
+        ],
+        "section_header": " "
+    },
+    {
+        "field_label": "[262] Over the last week, how much of a problem has the treatment for your skin been, for example by making your home messy, or by taking up time?",
+        "field_type": "radio",
+        "form_name": "followup",
+        "field_name": "fupso_dlqi10",
+        "required_field": "y",
+        "question_number": "10",
+        "select_choices_or_calculations": [
+            {
+                "code": "1",
+                "label": "Very much"
+            },
+            {
+                "code": "2",
+                "label": "A lot"
+            },
+            {
+                "code": "3",
+                "label": "A little"
+            },
+            {
+                "code": "4",
+                "label": "Not at all"
+            },
+            {
+                "code": "5",
+                "label": "Not relevant"
+            }
+        ],
+        "section_header": " "
+    },
+    {
+        "field_label": "[21_1] dlqi_calc",
+        "field_type": "calc",
+        "form_name": "baseline",
+        "field_name": "fupso_dlqi_calc",
+        "required_field": "y",
+        "calculation_fn": "const sum = (+fupso_dlqi1 > 4 ? 4 : +fupso_dlqi1) +(+fupso_dlqi2 > 4 ? 4 : +fupso_dlqi2) +(+fupso_dlqi3 > 4 ? 4 : +fupso_dlqi3) +(+fupso_dlqi4 > 4 ? 4 : +fupso_dlqi4) +(+fupso_dlqi5 > 4 ? 4 : +fupso_dlqi5) +(+fupso_dlqi6 > 4 ? 4 : +fupso_dlqi6) +(+fupso_dlqi7a ? (+fupso_dlqi7a > 4 ? 4 : +fupso_dlqi7a) : 4) +(+fupso_dlqi8 > 4 ? 4 : +fupso_dlqi8) +(+fupso_dlqi9 > 4 ? 4 : +fupso_dlqi9) +(+fupso_dlqi10 > 4 ? 4 : +fupso_dlqi10);console.log('***** = ', sum);const res = 40 - sum;return res<0 ? 0 : res;",
+        "calculation_args": "['fupso_dlqi1', 'fupso_dlqi2', 'fupso_dlqi3', 'fupso_dlqi4', 'fupso_dlqi5', 'fupso_dlqi6', 'fupso_dlqi7a', 'fupso_dlqi8', 'fupso_dlqi9', 'fupso_dlqi10']",
+        "report": {
+            "longitudinal": {
+                "name": "x_dlqi",
+                "title": "How much has your psoriasis affected your life over the last week?",
+                "type": "line_chart",
+                "value": "value",
+                "yaxis": {
+                    "min": 0,
+                    "max": 30,
+                    "step": 5,
+                    "title": "Quality-of-life score",
+                    "fn": {
+                        "0": "[min] 0",
+                        "5": "5",
+                        "10": "10",
+                        "15": "15",
+                        "20": "20",
+                        "25": "25",
+                        "30": "[max] 30"
+                    }
+                }
+            }
+        },
+        "section_header": " "
+    },
+    {
+        "field_label": "[263] How much does your psoriasis affect your life?",
+        "field_type": "radio",
+        "form_name": "followup",
+        "field_name": "fupso_bipq1",
+        "required_field": "y",
+        "custom_alignment": "LV",
+        "section_header": "Please provide your views on your psoriasis:",
+        "select_choices_or_calculations": [
+            {
+                "code": "0",
+                "label": "0 - no effect at all"
+            },
+            {
+                "code": "1",
+                "label": "1"
+            },
+            {
+                "code": "2",
+                "label": "2"
+            },
+            {
+                "code": "3",
+                "label": "3"
+            },
+            {
+                "code": "4",
+                "label": "4"
+            },
+            {
+                "code": "5",
+                "label": "5"
+            },
+            {
+                "code": "6",
+                "label": "6"
+            },
+            {
+                "code": "7",
+                "label": "7"
+            },
+            {
+                "code": "8",
+                "label": "8"
+            },
+            {
+                "code": "9",
+                "label": "9"
+            },
+            {
+                "code": "10",
+                "label": "10 - severely affects my life"
+            }
+        ]
+    },
+    {
+        "field_label": "[264] How long do you think your psoriasis will continue?",
+        "field_type": "radio",
+        "form_name": "followup",
+        "field_name": "fupso_bipq2",
+        "required_field": "y",
+        "custom_alignment": "LV",
+        "select_choices_or_calculations": [
+            {
+                "code": "0",
+                "label": "0 - a very short time"
+            },
+            {
+                "code": "1",
+                "label": "1"
+            },
+            {
+                "code": "2",
+                "label": "2"
+            },
+            {
+                "code": "3",
+                "label": "3"
+            },
+            {
+                "code": "4",
+                "label": "4"
+            },
+            {
+                "code": "5",
+                "label": "5"
+            },
+            {
+                "code": "6",
+                "label": "6"
+            },
+            {
+                "code": "7",
+                "label": "7"
+            },
+            {
+                "code": "8",
+                "label": "8"
+            },
+            {
+                "code": "9",
+                "label": "9"
+            },
+            {
+                "code": "10",
+                "label": "10 - forever"
+            }
+        ]
+    },
+    {
+        "field_label": "[265] How much control do you feel you have over your psoriasis?",
+        "field_type": "radio",
+        "form_name": "followup",
+        "field_name": "fupso_bipq3",
+        "required_field": "y",
+        "custom_alignment": "LV",
+        "select_choices_or_calculations": [
+            {
+                "code": "0",
+                "label": "0 - absolutely no control"
+            },
+            {
+                "code": "1",
+                "label": "1"
+            },
+            {
+                "code": "2",
+                "label": "2"
+            },
+            {
+                "code": "3",
+                "label": "3"
+            },
+            {
+                "code": "4",
+                "label": "4"
+            },
+            {
+                "code": "5",
+                "label": "5"
+            },
+            {
+                "code": "6",
+                "label": "6"
+            },
+            {
+                "code": "7",
+                "label": "7"
+            },
+            {
+                "code": "8",
+                "label": "8"
+            },
+            {
+                "code": "9",
+                "label": "9"
+            },
+            {
+                "code": "10",
+                "label": "10 - extreme amount of control"
+            }
+        ]
+    },
+    {
+        "field_label": "[266] How much do you think your treatment can help your psoriasis?",
+        "field_type": "radio",
+        "form_name": "followup",
+        "field_name": "fupso_bipq4",
+        "required_field": "y",
+        "custom_alignment": "LV",
+        "select_choices_or_calculations": [
+            {
+                "code": "0",
+                "label": "0 - not at all"
+            },
+            {
+                "code": "1",
+                "label": "1"
+            },
+            {
+                "code": "2",
+                "label": "2"
+            },
+            {
+                "code": "3",
+                "label": "3"
+            },
+            {
+                "code": "4",
+                "label": "4"
+            },
+            {
+                "code": "5",
+                "label": "5"
+            },
+            {
+                "code": "6",
+                "label": "6"
+            },
+            {
+                "code": "7",
+                "label": "7"
+            },
+            {
+                "code": "8",
+                "label": "8"
+            },
+            {
+                "code": "9",
+                "label": "9"
+            },
+            {
+                "code": "10",
+                "label": "10 - extremely helpful"
+            }
+        ]
+    },
+    {
+        "field_label": "[267] How much do you experience symptoms from your psoriasis?",
+        "field_type": "radio",
+        "form_name": "followup",
+        "field_name": "fupso_bipq5",
+        "required_field": "y",
+        "custom_alignment": "LV",
+        "select_choices_or_calculations": [
+            {
+                "code": "0",
+                "label": "0 - no symptoms at all"
+            },
+            {
+                "code": "1",
+                "label": "1"
+            },
+            {
+                "code": "2",
+                "label": "2"
+            },
+            {
+                "code": "3",
+                "label": "3"
+            },
+            {
+                "code": "4",
+                "label": "4"
+            },
+            {
+                "code": "5",
+                "label": "5"
+            },
+            {
+                "code": "6",
+                "label": "6"
+            },
+            {
+                "code": "7",
+                "label": "7"
+            },
+            {
+                "code": "8",
+                "label": "8"
+            },
+            {
+                "code": "9",
+                "label": "9"
+            },
+            {
+                "code": "10",
+                "label": "10 - many severe symptoms"
+            }
+        ]
+    },
+    {
+        "field_label": "[268] How concerned are you about your psoriasis?",
+        "field_type": "radio",
+        "form_name": "followup",
+        "field_name": "fupso_bipq6",
+        "required_field": "y",
+        "custom_alignment": "LV",
+        "select_choices_or_calculations": [
+            {
+                "code": "0",
+                "label": "0 - not at all concerned"
+            },
+            {
+                "code": "1",
+                "label": "1"
+            },
+            {
+                "code": "2",
+                "label": "2"
+            },
+            {
+                "code": "3",
+                "label": "3"
+            },
+            {
+                "code": "4",
+                "label": "4"
+            },
+            {
+                "code": "5",
+                "label": "5"
+            },
+            {
+                "code": "6",
+                "label": "6"
+            },
+            {
+                "code": "7",
+                "label": "7"
+            },
+            {
+                "code": "8",
+                "label": "8"
+            },
+            {
+                "code": "9",
+                "label": "9"
+            },
+            {
+                "code": "10",
+                "label": "10 - extremely concerned"
+            }
+        ]
+    },
+    {
+        "field_label": "[269] How well do you feel you understand your psoriasis?",
+        "field_type": "radio",
+        "form_name": "followup",
+        "field_name": "fupso_bipq7",
+        "required_field": "y",
+        "custom_alignment": "LV",
+        "select_choices_or_calculations": [
+            {
+                "code": "0",
+                "label": "0 - don't understand at all"
+            },
+            {
+                "code": "1",
+                "label": "1"
+            },
+            {
+                "code": "2",
+                "label": "2"
+            },
+            {
+                "code": "3",
+                "label": "3"
+            },
+            {
+                "code": "4",
+                "label": "4"
+            },
+            {
+                "code": "5",
+                "label": "5"
+            },
+            {
+                "code": "6",
+                "label": "6"
+            },
+            {
+                "code": "7",
+                "label": "7"
+            },
+            {
+                "code": "8",
+                "label": "8"
+            },
+            {
+                "code": "9",
+                "label": "9"
+            },
+            {
+                "code": "10",
+                "label": "10 - understand very clearly"
+            }
+        ]
+    },
+    {
+        "field_label": "[270] How much does your psoriasis affect you emotionally? (e.g., does it make you angry, scared, upset or depressed?)",
+        "field_type": "radio",
+        "form_name": "followup",
+        "field_name": "fupso_bipq8",
+        "required_field": "y",
+        "custom_alignment": "LV",
+        "select_choices_or_calculations": [
+            {
+                "code": "0",
+                "label": "0 - not at all affected emotionally"
+            },
+            {
+                "code": "1",
+                "label": "1"
+            },
+            {
+                "code": "2",
+                "label": "2"
+            },
+            {
+                "code": "3",
+                "label": "3"
+            },
+            {
+                "code": "4",
+                "label": "4"
+            },
+            {
+                "code": "5",
+                "label": "5"
+            },
+            {
+                "code": "6",
+                "label": "6"
+            },
+            {
+                "code": "7",
+                "label": "7"
+            },
+            {
+                "code": "8",
+                "label": "8"
+            },
+            {
+                "code": "9",
+                "label": "9"
+            },
+            {
+                "code": "10",
+                "label": "10 - extremely affected emotionally"
+            }
+        ]
+    },
+    {
+        "field_label": "[271] Select the number that best describes your worst level of itching due to psoriasis in the <b>PAST 24 HOURS</b>.",
+        "field_type": "radio",
+        "form_name": "followup",
+        "field_name": "fupso_itch",
+        "required_field": "y",
+        "custom_alignment": "LV",
+        "select_choices_or_calculations": [
+            {
+                "code": "0",
+                "label": "0 - no itching"
+            },
+            {
+                "code": "1",
+                "label": "1"
+            },
+            {
+                "code": "2",
+                "label": "2"
+            },
+            {
+                "code": "3",
+                "label": "3"
+            },
+            {
+                "code": "4",
+                "label": "4"
+            },
+            {
+                "code": "5",
+                "label": "5"
+            },
+            {
+                "code": "6",
+                "label": "6"
+            },
+            {
+                "code": "7",
+                "label": "7"
+            },
+            {
+                "code": "8",
+                "label": "8"
+            },
+            {
+                "code": "9",
+                "label": "9"
+            },
+            {
+                "code": "10",
+                "label": "10 - worst itch imaginable"
+            }
+        ]
+    },
+    {
+        "field_label": "[272] Under each heading, please tick the ONE box that best describes your health <u>TODAY</u>",
+        "field_type": "descriptive",
+        "form_name": "followup",
+        "field_name": "fupso_eq5d_text",
+        "required_field": "false",
+        "section_header": "Health-related quality of life"
+    },
+    {
+        "field_label": "[273] <b>Mobility</b>",
+        "field_type": "radio",
+        "form_name": "followup",
+        "field_name": "fupso_eq5d_mob",
+        "required_field": "y",
+        "select_choices_or_calculations": [
+            {
+                "code": "1",
+                "label": "I have no problems walking about"
+            },
+            {
+                "code": "2",
+                "label": "I have slight problems in walking about"
+            },
+            {
+                "code": "3",
+                "label": "I have moderate problems in walking about"
+            },
+            {
+                "code": "4",
+                "label": "I have severe problems in walking about"
+            },
+            {
+                "code": "5",
+                "label": "I am unable to walk about"
+            }
+        ]
+    },
+    {
+        "field_label": "[274] <b>Self-care</b>",
+        "field_type": "radio",
+        "form_name": "followup",
+        "field_name": "fupso_eq5d_scare",
+        "required_field": "y",
+        "select_choices_or_calculations": [
+            {
+                "code": "1",
+                "label": "I have no problems washing or dressing myself"
+            },
+            {
+                "code": "2",
+                "label": "I have slight problems washing or dressing myself"
+            },
+            {
+                "code": "3",
+                "label": "I have moderate problems washing or dressing myself"
+            },
+            {
+                "code": "4",
+                "label": "I have severe problems washing or dressing myself"
+            },
+            {
+                "code": "5",
+                "label": "I am unable to wash or dress myself"
+            }
+        ]
+    },
+    {
+        "field_label": "[275] <b>Usual activities (e.g., work, study, housework, family or leisure activities)</b>",
+        "field_type": "radio",
+        "form_name": "followup",
+        "field_name": "fupso_eq5d_uactive",
+        "required_field": "y",
+        "select_choices_or_calculations": [
+            {
+                "code": "1",
+                "label": "I have no problems doing my usual activities"
+            },
+            {
+                "code": "2",
+                "label": "I have slight problems doing my usual activities"
+            },
+            {
+                "code": "3",
+                "label": "I have moderate problems doing my usual activities"
+            },
+            {
+                "code": "4",
+                "label": "I have severe problems doing my usual activities"
+            },
+            {
+                "code": "5",
+                "label": "I am unable to do my usual activities"
+            }
+        ]
+    },
+    {
+        "field_label": "[276] Pain/discomfort",
+        "field_type": "radio",
+        "form_name": "followup",
+        "field_name": "fupso_eq5d_pain",
+        "required_field": "y",
+        "select_choices_or_calculations": [
+            {
+                "code": "1",
+                "label": "I have no pain or discomfort"
+            },
+            {
+                "code": "2",
+                "label": "I have slight pain or discomfort"
+            },
+            {
+                "code": "3",
+                "label": "I have moderate pain or discomfort"
+            },
+            {
+                "code": "4",
+                "label": "I have severe pain or discomfort"
+            },
+            {
+                "code": "5",
+                "label": "I have extreme pain or discomfort"
+            }
+        ]
+    },
+    {
+        "field_label": "[277] Anxiety/Depression",
+        "field_type": "radio",
+        "form_name": "followup",
+        "field_name": "fupso_eq5d_anx",
+        "required_field": "y",
+        "select_choices_or_calculations": [
+            {
+                "code": "1",
+                "label": "I am not anxious or depressed"
+            },
+            {
+                "code": "2",
+                "label": "I am slightly anxious or depressed"
+            },
+            {
+                "code": "3",
+                "label": "I am moderately anxious or depressed"
+            },
+            {
+                "code": "4",
+                "label": "I am severely anxious or depressed"
+            },
+            {
+                "code": "5",
+                "label": "I am extremely anxious or depressed"
+            }
+        ]
+    },
+    {
+        "field_label": "[278] We would like to know how good or bad your health is <u>TODAY</u>. The scale is numbered from 0 to 100. 100 means the best health you can imagine. 0 means the worst health you can imagine. Select on the scale to indicate how your health is today.",
+        "field_type": "slider",
+        "form_name": "followup",
+        "field_name": "fupso_eq5d_vas",
+        "required_field": "y",
+        "text_validation_type_or_show_slider_number": "number",
+        "custom_alignment": "RH",
+        "select_choices_or_calculations": [
+            {
+                "code": "0",
+                "label": "Worst health"
+            },
+            {
+                "code": "100",
+                "label": "Best health"
+            }
+        ]
+    },
+    {
+        "field_label": "[38] Has a doctor ever told you that you have psoriatic arthritis?",
+        "field_type": "radio",
+        "field_name": "blpso_psoarth_doc",
+        "required_field": "y",
+        "section_header": "Psoriatic arthritis",
+        "select_choices_or_calculations": [
+            {
+                "code": "1",
+                "label": "Yes"
+            },
+            {
+                "code": "0",
+                "label": "No"
+            },
+            {
+                "code": "2",
+                "label": "Not sure"
+            }
+        ]
+    },
+    {
+        "field_label": "[279] <p>1. Pain<br>Select the number that best describes the pain you felt due to your psoriatic arthritis during last week:</p>",
+        "field_type": "radio",
+        "form_name": "followup",
+        "field_name": "fupso_psaid1",
+        "required_field": "y",
+        "custom_alignment": "LH",
+        "section_header": "Psoriatic arthritis",
+        "select_choices_or_calculations": [
+            {
+                "code": "0",
+                "label": "0 - None"
+            },
+            {
+                "code": "1",
+                "label": "1"
+            },
+            {
+                "code": "2",
+                "label": "2"
+            },
+            {
+                "code": "3",
+                "label": "3"
+            },
+            {
+                "code": "4",
+                "label": "4"
+            },
+            {
+                "code": "5",
+                "label": "5"
+            },
+            {
+                "code": "6",
+                "label": "6"
+            },
+            {
+                "code": "7",
+                "label": "7"
+            },
+            {
+                "code": "8",
+                "label": "8"
+            },
+            {
+                "code": "9",
+                "label": "9"
+            },
+            {
+                "code": "10",
+                "label": "10 - Extreme"
+            }
+        ],
+        "branching_logic": "[blpso_psoarth_doc]='1'"
+    },
+    {
+        "field_label": "[281] <p>2. Fatigue<br>Select the number that best describes the overall level of fatigue due to your psoriatic arthritis you have experienced during the last week:</p>",
+        "field_type": "radio",
+        "form_name": "followup",
+        "field_name": "fupso_psaid2",
+        "required_field": "y",
+        "custom_alignment": "LH",
+        "select_choices_or_calculations": [
+            {
+                "code": "0",
+                "label": "0 - No fatigue"
+            },
+            {
+                "code": "1",
+                "label": "1"
+            },
+            {
+                "code": "2",
+                "label": "2"
+            },
+            {
+                "code": "3",
+                "label": "3"
+            },
+            {
+                "code": "4",
+                "label": "4"
+            },
+            {
+                "code": "5",
+                "label": "5"
+            },
+            {
+                "code": "6",
+                "label": "6"
+            },
+            {
+                "code": "7",
+                "label": "7"
+            },
+            {
+                "code": "8",
+                "label": "8"
+            },
+            {
+                "code": "9",
+                "label": "9"
+            },
+            {
+                "code": "10",
+                "label": "10 - Totally exhausted"
+            }
+        ],
+        "branching_logic": "[blpso_psoarth_doc]='1'"
+    },
+    {
+        "field_label": "[283] <p>3. Skin problems<br>Select the number that best describes the skin problems including itching you felt due to your psoriatic arthritis during last week:</p>",
+        "field_type": "radio",
+        "form_name": "followup",
+        "field_name": "fupso_psaid3",
+        "required_field": "y",
+        "custom_alignment": "LH",
+        "select_choices_or_calculations": [
+            {
+                "code": "0",
+                "label": "0 - None"
+            },
+            {
+                "code": "1",
+                "label": "1"
+            },
+            {
+                "code": "2",
+                "label": "2"
+            },
+            {
+                "code": "3",
+                "label": "3"
+            },
+            {
+                "code": "4",
+                "label": "4"
+            },
+            {
+                "code": "5",
+                "label": "5"
+            },
+            {
+                "code": "6",
+                "label": "6"
+            },
+            {
+                "code": "7",
+                "label": "7"
+            },
+            {
+                "code": "8",
+                "label": "8"
+            },
+            {
+                "code": "9",
+                "label": "9"
+            },
+            {
+                "code": "10",
+                "label": "10 - Extreme"
+            }
+        ],
+        "branching_logic": "[blpso_psoarth_doc]='1'"
+    },
+    {
+        "field_label": "[285] <p>4. Work and/or leisure activities<br>Select the number that best describes the difficulties you had to participate fully in work and/or leisure activities due to your psoriatic arthritis during last week:</p>",
+        "field_type": "radio",
+        "form_name": "followup",
+        "field_name": "fupso_psaid4",
+        "required_field": "y",
+        "custom_alignment": "LH",
+        "select_choices_or_calculations": [
+            {
+                "code": "0",
+                "label": "0 - None"
+            },
+            {
+                "code": "1",
+                "label": "1"
+            },
+            {
+                "code": "2",
+                "label": "2"
+            },
+            {
+                "code": "3",
+                "label": "3"
+            },
+            {
+                "code": "4",
+                "label": "4"
+            },
+            {
+                "code": "5",
+                "label": "5"
+            },
+            {
+                "code": "6",
+                "label": "6"
+            },
+            {
+                "code": "7",
+                "label": "7"
+            },
+            {
+                "code": "8",
+                "label": "8"
+            },
+            {
+                "code": "9",
+                "label": "9"
+            },
+            {
+                "code": "10",
+                "label": "10 - Extreme"
+            }
+        ],
+        "branching_logic": "[blpso_psoarth_doc]='1'"
+    },
+    {
+        "field_label": "[287] <p>5. Functional capacity<br>Select the number that best describes the difficulty you had in doing daily physical activities due to your psoriatic arthritis during the last week:</p>",
+        "field_type": "radio",
+        "form_name": "followup",
+        "field_name": "fupso_psaid5",
+        "required_field": "y",
+        "custom_alignment": "LH",
+        "select_choices_or_calculations": [
+            {
+                "code": "0",
+                "label": "0 - No difficulty"
+            },
+            {
+                "code": "1",
+                "label": "1"
+            },
+            {
+                "code": "2",
+                "label": "2"
+            },
+            {
+                "code": "3",
+                "label": "3"
+            },
+            {
+                "code": "4",
+                "label": "4"
+            },
+            {
+                "code": "5",
+                "label": "5"
+            },
+            {
+                "code": "6",
+                "label": "6"
+            },
+            {
+                "code": "7",
+                "label": "7"
+            },
+            {
+                "code": "8",
+                "label": "8"
+            },
+            {
+                "code": "9",
+                "label": "9"
+            },
+            {
+                "code": "10",
+                "label": "10 - Extreme difficulty"
+            }
+        ],
+        "branching_logic": "[blpso_psoarth_doc]='1'"
+    },
+    {
+        "field_label": "[289] <p>6. Discomfort<br>Select the number that best describes the feeling of discomfort and annoyance with everyday tasks due to your psoriatic arthritis during the last week:</p>",
+        "field_type": "radio",
+        "form_name": "followup",
+        "field_name": "fupso_psaid6",
+        "required_field": "y",
+        "custom_alignment": "LH",
+        "select_choices_or_calculations": [
+            {
+                "code": "0",
+                "label": "0 - None"
+            },
+            {
+                "code": "1",
+                "label": "1"
+            },
+            {
+                "code": "2",
+                "label": "2"
+            },
+            {
+                "code": "3",
+                "label": "3"
+            },
+            {
+                "code": "4",
+                "label": "4"
+            },
+            {
+                "code": "5",
+                "label": "5"
+            },
+            {
+                "code": "6",
+                "label": "6"
+            },
+            {
+                "code": "7",
+                "label": "7"
+            },
+            {
+                "code": "8",
+                "label": "8"
+            },
+            {
+                "code": "9",
+                "label": "9"
+            },
+            {
+                "code": "10",
+                "label": "10 - Extreme"
+            }
+        ],
+        "branching_logic": "[blpso_psoarth_doc]='1'"
+    },
+    {
+        "field_label": "[291] <p>7. Sleep disturbance<br>Select the number that best describes the sleep difficulties (i.e., resting at night) you felt due to your psoriatic arthritis during last week:</p>",
+        "field_type": "radio",
+        "form_name": "followup",
+        "field_name": "fupso_psaid7",
+        "required_field": "y",
+        "custom_alignment": "LH",
+        "select_choices_or_calculations": [
+            {
+                "code": "0",
+                "label": "0 - No difficulty"
+            },
+            {
+                "code": "1",
+                "label": "1"
+            },
+            {
+                "code": "2",
+                "label": "2"
+            },
+            {
+                "code": "3",
+                "label": "3"
+            },
+            {
+                "code": "4",
+                "label": "4"
+            },
+            {
+                "code": "5",
+                "label": "5"
+            },
+            {
+                "code": "6",
+                "label": "6"
+            },
+            {
+                "code": "7",
+                "label": "7"
+            },
+            {
+                "code": "8",
+                "label": "8"
+            },
+            {
+                "code": "9",
+                "label": "9"
+            },
+            {
+                "code": "10",
+                "label": "10 - Extreme difficulty"
+            }
+        ],
+        "branching_logic": "[blpso_psoarth_doc]='1'"
+    },
+    {
+        "field_label": "[293] <p>8. Coping<br>Considering your psoriatic arthritis overall, how well did you cope (manage, deal, make do) with your psoriatic arthritis during the last week?</p>",
+        "field_type": "radio",
+        "form_name": "followup",
+        "field_name": "fupso_psaid8",
+        "required_field": "y",
+        "custom_alignment": "LH",
+        "select_choices_or_calculations": [
+            {
+                "code": "0",
+                "label": "0 - Very well"
+            },
+            {
+                "code": "1",
+                "label": "1"
+            },
+            {
+                "code": "2",
+                "label": "2"
+            },
+            {
+                "code": "3",
+                "label": "3"
+            },
+            {
+                "code": "4",
+                "label": "4"
+            },
+            {
+                "code": "5",
+                "label": "5"
+            },
+            {
+                "code": "6",
+                "label": "6"
+            },
+            {
+                "code": "7",
+                "label": "7"
+            },
+            {
+                "code": "8",
+                "label": "8"
+            },
+            {
+                "code": "9",
+                "label": "9"
+            },
+            {
+                "code": "10",
+                "label": "10 - Very poorly"
+            }
+        ],
+        "branching_logic": "[blpso_psoarth_doc]='1'"
+    },
+    {
+        "field_label": "[295] <p>9. Anxiety, fear and uncertainty<br>Select the number that best describes the level of anxiety, fear and uncertainty (for example about the future, treatments, fears of loneliness) due to your psoriatic arthritis you have experienced during the last week:</p>",
+        "field_type": "radio",
+        "form_name": "followup",
+        "field_name": "fupso_psaid9",
+        "required_field": "y",
+        "custom_alignment": "LH",
+        "select_choices_or_calculations": [
+            {
+                "code": "0",
+                "label": "0 - None"
+            },
+            {
+                "code": "1",
+                "label": "1"
+            },
+            {
+                "code": "2",
+                "label": "2"
+            },
+            {
+                "code": "3",
+                "label": "3"
+            },
+            {
+                "code": "4",
+                "label": "4"
+            },
+            {
+                "code": "5",
+                "label": "5"
+            },
+            {
+                "code": "6",
+                "label": "6"
+            },
+            {
+                "code": "7",
+                "label": "7"
+            },
+            {
+                "code": "8",
+                "label": "8"
+            },
+            {
+                "code": "9",
+                "label": "9"
+            },
+            {
+                "code": "10",
+                "label": "10 - Extreme"
+            }
+        ],
+        "branching_logic": "[blpso_psoarth_doc]='1'"
+    },
+    {
+        "field_label": "[297] Psoriasis epidemiology screening tool",
+        "field_type": "checkbox",
+        "form_name": "followup",
+        "field_name": "fupest",
+        "field_annotation": " @HIDDEN",
+        "required_field": "false",
+        "select_choices_or_calculations": [
+            {
+                "code": "1",
+                "label": "Neck"
+            },
+            {
+                "code": "2",
+                "label": "Upper back"
+            },
+            {
+                "code": "3",
+                "label": "Lower back"
+            },
+            {
+                "code": "4",
+                "label": "Left shoulder"
+            },
+            {
+                "code": "5",
+                "label": "Left elbow"
+            },
+            {
+                "code": "6",
+                "label": "Left wrist"
+            },
+            {
+                "code": "7",
+                "label": "Left hand/fingers"
+            },
+            {
+                "code": "8",
+                "label": "Left thumb"
+            },
+            {
+                "code": "9",
+                "label": "Left foot/toes"
+            },
+            {
+                "code": "10",
+                "label": "Left ankle"
+            },
+            {
+                "code": "11",
+                "label": "Left knee"
+            },
+            {
+                "code": "12",
+                "label": "Left hip"
+            },
+            {
+                "code": "13",
+                "label": "Right shoulder"
+            },
+            {
+                "code": "14",
+                "label": "Right elbow"
+            },
+            {
+                "code": "15",
+                "label": "Right wrist"
+            },
+            {
+                "code": "16",
+                "label": "Right hand/fingers"
+            },
+            {
+                "code": "17",
+                "label": "Right thumb"
+            },
+            {
+                "code": "18",
+                "label": "Right hip"
+            },
+            {
+                "code": "19",
+                "label": "Right knee"
+            },
+            {
+                "code": "20",
+                "label": "Right ankle"
+            },
+            {
+                "code": "21",
+                "label": "Right foot/toes"
+            }
+        ],
+        "branching_logic": "[blpso_psoarth_doc]='0' or [blpso_psoarth_doc]='2'"
+    },
+    {
+        "field_label": "[299] Have you ever had a swollen joint (or joints)?",
+        "field_type": "yesno",
+        "form_name": "followup",
+        "field_name": "fupest_joint",
+        "required_field": "y",
+        "custom_alignment": "RH",
+        "branching_logic": "[blpso_psoarth_doc]='0' or [blpso_psoarth_doc]='2'"
+    },
+    {
+        "field_label": "[300] Has a doctor ever told you that you have arthritis?",
+        "field_type": "yesno",
+        "form_name": "followup",
+        "field_name": "fupest_arth",
+        "required_field": "y",
+        "custom_alignment": "RH",
+        "branching_logic": "[blpso_psoarth_doc]='0' or [blpso_psoarth_doc]='2'"
+    },
+    {
+        "field_label": "[301] Do your fingernails or toenails have holes or pits?",
+        "field_type": "yesno",
+        "form_name": "followup",
+        "field_name": "fupest_nailhole",
+        "required_field": "y",
+        "custom_alignment": "RH",
+        "branching_logic": "[blpso_psoarth_doc]='0' or [blpso_psoarth_doc]='2'"
+    },
+    {
+        "field_label": "[302] Have you had pain in your heel?",
+        "field_type": "yesno",
+        "form_name": "followup",
+        "field_name": "fupest_heelpain",
+        "required_field": "y",
+        "custom_alignment": "RH",
+        "branching_logic": "[blpso_psoarth_doc]='0' or [blpso_psoarth_doc]='2'"
+    },
+    {
+        "field_label": "[303] Have you had a finger or toe that was completely swollen and painful for no apparent reason?",
+        "field_type": "yesno",
+        "form_name": "followup",
+        "field_name": "fupest_swollen",
+        "required_field": "y",
+        "custom_alignment": "RH",
+        "branching_logic": "[blpso_psoarth_doc]='0' or [blpso_psoarth_doc]='2'"
+    },
+    {
+        "field_label": "[304] Overall, how satisfied are you with your life nowadays?",
+        "field_type": "radio",
+        "form_name": "followup",
+        "field_name": "fuwbg_satis",
+        "required_field": "y",
+        "custom_alignment": "LV",
+        "section_header": "General health\n\n<u>Wellbeing</u>\n",
+        "select_choices_or_calculations": [
+            {
+                "code": "10",
+                "label": "10 - completely"
+            },
+            {
+                "code": "9",
+                "label": "9"
+            },
+            {
+                "code": "8",
+                "label": "8"
+            },
+            {
+                "code": "7",
+                "label": "7"
+            },
+            {
+                "code": "6",
+                "label": "6"
+            },
+            {
+                "code": "5",
+                "label": "5"
+            },
+            {
+                "code": "4",
+                "label": "4"
+            },
+            {
+                "code": "3",
+                "label": "3"
+            },
+            {
+                "code": "2",
+                "label": "2"
+            },
+            {
+                "code": "1",
+                "label": "1"
+            },
+            {
+                "code": "0",
+                "label": "0 - not at all"
+            }
+        ],
+        "report": {
+            "longitudinal": {
+                "name": "x_well_being",
+                "title": "Overall, how satisfied are you with your life nowadays?",
+                "type": "line_chart",
+                "value": "value",
+                "yaxis": {
+                    "min": 0,
+                    "max": 10,
+                    "step": 2,
+                    "fn": {
+                        "0": "Not at all - 0",
+                        "2": "2",
+                        "4": "4",
+                        "6": "6",
+                        "8": "8",
+                        "10": "Completely - 10"
+                    }
+                }
+            }
+        }
+    },
+    {
+        "field_label": "[305] Little interest or pleasure in doing things",
+        "field_type": "radio",
+        "form_name": "followup",
+        "field_name": "fuwbg_lt2w_little",
+        "required_field": "y",
+        "matrix_group_name": "fuwbg_lt2w",
+        "section_header": "<b>OVER THE LAST 2 WEEKS</b>, how often have you been bothered by the following problems?",
+        "select_choices_or_calculations": [
+            {
+                "code": "1",
+                "label": "Not at all"
+            },
+            {
+                "code": "2",
+                "label": "Several days"
+            },
+            {
+                "code": "3",
+                "label": "More than half the days"
+            },
+            {
+                "code": "4",
+                "label": "Nearly everyday"
+            }
+        ],
+        "report": {
+            "longitudinal": {
+                "name": "x_problem",
+                "title": "Little interest/pleasure in doing things",
+                "type": "line_chart",
+                "value": "value",
+                "group": {
+                    "name": "a",
+                    "title": "How often have you been bothered by.....?"
+                },
+                "height": "300",
+                "yaxis": {
+                    "min": 1,
+                    "max": 4,
+                    "step": 1,
+                    "fn": {
+                        "1": "Not at all",
+                        "2": "Several days",
+                        "3": "More than one half the days",
+                        "4": "Nearly everyday"
+                    }
+                }
+            }
+        }
+    },
+    {
+        "field_label": "[306] Feeling down, depressed, or hopeless",
+        "field_type": "radio",
+        "form_name": "followup",
+        "field_name": "fuwbg_lt2w_down",
+        "required_field": "y",
+        "matrix_group_name": "fuwbg_lt2w",
+        "select_choices_or_calculations": [
+            {
+                "code": "1",
+                "label": "Not at all"
+            },
+            {
+                "code": "2",
+                "label": "Several days"
+            },
+            {
+                "code": "3",
+                "label": "More than half the days"
+            },
+            {
+                "code": "4",
+                "label": "Nearly everyday"
+            }
+        ],
+        "report": {
+            "longitudinal": {
+                "name": "x_problem",
+                "title": "Feeling down, depressed or hopeless",
+                "type": "line_chart",
+                "value": "value",
+                "group": {
+                    "name": "a",
+                    "title": "How often have you been bothered by.....?"
+                },
+                "height": "300",
+                "yaxis": {
+                    "min": 1,
+                    "max": 4,
+                    "step": 1,
+                    "fn": {
+                        "1": "Not at all",
+                        "2": "Several days",
+                        "3": "More than one half the days",
+                        "4": "Nearly everyday"
+                    }
+                }
+            }
+        },
+        "section_header": "<b>OVER THE LAST 2 WEEKS</b>, how often have you been bothered by the following problems?"
+    },
+    {
+        "field_label": "[307] Feeling nervous, anxious or on edge",
+        "field_type": "radio",
+        "form_name": "followup",
+        "field_name": "fuwbg_lt2w_nervous",
+        "required_field": "y",
+        "matrix_group_name": "fuwbg_lt2w",
+        "select_choices_or_calculations": [
+            {
+                "code": "1",
+                "label": "Not at all"
+            },
+            {
+                "code": "2",
+                "label": "Several days"
+            },
+            {
+                "code": "3",
+                "label": "More than half the days"
+            },
+            {
+                "code": "4",
+                "label": "Nearly everyday"
+            }
+        ],
+        "report": {
+            "longitudinal": {
+                "name": "x_problem",
+                "title": "Feeling nervous, anxious or on edge",
+                "type": "line_chart",
+                "value": "value",
+                "group": {
+                    "name": "a",
+                    "title": "How often have you been bothered by.....?"
+                },
+                "height": "300",
+                "yaxis": {
+                    "min": 1,
+                    "max": 4,
+                    "step": 1,
+                    "fn": {
+                        "1": "Not at all",
+                        "2": "Several days",
+                        "3": "More than one half the days",
+                        "4": "Nearly everyday"
+                    }
+                }
+            }
+        },
+        "section_header": "<b>OVER THE LAST 2 WEEKS</b>, how often have you been bothered by the following problems?"
+    },
+    {
+        "field_label": "[308] Not being able to stop or control worrying",
+        "field_type": "radio",
+        "form_name": "followup",
+        "field_name": "fuwbg_lt2w_worry",
+        "required_field": "y",
+        "matrix_group_name": "fuwbg_lt2w",
+        "select_choices_or_calculations": [
+            {
+                "code": "1",
+                "label": "Not at all"
+            },
+            {
+                "code": "2",
+                "label": "Several days"
+            },
+            {
+                "code": "3",
+                "label": "More than half the days"
+            },
+            {
+                "code": "4",
+                "label": "Nearly everyday"
+            }
+        ],
+        "report": {
+            "longitudinal": {
+                "name": "x_problem",
+                "title": "Not being able to stop or control worrying",
+                "type": "line_chart",
+                "value": "value",
+                "group": {
+                    "name": "a",
+                    "title": "How often have you been bothered by.....?"
+                },
+                "height": "300",
+                "yaxis": {
+                    "min": 1,
+                    "max": 4,
+                    "step": 1,
+                    "fn": {
+                        "1": "Not at all",
+                        "2": "Several days",
+                        "3": "More than one half the days",
+                        "4": "Nearly everyday"
+                    }
+                }
+            }
+        },
+        "section_header": "<b>OVER THE LAST 2 WEEKS</b>, how often have you been bothered by the following problems?"
+    },
+    {
+        "field_label": "[309] Over the past 3 months, have you had an infection?",
+        "field_type": "radio",
+        "form_name": "followup",
+        "field_name": "fuwb_pt3m_inf",
+        "required_field": "y",
+        "custom_alignment": "RH",
+        "select_choices_or_calculations": [
+            {
+                "code": "1",
+                "label": "Yes"
+            },
+            {
+                "code": "0",
+                "label": "No"
+            },
+            {
+                "code": "2",
+                "label": "Not sure"
+            }
+        ]
+    },
+    {
+        "field_label": "[310] Over the past 3 months, how many infections have you had?",
+        "field_type": "text",
+        "form_name": "followup",
+        "field_name": "fuwb_pt3m_infno",
+        "field_note": "maximum ten infections",
+        "required_field": "y",
+        "text_validation_type_or_show_slider_number": "integer",
+        "text_validation_max": "10",
+        "text_validation_min": "0",
+        "branching_logic": "[fuwb_pt3m_inf]='1'",
+        "validations": [
+            {
+                "name": "min",
+                "value": "0",
+                "error": "Enter a number greater than 0",
+                "hint": ""
+            },
+            {
+                "name": "max",
+                "value": "10",
+                "error": "Enter a number less than 10",
+                "hint": ""
+            }
+        ]
+    },
+    {
+        "field_label": "[311] <u>1<sup>st</sup> Infection</u>",
+        "field_type": "descriptive",
+        "form_name": "followup",
+        "field_name": "fuwb_pt3m_inftxt1",
+        "required_field": "false",
+        "branching_logic": "[fuwb_pt3m_infno]>0"
+    },
+    {
+        "field_label": "[312] What infection was it?",
+        "field_type": "radio",
+        "form_name": "followup",
+        "field_name": "fuwb_pt3m_infwht1",
+        "required_field": "y",
+        "select_choices_or_calculations": [
+            {
+                "code": "1",
+                "label": "Throat"
+            },
+            {
+                "code": "2",
+                "label": "Chest"
+            },
+            {
+                "code": "3",
+                "label": "Urine"
+            },
+            {
+                "code": "4",
+                "label": "COVID-19"
+            },
+            {
+                "code": "5",
+                "label": "Other (please specify)"
+            },
+            {
+                "code": "6",
+                "label": "Not sure"
+            }
+        ],
+        "branching_logic": "[fuwb_pt3m_infno]>0"
+    },
+    {
+        "field_label": "[313] What infection was it?<br>Please specify other.",
+        "field_type": "text",
+        "form_name": "followup",
+        "field_name": "fuwb_pt3m_infwhtoth1",
+        "required_field": "y",
+        "custom_alignment": "RH",
+        "branching_logic": "[fuwb_pt3m_infwht1]='5'"
+    },
+    {
+        "field_label": "[314] Did you go to hospital due to your infection?",
+        "field_type": "radio",
+        "form_name": "followup",
+        "field_name": "fuwb_pt3m_infhsp1",
+        "required_field": "y",
+        "select_choices_or_calculations": [
+            {
+                "code": "1",
+                "label": "Yes"
+            },
+            {
+                "code": "2",
+                "label": "Yes"
+            },
+            {
+                "code": "0",
+                "label": "No"
+            }
+        ],
+        "branching_logic": "[fuwb_pt3m_infno]>0"
+    },
+    {
+        "field_label": "[315] Were you given any medications to treat your infection?",
+        "field_type": "radio",
+        "form_name": "followup",
+        "field_name": "fuwb_pt3m_infmed1",
+        "required_field": "y",
+        "select_choices_or_calculations": [
+            {
+                "code": "1",
+                "label": "Yes"
+            },
+            {
+                "code": "2",
+                "label": "Yes"
+            },
+            {
+                "code": "0",
+                "label": "No"
+            }
+        ],
+        "branching_logic": "[fuwb_pt3m_infno]>0"
+    },
+    {
+        "field_label": "[316] What other medication were you given?",
+        "field_type": "text",
+        "form_name": "followup",
+        "field_name": "fuwb_pt3m_infmedoth1",
+        "required_field": "y",
+        "branching_logic": "[fuwb_pt3m_infmed1]='2'"
+    },
+    {
+        "field_label": "[317] Has your infection got better?",
+        "field_type": "radio",
+        "form_name": "followup",
+        "field_name": "fuwb_pt3m_infbet1",
+        "required_field": "y",
+        "select_choices_or_calculations": [
+            {
+                "code": "1",
+                "label": "Yes"
+            },
+            {
+                "code": "0",
+                "label": "No"
+            },
+            {
+                "code": "2",
+                "label": "Not sure"
+            }
+        ],
+        "branching_logic": "[fuwb_pt3m_infno]>0"
+    },
+    {
+        "field_label": "[318] Why has your infection not got better?",
+        "field_type": "radio",
+        "form_name": "followup",
+        "field_name": "fuwb_pt3m_infbetno1",
+        "required_field": "y",
+        "select_choices_or_calculations": [
+            {
+                "code": "1",
+                "label": "My infection is still active"
+            },
+            {
+                "code": "2",
+                "label": "I have other medical problems from the infection (please specify)"
+            },
+            {
+                "code": "3",
+                "label": "Other (please specify)"
+            }
+        ],
+        "branching_logic": "[fuwb_pt3m_infbet1]='0'"
+    },
+    {
+        "field_label": "[319] Please specify what other medical problems you have from the infection",
+        "field_type": "text",
+        "form_name": "followup",
+        "field_name": "fuwb_pt3m_infbetno_med1",
+        "required_field": "y",
+        "branching_logic": "[fuwb_pt3m_infbetno1]='2'"
+    },
+    {
+        "field_label": "[320] Please specify other reasons why the infection has not got better",
+        "field_type": "text",
+        "form_name": "followup",
+        "field_name": "fuwb_pt3m_infbetno_oth1",
+        "required_field": "y",
+        "branching_logic": "[fuwb_pt3m_infbetno1]='3'"
+    },
+    {
+        "field_label": "[321] <u>2<sup>nd</sup> Infection</u>",
+        "field_type": "descriptive",
+        "form_name": "followup",
+        "field_name": "fuwb_pt3m_inftxt2",
+        "required_field": "false",
+        "branching_logic": "[fuwb_pt3m_infno]>1"
+    },
+    {
+        "field_label": "[322] What infection was it?",
+        "field_type": "radio",
+        "form_name": "followup",
+        "field_name": "fuwb_pt3m_infwht2",
+        "required_field": "y",
+        "select_choices_or_calculations": [
+            {
+                "code": "1",
+                "label": "Throat"
+            },
+            {
+                "code": "2",
+                "label": "Chest"
+            },
+            {
+                "code": "3",
+                "label": "Urine"
+            },
+            {
+                "code": "4",
+                "label": "COVID-19"
+            },
+            {
+                "code": "5",
+                "label": "Other (please specify)"
+            },
+            {
+                "code": "6",
+                "label": "Not sure"
+            }
+        ],
+        "branching_logic": "[fuwb_pt3m_infno]>1"
+    },
+    {
+        "field_label": "[323] What infection was it?<br>Please specify other.",
+        "field_type": "text",
+        "form_name": "followup",
+        "field_name": "fuwb_pt3m_infwhtoth2",
+        "required_field": "y",
+        "custom_alignment": "RH",
+        "branching_logic": "[fuwb_pt3m_infwht2]='5'"
+    },
+    {
+        "field_label": "[324] Did you go to hospital due to your infection?",
+        "field_type": "radio",
+        "form_name": "followup",
+        "field_name": "fuwb_pt3m_infhsp2",
+        "required_field": "y",
+        "select_choices_or_calculations": [
+            {
+                "code": "1",
+                "label": "Yes"
+            },
+            {
+                "code": "2",
+                "label": "Yes"
+            },
+            {
+                "code": "0",
+                "label": "No"
+            }
+        ],
+        "branching_logic": "[fuwb_pt3m_infno]>1"
+    },
+    {
+        "field_label": "[325] Were you given any medications to treat your infection?",
+        "field_type": "radio",
+        "form_name": "followup",
+        "field_name": "fuwb_pt3m_infmed2",
+        "required_field": "y",
+        "select_choices_or_calculations": [
+            {
+                "code": "1",
+                "label": "Yes"
+            },
+            {
+                "code": "2",
+                "label": "Yes"
+            },
+            {
+                "code": "0",
+                "label": "No"
+            }
+        ],
+        "branching_logic": "[fuwb_pt3m_infno]>1"
+    },
+    {
+        "field_label": "[326] What other medication were you given?",
+        "field_type": "text",
+        "form_name": "followup",
+        "field_name": "fuwb_pt3m_infmedoth2",
+        "required_field": "y",
+        "branching_logic": "[fuwb_pt3m_infmed2]='2'"
+    },
+    {
+        "field_label": "[327] Has your infection got better?",
+        "field_type": "radio",
+        "form_name": "followup",
+        "field_name": "fuwb_pt3m_infbet2",
+        "required_field": "y",
+        "select_choices_or_calculations": [
+            {
+                "code": "1",
+                "label": "Yes"
+            },
+            {
+                "code": "0",
+                "label": "No"
+            },
+            {
+                "code": "2",
+                "label": "Not sure"
+            }
+        ],
+        "branching_logic": "[fuwb_pt3m_infno]>1"
+    },
+    {
+        "field_label": "[328] Why has your infection not got better?",
+        "field_type": "radio",
+        "form_name": "followup",
+        "field_name": "fuwb_pt3m_infbetno2",
+        "required_field": "y",
+        "select_choices_or_calculations": [
+            {
+                "code": "1",
+                "label": "My infection is still active"
+            },
+            {
+                "code": "2",
+                "label": "I have other medical problems from the infection (please specify)"
+            },
+            {
+                "code": "3",
+                "label": "Other (please specify)"
+            }
+        ],
+        "branching_logic": "[fuwb_pt3m_infbet2]='0'"
+    },
+    {
+        "field_label": "[329] Please specify what other medical problems you have from the infection",
+        "field_type": "text",
+        "form_name": "followup",
+        "field_name": "fuwb_pt3m_infbetno_med2",
+        "required_field": "y",
+        "branching_logic": "[fuwb_pt3m_infbetno2]='2'"
+    },
+    {
+        "field_label": "[330] Please specify other reasons why the infection has not got better",
+        "field_type": "text",
+        "form_name": "followup",
+        "field_name": "fuwb_pt3m_infbetno_oth2",
+        "required_field": "y",
+        "branching_logic": "[fuwb_pt3m_infbetno2]='3'"
+    },
+    {
+        "field_label": "[331] <u>3<sup>rd</sup> Infection</u>",
+        "field_type": "descriptive",
+        "form_name": "followup",
+        "field_name": "fuwb_pt3m_inftxt3",
+        "required_field": "false",
+        "branching_logic": "[fuwb_pt3m_infno]>2"
+    },
+    {
+        "field_label": "[332] What infection was it?",
+        "field_type": "radio",
+        "form_name": "followup",
+        "field_name": "fuwb_pt3m_infwht3",
+        "required_field": "y",
+        "select_choices_or_calculations": [
+            {
+                "code": "1",
+                "label": "Throat"
+            },
+            {
+                "code": "2",
+                "label": "Chest"
+            },
+            {
+                "code": "3",
+                "label": "Urine"
+            },
+            {
+                "code": "4",
+                "label": "COVID-19"
+            },
+            {
+                "code": "5",
+                "label": "Other (please specify)"
+            },
+            {
+                "code": "6",
+                "label": "Not sure"
+            }
+        ],
+        "branching_logic": "[fuwb_pt3m_infno]>2"
+    },
+    {
+        "field_label": "[333] What infection was it?<br>Please specify other.",
+        "field_type": "text",
+        "form_name": "followup",
+        "field_name": "fuwb_pt3m_infwhtoth3",
+        "required_field": "y",
+        "custom_alignment": "RH",
+        "branching_logic": "[fuwb_pt3m_infwht3]='5'"
+    },
+    {
+        "field_label": "[334] Did you go to hospital due to your infection?",
+        "field_type": "radio",
+        "form_name": "followup",
+        "field_name": "fuwb_pt3m_infhsp3",
+        "required_field": "y",
+        "select_choices_or_calculations": [
+            {
+                "code": "1",
+                "label": "Yes"
+            },
+            {
+                "code": "2",
+                "label": "Yes"
+            },
+            {
+                "code": "0",
+                "label": "No"
+            }
+        ],
+        "branching_logic": "[fuwb_pt3m_infno]>2"
+    },
+    {
+        "field_label": "[335] Were you given any medications to treat your infection?",
+        "field_type": "radio",
+        "form_name": "followup",
+        "field_name": "fuwb_pt3m_infmed3",
+        "required_field": "y",
+        "select_choices_or_calculations": [
+            {
+                "code": "1",
+                "label": "Yes"
+            },
+            {
+                "code": "2",
+                "label": "Yes"
+            },
+            {
+                "code": "0",
+                "label": "No"
+            }
+        ],
+        "branching_logic": "[fuwb_pt3m_infno]>2"
+    },
+    {
+        "field_label": "[336] What other medication were you given?",
+        "field_type": "text",
+        "form_name": "followup",
+        "field_name": "fuwb_pt3m_infmedoth3",
+        "required_field": "y",
+        "branching_logic": "[fuwb_pt3m_infmed3]='2'"
+    },
+    {
+        "field_label": "[337] Has your infection got better?",
+        "field_type": "radio",
+        "form_name": "followup",
+        "field_name": "fuwb_pt3m_infbet3",
+        "required_field": "y",
+        "select_choices_or_calculations": [
+            {
+                "code": "1",
+                "label": "Yes"
+            },
+            {
+                "code": "0",
+                "label": "No"
+            },
+            {
+                "code": "2",
+                "label": "Not sure"
+            }
+        ],
+        "branching_logic": "[fuwb_pt3m_infno]>2"
+    },
+    {
+        "field_label": "[338] Why has your infection not got better?",
+        "field_type": "radio",
+        "form_name": "followup",
+        "field_name": "fuwb_pt3m_infbetno3",
+        "required_field": "y",
+        "select_choices_or_calculations": [
+            {
+                "code": "1",
+                "label": "My infection is still active"
+            },
+            {
+                "code": "2",
+                "label": "I have other medical problems from the infection (please specify)"
+            },
+            {
+                "code": "3",
+                "label": "Other (please specify)"
+            }
+        ],
+        "branching_logic": "[fuwb_pt3m_infbet3]='0'"
+    },
+    {
+        "field_label": "[339] Please specify what other medical problems you have from the infection",
+        "field_type": "text",
+        "form_name": "followup",
+        "field_name": "fuwb_pt3m_infbetno_med3",
+        "required_field": "y",
+        "branching_logic": "[fuwb_pt3m_infbetno3]='2'"
+    },
+    {
+        "field_label": "[340] Please specify other reasons why the infection has not got better",
+        "field_type": "text",
+        "form_name": "followup",
+        "field_name": "fuwb_pt3m_infbetno_oth3",
+        "required_field": "y",
+        "branching_logic": "[fuwb_pt3m_infbetno3]='3'"
+    },
+    {
+        "field_label": "[341] <u>4<sup>th</sup> Infection</u>",
+        "field_type": "descriptive",
+        "form_name": "followup",
+        "field_name": "fuwb_pt3m_inftxt4",
+        "required_field": "false",
+        "branching_logic": "[fuwb_pt3m_infno]>3"
+    },
+    {
+        "field_label": "[342] What infection was it?",
+        "field_type": "radio",
+        "form_name": "followup",
+        "field_name": "fuwb_pt3m_infwht4",
+        "required_field": "y",
+        "select_choices_or_calculations": [
+            {
+                "code": "1",
+                "label": "Throat"
+            },
+            {
+                "code": "2",
+                "label": "Chest"
+            },
+            {
+                "code": "3",
+                "label": "Urine"
+            },
+            {
+                "code": "4",
+                "label": "COVID-19"
+            },
+            {
+                "code": "5",
+                "label": "Other (please specify)"
+            },
+            {
+                "code": "6",
+                "label": "Not sure"
+            }
+        ],
+        "branching_logic": "[fuwb_pt3m_infno]>3"
+    },
+    {
+        "field_label": "[343] What infection was it?<br>Please specify other.",
+        "field_type": "text",
+        "form_name": "followup",
+        "field_name": "fuwb_pt3m_infwhtoth4",
+        "required_field": "y",
+        "custom_alignment": "RH",
+        "branching_logic": "[fuwb_pt3m_infwht4]='5'"
+    },
+    {
+        "field_label": "[344] Did you go to hospital due to your infection?",
+        "field_type": "radio",
+        "form_name": "followup",
+        "field_name": "fuwb_pt3m_infhsp4",
+        "required_field": "y",
+        "select_choices_or_calculations": [
+            {
+                "code": "1",
+                "label": "Yes"
+            },
+            {
+                "code": "2",
+                "label": "Yes"
+            },
+            {
+                "code": "0",
+                "label": "No"
+            }
+        ],
+        "branching_logic": "[fuwb_pt3m_infno]>3"
+    },
+    {
+        "field_label": "[345] Were you given any medications to treat your infection?",
+        "field_type": "radio",
+        "form_name": "followup",
+        "field_name": "fuwb_pt3m_infmed4",
+        "required_field": "y",
+        "select_choices_or_calculations": [
+            {
+                "code": "1",
+                "label": "Yes"
+            },
+            {
+                "code": "2",
+                "label": "Yes"
+            },
+            {
+                "code": "0",
+                "label": "No"
+            }
+        ],
+        "branching_logic": "[fuwb_pt3m_infno]>3"
+    },
+    {
+        "field_label": "[346] What other medication were you given?",
+        "field_type": "text",
+        "form_name": "followup",
+        "field_name": "fuwb_pt3m_infmedoth4",
+        "required_field": "y",
+        "branching_logic": "[fuwb_pt3m_infmed4]='2'"
+    },
+    {
+        "field_label": "[347] Has your infection got better?",
+        "field_type": "radio",
+        "form_name": "followup",
+        "field_name": "fuwb_pt3m_infbet4",
+        "required_field": "y",
+        "select_choices_or_calculations": [
+            {
+                "code": "1",
+                "label": "Yes"
+            },
+            {
+                "code": "0",
+                "label": "No"
+            },
+            {
+                "code": "2",
+                "label": "Not sure"
+            }
+        ],
+        "branching_logic": "[fuwb_pt3m_infno]>3"
+    },
+    {
+        "field_label": "[348] Why has your infection not got better?",
+        "field_type": "radio",
+        "form_name": "followup",
+        "field_name": "fuwb_pt3m_infbetno4",
+        "required_field": "y",
+        "select_choices_or_calculations": [
+            {
+                "code": "1",
+                "label": "My infection is still active"
+            },
+            {
+                "code": "2",
+                "label": "I have other medical problems from the infection (please specify)"
+            },
+            {
+                "code": "3",
+                "label": "Other (please specify)"
+            }
+        ],
+        "branching_logic": "[fuwb_pt3m_infbet4]='0'"
+    },
+    {
+        "field_label": "[349] Please specify what other medical problems you have from the infection",
+        "field_type": "text",
+        "form_name": "followup",
+        "field_name": "fuwb_pt3m_infbetno_med4",
+        "required_field": "y",
+        "branching_logic": "[fuwb_pt3m_infbetno4]='2'"
+    },
+    {
+        "field_label": "[350] Please specify other reasons why the infection has not got better",
+        "field_type": "text",
+        "form_name": "followup",
+        "field_name": "fuwb_pt3m_infbetno_oth4",
+        "required_field": "y",
+        "branching_logic": "[fuwb_pt3m_infbetno4]='3'"
+    },
+    {
+        "field_label": "[351] <u>5<sup>th</sup> Infection</u>",
+        "field_type": "descriptive",
+        "form_name": "followup",
+        "field_name": "fuwb_pt3m_inftxt5",
+        "required_field": "false",
+        "branching_logic": "[fuwb_pt3m_infno]>4"
+    },
+    {
+        "field_label": "[352] What infection was it?",
+        "field_type": "radio",
+        "form_name": "followup",
+        "field_name": "fuwb_pt3m_infwht5",
+        "required_field": "y",
+        "select_choices_or_calculations": [
+            {
+                "code": "1",
+                "label": "Throat"
+            },
+            {
+                "code": "2",
+                "label": "Chest"
+            },
+            {
+                "code": "3",
+                "label": "Urine"
+            },
+            {
+                "code": "4",
+                "label": "COVID-19"
+            },
+            {
+                "code": "5",
+                "label": "Other (please specify)"
+            },
+            {
+                "code": "6",
+                "label": "Not sure"
+            }
+        ],
+        "branching_logic": "[fuwb_pt3m_infno]>4"
+    },
+    {
+        "field_label": "[353] What infection was it?<br>Please specify other.",
+        "field_type": "text",
+        "form_name": "followup",
+        "field_name": "fuwb_pt3m_infwhtoth5",
+        "required_field": "y",
+        "custom_alignment": "RH",
+        "branching_logic": "[fuwb_pt3m_infwht5]='5'"
+    },
+    {
+        "field_label": "[354] Did you go to hospital due to your infection?",
+        "field_type": "radio",
+        "form_name": "followup",
+        "field_name": "fuwb_pt3m_infhsp5",
+        "required_field": "y",
+        "select_choices_or_calculations": [
+            {
+                "code": "1",
+                "label": "Yes"
+            },
+            {
+                "code": "2",
+                "label": "Yes"
+            },
+            {
+                "code": "0",
+                "label": "No"
+            }
+        ],
+        "branching_logic": "[fuwb_pt3m_infno]>4"
+    },
+    {
+        "field_label": "[355] Were you given any medications to treat your infection?",
+        "field_type": "radio",
+        "form_name": "followup",
+        "field_name": "fuwb_pt3m_infmed5",
+        "required_field": "y",
+        "select_choices_or_calculations": [
+            {
+                "code": "1",
+                "label": "Yes"
+            },
+            {
+                "code": "2",
+                "label": "Yes"
+            },
+            {
+                "code": "0",
+                "label": "No"
+            }
+        ],
+        "branching_logic": "[fuwb_pt3m_infno]>4"
+    },
+    {
+        "field_label": "[356] What other medication were you given?",
+        "field_type": "text",
+        "form_name": "followup",
+        "field_name": "fuwb_pt3m_infmedoth5",
+        "required_field": "y",
+        "branching_logic": "[fuwb_pt3m_infmed5]='2'"
+    },
+    {
+        "field_label": "[357] Has your infection got better?",
+        "field_type": "radio",
+        "form_name": "followup",
+        "field_name": "fuwb_pt3m_infbet5",
+        "required_field": "y",
+        "select_choices_or_calculations": [
+            {
+                "code": "1",
+                "label": "Yes"
+            },
+            {
+                "code": "0",
+                "label": "No"
+            },
+            {
+                "code": "2",
+                "label": "Not sure"
+            }
+        ],
+        "branching_logic": "[fuwb_pt3m_infno]>4"
+    },
+    {
+        "field_label": "[358] Why has your infection not got better?",
+        "field_type": "radio",
+        "form_name": "followup",
+        "field_name": "fuwb_pt3m_infbetno5",
+        "required_field": "y",
+        "select_choices_or_calculations": [
+            {
+                "code": "1",
+                "label": "My infection is still active"
+            },
+            {
+                "code": "2",
+                "label": "I have other medical problems from the infection (please specify)"
+            },
+            {
+                "code": "3",
+                "label": "Other (please specify)"
+            }
+        ],
+        "branching_logic": "[fuwb_pt3m_infbet5]='0'"
+    },
+    {
+        "field_label": "[359] Please specify what other medical problems you have from the infection",
+        "field_type": "text",
+        "form_name": "followup",
+        "field_name": "fuwb_pt3m_infbetno_med5",
+        "required_field": "y",
+        "branching_logic": "[fuwb_pt3m_infbetno5]='2'"
+    },
+    {
+        "field_label": "[360] Please specify other reasons why the infection has not got better",
+        "field_type": "text",
+        "form_name": "followup",
+        "field_name": "fuwb_pt3m_infbetno_oth5",
+        "required_field": "y",
+        "branching_logic": "[fuwb_pt3m_infbetno5]='3'"
+    },
+    {
+        "field_label": "[361] <u>6<sup>th</sup> Infection</u>",
+        "field_type": "descriptive",
+        "form_name": "followup",
+        "field_name": "fuwb_pt3m_inftxt6",
+        "required_field": "false",
+        "branching_logic": "[fuwb_pt3m_infno]>5"
+    },
+    {
+        "field_label": "[362] What infection was it?",
+        "field_type": "radio",
+        "form_name": "followup",
+        "field_name": "fuwb_pt3m_infwht6",
+        "required_field": "y",
+        "select_choices_or_calculations": [
+            {
+                "code": "1",
+                "label": "Throat"
+            },
+            {
+                "code": "2",
+                "label": "Chest"
+            },
+            {
+                "code": "3",
+                "label": "Urine"
+            },
+            {
+                "code": "4",
+                "label": "COVID-19"
+            },
+            {
+                "code": "5",
+                "label": "Other (please specify)"
+            },
+            {
+                "code": "6",
+                "label": "Not sure"
+            }
+        ],
+        "branching_logic": "[fuwb_pt3m_infno]>5"
+    },
+    {
+        "field_label": "[363] What infection was it?<br>Please specify other.",
+        "field_type": "text",
+        "form_name": "followup",
+        "field_name": "fuwb_pt3m_infwhtoth6",
+        "required_field": "y",
+        "custom_alignment": "RH",
+        "branching_logic": "[fuwb_pt3m_infwht6]='5'"
+    },
+    {
+        "field_label": "[364] Did you go to hospital due to your infection?",
+        "field_type": "radio",
+        "form_name": "followup",
+        "field_name": "fuwb_pt3m_infhsp6",
+        "required_field": "y",
+        "select_choices_or_calculations": [
+            {
+                "code": "1",
+                "label": "Yes"
+            },
+            {
+                "code": "2",
+                "label": "Yes"
+            },
+            {
+                "code": "0",
+                "label": "No"
+            }
+        ],
+        "branching_logic": "[fuwb_pt3m_infno]>5"
+    },
+    {
+        "field_label": "[365] Were you given any medications to treat your infection?",
+        "field_type": "radio",
+        "form_name": "followup",
+        "field_name": "fuwb_pt3m_infmed6",
+        "required_field": "y",
+        "select_choices_or_calculations": [
+            {
+                "code": "1",
+                "label": "Yes"
+            },
+            {
+                "code": "2",
+                "label": "Yes"
+            },
+            {
+                "code": "0",
+                "label": "No"
+            }
+        ],
+        "branching_logic": "[fuwb_pt3m_infno]>5"
+    },
+    {
+        "field_label": "[366] What other medication were you given?",
+        "field_type": "text",
+        "form_name": "followup",
+        "field_name": "fuwb_pt3m_infmedoth6",
+        "required_field": "y",
+        "branching_logic": "[fuwb_pt3m_infmed6]='2'"
+    },
+    {
+        "field_label": "[367] Has your infection got better?",
+        "field_type": "radio",
+        "form_name": "followup",
+        "field_name": "fuwb_pt3m_infbet6",
+        "required_field": "y",
+        "select_choices_or_calculations": [
+            {
+                "code": "1",
+                "label": "Yes"
+            },
+            {
+                "code": "0",
+                "label": "No"
+            },
+            {
+                "code": "2",
+                "label": "Not sure"
+            }
+        ],
+        "branching_logic": "[fuwb_pt3m_infno]>5"
+    },
+    {
+        "field_label": "[368] Why has your infection not got better?",
+        "field_type": "radio",
+        "form_name": "followup",
+        "field_name": "fuwb_pt3m_infbetno6",
+        "required_field": "y",
+        "select_choices_or_calculations": [
+            {
+                "code": "1",
+                "label": "My infection is still active"
+            },
+            {
+                "code": "2",
+                "label": "I have other medical problems from the infection (please specify)"
+            },
+            {
+                "code": "3",
+                "label": "Other (please specify)"
+            }
+        ],
+        "branching_logic": "[fuwb_pt3m_infbet6]='0'"
+    },
+    {
+        "field_label": "[369] Please specify what other medical problems you have from the infection",
+        "field_type": "text",
+        "form_name": "followup",
+        "field_name": "fuwb_pt3m_infbetno_med6",
+        "required_field": "y",
+        "branching_logic": "[fuwb_pt3m_infbetno6]='2'"
+    },
+    {
+        "field_label": "[370] Please specify other reasons why the infection has not got better",
+        "field_type": "text",
+        "form_name": "followup",
+        "field_name": "fuwb_pt3m_infbetno_oth6",
+        "required_field": "y",
+        "branching_logic": "[fuwb_pt3m_infbetno6]='3'"
+    },
+    {
+        "field_label": "[371] <u>7<sup>th</sup> Infection</u>",
+        "field_type": "descriptive",
+        "form_name": "followup",
+        "field_name": "fuwb_pt3m_inftxt7",
+        "required_field": "false",
+        "branching_logic": "[fuwb_pt3m_infno]>6"
+    },
+    {
+        "field_label": "[372] What infection was it?",
+        "field_type": "radio",
+        "form_name": "followup",
+        "field_name": "fuwb_pt3m_infwht7",
+        "required_field": "y",
+        "select_choices_or_calculations": [
+            {
+                "code": "1",
+                "label": "Throat"
+            },
+            {
+                "code": "2",
+                "label": "Chest"
+            },
+            {
+                "code": "3",
+                "label": "Urine"
+            },
+            {
+                "code": "4",
+                "label": "COVID-19"
+            },
+            {
+                "code": "5",
+                "label": "Other (please specify)"
+            },
+            {
+                "code": "6",
+                "label": "Not sure"
+            }
+        ],
+        "branching_logic": "[fuwb_pt3m_infno]>6"
+    },
+    {
+        "field_label": "[373] What infection was it?<br>Please specify other.",
+        "field_type": "text",
+        "form_name": "followup",
+        "field_name": "fuwb_pt3m_infwhtoth7",
+        "required_field": "y",
+        "custom_alignment": "RH",
+        "branching_logic": "[fuwb_pt3m_infwht7]='5'"
+    },
+    {
+        "field_label": "[374] Did you go to hospital due to your infection?",
+        "field_type": "radio",
+        "form_name": "followup",
+        "field_name": "fuwb_pt3m_infhsp7",
+        "required_field": "y",
+        "select_choices_or_calculations": [
+            {
+                "code": "1",
+                "label": "Yes"
+            },
+            {
+                "code": "2",
+                "label": "Yes"
+            },
+            {
+                "code": "0",
+                "label": "No"
+            }
+        ],
+        "branching_logic": "[fuwb_pt3m_infno]>6"
+    },
+    {
+        "field_label": "[375] Were you given any medications to treat your infection?",
+        "field_type": "radio",
+        "form_name": "followup",
+        "field_name": "fuwb_pt3m_infmed7",
+        "required_field": "y",
+        "select_choices_or_calculations": [
+            {
+                "code": "1",
+                "label": "Yes"
+            },
+            {
+                "code": "2",
+                "label": "Yes"
+            },
+            {
+                "code": "0",
+                "label": "No"
+            }
+        ],
+        "branching_logic": "[fuwb_pt3m_infno]>6"
+    },
+    {
+        "field_label": "[376] What other medication were you given?",
+        "field_type": "text",
+        "form_name": "followup",
+        "field_name": "fuwb_pt3m_infmedoth7",
+        "required_field": "y",
+        "branching_logic": "[fuwb_pt3m_infmed7]='2'"
+    },
+    {
+        "field_label": "[377] Has your infection got better?",
+        "field_type": "radio",
+        "form_name": "followup",
+        "field_name": "fuwb_pt3m_infbet7",
+        "required_field": "y",
+        "select_choices_or_calculations": [
+            {
+                "code": "1",
+                "label": "Yes"
+            },
+            {
+                "code": "0",
+                "label": "No"
+            },
+            {
+                "code": "2",
+                "label": "Not sure"
+            }
+        ],
+        "branching_logic": "[fuwb_pt3m_infno]>6"
+    },
+    {
+        "field_label": "[378] Why has your infection not got better?",
+        "field_type": "radio",
+        "form_name": "followup",
+        "field_name": "fuwb_pt3m_infbetno7",
+        "required_field": "y",
+        "select_choices_or_calculations": [
+            {
+                "code": "1",
+                "label": "My infection is still active"
+            },
+            {
+                "code": "2",
+                "label": "I have other medical problems from the infection (please specify)"
+            },
+            {
+                "code": "3",
+                "label": "Other (please specify)"
+            }
+        ],
+        "branching_logic": "[fuwb_pt3m_infbet7]='0'"
+    },
+    {
+        "field_label": "[379] Please specify what other medical problems you have from the infection",
+        "field_type": "text",
+        "form_name": "followup",
+        "field_name": "fuwb_pt3m_infbetno_med7",
+        "required_field": "y",
+        "branching_logic": "[fuwb_pt3m_infbetno7]='2'"
+    },
+    {
+        "field_label": "[380] Please specify other reasons why the infection has not got better",
+        "field_type": "text",
+        "form_name": "followup",
+        "field_name": "fuwb_pt3m_infbetno_oth7",
+        "required_field": "y",
+        "branching_logic": "[fuwb_pt3m_infbetno7]='3'"
+    },
+    {
+        "field_label": "[381] <u>8<sup>th</sup> Infection</u>",
+        "field_type": "descriptive",
+        "form_name": "followup",
+        "field_name": "fuwb_pt3m_inftxt8",
+        "required_field": "false",
+        "branching_logic": "[fuwb_pt3m_infno]>7"
+    },
+    {
+        "field_label": "[382] What infection was it?",
+        "field_type": "radio",
+        "form_name": "followup",
+        "field_name": "fuwb_pt3m_infwht8",
+        "required_field": "y",
+        "select_choices_or_calculations": [
+            {
+                "code": "1",
+                "label": "Throat"
+            },
+            {
+                "code": "2",
+                "label": "Chest"
+            },
+            {
+                "code": "3",
+                "label": "Urine"
+            },
+            {
+                "code": "4",
+                "label": "COVID-19"
+            },
+            {
+                "code": "5",
+                "label": "Other (please specify)"
+            },
+            {
+                "code": "6",
+                "label": "Not sure"
+            }
+        ],
+        "branching_logic": "[fuwb_pt3m_infno]>7"
+    },
+    {
+        "field_label": "[383] What infection was it?<br>Please specify other.",
+        "field_type": "text",
+        "form_name": "followup",
+        "field_name": "fuwb_pt3m_infwhtoth8",
+        "required_field": "y",
+        "custom_alignment": "RH",
+        "branching_logic": "[fuwb_pt3m_infwht8]='5'"
+    },
+    {
+        "field_label": "[384] Did you go to hospital due to your infection?",
+        "field_type": "radio",
+        "form_name": "followup",
+        "field_name": "fuwb_pt3m_infhsp8",
+        "required_field": "y",
+        "select_choices_or_calculations": [
+            {
+                "code": "1",
+                "label": "Yes"
+            },
+            {
+                "code": "2",
+                "label": "Yes"
+            },
+            {
+                "code": "0",
+                "label": "No"
+            }
+        ],
+        "branching_logic": "[fuwb_pt3m_infno]>7"
+    },
+    {
+        "field_label": "[385] Were you given any medications to treat your infection?",
+        "field_type": "radio",
+        "form_name": "followup",
+        "field_name": "fuwb_pt3m_infmed8",
+        "required_field": "y",
+        "select_choices_or_calculations": [
+            {
+                "code": "1",
+                "label": "Yes"
+            },
+            {
+                "code": "2",
+                "label": "Yes"
+            },
+            {
+                "code": "0",
+                "label": "No"
+            }
+        ],
+        "branching_logic": "[fuwb_pt3m_infno]>7"
+    },
+    {
+        "field_label": "[386] What other medication were you given?",
+        "field_type": "text",
+        "form_name": "followup",
+        "field_name": "fuwb_pt3m_infmedoth8",
+        "required_field": "y",
+        "branching_logic": "[fuwb_pt3m_infmed8]='2'"
+    },
+    {
+        "field_label": "[387] Has your infection got better?",
+        "field_type": "radio",
+        "form_name": "followup",
+        "field_name": "fuwb_pt3m_infbet8",
+        "required_field": "y",
+        "select_choices_or_calculations": [
+            {
+                "code": "1",
+                "label": "Yes"
+            },
+            {
+                "code": "0",
+                "label": "No"
+            },
+            {
+                "code": "2",
+                "label": "Not sure"
+            }
+        ],
+        "branching_logic": "[fuwb_pt3m_infno]>7"
+    },
+    {
+        "field_label": "[388] Why has your infection not got better?",
+        "field_type": "radio",
+        "form_name": "followup",
+        "field_name": "fuwb_pt3m_infbetno8",
+        "required_field": "y",
+        "select_choices_or_calculations": [
+            {
+                "code": "1",
+                "label": "My infection is still active"
+            },
+            {
+                "code": "2",
+                "label": "I have other medical problems from the infection (please specify)"
+            },
+            {
+                "code": "3",
+                "label": "Other (please specify)"
+            }
+        ],
+        "branching_logic": "[fuwb_pt3m_infbet8]='0'"
+    },
+    {
+        "field_label": "[389] Please specify what other medical problems you have from the infection",
+        "field_type": "text",
+        "form_name": "followup",
+        "field_name": "fuwb_pt3m_infbetno_med8",
+        "required_field": "y",
+        "branching_logic": "[fuwb_pt3m_infbetno8]='2'"
+    },
+    {
+        "field_label": "[390] Please specify other reasons why the infection has not got better",
+        "field_type": "text",
+        "form_name": "followup",
+        "field_name": "fuwb_pt3m_infbetno_oth8",
+        "required_field": "y",
+        "branching_logic": "[fuwb_pt3m_infbetno8]='3'"
+    },
+    {
+        "field_label": "[391] <u>9<sup>th</sup> Infection</u>",
+        "field_type": "descriptive",
+        "form_name": "followup",
+        "field_name": "fuwb_pt3m_inftxt9",
+        "required_field": "false",
+        "branching_logic": "[fuwb_pt3m_infno]>8"
+    },
+    {
+        "field_label": "[392] What infection was it?",
+        "field_type": "radio",
+        "form_name": "followup",
+        "field_name": "fuwb_pt3m_infwht9",
+        "required_field": "y",
+        "select_choices_or_calculations": [
+            {
+                "code": "1",
+                "label": "Throat"
+            },
+            {
+                "code": "2",
+                "label": "Chest"
+            },
+            {
+                "code": "3",
+                "label": "Urine"
+            },
+            {
+                "code": "4",
+                "label": "COVID-19"
+            },
+            {
+                "code": "5",
+                "label": "Other (please specify)"
+            },
+            {
+                "code": "6",
+                "label": "Not sure"
+            }
+        ],
+        "branching_logic": "[fuwb_pt3m_infno]>8"
+    },
+    {
+        "field_label": "[393] What infection was it?<br>Please specify other.",
+        "field_type": "text",
+        "form_name": "followup",
+        "field_name": "fuwb_pt3m_infwhtoth9",
+        "required_field": "y",
+        "custom_alignment": "RH",
+        "branching_logic": "[fuwb_pt3m_infwht9]='5'"
+    },
+    {
+        "field_label": "[394] Did you go to hospital due to your infection?",
+        "field_type": "radio",
+        "form_name": "followup",
+        "field_name": "fuwb_pt3m_infhsp9",
+        "required_field": "y",
+        "select_choices_or_calculations": [
+            {
+                "code": "1",
+                "label": "Yes"
+            },
+            {
+                "code": "2",
+                "label": "Yes"
+            },
+            {
+                "code": "0",
+                "label": "No"
+            }
+        ],
+        "branching_logic": "[fuwb_pt3m_infno]>8"
+    },
+    {
+        "field_label": "[395] Were you given any medications to treat your infection?",
+        "field_type": "radio",
+        "form_name": "followup",
+        "field_name": "fuwb_pt3m_infmed9",
+        "required_field": "y",
+        "select_choices_or_calculations": [
+            {
+                "code": "1",
+                "label": "Yes"
+            },
+            {
+                "code": "2",
+                "label": "Yes"
+            },
+            {
+                "code": "0",
+                "label": "No"
+            }
+        ],
+        "branching_logic": "[fuwb_pt3m_infno]>8"
+    },
+    {
+        "field_label": "[396] What other medication were you given?",
+        "field_type": "text",
+        "form_name": "followup",
+        "field_name": "fuwb_pt3m_infmedoth9",
+        "required_field": "y",
+        "branching_logic": "[fuwb_pt3m_infmed9]='2'"
+    },
+    {
+        "field_label": "[397] Has your infection got better?",
+        "field_type": "radio",
+        "form_name": "followup",
+        "field_name": "fuwb_pt3m_infbet9",
+        "required_field": "y",
+        "select_choices_or_calculations": [
+            {
+                "code": "1",
+                "label": "Yes"
+            },
+            {
+                "code": "0",
+                "label": "No"
+            },
+            {
+                "code": "2",
+                "label": "Not sure"
+            }
+        ],
+        "branching_logic": "[fuwb_pt3m_infno]>8"
+    },
+    {
+        "field_label": "[398] Why has your infection not got better?",
+        "field_type": "radio",
+        "form_name": "followup",
+        "field_name": "fuwb_pt3m_infbetno9",
+        "required_field": "y",
+        "select_choices_or_calculations": [
+            {
+                "code": "1",
+                "label": "My infection is still active"
+            },
+            {
+                "code": "2",
+                "label": "I have other medical problems from the infection (please specify)"
+            },
+            {
+                "code": "3",
+                "label": "Other (please specify)"
+            }
+        ],
+        "branching_logic": "[fuwb_pt3m_infbet9]='0'"
+    },
+    {
+        "field_label": "[399] Please specify what other medical problems you have from the infection",
+        "field_type": "text",
+        "form_name": "followup",
+        "field_name": "fuwb_pt3m_infbetno_med9",
+        "required_field": "y",
+        "branching_logic": "[fuwb_pt3m_infbetno9]='2'"
+    },
+    {
+        "field_label": "[400] Please specify other reasons why the infection has not got better",
+        "field_type": "text",
+        "form_name": "followup",
+        "field_name": "fuwb_pt3m_infbetno_oth9",
+        "required_field": "y",
+        "branching_logic": "[fuwb_pt3m_infbetno9]='3'"
+    },
+    {
+        "field_label": "[401] <u>10<sup>th</sup> Infection</u>",
+        "field_type": "descriptive",
+        "form_name": "followup",
+        "field_name": "fuwb_pt3m_inftxt10",
+        "required_field": "false",
+        "branching_logic": "[fuwb_pt3m_infno]>9"
+    },
+    {
+        "field_label": "[402] What infection was it?",
+        "field_type": "radio",
+        "form_name": "followup",
+        "field_name": "fuwb_pt3m_infwht10",
+        "required_field": "y",
+        "select_choices_or_calculations": [
+            {
+                "code": "1",
+                "label": "Throat"
+            },
+            {
+                "code": "2",
+                "label": "Chest"
+            },
+            {
+                "code": "3",
+                "label": "Urine"
+            },
+            {
+                "code": "4",
+                "label": "COVID-19"
+            },
+            {
+                "code": "5",
+                "label": "Other (please specify)"
+            },
+            {
+                "code": "6",
+                "label": "Not sure"
+            }
+        ],
+        "branching_logic": "[fuwb_pt3m_infno]>9"
+    },
+    {
+        "field_label": "[403] What infection was it?<br>Please specify other.",
+        "field_type": "text",
+        "form_name": "followup",
+        "field_name": "fuwb_pt3m_infwhtoth10",
+        "required_field": "y",
+        "custom_alignment": "RH",
+        "branching_logic": "[fuwb_pt3m_infwht10]='5'"
+    },
+    {
+        "field_label": "[404] Did you go to hospital due to your infection?",
+        "field_type": "radio",
+        "form_name": "followup",
+        "field_name": "fuwb_pt3m_infhsp10",
+        "required_field": "y",
+        "select_choices_or_calculations": [
+            {
+                "code": "1",
+                "label": "Yes"
+            },
+            {
+                "code": "2",
+                "label": "Yes"
+            },
+            {
+                "code": "0",
+                "label": "No"
+            }
+        ],
+        "branching_logic": "[fuwb_pt3m_infno]>9"
+    },
+    {
+        "field_label": "[405] Were you given any medications to treat your infection?",
+        "field_type": "radio",
+        "form_name": "followup",
+        "field_name": "fuwb_pt3m_infmed10",
+        "required_field": "y",
+        "select_choices_or_calculations": [
+            {
+                "code": "1",
+                "label": "Yes"
+            },
+            {
+                "code": "2",
+                "label": "Yes"
+            },
+            {
+                "code": "0",
+                "label": "No"
+            }
+        ],
+        "branching_logic": "[fuwb_pt3m_infno]>9"
+    },
+    {
+        "field_label": "[406] What other medication were you given?",
+        "field_type": "text",
+        "form_name": "followup",
+        "field_name": "fuwb_pt3m_infmedoth10",
+        "required_field": "y",
+        "branching_logic": "[fuwb_pt3m_infmed10]='2'"
+    },
+    {
+        "field_label": "[407] Has your infection got better?",
+        "field_type": "radio",
+        "form_name": "followup",
+        "field_name": "fuwb_pt3m_infbet10",
+        "required_field": "y",
+        "select_choices_or_calculations": [
+            {
+                "code": "1",
+                "label": "Yes"
+            },
+            {
+                "code": "0",
+                "label": "No"
+            },
+            {
+                "code": "2",
+                "label": "Not sure"
+            }
+        ],
+        "branching_logic": "[fuwb_pt3m_infno]>9"
+    },
+    {
+        "field_label": "[408] Why has your infection not got better?",
+        "field_type": "radio",
+        "form_name": "followup",
+        "field_name": "fuwb_pt3m_infbetno10",
+        "required_field": "y",
+        "select_choices_or_calculations": [
+            {
+                "code": "1",
+                "label": "My infection is still active"
+            },
+            {
+                "code": "2",
+                "label": "I have other medical problems from the infection (please specify)"
+            },
+            {
+                "code": "3",
+                "label": "Other (please specify)"
+            }
+        ],
+        "branching_logic": "[fuwb_pt3m_infbet10]='0'"
+    },
+    {
+        "field_label": "[409] Please specify what other medical problems you have from the infection",
+        "field_type": "text",
+        "form_name": "followup",
+        "field_name": "fuwb_pt3m_infbetno_med10",
+        "required_field": "y",
+        "branching_logic": "[fuwb_pt3m_infbetno10]='2'"
+    },
+    {
+        "field_label": "[410] Please specify other reasons why the infection has not got better",
+        "field_type": "text",
+        "form_name": "followup",
+        "field_name": "fuwb_pt3m_infbetno_oth10",
+        "required_field": "y",
+        "branching_logic": "[fuwb_pt3m_infbetno10]='3'"
+    },
+    {
+        "field_label": "[411] Over the past 3 months, have you been diagnosed with a new health problem (not an infection) by a doctor or other health professional?",
+        "field_type": "yesno",
+        "form_name": "followup",
+        "field_name": "fuwb_pt3m_diag",
+        "required_field": "y",
+        "custom_alignment": "RH"
+    },
+    {
+        "field_label": "[412] What health problem is it? (Tick all that apply)",
+        "field_type": "checkbox",
+        "form_name": "followup",
+        "field_name": "fuwb_pt3m_diagwht",
+        "required_field": "y",
+        "select_choices_or_calculations": [
+            {
+                "code": "1",
+                "label": "Heart or metabolic problem"
+            },
+            {
+                "code": "2",
+                "label": "Joint or bone problems"
+            },
+            {
+                "code": "3",
+                "label": "Inflammatory bowel disease"
+            },
+            {
+                "code": "4",
+                "label": "Mental health problems"
+            },
+            {
+                "code": "5",
+                "label": "Cancer (please specify)"
+            },
+            {
+                "code": "6",
+                "label": "Other (please specify)"
+            }
+        ],
+        "branching_logic": "[fuwb_pt3m_diag]='1'"
+    },
+    {
+        "field_label": "[413] Heart or metabolic problem (Tick all that apply)",
+        "field_type": "checkbox",
+        "form_name": "followup",
+        "field_name": "fuwb_pt3m_diagwht_hrt",
+        "required_field": "y",
+        "select_choices_or_calculations": [
+            {
+                "code": "1",
+                "label": "Ischaemic heart disease (angina"
+            },
+            {
+                "code": "2",
+                "label": "High blood pressure"
+            },
+            {
+                "code": "3",
+                "label": "High cholesterol"
+            },
+            {
+                "code": "4",
+                "label": "Type 2 diabetes"
+            },
+            {
+                "code": "5",
+                "label": "Obesity (BMI 30 or more)"
+            },
+            {
+                "code": "6",
+                "label": "Fatty liver disease"
+            },
+            {
+                "code": "7",
+                "label": "Metabolic syndrome"
+            }
+        ],
+        "branching_logic": "[fuwb_pt3m_diagwht]='1'"
+    },
+    {
+        "field_label": "[414] Joint or bone problems (Tick all that apply)",
+        "field_type": "checkbox",
+        "form_name": "followup",
+        "field_name": "fuwb_pt3m_diagwht_jnt",
+        "required_field": "y",
+        "select_choices_or_calculations": [
+            {
+                "code": "1",
+                "label": "Psoriatic arthritis"
+            },
+            {
+                "code": "2",
+                "label": "Rheumatoid arthritis"
+            },
+            {
+                "code": "3",
+                "label": "Ankylosing spondylitis"
+            },
+            {
+                "code": "4",
+                "label": "Osteoarthritis"
+            },
+            {
+                "code": "5",
+                "label": "Other joint or bone problem (please specify)"
+            }
+        ],
+        "branching_logic": "[fuwb_pt3m_diagwht]='2'"
+    },
+    {
+        "field_label": "[415] Please specify other joint or bone problem",
+        "field_type": "text",
+        "form_name": "followup",
+        "field_name": "fuwb_pt3m_diagwht_jntoth",
+        "required_field": "y",
+        "branching_logic": "[fuwb_pt3m_diagwht_jnt]='5'"
+    },
+    {
+        "field_label": "[416] Inflammatory bowel disease (Tick all that apply)",
+        "field_type": "checkbox",
+        "form_name": "followup",
+        "field_name": "fuwb_pt3m_diagwht_inf",
+        "required_field": "y",
+        "select_choices_or_calculations": [
+            {
+                "code": "1",
+                "label": "Crohn's disease"
+            },
+            {
+                "code": "2",
+                "label": "Ulcerative colitis"
+            },
+            {
+                "code": "3",
+                "label": "Other (please specify)"
+            }
+        ],
+        "branching_logic": "[fuwb_pt3m_diagwht]='3'"
+    },
+    {
+        "field_label": "[417] Please specify other inflammatory bowel disease",
+        "field_type": "text",
+        "form_name": "followup",
+        "field_name": "fuwb_pt3m_diagwht_infoth",
+        "required_field": "y",
+        "branching_logic": "[fuwb_pt3m_diagwht_inf]='3'"
+    },
+    {
+        "field_label": "[418] Please specify type of cancer",
+        "field_type": "text",
+        "form_name": "followup",
+        "field_name": "fuwb_pt3m_diagwht_can",
+        "required_field": "y",
+        "branching_logic": "[fuwb_pt3m_diagwht]='5'"
+    },
+    {
+        "field_label": "[419] Please specify your other health problems",
+        "field_type": "text",
+        "form_name": "followup",
+        "field_name": "fuwb_pt3m_diagwht_oth",
+        "required_field": "y",
+        "branching_logic": "[fuwb_pt3m_diagwht]='6'"
+    },
+    {
+        "field_label": "[420] Mental health problems (Tick all that apply)",
+        "field_type": "checkbox",
+        "form_name": "followup",
+        "field_name": "fuwb_pt3m_diagwht_men",
+        "required_field": "y",
+        "select_choices_or_calculations": [
+            {
+                "code": "1",
+                "label": "Depression"
+            },
+            {
+                "code": "2",
+                "label": "Anxiety"
+            },
+            {
+                "code": "3",
+                "label": "Other mental health problem (please specify)"
+            }
+        ],
+        "branching_logic": "[fuwb_pt3m_diagwht]='4'"
+    },
+    {
+        "field_label": "[421] Please specify other mental health problems",
+        "field_type": "text",
+        "form_name": "followup",
+        "field_name": "fuwb_pt3_diagwht_menoth",
+        "required_field": "y",
+        "branching_logic": "[fuwb_pt3m_diagwht_men]='3'"
+    },
+    {
+        "field_label": "[422] Over the past 3 months, have you started  any new medications?",
+        "field_type": "yesno",
+        "form_name": "followup",
+        "field_name": "fuwb_pt3m_med",
+        "required_field": "y",
+        "custom_alignment": "RH"
+    },
+    {
+        "field_label": "[423] Please list your new medications",
+        "field_type": "notes",
+        "form_name": "followup",
+        "field_name": "fuwb_pt3m_medoth",
+        "required_field": "y",
+        "custom_alignment": "RH",
+        "branching_logic": "[fuwb_pt3m_med]='1'"
+    },
+    {
+        "field_label": "[424] I completely understand how and when I should take my biologic injection during the study,",
+        "field_type": "radio",
+        "form_name": "followup",
+        "field_name": "fuexp_blgtke",
+        "required_field": "y",
+        "section_header": "Experiences in the study",
+        "select_choices_or_calculations": [
+            {
+                "code": "1",
+                "label": "Strongly Agree"
+            },
+            {
+                "code": "2",
+                "label": "Agree"
+            },
+            {
+                "code": "3",
+                "label": "No opinion"
+            },
+            {
+                "code": "4",
+                "label": "Disagree"
+            },
+            {
+                "code": "5",
+                "label": "Strongly disagree"
+            }
+        ]
+    },
+    {
+        "field_label": "[425] Over the past 3 months, did you take your biologic injection according to the treatment plan selected for you in the study?",
+        "field_type": "yesno",
+        "form_name": "followup",
+        "field_name": "fuexp_blgtp",
+        "required_field": "y",
+        "custom_alignment": "RH"
+    },
+    {
+        "field_label": "[426] Why did you not take your biologic injection according to the treatment plan selected for you in the study? Tick all that apply.",
+        "field_type": "checkbox",
+        "form_name": "followup",
+        "field_name": "fuexp_blgtpno",
+        "required_field": "y",
+        "select_choices_or_calculations": [
+            {
+                "code": "1",
+                "label": "I did not understand the advice that I was given by the study team"
+            },
+            {
+                "code": "2",
+                "label": "I was told to take it differently by my doctor/nurse"
+            },
+            {
+                "code": "3",
+                "label": "I took it when I did not have any psoriasis symptoms"
+            },
+            {
+                "code": "4",
+                "label": "I took it after my psoriasis started to flare"
+            },
+            {
+                "code": "5",
+                "label": "I had concerns about the treatment strategy"
+            },
+            {
+                "code": "6",
+                "label": "Other (please specify)"
+            }
+        ],
+        "branching_logic": "[fuexp_blgtp]='0'"
+    },
+    {
+        "field_label": "[427] Other reason why you did not take your biologic injection according to the treatment plan selected for you in the study.",
+        "field_type": "text",
+        "form_name": "followup",
+        "field_name": "fuexp_blgtpnooth",
+        "required_field": "y",
+        "branching_logic": "[fuexp_blgtpno]='6'"
+    },
+    {
+        "field_label": "[428] Over the past 3 months, how many times have you taken your biologic injection?",
+        "field_type": "radio",
+        "form_name": "followup",
+        "field_name": "fuexp_blgno",
+        "required_field": "y",
+        "select_choices_or_calculations": [
+            {
+                "code": "0",
+                "label": "0"
+            },
+            {
+                "code": "1",
+                "label": "1"
+            },
+            {
+                "code": "2",
+                "label": "2"
+            },
+            {
+                "code": "3",
+                "label": "3"
+            },
+            {
+                "code": "4",
+                "label": "4"
+            },
+            {
+                "code": "5",
+                "label": "more than 4 times"
+            }
+        ]
+    },
+    {
+        "field_label": "[429] Over the past 3 months, how many times did you request to have an appointment with your psoriasis doctor?",
+        "field_type": "radio",
+        "form_name": "followup",
+        "field_name": "fuexp_appt_no",
+        "required_field": "y",
+        "select_choices_or_calculations": [
+            {
+                "code": "0",
+                "label": "0"
+            },
+            {
+                "code": "1",
+                "label": "1"
+            },
+            {
+                "code": "2",
+                "label": "2"
+            },
+            {
+                "code": "3",
+                "label": "3"
+            },
+            {
+                "code": "4",
+                "label": "4"
+            },
+            {
+                "code": "5",
+                "label": "5"
+            },
+            {
+                "code": "6",
+                "label": "6"
+            },
+            {
+                "code": "7",
+                "label": "7"
+            },
+            {
+                "code": "8",
+                "label": "8"
+            },
+            {
+                "code": "9",
+                "label": "9"
+            },
+            {
+                "code": "10",
+                "label": "10"
+            },
+            {
+                "code": "11",
+                "label": "11 or more"
+            }
+        ]
+    },
+    {
+        "field_label": "[430] Following your request for your appointment, were you invited to psoriasis clinic with 5 working days?",
+        "field_type": "radio",
+        "form_name": "followup",
+        "field_name": "fuexp_appt_inv5d",
+        "required_field": "y",
+        "select_choices_or_calculations": [
+            {
+                "code": "1",
+                "label": "Yes"
+            },
+            {
+                "code": "2",
+                "label": "No"
+            },
+            {
+                "code": "3",
+                "label": "No"
+            },
+            {
+                "code": "4",
+                "label": "Unsure"
+            }
+        ],
+        "branching_logic": "[fuexp_appt_no]>0"
+    },
+    {
+        "field_label": "[431] Was this clinic review by telephone or person?",
+        "field_type": "radio",
+        "form_name": "followup",
+        "field_name": "fuexp_appt_inv5d_crev",
+        "required_field": "y",
+        "custom_alignment": "RH",
+        "select_choices_or_calculations": [
+            {
+                "code": "1",
+                "label": "Telephone"
+            },
+            {
+                "code": "2",
+                "label": "In person"
+            }
+        ],
+        "branching_logic": "[fuexp_appt_inv5d]='1' or [fuexp_appt_inv5d]='2' or [fuexp_appt_inv5d]='4'"
+    },
+    {
+        "field_label": "[432] Did you attend (either in person or by telephone) the appointment offered?",
+        "field_type": "yesno",
+        "form_name": "followup",
+        "field_name": "fuexp_appt_inv5d_atd",
+        "required_field": "y",
+        "custom_alignment": "RH",
+        "branching_logic": "[fuexp_appt_inv5d]='1' or [fuexp_appt_inv5d]='2' or [fuexp_appt_inv5d]='4'"
+    },
+    {
+        "field_label": "[433] Why did you not attend? Tick all that apply.",
+        "field_type": "checkbox",
+        "form_name": "followup",
+        "field_name": "fuexp_appt_inv5d_atd_no",
+        "required_field": "y",
+        "select_choices_or_calculations": [
+            {
+                "code": "1",
+                "label": "My problem improved so I didn't think I needed the appointment anymore"
+            },
+            {
+                "code": "2",
+                "label": "I couldn't afford the time to attend"
+            },
+            {
+                "code": "3",
+                "label": "I didn't want to travel to the appointment"
+            },
+            {
+                "code": "4",
+                "label": "I didn't want to have blood tests"
+            },
+            {
+                "code": "5",
+                "label": "I don't enjoy the appointments"
+            },
+            {
+                "code": "6",
+                "label": "I forgot to attend"
+            },
+            {
+                "code": "7",
+                "label": "I didn't want to burden my healthcare team"
+            },
+            {
+                "code": "8",
+                "label": "Other (please state)"
+            }
+        ],
+        "branching_logic": "[fuexp_appt_inv5d_atd]='0'"
+    },
+    {
+        "field_label": "[434] Why did you not attend?<br><br><span style=\"font-weight: normal;\">Other (please state)</span>",
+        "field_type": "text",
+        "form_name": "followup",
+        "field_name": "fuexp_appt_inv5d_atd_nooth",
+        "required_field": "y",
+        "branching_logic": "[fuexp_appt_inv5d_atd_no]='8'"
+    },
+    {
+        "field_label": "[435] Over the last 3 months, did you delay or not book an appointment with your doctor, even when your psoriasis got worse?",
+        "field_type": "yesno",
+        "form_name": "followup",
+        "field_name": "fuexp_appt_dly",
+        "required_field": "y",
+        "custom_alignment": "RH"
+    },
+    {
+        "field_label": "[436] Why did you delay or not book an appointment? Tick all that apply.",
+        "field_type": "checkbox",
+        "form_name": "followup",
+        "field_name": "fuexp_appt_dly_yes",
+        "required_field": "y",
+        "select_choices_or_calculations": [
+            {
+                "code": "1",
+                "label": "I didn't think I needed it"
+            },
+            {
+                "code": "2",
+                "label": "I couldn't afford the time to attend"
+            },
+            {
+                "code": "3",
+                "label": "I didn't want to travel to the appointment"
+            },
+            {
+                "code": "4",
+                "label": "I didn't want to have blood tests"
+            },
+            {
+                "code": "5",
+                "label": "I don't enjoy the appointments"
+            },
+            {
+                "code": "6",
+                "label": "I couldn't arrange an appointment"
+            },
+            {
+                "code": "7",
+                "label": "I didn't want to burden my healthcare team"
+            },
+            {
+                "code": "8",
+                "label": "Other (please state)"
+            }
+        ],
+        "branching_logic": "[fuexp_appt_dly]='1'"
+    },
+    {
+        "field_label": "[437] Why did you delay or not book an appointment?<br><br><span style=\"font-weight: normal;\">Other (please state)</span>",
+        "field_type": "text",
+        "form_name": "followup",
+        "field_name": "fuexp_appt_dly_yesoth",
+        "required_field": "y",
+        "custom_alignment": "RH",
+        "branching_logic": "[fuexp_appt_dly_yes]='8'"
+    },
+    {
+        "field_label": "[438] <u>Acceptability of treatment strategy</u>",
+        "field_type": "descriptive",
+        "form_name": "followup",
+        "field_name": "fuacpts_txt",
+        "required_field": "false",
+        "section_header": "<p>Acceptability <span style=\"color: green;\">[at 6 months and 12 months only]</span></p>"
+    },
+    {
+        "field_label": "[439] Do you like or dislike the biologic treatment plan selected for you in the study?",
+        "field_type": "radio",
+        "form_name": "followup",
+        "field_name": "fuacpts_blglke",
+        "required_field": "y",
+        "select_choices_or_calculations": [
+            {
+                "code": "1",
+                "label": "Strongly like"
+            },
+            {
+                "code": "2",
+                "label": "Like"
+            },
+            {
+                "code": "3",
+                "label": "No opinion"
+            },
+            {
+                "code": "4",
+                "label": "Dislike"
+            },
+            {
+                "code": "5",
+                "label": "Strongly dislike"
+            }
+        ]
+    },
+    {
+        "field_label": "[440] How much effort was it to take your biologic injection according to your treatment plan?",
+        "field_type": "radio",
+        "form_name": "followup",
+        "field_name": "fuacpts_blgeft",
+        "required_field": "y",
+        "select_choices_or_calculations": [
+            {
+                "code": "1",
+                "label": "No effort at all"
+            },
+            {
+                "code": "2",
+                "label": "A little effort"
+            },
+            {
+                "code": "3",
+                "label": "No opinion"
+            },
+            {
+                "code": "4",
+                "label": "A lot of effort"
+            },
+            {
+                "code": "5",
+                "label": "Huge effort"
+            }
+        ]
+    },
+    {
+        "field_label": "[441] How fair is it (to people with psoriasis) to take your biologic injection according to your treatment plan?",
+        "field_type": "radio",
+        "form_name": "followup",
+        "field_name": "fuacpts_blgfre",
+        "required_field": "y",
+        "select_choices_or_calculations": [
+            {
+                "code": "1",
+                "label": "Very fair"
+            },
+            {
+                "code": "2",
+                "label": "Fair"
+            },
+            {
+                "code": "3",
+                "label": "No opinion"
+            },
+            {
+                "code": "4",
+                "label": "Unfair"
+            },
+            {
+                "code": "5",
+                "label": "Very unfair"
+            }
+        ]
+    },
+    {
+        "field_label": "[442] Taking my biologic injection according to my treatment plan has improved my health",
+        "field_type": "radio",
+        "form_name": "followup",
+        "field_name": "fuacpts_blgimp",
+        "required_field": "y",
+        "select_choices_or_calculations": [
+            {
+                "code": "1",
+                "label": "Strongly agree"
+            },
+            {
+                "code": "2",
+                "label": "Agree"
+            },
+            {
+                "code": "3",
+                "label": "No opinion"
+            },
+            {
+                "code": "4",
+                "label": "Disagree"
+            },
+            {
+                "code": "5",
+                "label": "Strongly disagree"
+            }
+        ]
+    },
+    {
+        "field_label": "[443] It is clear to me how my treatment plan could help improve my health",
+        "field_type": "radio",
+        "form_name": "followup",
+        "field_name": "fuacpts_trtimp",
+        "required_field": "y",
+        "select_choices_or_calculations": [
+            {
+                "code": "1",
+                "label": "Strongly agree"
+            },
+            {
+                "code": "2",
+                "label": "Agree"
+            },
+            {
+                "code": "3",
+                "label": "No opinion"
+            },
+            {
+                "code": "4",
+                "label": "Disagree"
+            },
+            {
+                "code": "5",
+                "label": "Strongly disagree"
+            }
+        ]
+    },
+    {
+        "field_label": "[444] How confident are you that you can take your biologic injection according to your treatment plan?",
+        "field_type": "radio",
+        "form_name": "followup",
+        "field_name": "fuacpts_blgcfd",
+        "required_field": "y",
+        "select_choices_or_calculations": [
+            {
+                "code": "1",
+                "label": "Very confident"
+            },
+            {
+                "code": "2",
+                "label": "Confident"
+            },
+            {
+                "code": "3",
+                "label": "No opinion"
+            },
+            {
+                "code": "4",
+                "label": "Unconfident"
+            },
+            {
+                "code": "5",
+                "label": "Very unconfident"
+            }
+        ]
+    },
+    {
+        "field_label": "[445] Taking my biologic injection according to my treatment plan interferes with my other priorities",
+        "field_type": "radio",
+        "form_name": "followup",
+        "field_name": "fuacpts_blgitf",
+        "required_field": "y",
+        "select_choices_or_calculations": [
+            {
+                "code": "1",
+                "label": "Strongly agree"
+            },
+            {
+                "code": "2",
+                "label": "Agree"
+            },
+            {
+                "code": "3",
+                "label": "No opinion"
+            },
+            {
+                "code": "4",
+                "label": "Disagree"
+            },
+            {
+                "code": "5",
+                "label": "Strongly disagree"
+            }
+        ]
+    },
+    {
+        "field_label": "[446] How acceptable to you is taking your biologic injection according to your treatment plan?",
+        "field_type": "radio",
+        "form_name": "followup",
+        "field_name": "fuacpts_blgacp",
+        "required_field": "y",
+        "select_choices_or_calculations": [
+            {
+                "code": "1",
+                "label": "Completely acceptable"
+            },
+            {
+                "code": "2",
+                "label": "Acceptable"
+            },
+            {
+                "code": "3",
+                "label": "No opinion"
+            },
+            {
+                "code": "4",
+                "label": "Unacceptable"
+            },
+            {
+                "code": "5",
+                "label": "Completely unacceptable"
+            }
+        ]
+    },
+    {
+        "field_label": "[447] I would like to continue taking my biologic injection according to my treatment plan",
+        "field_type": "radio",
+        "form_name": "followup",
+        "field_name": "fuacpts_blgaft",
+        "required_field": "y",
+        "select_choices_or_calculations": [
+            {
+                "code": "1",
+                "label": "Strongly agree"
+            },
+            {
+                "code": "2",
+                "label": "Agree"
+            },
+            {
+                "code": "3",
+                "label": "No opinion"
+            },
+            {
+                "code": "4",
+                "label": "Disagree"
+            },
+            {
+                "code": "5",
+                "label": "Strongly disagree"
+            }
+        ]
+    },
+    {
+        "field_label": "[448] How much control do you feel that you have over your current treatment?",
+        "field_type": "radio",
+        "form_name": "followup",
+        "field_name": "fuacpts_blgctltp",
+        "required_field": "y",
+        "select_choices_or_calculations": [
+            {
+                "code": "1",
+                "label": "A great deal"
+            },
+            {
+                "code": "2",
+                "label": "Some"
+            },
+            {
+                "code": "3",
+                "label": "A little"
+            },
+            {
+                "code": "4",
+                "label": "None"
+            }
+        ]
+    },
+    {
+        "field_label": "[449] <u>Acceptability of 'ad hoc' patient-initiated follow-up (PIFU)</u>",
+        "field_type": "descriptive",
+        "form_name": "followup",
+        "field_name": "fuacppifu_txt",
+        "required_field": "false",
+        "section_header": " "
+    },
+    {
+        "field_label": "[450] Do you like or dislike being able to request an appointment with your psoriasis doctor when you need it?",
+        "field_type": "radio",
+        "form_name": "followup",
+        "field_name": "fuacppifu_lke",
+        "required_field": "y",
+        "select_choices_or_calculations": [
+            {
+                "code": "1",
+                "label": "Strongly like"
+            },
+            {
+                "code": "2",
+                "label": "Like"
+            },
+            {
+                "code": "3",
+                "label": "No opinion"
+            },
+            {
+                "code": "4",
+                "label": "Dislike"
+            },
+            {
+                "code": "5",
+                "label": "Strongly dislike"
+            }
+        ]
+    },
+    {
+        "field_label": "[451] How much effort is it to request your appointment with your psoriasis doctor when you need it?",
+        "field_type": "radio",
+        "form_name": "followup",
+        "field_name": "fuacppifu_eft",
+        "required_field": "y",
+        "select_choices_or_calculations": [
+            {
+                "code": "1",
+                "label": "No effort at all"
+            },
+            {
+                "code": "2",
+                "label": "A little effort"
+            },
+            {
+                "code": "3",
+                "label": "No opinion"
+            },
+            {
+                "code": "4",
+                "label": "A lot of effort"
+            },
+            {
+                "code": "5",
+                "label": "Huge effort"
+            }
+        ]
+    },
+    {
+        "field_label": "[452] How fair is it (to people with psoriasis) for you to request an appointment with your psoriasis doctor whenever you need it?",
+        "field_type": "radio",
+        "form_name": "followup",
+        "field_name": "fuacppifu_fre",
+        "required_field": "false",
+        "select_choices_or_calculations": [
+            {
+                "code": "1",
+                "label": "Very fair"
+            },
+            {
+                "code": "2",
+                "label": "Fair"
+            },
+            {
+                "code": "3",
+                "label": "No opinion"
+            },
+            {
+                "code": "4",
+                "label": "Unfair"
+            },
+            {
+                "code": "5",
+                "label": "Very unfair"
+            }
+        ]
+    },
+    {
+        "field_label": "[453] Requesting an appointment with my psoriasis doctor whenever I need it improves my health",
+        "field_type": "radio",
+        "form_name": "followup",
+        "field_name": "fuacppifu_whnappt_hlth",
+        "required_field": "y",
+        "select_choices_or_calculations": [
+            {
+                "code": "1",
+                "label": "Strongly agree"
+            },
+            {
+                "code": "2",
+                "label": "Agree"
+            },
+            {
+                "code": "3",
+                "label": "No opinion"
+            },
+            {
+                "code": "4",
+                "label": "Disagree"
+            },
+            {
+                "code": "5",
+                "label": "Strongly disagree"
+            }
+        ]
+    },
+    {
+        "field_label": "[454] It is clear to me how requesting an appointment with my psoriasis doctor whenever I need it could help improve my health",
+        "field_type": "radio",
+        "form_name": "followup",
+        "field_name": "fuacppifu_reqappt_hlth",
+        "required_field": "y",
+        "select_choices_or_calculations": [
+            {
+                "code": "1",
+                "label": "Strongly agree"
+            },
+            {
+                "code": "2",
+                "label": "Agree"
+            },
+            {
+                "code": "3",
+                "label": "No opinion"
+            },
+            {
+                "code": "4",
+                "label": "Disagree"
+            },
+            {
+                "code": "5",
+                "label": "Strongly disagree"
+            }
+        ]
+    },
+    {
+        "field_label": "[455] How confident are you that you can request an appointment with your psoriasis doctor whenever you need one?",
+        "field_type": "radio",
+        "form_name": "followup",
+        "field_name": "fuacppifu_reqappt_cfd",
+        "required_field": "y",
+        "select_choices_or_calculations": [
+            {
+                "code": "1",
+                "label": "Very confident"
+            },
+            {
+                "code": "2",
+                "label": "Confident"
+            },
+            {
+                "code": "3",
+                "label": "No opinion"
+            },
+            {
+                "code": "4",
+                "label": "Unconfident"
+            },
+            {
+                "code": "5",
+                "label": "Very unconfident"
+            }
+        ]
+    },
+    {
+        "field_label": "[456] How confident are you that you can get an appointment with your psoriasis doctor whenever you need one?",
+        "field_type": "radio",
+        "form_name": "followup",
+        "field_name": "fuacppifu_getappt_cfd",
+        "required_field": "y",
+        "select_choices_or_calculations": [
+            {
+                "code": "1",
+                "label": "Very confident"
+            },
+            {
+                "code": "2",
+                "label": "Confident"
+            },
+            {
+                "code": "3",
+                "label": "No opinion"
+            },
+            {
+                "code": "4",
+                "label": "Unconfident"
+            },
+            {
+                "code": "5",
+                "label": "Very unconfident"
+            }
+        ]
+    },
+    {
+        "field_label": "[457] Requesting an appointment with my psoriasis doctor whenever I need it interferes with my other priorities",
+        "field_type": "radio",
+        "form_name": "followup",
+        "field_name": "fuacppifu_appt_itf",
+        "required_field": "y",
+        "select_choices_or_calculations": [
+            {
+                "code": "1",
+                "label": "Strongly agree"
+            },
+            {
+                "code": "2",
+                "label": "Agree"
+            },
+            {
+                "code": "3",
+                "label": "No opinion"
+            },
+            {
+                "code": "4",
+                "label": "Disagree"
+            },
+            {
+                "code": "5",
+                "label": "Strongly disagree"
+            }
+        ]
+    },
+    {
+        "field_label": "[458] How acceptable to you is requesting an appointment with your psoriasis doctor whenever you need it?",
+        "field_type": "radio",
+        "form_name": "followup",
+        "field_name": "fuacppifu_appt_whever",
+        "required_field": "y",
+        "select_choices_or_calculations": [
+            {
+                "code": "1",
+                "label": "Completely acceptable"
+            },
+            {
+                "code": "2",
+                "label": "Acceptable"
+            },
+            {
+                "code": "3",
+                "label": "No opinion"
+            },
+            {
+                "code": "4",
+                "label": "Unacceptable"
+            },
+            {
+                "code": "5",
+                "label": "Completely unacceptable"
+            }
+        ]
+    },
+    {
+        "field_label": "[459] I would like to continue to be able to request an appointment with my psoriasis doctor when I need it.",
+        "field_type": "radio",
+        "form_name": "followup",
+        "field_name": "fuacppifu_apptchse",
+        "required_field": "y",
+        "select_choices_or_calculations": [
+            {
+                "code": "1",
+                "label": "Strongly Agree"
+            },
+            {
+                "code": "2",
+                "label": "Agree"
+            },
+            {
+                "code": "3",
+                "label": "No opinion"
+            },
+            {
+                "code": "4",
+                "label": "Disagree"
+            },
+            {
+                "code": "5",
+                "label": "Strongly disagree"
+            }
+        ]
+    },
+    {
+        "field_label": "[460] How much control do you feel that you have over when you have appointments?",
+        "field_type": "radio",
+        "form_name": "followup",
+        "field_name": "fuacppifu_apptctl",
+        "required_field": "y",
+        "select_choices_or_calculations": [
+            {
+                "code": "1",
+                "label": "A great deal"
+            },
+            {
+                "code": "2",
+                "label": "Some"
+            },
+            {
+                "code": "3",
+                "label": "A little"
+            },
+            {
+                "code": "4",
+                "label": "None"
+            }
+        ]
+    },
+    {
+        "field_label": "[472] With these next few questions, we are trying to find out about your health and care needs. If you are unsure, please put in your best estimate.\n\n<u>1) Community-based NHS services</u>",
+        "field_type": "descriptive",
+        "field_name": "fuhcn_txt",
+        "section_header": "Health and care needs"
+    },
+    {
+        "field_label": "[473] <p>In the last 3 months have you had an appointment with any <strong>community-based</strong> health professionals (e.g., GP, practice nurse, walk-in centre etc) <strong>as a result of your psoriasis or treatment for your psoriasis?</strong></p>",
+        "field_type": "yesno",
+        "field_name": "fuhcn1a",
+        "required_field": "y"
+    },
+    {
+        "field_label": "[474] For each professional listed below, please state 'Yes' if you had an appointment with that professional as a result of your psoriasis or treatment for your psoriasis, and enter the number of visits (virtual/telephone and in-person visits). There is space for you to name other professionals you have seen via the NHS as a result of your psoriasis or treatment for your psoriasis.",
+        "field_type": "descriptive",
+        "field_name": "fuhcn1a_txt",
+        "branching_logic": "[fuhcn1a]='1'"
+    },
+    {
+        "field_label": "[475] General Practitioner",
+        "field_type": "yesno",
+        "field_name": "fuhcn1a_gp",
+        "required_field": "y",
+        "branching_logic": "[fuhcn1a]='1'"
+    },
+    {
+        "field_label": "[476] General Practitioner - Number of virtual/telephone visits in the last 3 months?",
+        "field_type": "text",
+        "field_name": "fuhcn1a_gpvrt",
+        "required_field": "y",
+        "text_validation_type_or_show_slider_number": "integer",
+        "text_validation_max": "50",
+        "text_validation_min": "0",
+        "branching_logic": "[fuhcn1a_gp]='1'"
+    },
+    {
+        "field_label": "[477] General Practitioner - Number of in-person visits in the last 3 months?",
+        "field_type": "text",
+        "field_name": "fuhcn1a_gpipv",
+        "required_field": "y",
+        "text_validation_type_or_show_slider_number": "integer",
+        "text_validation_max": "50",
+        "text_validation_min": "0",
+        "branching_logic": "[fuhcn1a_gp]='1'"
+    },
+    {
+        "field_label": "[478] Practice nurse",
+        "field_type": "yesno",
+        "field_name": "fuhcn1a_pn",
+        "required_field": "y",
+        "branching_logic": "[fuhcn1a]='1'"
+    },
+    {
+        "field_label": "[479] Practice nurse -Number of virtual/telephone visits in the last 3 months?",
+        "field_type": "text",
+        "field_name": "fuhcn1a_pnvrt",
+        "required_field": "y",
+        "text_validation_type_or_show_slider_number": "integer",
+        "text_validation_max": "50",
+        "text_validation_min": "0",
+        "branching_logic": "[fuhcn1a_pn]='1'"
+    },
+    {
+        "field_label": "[480] Practice nurse - Number of in-person visits in the last 3 months?",
+        "field_type": "text",
+        "field_name": "fuhcn1a_pnipv",
+        "required_field": "y",
+        "text_validation_type_or_show_slider_number": "integer",
+        "text_validation_max": "50",
+        "text_validation_min": "0",
+        "branching_logic": "[fuhcn1a_pn]='1'"
+    },
+    {
+        "field_label": "[481] Health care assistant",
+        "field_type": "yesno",
+        "field_name": "fuhcn1a_hca",
+        "required_field": "y",
+        "branching_logic": "[fuhcn1a]='1'"
+    },
+    {
+        "field_label": "[482] Health care assistant - Number of virtual/telephone visits in the last 3 months?",
+        "field_type": "text",
+        "field_name": "fuhcn1a_hcavrt",
+        "required_field": "y",
+        "text_validation_type_or_show_slider_number": "integer",
+        "text_validation_min": "0",
+        "branching_logic": "[fuhcn1a_hca]='1'"
+    },
+    {
+        "field_label": "[483] Health care assistant - Number of in-person visits in the last 3 months?",
+        "field_type": "text",
+        "field_name": "fuhcn1a_hcaipv",
+        "required_field": "y",
+        "text_validation_type_or_show_slider_number": "integer",
+        "text_validation_max": "50",
+        "text_validation_min": "0",
+        "branching_logic": "[fuhcn1a_hca]='1'"
+    },
+    {
+        "field_label": "[484] NHS Walk in centre",
+        "field_type": "yesno",
+        "field_name": "fuhcn1a_nhs",
+        "required_field": "y",
+        "branching_logic": "[fuhcn1a]='1'"
+    },
+    {
+        "field_label": "[485] NHS Walk in centre - Number of virtual/telephone visits in the last 3 months?",
+        "field_type": "text",
+        "field_name": "fuhcn1a_nhsvrt",
+        "required_field": "y",
+        "text_validation_type_or_show_slider_number": "integer",
+        "text_validation_max": "50",
+        "text_validation_min": "0",
+        "branching_logic": "[fuhcn1a_nhs]='1'"
+    },
+    {
+        "field_label": "[486] NHS Walk in centre - Number of in-person visits in the last 3 months?",
+        "field_type": "text",
+        "field_name": "fuhcn1a_nhsipv",
+        "required_field": "y",
+        "text_validation_type_or_show_slider_number": "integer",
+        "text_validation_max": "50",
+        "text_validation_min": "0",
+        "branching_logic": "[fuhcn1a_nhs]='1'"
+    },
+    {
+        "field_label": "[487] Community dermatology service",
+        "field_type": "yesno",
+        "field_name": "fuhcn1a_cds",
+        "required_field": "y",
+        "branching_logic": "[fuhcn1a]='1'"
+    },
+    {
+        "field_label": "[488] Community dermatology service - Number of virtual/telephone visits in the last 3 months?",
+        "field_type": "text",
+        "field_name": "fuhcn1a_cdsvrt",
+        "required_field": "y",
+        "text_validation_type_or_show_slider_number": "integer",
+        "text_validation_max": "50",
+        "text_validation_min": "0",
+        "branching_logic": "[fuhcn1a_cds]='1'"
+    },
+    {
+        "field_label": "[489] Community dermatology service - Number of in-person visits in the last 3 months?",
+        "field_type": "text",
+        "field_name": "fuhcn1a_cdsipv",
+        "required_field": "y",
+        "text_validation_type_or_show_slider_number": "integer",
+        "text_validation_max": "50",
+        "text_validation_min": "0",
+        "branching_logic": "[fuhcn1a_cds]='1'"
+    },
+    {
+        "field_label": "[490] 1. Other, please specify who:",
+        "field_type": "text",
+        "field_name": "fuhcn1a_oth1_txt",
+        "required_field": "false",
+        "branching_logic": "[fuhcn1a]='1'"
+    },
+    {
+        "field_label": "[491] 1. [fuhcn1a_oth1_txt]",
+        "field_type": "yesno",
+        "field_name": "fuhcn1a_oth1",
+        "required_field": "y",
+        "branching_logic": "[fuhcn1a_oth1_txt]<>'undefined' and [fuhcn1a_oth1_txt]<>''"
+    },
+    {
+        "field_label": "[492] 1. [fuhcn1a_oth1_txt] - How many times virtual/telephone?",
+        "field_type": "text",
+        "field_name": "fuhcn1a_oth1vrt",
+        "required_field": "y",
+        "text_validation_type_or_show_slider_number": "integer",
+        "text_validation_min": "0",
+        "branching_logic": "[fuhcn1a_oth1]='1'"
+    },
+    {
+        "field_label": "[493] 1. [fuhcn1a_oth1_txt] - How many times in-person?",
+        "field_type": "text",
+        "field_name": "fuhcn1a_oth1ipv",
+        "required_field": "y",
+        "text_validation_type_or_show_slider_number": "integer",
+        "text_validation_min": "0",
+        "branching_logic": "[fuhcn1a_oth1]='1'"
+    },
+    {
+        "field_label": "[494] 2. Other, please specify who",
+        "field_type": "text",
+        "field_name": "fuhcn1a_oth2_txt",
+        "required_field": "false",
+        "branching_logic": "[fuhcn1a_oth1_txt]<>'undefined' and [fuhcn1a_oth1_txt]<>''"
+    },
+    {
+        "field_label": "[495] 2. [fuhcn1a_oth2_txt]",
+        "field_type": "yesno",
+        "field_name": "fuhcn1a_oth2",
+        "required_field": "y",
+        "branching_logic": "[fuhcn1a_oth2_txt]<>'undefined' and [fuhcn1a_oth2_txt]<>''"
+    },
+    {
+        "field_label": "[496] 2. [fuhcn1a_oth2_txt] - How many times virtual/telephone?",
+        "field_type": "text",
+        "field_name": "fuhcn1a_oth2vrt",
+        "required_field": "y",
+        "text_validation_type_or_show_slider_number": "integer",
+        "text_validation_min": "0",
+        "branching_logic": "[fuhcn1a_oth2]='1'"
+    },
+    {
+        "field_label": "[497] 2. [fuhcn1a_oth2_txt] - How many times in-person?",
+        "field_type": "text",
+        "field_name": "fuhcn1a_oth2ipv",
+        "required_field": "y",
+        "text_validation_type_or_show_slider_number": "integer",
+        "text_validation_min": "0",
+        "branching_logic": "[fuhcn1a_oth2]='1'"
+    },
+    {
+        "field_label": "[498] 3. Other, please specify who",
+        "field_type": "text",
+        "field_name": "fuhcn1a_oth3_txt",
+        "required_field": "false",
+        "branching_logic": "[fuhcn1a_oth2_txt]<>'undefined' and [fuhcn1a_oth2_txt]<>''"
+    },
+    {
+        "field_label": "[499] 3. [fuhcn1a_oth3_txt]",
+        "field_type": "yesno",
+        "field_name": "fuhcn1a_oth3",
+        "required_field": "y",
+        "branching_logic": "[fuhcn1a_oth3_txt]<>'undefined' and [fuhcn1a_oth3_txt]<>''"
+    },
+    {
+        "field_label": "[500] 3. [fuhcn1a_oth3_txt] - How many times virtual/telephone?",
+        "field_type": "text",
+        "field_name": "fuhcn1a_oth3vrt",
+        "required_field": "y",
+        "text_validation_type_or_show_slider_number": "integer",
+        "text_validation_min": "0",
+        "branching_logic": "[fuhcn1a_oth3]='1'"
+    },
+    {
+        "field_label": "[501] 3. [fuhcn1a_oth3_txt] - How many times in-person?",
+        "field_type": "text",
+        "field_name": "fuhcn1a_oth3ipv",
+        "required_field": "y",
+        "text_validation_type_or_show_slider_number": "integer",
+        "text_validation_min": "0",
+        "branching_logic": "[fuhcn1a_oth3]='1'"
+    },
+    {
+        "field_label": "[502] <p><u>2) Hospital-based services</u></p><p>2a. In the last 3 months have you had an outpatient hospital appointment (either virtual/telephone or in-person) as a result of your psoriasis or treatment for your psoriasis?",
+        "field_type": "yesno",
+        "field_name": "fuhcn2a",
+        "required_field": "y",
+        "section_header": " "
+    },
+    {
+        "field_label": "[503] <p>For each outpatient visit you had at the hospital as a result of your psoriasis or treatment for your psoriasis, please record the type of healthcare professional you saw and the number of virtual/telephone and in-person visits.</p><p>Please do not include visits with any healthcare professionals that took place outside of the hospital.</p>",
+        "field_type": "descriptive",
+        "field_name": "fuhcn2a_txt",
+        "branching_logic": "[fuhcn2a]='1'"
+    },
+    {
+        "field_label": "[504] Dermatologist - Number of outpatient visits virtual/telephone",
+        "field_type": "text",
+        "field_name": "fuhcn2a_dmvrt",
+        "required_field": "false",
+        "text_validation_type_or_show_slider_number": "integer",
+        "text_validation_min": "0",
+        "branching_logic": "[fuhcn2a]='1'"
+    },
+    {
+        "field_label": "[505] Dermatologist - Number of outpatient visits in-person",
+        "field_type": "text",
+        "field_name": "fuhcn2a_dmipv",
+        "required_field": "false",
+        "text_validation_type_or_show_slider_number": "integer",
+        "text_validation_min": "0",
+        "branching_logic": "[fuhcn2a]='1'"
+    },
+    {
+        "field_label": "[506] Dermatology nurse - Number of outpatient visits virtual/telephone",
+        "field_type": "text",
+        "field_name": "fuhcn2a_dmnvrt",
+        "required_field": "false",
+        "text_validation_type_or_show_slider_number": "integer",
+        "text_validation_min": "0",
+        "branching_logic": "[fuhcn2a]='1'"
+    },
+    {
+        "field_label": "[507] Dermatology nurse - Number of outpatient visits in-person",
+        "field_type": "text",
+        "field_name": "fuhcn2a_dmnipv",
+        "required_field": "false",
+        "text_validation_type_or_show_slider_number": "integer",
+        "text_validation_min": "0",
+        "branching_logic": "[fuhcn2a]='1'"
+    },
+    {
+        "field_label": "[508] 1. Other, please specify other health professional you saw",
+        "field_type": "text",
+        "field_name": "fuhcn2a_oth1_txt",
+        "required_field": "false",
+        "branching_logic": "[fuhcn2a]='1'"
+    },
+    {
+        "field_label": "[509] 1. [fuhcn2a_oth1_txt] - Number of virtual/telephone visits in the last 3 months",
+        "field_type": "text",
+        "field_name": "fuhcn2a_oth1vrt",
+        "required_field": "y",
+        "text_validation_type_or_show_slider_number": "integer",
+        "text_validation_max": "50",
+        "text_validation_min": "0",
+        "branching_logic": "[fuhcn2a_oth1_txt]<>'undefined' and [fuhcn2a_oth1_txt]<>''"
+    },
+    {
+        "field_label": "[510] 1. [fuhcn2a_oth1_txt] - Number of in-person visits in the last 3 months",
+        "field_type": "text",
+        "field_name": "fuhcn2a_oth1ipv",
+        "required_field": "y",
+        "text_validation_type_or_show_slider_number": "integer",
+        "text_validation_max": "50",
+        "text_validation_min": "0",
+        "branching_logic": "[fuhcn2a_oth1_txt]<>'undefined' and [fuhcn2a_oth1_txt]<>''"
+    },
+    {
+        "field_label": "[511] 2. Other, please specify other health professional you saw",
+        "field_type": "text",
+        "field_name": "fuhcn2a_oth2_txt",
+        "required_field": "false",
+        "branching_logic": "[fuhcn2a_oth1_txt]<>'undefined' and [fuhcn2a_oth1_txt]<>''"
+    },
+    {
+        "field_label": "[512] 2. [fuhcn2a_oth2_txt] - Number of virtual/telephone visits in the last  3 months",
+        "field_type": "text",
+        "field_name": "fuhcn2a_oth2vrt",
+        "required_field": "y",
+        "text_validation_type_or_show_slider_number": "integer",
+        "text_validation_max": "50",
+        "text_validation_min": "0",
+        "branching_logic": "[fuhcn2a_oth2_txt]<>'undefined' and [fuhcn2a_oth2_txt]<>''"
+    },
+    {
+        "field_label": "[513] 2. [fuhcn2a_oth2_txt] - Number of in-person visits in the last 3 months",
+        "field_type": "text",
+        "field_name": "fuhcn2a_oth2ipv",
+        "required_field": "y",
+        "text_validation_type_or_show_slider_number": "integer",
+        "text_validation_max": "50",
+        "text_validation_min": "0",
+        "branching_logic": "[fuhcn2a_oth2_txt]<>'undefined' and [fuhcn2a_oth2_txt]<>''"
+    },
+    {
+        "field_label": "[514] 3. Other, please specify other health professional you saw",
+        "field_type": "text",
+        "field_name": "fuhcn2a_oth3_txt",
+        "required_field": "false",
+        "branching_logic": "[fuhcn2a_oth2_txt]<>'undefined' and [fuhcn2a_oth2_txt]<>''"
+    },
+    {
+        "field_label": "[515] 3. [fuhcn2a_oth3_txt] - Number of virtual/telephone visits in the last 3 months",
+        "field_type": "text",
+        "field_name": "fuhcn2a_oth3vrt",
+        "required_field": "y",
+        "text_validation_type_or_show_slider_number": "integer",
+        "text_validation_max": "50",
+        "text_validation_min": "0",
+        "branching_logic": "[fuhcn2a_oth3_txt]<>'undefined' and [fuhcn2a_oth3_txt]<>''"
+    },
+    {
+        "field_label": "[516] 3. [fuhcn2a_oth3_txt] - Number of in-person visits in the last 3 months",
+        "field_type": "text",
+        "field_name": "fuhcn2a_oth3ipv",
+        "required_field": "y",
+        "text_validation_type_or_show_slider_number": "integer",
+        "text_validation_max": "50",
+        "text_validation_min": "0",
+        "branching_logic": "[fuhcn2a_oth3_txt]<>'undefined' and [fuhcn2a_oth3_txt]<>''"
+    },
+    {
+        "field_label": "[517] 2b. In the last 3 months, did you attend Accident and Emergency Services as a result of your psoriasis or treatment for your psoriasis?",
+        "field_type": "yesno",
+        "field_name": "fuhcn2b",
+        "required_field": "y"
+    },
+    {
+        "field_label": "[518] Number of A&E visits in the last 3 months:",
+        "field_type": "text",
+        "field_name": "fuhcn2b_vsts",
+        "required_field": "y",
+        "text_validation_type_or_show_slider_number": "integer",
+        "text_validation_min": "0",
+        "branching_logic": "[fuhcn2b]='1'"
+    },
+    {
+        "field_label": "[519] 2c. In the last 3 months, have you been admitted to hospital as a day case or inpatient as a result of your psoriasis or treatment for your psoriasis?",
+        "field_type": "yesno",
+        "field_name": "fuhcn2c",
+        "required_field": "y"
+    },
+    {
+        "field_label": "[520] For each day case/inpatient visit you have had as a result of your psoriasis or treatment for your psoriasis, please record the type of ward you were admitted to and the duration of your stay. Please include any day case procedures.",
+        "field_type": "descriptive",
+        "field_name": "fuhcn2c_txt",
+        "required_field": "false",
+        "branching_logic": "[fuhcn2c]='1'"
+    },
+    {
+        "field_label": "[521] Visit 1 - The type of department or ward  or reason for admission",
+        "field_type": "text",
+        "field_name": "fuhcn2c_dep1txt",
+        "required_field": "y",
+        "branching_logic": "[fuhcn2c]='1'"
+    },
+    {
+        "field_label": "[522] Visit 1 - Duration of stay (number of days) in [fuhcn2c_dep1txt]",
+        "field_type": "text",
+        "field_name": "fuhcn2c_dep1dys",
+        "required_field": "y",
+        "text_validation_type_or_show_slider_number": "integer",
+        "text_validation_min": "0",
+        "branching_logic": "[fuhcn2c_dep1txt]<>'undefined' and [fuhcn2c_dep1txt]<>''"
+    },
+    {
+        "field_label": "[523] Visit 2 - The type of department or ward  or reason for admission",
+        "field_type": "text",
+        "field_name": "fuhcn2c_dep2txt",
+        "required_field": "false",
+        "branching_logic": "[fuhcn2c_dep1txt]<>'undefined' and [fuhcn2c_dep1txt]<>''"
+    },
+    {
+        "field_label": "[524] Visit 2 - Duration of stay (number of days) in [fuhcn2c_dep2txt]",
+        "field_type": "text",
+        "field_name": "fuhcn2c_dep2dys",
+        "required_field": "y",
+        "text_validation_type_or_show_slider_number": "integer",
+        "text_validation_min": "0",
+        "branching_logic": "[fuhcn2c_dep2txt]<>'undefined' and [fuhcn2c_dep2txt]<>''"
+    },
+    {
+        "field_label": "[525] Visit 3 - The type of department or ward  or reason for admission",
+        "field_type": "text",
+        "field_name": "fuhcn2c_dep3txt",
+        "required_field": "false",
+        "branching_logic": "[fuhcn2c_dep2txt]<>'undefined' and [fuhcn2c_dep2txt]<>''"
+    },
+    {
+        "field_label": "[526] Visit 3 - Duration of stay (number of days) in [fuhcn2c_dep3txt]",
+        "field_type": "text",
+        "field_name": "fuhcn2c_dep3dys",
+        "required_field": "y",
+        "text_validation_type_or_show_slider_number": "integer",
+        "text_validation_min": "0",
+        "branching_logic": "[fuhcn2c_dep3txt]<>'undefined' and [fuhcn2c_dep3txt]<>''"
+    },
+    {
+        "field_label": "[527] <b><u>3) Other services</u></b>",
+        "field_type": "descriptive",
+        "field_name": "fuhcn3_txt",
+        "required_field": "false",
+        "section_header": " "
+    },
+    {
+        "field_label": "[528] 3. In the last 3 months have you received any other publicly provided services as a result of your psoriasis or treatment for your psoriasis?",
+        "field_type": "yesno",
+        "field_name": "fuhcn3",
+        "required_field": "y",
+        "custom_alignment": "LH"
+    },
+    {
+        "field_label": "[529] Please give details including type and how many times received",
+        "field_type": "notes",
+        "field_name": "fuhcn3_det",
+        "required_field": "y",
+        "branching_logic": "[fuhcn3]='1'"
+    },
+    {
+        "field_label": "[530] <u>4) Personal Costs</u><p>With these next few questions, we are trying to find out more about the costs incurred by you and your family/friends as a result of your psoriasis or treatment for your psoriasis.</p>",
+        "field_type": "descriptive",
+        "field_name": "fuhcn4_txt",
+        "required_field": "false",
+        "section_header": " "
+    },
+    {
+        "field_label": "[531] 4a. In the last 3 months have you or your family/friends incurred any other costs as a result of your psoriasis or treatment for your psoriasis?",
+        "field_type": "yesno",
+        "field_name": "fuhcn4a",
+        "required_field": "y"
+    },
+    {
+        "field_label": "[532] <p>Please state the details and the approximate cost of items purchased as a result of your psoriasis or treatment for your psoriasis.</p> <p>Example</p> <table style=\"border-collapse: collapse; width: 99.9489%; height: 46.7222px;\" border=\"1\"><colgroup><col style=\"width: 33.239%;\"><col style=\"width: 33.239%;\"><col style=\"width: 33.239%;\"></colgroup> <tbody> <tr style=\"height: 24.8611px;\"> <td style=\"height: 24.8611px;\">Item</td> <td style=\"height: 24.8611px;\">Number of items or visits</td> <td style=\"height: 24.8611px;\">Overall cost (£)</td> </tr> <tr style=\"height: 21.8611px;\"> <td style=\"height: 21.8611px;\"><em>Homeopath</em></td> <td style=\"height: 21.8611px;\"><em>2 visits</em></td> <td style=\"height: 21.8611px;\"><em>£80 (2x£40)</em></td> </tr> </tbody> </table></div>",
+        "field_type": "descriptive",
+        "field_name": "fuhcn4a_txt",
+        "required_field": "false",
+        "branching_logic": "[fuhcn4a]='1'"
+    },
+    {
+        "field_label": "[533] Private health care or Complementary therapy - number of items or visits",
+        "field_type": "text",
+        "field_name": "fuhcn4a_ph",
+        "required_field": "false",
+        "text_validation_type_or_show_slider_number": "number",
+        "text_validation_min": "0",
+        "branching_logic": "[fuhcn4a]='1'"
+    },
+    {
+        "field_label": "[534] Private health care or Complementary therapy - overall cost (£)",
+        "field_type": "text",
+        "field_name": "fuhcn4a_phcst",
+        "required_field": "false",
+        "text_validation_type_or_show_slider_number": "number",
+        "text_validation_min": "0",
+        "branching_logic": "[fuhcn4a]='1'"
+    },
+    {
+        "field_label": "[535] Non-prescribed medication - number of items",
+        "field_type": "text",
+        "field_name": "fuhcn4a_npm",
+        "required_field": "false",
+        "text_validation_type_or_show_slider_number": "number",
+        "text_validation_min": "0",
+        "branching_logic": "[fuhcn4a]='1'"
+    },
+    {
+        "field_label": "[536] Non-prescribed medication - overall cost (£)",
+        "field_type": "text",
+        "field_name": "fuhcn4a_npmcst",
+        "required_field": "false",
+        "text_validation_type_or_show_slider_number": "number",
+        "text_validation_min": "0",
+        "branching_logic": "[fuhcn4a]='1'"
+    },
+    {
+        "field_label": "[537] Travel costs to health care appointments (including parking costs, petrol costs or bus/train fares for instance) - number of visits",
+        "field_type": "text",
+        "field_name": "fuhcn4a_tvl",
+        "required_field": "false",
+        "text_validation_type_or_show_slider_number": "number",
+        "text_validation_min": "0",
+        "branching_logic": "[fuhcn4a]='1'"
+    },
+    {
+        "field_label": "[538] Travel costs to health care appointments (including parking costs, petrol costs or bus/train fares for instance) -overall cost (£)",
+        "field_type": "text",
+        "field_name": "fuhcn4a_tvlcst",
+        "required_field": "false",
+        "text_validation_type_or_show_slider_number": "number",
+        "text_validation_min": "0",
+        "branching_logic": "[fuhcn4a]='1'"
+    },
+    {
+        "field_label": "[539] Cosmetic and skin care products - number of items or visits",
+        "field_type": "text",
+        "field_name": "fuhcn4a_skc",
+        "required_field": "false",
+        "text_validation_type_or_show_slider_number": "number",
+        "text_validation_min": "0",
+        "branching_logic": "[fuhcn4a]='1'"
+    },
+    {
+        "field_label": "[540] Cosmetic and skin care products - overall cost (£)",
+        "field_type": "text",
+        "field_name": "fuhcn4a_skccst",
+        "required_field": "false",
+        "text_validation_type_or_show_slider_number": "number",
+        "text_validation_min": "0",
+        "branching_logic": "[fuhcn4a]='1'"
+    },
+    {
+        "field_label": "[541] Special foods or dietary supplements (please specify)",
+        "field_type": "notes",
+        "field_name": "fuhcn4a_sf_txt",
+        "required_field": "false",
+        "branching_logic": "[fuhcn4a]='1'"
+    },
+    {
+        "field_label": "[542] Special foods or dietary supplements - number of items",
+        "field_type": "text",
+        "field_name": "fuhcn4a_sf",
+        "required_field": "false",
+        "text_validation_type_or_show_slider_number": "number",
+        "text_validation_min": "0",
+        "branching_logic": "[fuhcn4a]='1'"
+    },
+    {
+        "field_label": "[543] Special foods or dietary supplements - overall cost (£)",
+        "field_type": "text",
+        "field_name": "fuhcn4a_sfcst",
+        "required_field": "false",
+        "text_validation_type_or_show_slider_number": "number",
+        "text_validation_min": "0",
+        "branching_logic": "[fuhcn4a]='1'"
+    },
+    {
+        "field_label": "[544] Special clothing or bedding (please specify)",
+        "field_type": "notes",
+        "field_name": "fuhcn4a_sc_txt",
+        "required_field": "false",
+        "branching_logic": "[fuhcn4a]='1'"
+    },
+    {
+        "field_label": "[545] Special clothing or bedding - number of items",
+        "field_type": "text",
+        "field_name": "fuhcn4a_sc",
+        "required_field": "false",
+        "text_validation_type_or_show_slider_number": "number",
+        "text_validation_min": "0",
+        "branching_logic": "[fuhcn4a]='1'"
+    },
+    {
+        "field_label": "[546] Special clothing or bedding - overall cost (£)",
+        "field_type": "text",
+        "field_name": "fuhcn4a_sccst",
+        "required_field": "false",
+        "text_validation_type_or_show_slider_number": "number",
+        "text_validation_min": "0",
+        "branching_logic": "[fuhcn4a]='1'"
+    },
+    {
+        "field_label": "[547] Mental health support e.g., counselling (please specify)",
+        "field_type": "notes",
+        "field_name": "fuhcn4a_mhs_txt",
+        "required_field": "false",
+        "branching_logic": "[fuhcn4a]='1'"
+    },
+    {
+        "field_label": "[548] Mental health support e.g. counselling - number visits",
+        "field_type": "text",
+        "field_name": "fuhcn4a_mhs",
+        "required_field": "false",
+        "text_validation_type_or_show_slider_number": "number",
+        "text_validation_min": "0",
+        "branching_logic": "[fuhcn4a]='1'"
+    },
+    {
+        "field_label": "[549] Mental health  support e.g., counselling - overall cost (£)",
+        "field_type": "text",
+        "field_name": "fuhcn4a_mhscst",
+        "required_field": "false",
+        "text_validation_type_or_show_slider_number": "number",
+        "text_validation_min": "0",
+        "branching_logic": "[fuhcn4a]='1'"
+    },
+    {
+        "field_label": "[550] 1. Other (please specify)",
+        "field_type": "notes",
+        "field_name": "fuhcn4a_oth1_txt",
+        "required_field": "false",
+        "branching_logic": "[fuhcn4a]='1'"
+    },
+    {
+        "field_label": "[551] 1. Other - number of items or visits",
+        "field_type": "text",
+        "field_name": "fuhcn4a_oth1",
+        "required_field": "false",
+        "text_validation_type_or_show_slider_number": "number",
+        "text_validation_min": "0",
+        "branching_logic": "[fuhcn4a_oth1_txt]<>'undefined' and [fuhcn4a_oth1_txt]<>''"
+    },
+    {
+        "field_label": "[552] 1. Other - overall cost (£)",
+        "field_type": "text",
+        "field_name": "fuhcn4a_oth1cst",
+        "required_field": "false",
+        "text_validation_type_or_show_slider_number": "number",
+        "text_validation_min": "0",
+        "branching_logic": "[fuhcn4a_oth1_txt]<>'undefined' and [fuhcn4a_oth1_txt]<>''"
+    },
+    {
+        "field_label": "[553] 2. Other (please specify)",
+        "field_type": "notes",
+        "field_name": "fuhcn4a_oth2_txt",
+        "required_field": "false",
+        "branching_logic": "[fuhcn4a_oth1_txt]<>'undefined' and [fuhcn4a_oth1_txt]<>''"
+    },
+    {
+        "field_label": "[554] 2. Other - number of items or visits",
+        "field_type": "text",
+        "field_name": "fuhcn4a_oth2",
+        "required_field": "false",
+        "text_validation_type_or_show_slider_number": "number",
+        "text_validation_min": "0",
+        "branching_logic": "[fuhcn4a_oth2_txt]<>'undefined' and [fuhcn4a_oth2_txt]<>''"
+    },
+    {
+        "field_label": "[555] 2. Other - overall cost (£)",
+        "field_type": "text",
+        "field_name": "fuhcn4a_oth2cst",
+        "required_field": "false",
+        "text_validation_type_or_show_slider_number": "number",
+        "text_validation_min": "0",
+        "branching_logic": "[fuhcn4a_oth2_txt]<>'undefined' and [fuhcn4a_oth2_txt]<>''"
+    },
+    {
+        "field_label": "[556] 3. Other (please specify)",
+        "field_type": "notes",
+        "field_name": "fuhcn4a_oth3_txt",
+        "required_field": "false",
+        "branching_logic": "[fuhcn4a_oth2_txt]<>'undefined' and [fuhcn4a_oth2_txt]<>''"
+    },
+    {
+        "field_label": "[557] 3. Other - number of items or visits",
+        "field_type": "text",
+        "field_name": "fuhcn4a_oth3",
+        "required_field": "false",
+        "text_validation_type_or_show_slider_number": "number",
+        "text_validation_min": "0",
+        "branching_logic": "[fuhcn4a_oth3_txt]<>'undefined' and [fuhcn4a_oth3_txt]<>''"
+    },
+    {
+        "field_label": "[558] 3. Other - overall cost (£)",
+        "field_type": "text",
+        "field_name": "fuhcn4a_oth3cst",
+        "required_field": "false",
+        "text_validation_type_or_show_slider_number": "number",
+        "text_validation_min": "0",
+        "branching_logic": "[fuhcn4a_oth3_txt]<>'undefined' and [fuhcn4a_oth3_txt]<>''"
+    },
+    {
+        "field_label": "[559] 4b. In the last 3 months have you been in any type of paid employment?",
+        "field_type": "yesno",
+        "form_name": "followup",
+        "field_name": "fuhcn4b",
+        "required_field": "y",
+        "custom_alignment": "LH"
+    },
+    {
+        "field_label": "[560] ",
+        "field_type": "radio",
+        "form_name": "followup",
+        "field_name": "fuhcn4b_wrk",
+        "required_field": "y",
+        "custom_alignment": "LH",
+        "select_choices_or_calculations": [
+            {
+                "code": "1",
+                "label": "I work full-time"
+            },
+            {
+                "code": "2",
+                "label": "I work part-time"
+            }
+        ],
+        "branching_logic": "[fuhcn4b]='1'"
+    },
+    {
+        "field_label": "[561] Which of the following best describes your situation?",
+        "field_type": "radio",
+        "form_name": "followup",
+        "field_name": "fuhcn4b_wrksit",
+        "required_field": "y",
+        "select_choices_or_calculations": [
+            {
+                "code": "1",
+                "label": "Unable to work because of my psoriasis"
+            },
+            {
+                "code": "2",
+                "label": "Unable to work because of other sickness or disability (NOT my psoriasis)"
+            },
+            {
+                "code": "3",
+                "label": "Doing unpaid or voluntary work"
+            },
+            {
+                "code": "4",
+                "label": "Full or part-time student"
+            },
+            {
+                "code": "5",
+                "label": "Looking after home and/or family/carer"
+            },
+            {
+                "code": "6",
+                "label": "Unemployed but looking for paid employment"
+            },
+            {
+                "code": "7",
+                "label": "Unemployed and NOT looking for paid employment"
+            },
+            {
+                "code": "8",
+                "label": "Full or part-time student"
+            },
+            {
+                "code": "9",
+                "label": "Retired"
+            },
+            {
+                "code": "10",
+                "label": "None of the above"
+            },
+            {
+                "code": "11",
+                "label": "Prefer not to say"
+            }
+        ],
+        "branching_logic": "[fuhcn4b]='0' and [fuhcn4b]<>'undefined' and [fuhcn4b]<>''"
+    },
+    {
+        "field_label": "[562] <p><strong>In the last 3 months,</strong> how much did</span> <strong>your psoriasis </strong><strong>or treatment for your psoriasis</strong> affect your productivity <strong>while you were working</strong>?</p><p><i>Think about days you were limited in the amount or kind of work you could do, days you accomplished less than you would like, or days you could not do your work as carefully as usual. Choose a low number if your <strong>psoriasis </strong></i><strong><i>or treatment for your psoriasis affected your work only a little.</i></strong>Choose a high number if your<i> <strong>psoriasis </strong></i><strong><i>or treatment for your psoriasis affected your work a great deal.</i></strong>",
+        "field_type": "radio",
+        "form_name": "followup",
+        "field_name": "fuhcn4b_wrkafft",
+        "required_field": "y",
+        "custom_alignment": "LV",
+        "select_choices_or_calculations": [
+            {
+                "code": "0",
+                "label": "0 - Psoriasis or psoriasis treatment had no effect on my work"
+            },
+            {
+                "code": "1",
+                "label": "1"
+            },
+            {
+                "code": "2",
+                "label": "2"
+            },
+            {
+                "code": "3",
+                "label": "3"
+            },
+            {
+                "code": "4",
+                "label": "4"
+            },
+            {
+                "code": "5",
+                "label": "5"
+            },
+            {
+                "code": "6",
+                "label": "6"
+            },
+            {
+                "code": "7",
+                "label": "7"
+            },
+            {
+                "code": "8",
+                "label": "8"
+            },
+            {
+                "code": "9",
+                "label": "9"
+            },
+            {
+                "code": "10",
+                "label": "10 - Psoriasis or psoriasis treatment completely prevented me from working"
+            }
+        ],
+        "branching_logic": "[fuhcn4b]='1'"
+    },
+    {
+        "field_label": "[563] In the last 3 months, has your psoriasis or treatment for your psoriasis resulted in you changing the number of hours you work?",
+        "field_type": "yesno",
+        "form_name": "followup",
+        "field_name": "fuhcn4b_wrk3mchg",
+        "required_field": "y",
+        "custom_alignment": "LH",
+        "branching_logic": "[fuhcn4b]='1'"
+    },
+    {
+        "field_label": "[564] In the last 3 months, what has the impact on number of hours worked been as a result of your psoriasis or treatment for your psoriasis or treatment for your psoriasis (e.g., due to sick leave related to you psoriasis, to attend appointments etc)?",
+        "field_type": "radio",
+        "form_name": "followup",
+        "field_name": "fuhcn4b_wrk3m",
+        "required_field": "y",
+        "custom_alignment": "LV",
+        "select_choices_or_calculations": [
+            {
+                "code": "1",
+                "label": "I have worked LESS hours over the last 3 months (please specify)"
+            },
+            {
+                "code": "2",
+                "label": "I have worked MORE hours over the last 3 months (please specify)"
+            }
+        ],
+        "branching_logic": "[fuhcn4b_wrk3mchg]='1'"
+    },
+    {
+        "field_label": "[565] Please specify how many LESS hours you have worked over the last 3 months",
+        "field_type": "text",
+        "form_name": "followup",
+        "field_name": "fuhcn4b_wrk3mles",
+        "field_note": "hours",
+        "required_field": "y",
+        "text_validation_type_or_show_slider_number": "number",
+        "custom_alignment": "RH",
+        "text_validation_min": "0",
+        "branching_logic": "[fuhcn4b_wrk3m]='1'"
+    },
+    {
+        "field_label": "[566] Please specify how many MORE hours you have worked over the last 3 months",
+        "field_type": "text",
+        "form_name": "followup",
+        "field_name": "fuhcn4b_wrk3mmre",
+        "field_note": "hours",
+        "required_field": "y",
+        "text_validation_type_or_show_slider_number": "number",
+        "custom_alignment": "RH",
+        "text_validation_min": "0",
+        "branching_logic": "[fuhcn4b_wrk3m]='2'"
+    },
+    {
+        "field_label": "[567] 4c. In the last 3 months, have you had a family member or friend who has had to take time off paid work to accompany you to health care appointments related to your psoriasis or treatment for your psoriasis?",
+        "field_type": "yesno",
+        "form_name": "followup",
+        "field_name": "fuhcn4c",
+        "required_field": "y",
+        "custom_alignment": "LH"
+    },
+    {
+        "field_label": "[568] In the last 3 months, how much leave have they had to take to accompany you to appointments related to your psoriasis or treatment for your psoriasis?",
+        "field_type": "text",
+        "field_name": "fuhcn4c_hrs3m",
+        "field_note": "hours",
+        "required_field": "y",
+        "text_validation_type_or_show_slider_number": "number",
+        "text_validation_min": "0",
+        "branching_logic": "[fuhcn4c]='1'"
+    },
+    {
+        "field_label": "[569] 4d. Support outside of official services (For example, charity support groups such as The Psoriasis Association, helplines etc)",
+        "field_type": "descriptive",
+        "field_name": "fuhcn4d_txt",
+        "required_field": "false"
+    },
+    {
+        "field_label": "[570] In the <b>last 3 months</b>, have you received support or attended support groups?",
+        "field_type": "yesno",
+        "field_name": "fuhcn4d",
+        "required_field": "y"
+    },
+    {
+        "field_label": "[571] Please list what support you have accessed and state whether you incurred any costs as a result (e.g., membership fee, participation fee, telephone cost etc)",
+        "field_type": "descriptive",
+        "field_name": "fuhcn4d_yes_txt",
+        "required_field": "false",
+        "branching_logic": "[fuhcn4d]='1'"
+    },
+    {
+        "field_label": "[572] 1. Type of support",
+        "field_type": "notes",
+        "field_name": "fuhcn4d_sup1",
+        "required_field": "false",
+        "branching_logic": "[fuhcn4d]='1'"
+    },
+    {
+        "field_label": "[573] 1. Cost incurred (£)",
+        "field_type": "text",
+        "field_name": "fuhcn4d_sup1cst",
+        "required_field": "false",
+        "text_validation_type_or_show_slider_number": "number",
+        "text_validation_min": "0",
+        "branching_logic": "[fuhcn4d]='1'"
+    },
+    {
+        "field_label": "[574] 2. Type of support",
+        "field_type": "notes",
+        "field_name": "fuhcn4d_sup2",
+        "required_field": "false",
+        "branching_logic": "[fuhcn4d_sup1]<>'undefined' and [fuhcn4d_sup1]<>''"
+    },
+    {
+        "field_label": "[575] 2. Cost incurred (£)",
+        "field_type": "text",
+        "field_name": "fuhcn4d_sup2cst",
+        "required_field": "false",
+        "text_validation_type_or_show_slider_number": "number",
+        "text_validation_min": "0",
+        "branching_logic": "[fuhcn4d_sup1]<>'undefined' and [fuhcn4d_sup1]<>''"
+    },
+    {
+        "field_label": "[1001] Do you want to upload photo?",
+        "field_type": "radio",
+        "field_name": "photo_have",
+        "required_field": "y",
+        "section_header": "Psoriasis",
+        "select_choices_or_calculations": [
+            {
+                "code": "0",
+                "label": "No"
+            },
+            {
+                "code": "1",
+                "label": "Yes"
+            }
+        ]
+    },
+    {
+        "field_name": "photo_worst",
+        "section_header": "Uploading your photographs",
+        "field_type": "photo",
+        "field_label": "[1004] Upload the photograph of your worst affected site by clicking on the green 'upload file' link and select the best photo of your worst affected site from your photo library.",
+        "required_field": "true",
+        "branching_logic": "[photo_have='1']"
+    },
+    {
+        "field_name": "photo_inst2",
+        "section_header": "",
+        "field_type": "descriptive",
+        "field_label": "[1005] <p>2. Take a photo of your chest and stomach.</p><ul><li>Switch to the front-facing camera on your smartphone.</li><li>Hold your smartphone in front of you to take a photo of your chest and stomach. An example of the area to be photographed is shown below.</li><li>Check the image to ensure it is in focus and your entire chest and stomach are included as per the example below.</li><li>Once you are happy with the photo you have taken ensure it is saved to your photo library.</li></ul><img src='assets/imgs/upload_image_2.png' alt=''>",
+        "required_field": "true",
+        "branching_logic": "[photo_have='1']"
+    },
+    {
+        "field_name": "photo_chest",
+        "section_header": "Uploading your photographs",
+        "field_type": "photo",
+        "field_label": "[1006] Upload the photograph of your worst affected site by clicking on the green 'upload file' link and select the best photo of your worst affected site from your photo library.",
+        "required_field": "true",
+        "branching_logic": "[photo_have='1']"
+    },
+    {
+        "field_name": "photo_inst3",
+        "section_header": "",
+        "field_type": "descriptive",
+        "field_label": "[1007] <p>3. Take a photograph of both your legs.</p><ul><li>Hold your smartphone in front of you to take a photo of your legs. An example of the area to be photographed is\nshown below.</li><li>Hold your smartphone in front of you to take a photo of your chest and stomach. An example of the area to be photographed is shown below.</li><li>Check the image to ensure it is in focus and both your legs are included as per the example below.</li><li>Once you are happy with the photo you have taken ensure it is saved to your photo library.</li></ul><img src='assets/imgs/upload_image_3.png' alt=''>",
+        "required_field": "true",
+        "branching_logic": "[photo_have='1']"
+    },
+    {
+        "field_name": "worst_legs",
+        "section_header": "Uploading your photographs",
+        "field_type": "photo",
+        "field_label": "[1008] Upload the photograph of your worst affected site by clicking on the green 'upload file' link and select the best photo of your worst affected site from your photo library.",
+        "required_field": "true",
+        "branching_logic": "[photo_have='1']"
+    },
+    {
+        "field_label": "[1009] Select the area you took a photo of from the following list:",
+        "field_type": "radio",
+        "field_name": "photo_area",
+        "required_field": "y",
+        "select_choices_or_calculations": [
+            {
+                "code": "0",
+                "label": "Ankle (left)"
+            },
+            {
+                "code": "1",
+                "label": "Ankle (right)"
+            },
+            {
+                "code": "2",
+                "label": "Arm (left)"
+            },
+            {
+                "code": "3",
+                "label": "Arm (right)"
+            },
+            {
+                "code": "4",
+                "label": "Back (upper)"
+            },
+            {
+                "code": "5",
+                "label": "Back (lower)"
+            },
+            {
+                "code": "6",
+                "label": "Buttocks"
+            },
+            {
+                "code": "7",
+                "label": "Chest"
+            },
+            {
+                "code": "8",
+                "label": "Ear (left)"
+            },
+            {
+                "code": "9",
+                "label": "Ear (right)"
+            },
+            {
+                "code": "10",
+                "label": "Face"
+            },
+            {
+                "code": "11",
+                "label": "Foot (left, sole)"
+            },
+            {
+                "code": "12",
+                "label": "Foot (left, top of foot)"
+            },
+            {
+                "code": "13",
+                "label": "Foot (right, sole)"
+            },
+            {
+                "code": "14",
+                "label": "Foot (right, top of foot)"
+            },
+            {
+                "code": "15",
+                "label": "Groin (left)"
+            },
+            {
+                "code": "16",
+                "label": "Groin (right)"
+            },
+            {
+                "code": "17",
+                "label": "Hand (left, palm)"
+            },
+            {
+                "code": "18",
+                "label": "Hand (left, top of hand)"
+            },
+            {
+                "code": "19",
+                "label": "Hand (right, top of hand)"
+            },
+            {
+                "code": "20",
+                "label": "Hand (right, palm)"
+            },
+            {
+                "code": "21",
+                "label": "Head"
+            },
+            {
+                "code": "22",
+                "label": "Leg (left, upper leg)"
+            },
+            {
+                "code": "23",
+                "label": "Leg (left, knee)"
+            },
+            {
+                "code": "24",
+                "label": "Leg (left, lower leg)"
+            },
+            {
+                "code": "25",
+                "label": "Leg (right, upper leg)"
+            },
+            {
+                "code": "26",
+                "label": "Leg (right, knee)"
+            },
+            {
+                "code": "27",
+                "label": "Leg (right, lower leg)"
+            },
+            {
+                "code": "28",
+                "label": "Neck"
+            },
+            {
+                "code": "29",
+                "label": "Scalp"
+            },
+            {
+                "code": "30",
+                "label": "Shoulder (left)"
+            },
+            {
+                "code": "31",
+                "label": "Shoulder (right)"
+            },
+            {
+                "code": "32",
+                "label": "Stomach"
+            },
+            {
+                "code": "33",
+                "label": "Wrist (left)"
+            },
+            {
+                "code": "34",
+                "label": "Wrist (right)"
+            },
+            {
+                "code": "35",
+                "label": "Other: please enter"
+            }
+        ],
+        "branching_logic": "[photo_have='1']"
+    },
+    {
+        "field_label": "[1010] Please specify your body site which is WORST affected\nby psoriasis",
+        "field_type": "text",
+        "field_name": "photo_other",
+        "required_field": "y",
+        "branching_logic": "[photo_area]='35'"
+    },
+    {
+        "field_label": "[577] Do you have any other comments? We would be delighted to hear your feedback on the study.",
+        "field_type": "notes",
+        "form_name": "followup",
+        "field_name": "fucomment",
+        "required_field": "false",
+        "custom_alignment": "LH"
+    }
+]

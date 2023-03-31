@@ -1,0 +1,83 @@
+[
+  {
+    "field_label": "[585] Why have you requested the 'ad hoc' clinic appointment? Tick all that apply.",
+    "field_type": "checkbox",
+    "field_name": "pfpso_req",
+    "required_field": "y",
+    "section_header": "Psoriasis",
+    "select_choices_or_calculations": [
+      {
+        "code": "1",
+        "label": "My psoriasis has worsened"
+      },
+      {
+        "code": "2",
+        "label": "I am worried about side effects from my psoriasis medication"
+      },
+      {
+        "code": "3",
+        "label": "I have developed a new skin problem (please state)"
+      },
+      {
+        "code": "4",
+        "label": "I am worried that I have developed (new onset) psoriatic arthritis"
+      },
+      {
+        "code": "5",
+        "label": "My (existing) psoriatic arthritis has worsened"
+      },
+      {
+        "code": "6",
+        "label": "Other (please state)"
+      }
+    ]
+  },
+  {
+    "field_label": "[586] Please state the new skin problem you developed",
+    "field_type": "text",
+    "field_name": "pfpso_reqskn",
+    "required_field": "y",
+    "branching_logic": "[pfpso_req]='3'",
+    "section_header": "Psoriasis"
+  },
+  {
+    "field_label": "[587] Please state the other reason why you requested the 'ad hoc' clinic appointment",
+    "field_type": "text",
+    "field_name": "pfpso_reqoth",
+    "required_field": "y",
+    "branching_logic": "[pfpso_req]='6'",
+    "section_header": "Psoriasis"
+  },
+  {
+    "field_label": "[1001] Do you want to upload photo?",
+    "field_type": "radio",
+    "field_name": "photo_have",
+    "required_field": "y",
+    "section_header": "Psoriasis",
+    "select_choices_or_calculations": [
+      {
+        "code": "0",
+        "label": "No"
+      },
+      {
+        "code": "1",
+        "label": "Yes"
+      }
+    ]
+  },
+  {
+    "field_name": "photo_worst",
+    "section_header": "Uploading your photographs",
+    "field_type": "photo",
+    "field_label": "[1004] Upload the photograph of your worst affected site by clicking on the green 'upload file' link and select the best photo of your worst affected site from your photo library.",
+    "required_field": "true",
+    "branching_logic": "[photo_have='1']"
+  },
+  {
+    "field_label": "[647] Do you have any comments? We would be delighted to hear your feedback on the study.",
+    "field_type": "notes",
+    "field_name": "pfcomment",
+    "required_field": "false",
+    "section_header": "Uploading your photographs"
+  }
+]

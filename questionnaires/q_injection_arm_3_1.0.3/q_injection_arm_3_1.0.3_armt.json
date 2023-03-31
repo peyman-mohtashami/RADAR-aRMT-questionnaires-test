@@ -1,0 +1,255 @@
+[
+  {
+    "field_label": "[746] Your biologic injection (risankizumab) should be taken every 12 weeks throughout the study.\n\nEvery time you take your biologic injection during the study, please record this in the injection log.",
+    "field_type": "descriptive",
+    "field_name": "t3_txt"
+  },
+  {
+    "field_label": "[746_1]",
+    "field_type": "calc",
+    "field_name": "t3_txt_calc",
+    "calculation_fn": "return _start_timestamp",
+    "calculation_args": "['_start_timestamp']"
+  },
+  {
+    "field_label": "[746_1]",
+    "field_type": "calc",
+    "field_name": "t3_injdte_calc",
+    "calculation_fn": "return _start_timestamp",
+    "calculation_args": "['_start_timestamp']"
+  },
+  {
+    "field_label": "[746_2]",
+    "field_type": "calc",
+    "field_name": "t3_injdtenxt_calc",
+    "calculation_fn": "return _next_start_timestamp",
+    "calculation_args": "['_next_start_timestamp']"
+  },
+  {
+    "field_label": "[746_3] ",
+    "field_type": "calc",
+    "field_name": "t3_injdte_str_calc",
+    "calculation_fn": "var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };return new Date(+t3_injdte_calc).toLocaleDateString('en-GB', options);",
+    "calculation_args": "['t3_injdte_calc']"
+  },
+  {
+    "field_label": "[746_4] ",
+    "field_type": "calc",
+    "field_name": "t3_injdtenxt_str_calc",
+    "calculation_fn": "var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };return new Date(+t3_injdtenxt_calc).toLocaleDateString('en-GB', options);",
+    "calculation_args": "['t3_injdtenxt_calc']"
+  },
+  {
+    "field_label": "[747] Scheduled date of biologic injection: [t3_injdte_str_calc]",
+    "field_type": "descriptive",
+    "field_name": "t3_schdte"
+  },
+  {
+    "field_label": "[748] When did you take your biologic injection?",
+    "field_type": "text",
+    "field_name": "t3_injdte",
+    "required_field": "y",
+    "text_validation_type_or_show_slider_number": "date_dmy",
+    "field_annotation": "@NOTFUTURE"
+  },
+  {
+    "field_label": "[749] _t3_injdelay",
+    "field_type": "calc",
+    "field_name": "t3_injdelay",
+    "required_field": "y",
+    "calculation_fn": "return Math.floor((new Date(t3_injdte).getTime() - t3_injdte_calc)/(24*60*60*1000))",
+    "calculation_args": "['t3_injdte', 't3_injdte_calc']"
+  },
+  {
+    "field_label": "[750] _t3_injdelay_abs",
+    "field_type": "calc",
+    "field_name": "t3_injdelay_abs",
+    "calculation_fn": "return Math.abs(+t3_injdelay)",
+    "calculation_args": "['t3_injdelay']"
+  },
+  {
+    "field_label": "[751] <div class=\"rich-text-field-label\"><p><span style=\"color: red;\">Your injection is delayed by [t3_injdelay] days</span></p></div>",
+    "field_type": "descriptive",
+    "field_name": "t3_injdelaytxt",
+    "branching_logic": "[t3_injdelay]>0"
+  },
+  {
+    "field_label": "[752] <div class=\"rich-text-field-label\"><p><span style=\"color: red;\">Your injection is early by [t3_injdelay_abs] days</span></p></div>",
+    "field_type": "descriptive",
+    "field_name": "t3_injearlytxt",
+    "branching_logic": "[t3_injdelay]<0"
+  },
+  {
+    "field_label": "[753] Why did you delay taking your biologic injection? ",
+    "field_name": "t3_injdly",
+    "field_type": "radio",
+    "required_field": "y",
+    "select_choices_or_calculations": [
+      {
+        "code": "1",
+        "label": "I did not have a supply (prescription/delivery/supply issues)"
+      },
+      {
+        "code": "2",
+        "label": "I had side effects"
+      },
+      {
+        "code": "3",
+        "label": "I didn't want to affect my immunity"
+      },
+      {
+        "code": "4",
+        "label": "I had an infection"
+      },
+      {
+        "code": "5",
+        "label": "I was unwell (not with an infection)"
+      },
+      {
+        "code": "6",
+        "label": "My doctor told me to stop/delay it"
+      },
+      {
+        "code": "7",
+        "label": "I forgot to take it"
+      },
+      {
+        "code": "8",
+        "label": "It was not effective for my psoriasis"
+      },
+      {
+        "code": "9",
+        "label": "Other (if other, please specify)"
+      }
+    ],
+    "branching_logic": "[t3_injdelay]>0"
+  },
+  {
+    "field_label": "[754] Please specify other reason why you delayed taking your biologic injection",
+    "field_type": "text",
+    "field_name": "t3_injdlyoth",
+    "required_field": "y",
+    "branching_logic": "[t3_injdly]='9'"
+  },
+  {
+    "field_label": "[755] When you took your biologic injection, was your psoriasis:",
+    "field_type": "radio",
+    "field_name": "t3_psoriasis",
+    "required_field": "y",
+    "select_choices_or_calculations": [
+      {
+        "code": "1",
+        "label": "1 - Clear"
+      },
+      {
+        "code": "2",
+        "label": "2 - Nearly clear"
+      },
+      {
+        "code": "3",
+        "label": "3 - Mild"
+      },
+      {
+        "code": "4",
+        "label": "4 - Moderate"
+      },
+      {
+        "code": "5",
+        "label": "5 - Moderate-severe"
+      },
+      {
+        "code": "6",
+        "label": "6 - Severe"
+      }
+    ]
+  },
+  {
+    "field_label": "[756] After you took your injection, did you develop any problems at the site of your injection?",
+    "field_type": "radio",
+    "field_name": "t3_injprb",
+    "required_field": "y",
+    "select_choices_or_calculations": [
+      {
+        "code": "0",
+        "label": "No"
+      },
+      {
+        "code": "1",
+        "label": "Yes"
+      }
+    ]
+  },
+  {
+    "field_label": "[757] Please specify problems you developed at the site of your injection? Tick all that apply.",
+    "field_type": "checkbox",
+    "field_name": "t3_injprbyes",
+    "required_field": "y",
+    "select_choices_or_calculations": [
+      {
+        "code": "1",
+        "label": "Redness"
+      },
+      {
+        "code": "2",
+        "label": "Swelling"
+      },
+      {
+        "code": "3",
+        "label": "Pain"
+      },
+      {
+        "code": "4",
+        "label": "Itch"
+      },
+      {
+        "code": "5",
+        "label": "Other (please specify)"
+      }
+    ]
+  },
+  {
+    "field_label": "[758] Please specify other problems you developed at the site of your injection?",
+    "field_type": "text",
+    "field_name": "t3_injprbyesoth",
+    "required_field": "y",
+    "branching_logic": "[t3_injprbyes]='5'"
+  },
+  {
+    "field_label": "[1001] Do you want to upload photo?",
+    "field_type": "radio",
+    "field_name": "photo_have",
+    "required_field": "y",
+    "section_header": "Psoriasis",
+    "select_choices_or_calculations": [
+      {
+        "code": "0",
+        "label": "No"
+      },
+      {
+        "code": "1",
+        "label": "Yes"
+      }
+    ]
+  },
+  {
+    "field_name": "photo_worst",
+    "section_header": "Uploading your photographs",
+    "field_type": "photo",
+    "field_label": "[1004] Upload the photograph of your worst affected site by clicking on the green 'upload file' link and select the best photo of your worst affected site from your photo library.",
+    "required_field": "true",
+    "branching_logic": "[photo_have='1']"
+  },
+  {
+    "field_label": "[759] The earliest date that you can take your next injection is: [t3_injdtenxt_str_calc]",
+    "field_type": "descriptive",
+    "field_name": "t3_injdtenxt",
+    "section_header": "Uploading your photographs"
+  },
+  {
+    "field_label": "[760] Do you have any other comments?",
+    "field_type": "notes",
+    "field_name": "t3_cmt",
+    "required_field": "false",
+    "section_header": "Uploading your photographs"
+  }
+]
