@@ -1,34 +1,34 @@
 [
     {
-        "field_label": "[251] <b><u>CURRENTLY</u></b> is your psoriasis:",
+        "field_label": "<b><u>CURRENTLY</u></b> is your psoriasis:",
         "field_type": "radio",
-        "field_name": "fupso_currently",
+        "field_name": "blpso_currently",
         "required_field": "y",
         "section_header": "Psoriasis",
         "select_choices_or_calculations": [
             {
                 "code": "0",
-                "label": "0 - Clear"
+                "label": "Clear"
             },
             {
                 "code": "1",
-                "label": "1 - Nearly clear"
+                "label": "Nearly clear"
             },
             {
                 "code": "2",
-                "label": "2 - Mild"
+                "label": "Mild"
             },
             {
                 "code": "3",
-                "label": "3 - Moderate"
+                "label": "Moderate"
             },
             {
                 "code": "4",
-                "label": "4 - Moderate-severe"
+                "label": "Moderate-severe"
             },
             {
                 "code": "5",
-                "label": "5 - Severe"
+                "label": "Severe"
             }
         ],
         "report": {
@@ -54,11 +54,10 @@
         }
     },
     {
-        "field_label": "[252] Over the last week, how itchy, sore, painful or stinging has your skin been?",
+        "field_label": "Over the last week, how itchy, sore, painful or stinging has your skin been?",
         "field_type": "radio",
-        "field_name": "fupso_dlqi1",
+        "field_name": "blpso_dlqi1",
         "required_field": "y",
-        "question_number": "1",
         "section_header": " ",
         "select_choices_or_calculations": [
             {
@@ -84,11 +83,10 @@
         ]
     },
     {
-        "field_label": "[253] Over the last week, how embarrassed or self-conscious have you been because of your skin?",
+        "field_label": "Over the last week, how embarrassed or self-conscious have you been because of your skin?",
         "field_type": "radio",
-        "field_name": "fupso_dlqi2",
+        "field_name": "blpso_dlqi2",
         "required_field": "y",
-        "question_number": "2",
         "select_choices_or_calculations": [
             {
                 "code": "1",
@@ -114,12 +112,10 @@
         "section_header": " "
     },
     {
-        "field_label": "[254] Over the last week, how much has your skin interfered with you going shopping or looking after your home or garden?",
+        "field_label": "Over the last week, how much has your skin interfered with you going shopping or looking after your home or garden?",
         "field_type": "radio",
-        "form_name": "followup",
-        "field_name": "fupso_dlqi3",
+        "field_name": "blpso_dlqi3",
         "required_field": "y",
-        "question_number": "3",
         "select_choices_or_calculations": [
             {
                 "code": "1",
@@ -145,12 +141,10 @@
         "section_header": " "
     },
     {
-        "field_label": "[255] Over the last week, how much has your skin influenced the clothes you wear?",
+        "field_label": "Over the last week, how much has your skin influenced the clothes you wear?",
         "field_type": "radio",
-        "form_name": "followup",
-        "field_name": "fupso_dlqi4",
+        "field_name": "blpso_dlqi4",
         "required_field": "y",
-        "question_number": "4",
         "select_choices_or_calculations": [
             {
                 "code": "1",
@@ -176,12 +170,10 @@
         "section_header": " "
     },
     {
-        "field_label": "[256] Over the last week, how much has your skin affected any social or leisure activities?",
+        "field_label": "Over the last week, how much has your skin affected any social or leisure activities?",
         "field_type": "radio",
-        "form_name": "followup",
-        "field_name": "fupso_dlqi5",
+        "field_name": "blpso_dlqi5",
         "required_field": "y",
-        "question_number": "5",
         "select_choices_or_calculations": [
             {
                 "code": "1",
@@ -207,12 +199,10 @@
         "section_header": " "
     },
     {
-        "field_label": "[257] Over the last week, how much has your skin made it difficult for you to do any sport?",
+        "field_label": "Over the last week, how much has your skin made it difficult for you to do any sport?",
         "field_type": "radio",
-        "form_name": "followup",
-        "field_name": "fupso_dlqi6",
+        "field_name": "blpso_dlqi6",
         "required_field": "y",
-        "question_number": "6",
         "select_choices_or_calculations": [
             {
                 "code": "1",
@@ -238,12 +228,10 @@
         "section_header": " "
     },
     {
-        "field_label": "[258] Over the last week, has your skin prevented you from working or studying?",
+        "field_label": "Over the last week, has your skin prevented you from working or studying?",
         "field_type": "radio",
-        "form_name": "followup",
-        "field_name": "fupso_dlqi7",
+        "field_name": "blpso_dlqi7",
         "required_field": "y",
-        "question_number": "7",
         "select_choices_or_calculations": [
             {
                 "code": "1",
@@ -261,10 +249,9 @@
         "section_header": " "
     },
     {
-        "field_label": "[259] Over the last week how much has your skin been a problem at work or studying?",
+        "field_label": "Over the last week how much has your skin been a problem at work or studying?",
         "field_type": "radio",
-        "form_name": "followup",
-        "field_name": "fupso_dlqi7a",
+        "field_name": "blpso_dlqi7a",
         "required_field": "y",
         "select_choices_or_calculations": [
             {
@@ -288,47 +275,14 @@
                 "label": "Not relevant"
             }
         ],
-        "branching_logic": "[fupso_dlqi7]='2'",
+        "branching_logic": "[blpso_dlqi7]='2'",
         "section_header": " "
     },
     {
-        "field_label": "[260] Over the last week, how much has your skin created problems with your partner or any of your close friends or relatives?",
+        "field_label": "Over the last week, how much has your skin created problems with your partner or any of your close friends or relatives?",
         "field_type": "radio",
-        "form_name": "followup",
-        "field_name": "fupso_dlqi8",
+        "field_name": "blpso_dlqi8",
         "required_field": "y",
-        "question_number": "8",
-        "select_choices_or_calculations": [
-            {
-                "code": "1",
-                "label": "Very much"
-            },
-            {
-                "code": "2",
-                "label": "A lot"
-            },
-            {
-                "code": "3",
-                "label": "A little"
-            },
-            {
-                "code": "4",
-                "label": "Not at all"
-            },
-            {
-                "code": "5",
-                "label": "Not relevant"
-            }
-        ],
-        "section_header": " "
-    },
-    {
-        "field_label": "[261] Over the last week, how much has your skin caused any sexual difficulties?",
-        "field_type": "radio",
-        "form_name": "followup",
-        "field_name": "fupso_dlqi9",
-        "required_field": "y",
-        "question_number": "9",
         "select_choices_or_calculations": [
             {
                 "code": "1",
@@ -354,12 +308,10 @@
         "section_header": " "
     },
     {
-        "field_label": "[262] Over the last week, how much of a problem has the treatment for your skin been, for example by making your home messy, or by taking up time?",
+        "field_label": "Over the last week, how much has your skin caused any sexual difficulties?",
         "field_type": "radio",
-        "form_name": "followup",
-        "field_name": "fupso_dlqi10",
+        "field_name": "blpso_dlqi9",
         "required_field": "y",
-        "question_number": "10",
         "select_choices_or_calculations": [
             {
                 "code": "1",
@@ -385,13 +337,41 @@
         "section_header": " "
     },
     {
-        "field_label": "[21_1] dlqi_calc",
+        "field_label": "Over the last week, how much of a problem has the treatment for your skin been, for example by making your home messy, or by taking up time?",
+        "field_type": "radio",
+        "field_name": "blpso_dlqi10",
+        "required_field": "y",
+        "select_choices_or_calculations": [
+            {
+                "code": "1",
+                "label": "Very much"
+            },
+            {
+                "code": "2",
+                "label": "A lot"
+            },
+            {
+                "code": "3",
+                "label": "A little"
+            },
+            {
+                "code": "4",
+                "label": "Not at all"
+            },
+            {
+                "code": "5",
+                "label": "Not relevant"
+            }
+        ],
+        "section_header": " "
+    },
+    {
+        "field_label": "dlqi_calc",
         "field_type": "calc",
-        "form_name": "baseline",
-        "field_name": "fupso_dlqi_calc",
+        "field_name": "blpso_dlqi_calc",
         "required_field": "y",
-        "calculation_fn": "const sum = (+fupso_dlqi1 > 4 ? 4 : +fupso_dlqi1) +(+fupso_dlqi2 > 4 ? 4 : +fupso_dlqi2) +(+fupso_dlqi3 > 4 ? 4 : +fupso_dlqi3) +(+fupso_dlqi4 > 4 ? 4 : +fupso_dlqi4) +(+fupso_dlqi5 > 4 ? 4 : +fupso_dlqi5) +(+fupso_dlqi6 > 4 ? 4 : +fupso_dlqi6) +(+fupso_dlqi7a ? (+fupso_dlqi7a > 4 ? 4 : +fupso_dlqi7a) : 4) +(+fupso_dlqi8 > 4 ? 4 : +fupso_dlqi8) +(+fupso_dlqi9 > 4 ? 4 : +fupso_dlqi9) +(+fupso_dlqi10 > 4 ? 4 : +fupso_dlqi10);console.log('***** = ', sum);const res = 40 - sum;return res<0 ? 0 : res;",
-        "calculation_args": "['fupso_dlqi1', 'fupso_dlqi2', 'fupso_dlqi3', 'fupso_dlqi4', 'fupso_dlqi5', 'fupso_dlqi6', 'fupso_dlqi7a', 'fupso_dlqi8', 'fupso_dlqi9', 'fupso_dlqi10']",
+        "calculation_fn": "const sum = (+blpso_dlqi1 > 4 ? 4 : +blpso_dlqi1) +(+blpso_dlqi2 > 4 ? 4 : +blpso_dlqi2) +(+blpso_dlqi3 > 4 ? 4 : +blpso_dlqi3) +(+blpso_dlqi4 > 4 ? 4 : +blpso_dlqi4) +(+blpso_dlqi5 > 4 ? 4 : +blpso_dlqi5) +(+blpso_dlqi6 > 4 ? 4 : +blpso_dlqi6) +(+blpso_dlqi7a ? (+blpso_dlqi7a > 4 ? 4 : +blpso_dlqi7a) : 4) +(+blpso_dlqi8 > 4 ? 4 : +blpso_dlqi8) +(+blpso_dlqi9 > 4 ? 4 : +blpso_dlqi9) +(+blpso_dlqi10 > 4 ? 4 : +blpso_dlqi10);console.log('***** = ', sum);const res = 40 - sum;console.log('***** = ', res<0 ? 0 : res);return res<0 ? 0 : res;",
+        "calculation_args": "['blpso_dlqi1', 'blpso_dlqi2', 'blpso_dlqi3', 'blpso_dlqi4', 'blpso_dlqi5', 'blpso_dlqi6', 'blpso_dlqi7a', 'blpso_dlqi8', 'blpso_dlqi9', 'blpso_dlqi10']",
         "report": {
             "longitudinal": {
                 "name": "x_dlqi",
@@ -418,57 +398,55 @@
         "section_header": " "
     },
     {
-        "field_label": "[304] Overall, how satisfied are you with your life nowadays?",
+        "field_label": "Overall, how satisfied are you with your life nowadays?",
         "field_type": "radio",
-        "form_name": "followup",
-        "field_name": "fuwbg_satis",
+        "field_name": "blwbg_satis",
         "required_field": "y",
-        "custom_alignment": "LV",
-        "section_header": "General health\n\n<u>Wellbeing</u>\n",
+        "section_header": "General health <u>Wellbeing</u>",
         "select_choices_or_calculations": [
             {
-                "code": "10",
-                "label": "10 - completely"
-            },
-            {
-                "code": "9",
-                "label": "9"
-            },
-            {
-                "code": "8",
-                "label": "8"
-            },
-            {
-                "code": "7",
-                "label": "7"
-            },
-            {
-                "code": "6",
-                "label": "6"
-            },
-            {
-                "code": "5",
-                "label": "5"
-            },
-            {
-                "code": "4",
-                "label": "4"
-            },
-            {
-                "code": "3",
-                "label": "3"
-            },
-            {
-                "code": "2",
-                "label": "2"
+                "code": "0",
+                "label": "0 - not at all"
             },
             {
                 "code": "1",
                 "label": "1"
             },
             {
-                "code": "0",
-                "label": "0 - not at all"
+                "code": "2",
+                "label": "2"
+            },
+            {
+                "code": "3",
+                "label": "3"
+            },
+            {
+                "code": "4",
+                "label": "4"
+            },
+            {
+                "code": "5",
+                "label": "5"
+            },
+            {
+                "code": "6",
+                "label": "6"
+            },
+            {
+                "code": "7",
+                "label": "7"
+            },
+            {
+                "code": "8",
+                "label": "8"
+            },
+            {
+                "code": "9",
+                "label": "9"
+            },
+            {
+                "code": "10",
+                "label": "10 - completely"
             }
         ],
         "report": {
@@ -494,12 +472,11 @@
         }
     },
     {
-        "field_label": "[305] Little interest or pleasure in doing things",
+        "field_label": "Little interest or pleasure in doing things",
         "field_type": "radio",
-        "form_name": "followup",
-        "field_name": "fuwbg_lt2w_little",
+        "field_name": "blwbg_lt2w_little",
         "required_field": "y",
-        "matrix_group_name": "fuwbg_lt2w",
+        "matrix_group_name": "blwbg_lt2w",
         "section_header": "<b>OVER THE LAST 2 WEEKS</b>, how often have you been bothered by the following problems?",
         "select_choices_or_calculations": [
             {
@@ -545,12 +522,11 @@
         }
     },
     {
-        "field_label": "[306] Feeling down, depressed, or hopeless",
+        "field_label": "Feeling down, depressed, or hopeless",
         "field_type": "radio",
-        "form_name": "followup",
-        "field_name": "fuwbg_lt2w_down",
+        "field_name": "blwbg_lt2w_down",
         "required_field": "y",
-        "matrix_group_name": "fuwbg_lt2w",
+        "matrix_group_name": "blwbg_lt2w",
         "select_choices_or_calculations": [
             {
                 "code": "1",
@@ -596,12 +572,11 @@
         "section_header": "<b>OVER THE LAST 2 WEEKS</b>, how often have you been bothered by the following problems?"
     },
     {
-        "field_label": "[307] Feeling nervous, anxious or on edge",
+        "field_label": "Feeling nervous, anxious or on edge",
         "field_type": "radio",
-        "form_name": "followup",
-        "field_name": "fuwbg_lt2w_nervous",
+        "field_name": "blwbg_lt2w_nervous",
         "required_field": "y",
-        "matrix_group_name": "fuwbg_lt2w",
+        "matrix_group_name": "blwbg_lt2w",
         "select_choices_or_calculations": [
             {
                 "code": "1",
@@ -647,12 +622,11 @@
         "section_header": "<b>OVER THE LAST 2 WEEKS</b>, how often have you been bothered by the following problems?"
     },
     {
-        "field_label": "[308] Not being able to stop or control worrying",
+        "field_label": "Not being able to stop or control worrying",
         "field_type": "radio",
-        "form_name": "followup",
-        "field_name": "fuwbg_lt2w_worry",
+        "field_name": "blwbg_lt2w_worry",
         "required_field": "y",
-        "matrix_group_name": "fuwbg_lt2w",
+        "matrix_group_name": "blwbg_lt2w",
         "select_choices_or_calculations": [
             {
                 "code": "1",
@@ -698,11 +672,9 @@
         "section_header": "<b>OVER THE LAST 2 WEEKS</b>, how often have you been bothered by the following problems?"
     },
     {
-        "field_label": "[577] Do you have any other comments? We would be delighted to hear your feedback on the study.",
+        "field_label": "Do you have any other comments? We would be delighted to hear your feedback on the study.",
         "field_type": "notes",
-        "form_name": "followup",
-        "field_name": "fucomment",
-        "required_field": "false",
-        "custom_alignment": "LH"
+        "field_name": "blcomment",
+        "required_field": "false"
     }
 ]

@@ -1,6 +1,6 @@
 [
     {
-        "field_label": "[251] <b><u>CURRENTLY</u></b> is your psoriasis:",
+        "field_label": "<b><u>CURRENTLY</u></b> is your psoriasis:",
         "field_type": "radio",
         "field_name": "fupso_currently",
         "required_field": "y",
@@ -54,7 +54,7 @@
         }
     },
     {
-        "field_label": "[252] Over the last week, how itchy, sore, painful or stinging has your skin been?",
+        "field_label": "Over the last week, how itchy, sore, painful or stinging has your skin been?",
         "field_type": "radio",
         "field_name": "fupso_dlqi1",
         "required_field": "y",
@@ -84,7 +84,7 @@
         ]
     },
     {
-        "field_label": "[253] Over the last week, how embarrassed or self-conscious have you been because of your skin?",
+        "field_label": "Over the last week, how embarrassed or self-conscious have you been because of your skin?",
         "field_type": "radio",
         "field_name": "fupso_dlqi2",
         "required_field": "y",
@@ -114,7 +114,7 @@
         "section_header": " "
     },
     {
-        "field_label": "[254] Over the last week, how much has your skin interfered with you going shopping or looking after your home or garden?",
+        "field_label": "Over the last week, how much has your skin interfered with you going shopping or looking after your home or garden?",
         "field_type": "radio",
         "form_name": "followup",
         "field_name": "fupso_dlqi3",
@@ -145,7 +145,7 @@
         "section_header": " "
     },
     {
-        "field_label": "[255] Over the last week, how much has your skin influenced the clothes you wear?",
+        "field_label": "Over the last week, how much has your skin influenced the clothes you wear?",
         "field_type": "radio",
         "form_name": "followup",
         "field_name": "fupso_dlqi4",
@@ -176,7 +176,7 @@
         "section_header": " "
     },
     {
-        "field_label": "[256] Over the last week, how much has your skin affected any social or leisure activities?",
+        "field_label": "Over the last week, how much has your skin affected any social or leisure activities?",
         "field_type": "radio",
         "form_name": "followup",
         "field_name": "fupso_dlqi5",
@@ -207,7 +207,7 @@
         "section_header": " "
     },
     {
-        "field_label": "[257] Over the last week, how much has your skin made it difficult for you to do any sport?",
+        "field_label": "Over the last week, how much has your skin made it difficult for you to do any sport?",
         "field_type": "radio",
         "form_name": "followup",
         "field_name": "fupso_dlqi6",
@@ -238,7 +238,7 @@
         "section_header": " "
     },
     {
-        "field_label": "[258] Over the last week, has your skin prevented you from working or studying?",
+        "field_label": "Over the last week, has your skin prevented you from working or studying?",
         "field_type": "radio",
         "form_name": "followup",
         "field_name": "fupso_dlqi7",
@@ -261,7 +261,7 @@
         "section_header": " "
     },
     {
-        "field_label": "[259] Over the last week how much has your skin been a problem at work or studying?",
+        "field_label": "Over the last week how much has your skin been a problem at work or studying?",
         "field_type": "radio",
         "form_name": "followup",
         "field_name": "fupso_dlqi7a",
@@ -292,7 +292,7 @@
         "section_header": " "
     },
     {
-        "field_label": "[260] Over the last week, how much has your skin created problems with your partner or any of your close friends or relatives?",
+        "field_label": "Over the last week, how much has your skin created problems with your partner or any of your close friends or relatives?",
         "field_type": "radio",
         "form_name": "followup",
         "field_name": "fupso_dlqi8",
@@ -323,7 +323,7 @@
         "section_header": " "
     },
     {
-        "field_label": "[261] Over the last week, how much has your skin caused any sexual difficulties?",
+        "field_label": "Over the last week, how much has your skin caused any sexual difficulties?",
         "field_type": "radio",
         "form_name": "followup",
         "field_name": "fupso_dlqi9",
@@ -354,7 +354,7 @@
         "section_header": " "
     },
     {
-        "field_label": "[262] Over the last week, how much of a problem has the treatment for your skin been, for example by making your home messy, or by taking up time?",
+        "field_label": "Over the last week, how much of a problem has the treatment for your skin been, for example by making your home messy, or by taking up time?",
         "field_type": "radio",
         "form_name": "followup",
         "field_name": "fupso_dlqi10",
@@ -385,7 +385,7 @@
         "section_header": " "
     },
     {
-        "field_label": "[21_1] dlqi_calc",
+        "field_label": "dlqi_calc",
         "field_type": "calc",
         "form_name": "baseline",
         "field_name": "fupso_dlqi_calc",
@@ -418,7 +418,7 @@
         "section_header": " "
     },
     {
-        "field_label": "[304] Overall, how satisfied are you with your life nowadays?",
+        "field_label": "Overall, how satisfied are you with your life nowadays?",
         "field_type": "radio",
         "form_name": "followup",
         "field_name": "fuwbg_satis",
@@ -494,7 +494,7 @@
         }
     },
     {
-        "field_label": "[305] Little interest or pleasure in doing things",
+        "field_label": "Little interest or pleasure in doing things",
         "field_type": "radio",
         "form_name": "followup",
         "field_name": "fuwbg_lt2w_little",
@@ -545,7 +545,7 @@
         }
     },
     {
-        "field_label": "[306] Feeling down, depressed, or hopeless",
+        "field_label": "Feeling down, depressed, or hopeless",
         "field_type": "radio",
         "form_name": "followup",
         "field_name": "fuwbg_lt2w_down",
@@ -596,7 +596,7 @@
         "section_header": "<b>OVER THE LAST 2 WEEKS</b>, how often have you been bothered by the following problems?"
     },
     {
-        "field_label": "[307] Feeling nervous, anxious or on edge",
+        "field_label": "Feeling nervous, anxious or on edge",
         "field_type": "radio",
         "form_name": "followup",
         "field_name": "fuwbg_lt2w_nervous",
@@ -647,7 +647,7 @@
         "section_header": "<b>OVER THE LAST 2 WEEKS</b>, how often have you been bothered by the following problems?"
     },
     {
-        "field_label": "[308] Not being able to stop or control worrying",
+        "field_label": "Not being able to stop or control worrying",
         "field_type": "radio",
         "form_name": "followup",
         "field_name": "fuwbg_lt2w_worry",
@@ -698,7 +698,7 @@
         "section_header": "<b>OVER THE LAST 2 WEEKS</b>, how often have you been bothered by the following problems?"
     },
     {
-        "field_label": "[577] Do you have any other comments? We would be delighted to hear your feedback on the study.",
+        "field_label": "Do you have any other comments? We would be delighted to hear your feedback on the study.",
         "field_type": "notes",
         "form_name": "followup",
         "field_name": "fucomment",
