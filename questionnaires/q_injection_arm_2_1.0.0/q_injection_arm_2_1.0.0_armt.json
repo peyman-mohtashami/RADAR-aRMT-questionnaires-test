@@ -1,44 +1,44 @@
 [
   {
-    "field_label": "[728] Your biologic injection (risankizumab) should be taken every [arm2RepeatQuestionnaire] weeks during the study.\nEvery time you take your biologic injection during the study, please record this in the injection log.",
+    "field_label": "Your biologic injection (risankizumab) should be taken every [arm2RepeatQuestionnaire] weeks during the study.\nEvery time you take your biologic injection during the study, please record this in the injection log.",
     "field_type": "descriptive",
     "field_name": "t2_txt"
   },
   {
-    "field_label": "[728_1]",
+    "field_label": "",
     "field_type": "calc",
     "field_name": "t2_injdte_calc",
     "calculation_fn": "return _start_timestamp",
     "calculation_args": "['_start_timestamp']"
   },
   {
-    "field_label": "[728_2]",
+    "field_label": "",
     "field_type": "calc",
     "field_name": "t2_injdtenxt_calc",
     "calculation_fn": "return _next_start_timestamp",
     "calculation_args": "['_next_start_timestamp']"
   },
   {
-    "field_label": "[728_3] ",
+    "field_label": "",
     "field_type": "calc",
     "field_name": "t2_injdte_str_calc",
     "calculation_fn": "var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric'};return new Date(+t2_injdte_calc).toLocaleString('en', options);",
     "calculation_args": "['t2_injdte_calc']"
   },
   {
-    "field_label": "[728_4] ",
+    "field_label": "",
     "field_type": "calc",
     "field_name": "t2_injdtenxt_str_calc",
     "calculation_fn": "var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric'};return new Date(+t2_injdtenxt_calc).toLocaleString('en', options);",
     "calculation_args": "['t2_injdtenxt_calc']"
   },
   {
-    "field_label": "[729] Scheduled date of biologic injection: [t2_injdte_str_calc]",
+    "field_label": "Scheduled date of biologic injection: [t2_injdte_str_calc]",
     "field_type": "descriptive",
     "field_name": "t2_schdte"
   },
   {
-    "field_label": "[730] When did you take your biologic injection?",
+    "field_label": "When did you take your biologic injection?",
     "field_type": "text",
     "field_name": "t2_injdte",
     "required_field": "y",
@@ -46,7 +46,7 @@
     "field_annotation": "@NOTFUTURE"
   },
   {
-    "field_label": "[731] _t2_injdelay",
+    "field_label": "_t2_injdelay",
     "field_type": "calc",
     "field_name": "t2_injdelay",
     "required_field": "y",
@@ -54,26 +54,26 @@
     "calculation_args": "['t2_injdte', 't2_injdte_calc']"
   },
   {
-    "field_label": "[732] _t2_injdelay_abs",
+    "field_label": "_t2_injdelay_abs",
     "field_type": "calc",
     "field_name": "t2_injdelay_abs",
     "calculation_fn": "return Math.abs(+t2_injdelay)",
     "calculation_args": "['t2_injdelay']"
   },
   {
-    "field_label": "[733] <p style='color: red;'>Your injection is delayed by [t2_injdelay] days</p>",
+    "field_label": "<p style='color: red;'>Your injection is delayed by [t2_injdelay] days</p>",
     "field_type": "descriptive",
     "field_name": "t2_injdelaytxt",
     "branching_logic": "[t2_injdelay]>0"
   },
   {
-    "field_label": "[734] <p style='color: red;'>Your injection is early by [t2_injdelay_abs] days</p></div>",
+    "field_label": "<p style='color: red;'>Your injection is early by [t2_injdelay_abs] days</p></div>",
     "field_type": "descriptive",
     "field_name": "t2_injearlytxt",
     "branching_logic": "[t2_injdelay]<0"
   },
   {
-    "field_label": "[735] Why did you delay taking your biologic injection? ",
+    "field_label": "Why did you delay taking your biologic injection? ",
     "field_name": "t2_injdly",
     "field_type": "radio",
     "required_field": "y",
@@ -118,14 +118,14 @@
     "branching_logic": "[t2_injdelay]>0"
   },
   {
-    "field_label": "[736] Please specify other reason why you delayed taking your biologic injection",
+    "field_label": "Please specify other reason why you delayed taking your biologic injection",
     "field_type": "text",
     "field_name": "t2_injdlyoth",
     "required_field": "y",
     "branching_logic": "[t2_injdly]='9'"
   },
   {
-    "field_label": "[737] When you took your biologic injection, was your psoriasis:",
+    "field_label": "When you took your biologic injection, was your psoriasis:",
     "field_type": "radio",
     "field_name": "t2_psoriasis",
     "required_field": "y",
@@ -158,7 +158,7 @@
     ]
   },
   {
-    "field_label": "[738] After you took your injection, did you develop any problems at the site of your injection?",
+    "field_label": "After you took your injection, did you develop any problems at the site of your injection?",
     "field_type": "radio",
     "field_name": "t2_injprb",
     "required_field": "y",
@@ -175,7 +175,7 @@
     ]
   },
   {
-    "field_label": "[739] Please specify problems you developed at the site of your injection? Tick all that apply.",
+    "field_label": "Please specify problems you developed at the site of your injection? Tick all that apply.",
     "field_type": "checkbox",
     "field_name": "t2_injprbyes",
     "required_field": "y",
@@ -204,14 +204,14 @@
     ]
   },
   {
-    "field_label": "[740] Please specify other problems you developed at the site of your injection?",
+    "field_label": "Please specify other problems you developed at the site of your injection?",
     "field_type": "text",
     "field_name": "t2_injprbyesoth",
     "required_field": "y",
     "branching_logic": "[t2_injprbyes]='5'"
   },
   {
-    "field_label": "[1001] Do you want to upload photo?",
+    "field_label": "Do you want to upload photo?",
     "field_type": "radio",
     "field_name": "photo_have",
     "required_field": "y",
@@ -231,7 +231,7 @@
     "field_name": "photo_worst",
     "section_header": "Uploading your photographs",
     "field_type": "photo",
-    "field_label": "[1004] Upload the photograph of your worst affected site by clicking on the green 'upload file' link and select the best photo of your worst affected site from your photo library.",
+    "field_label": "Upload the photograph of your worst affected site by clicking on the green 'upload file' link and select the best photo of your worst affected site from your photo library.",
     "required_field": "true",
     "branching_logic": "[photo_have='1']"
   },
@@ -239,7 +239,7 @@
     "field_name": "photo_inst2",
     "section_header": "",
     "field_type": "descriptive",
-    "field_label": "[1005] <p>2. Take a photo of your chest and stomach.</p><ul><li>Switch to the front-facing camera on your smartphone.</li><li>Hold your smartphone in front of you to take a photo of your chest and stomach. An example of the area to be photographed is shown below.</li><li>Check the image to ensure it is in focus and your entire chest and stomach are included as per the example below.</li><li>Once you are happy with the photo you have taken ensure it is saved to your photo library.</li></ul><img src='assets/imgs/upload_image_2.png' alt=''>",
+    "field_label": "<p>2. Take a photo of your chest and stomach.</p><ul><li>Switch to the front-facing camera on your smartphone.</li><li>Hold your smartphone in front of you to take a photo of your chest and stomach. An example of the area to be photographed is shown below.</li><li>Check the image to ensure it is in focus and your entire chest and stomach are included as per the example below.</li><li>Once you are happy with the photo you have taken ensure it is saved to your photo library.</li></ul><img src='assets/imgs/upload_image_2.png' alt=''>",
     "required_field": "true",
     "branching_logic": "[photo_have='1']"
   },
@@ -247,7 +247,7 @@
     "field_name": "photo_chest",
     "section_header": "Uploading your photographs",
     "field_type": "photo",
-    "field_label": "[1006] Upload the photograph of your worst affected site by clicking on the green 'upload file' link and select the best photo of your worst affected site from your photo library.",
+    "field_label": "Upload the photograph of your worst affected site by clicking on the green 'upload file' link and select the best photo of your worst affected site from your photo library.",
     "required_field": "true",
     "branching_logic": "[photo_have='1']"
   },
@@ -255,7 +255,7 @@
     "field_name": "photo_inst3",
     "section_header": "",
     "field_type": "descriptive",
-    "field_label": "[1007] <p>3. Take a photograph of both your legs.</p><ul><li>Hold your smartphone in front of you to take a photo of your legs. An example of the area to be photographed is\nshown below.</li><li>Hold your smartphone in front of you to take a photo of your chest and stomach. An example of the area to be photographed is shown below.</li><li>Check the image to ensure it is in focus and both your legs are included as per the example below.</li><li>Once you are happy with the photo you have taken ensure it is saved to your photo library.</li></ul><img src='assets/imgs/upload_image_3.png' alt=''>",
+    "field_label": "<p>3. Take a photograph of both your legs.</p><ul><li>Hold your smartphone in front of you to take a photo of your legs. An example of the area to be photographed is\nshown below.</li><li>Hold your smartphone in front of you to take a photo of your chest and stomach. An example of the area to be photographed is shown below.</li><li>Check the image to ensure it is in focus and both your legs are included as per the example below.</li><li>Once you are happy with the photo you have taken ensure it is saved to your photo library.</li></ul><img src='assets/imgs/upload_image_3.png' alt=''>",
     "required_field": "true",
     "branching_logic": "[photo_have='1']"
   },
@@ -263,12 +263,12 @@
     "field_name": "worst_legs",
     "section_header": "Uploading your photographs",
     "field_type": "photo",
-    "field_label": "[1008] Upload the photograph of your worst affected site by clicking on the green 'upload file' link and select the best photo of your worst affected site from your photo library.",
+    "field_label": "Upload the photograph of your worst affected site by clicking on the green 'upload file' link and select the best photo of your worst affected site from your photo library.",
     "required_field": "true",
     "branching_logic": "[photo_have='1']"
   },
   {
-    "field_label": "[1009] Select the area you took a photo of from the following list:",
+    "field_label": "Select the area you took a photo of from the following list:",
     "field_type": "radio",
     "field_name": "photo_area",
     "required_field": "y",
@@ -421,19 +421,19 @@
     "branching_logic": "[photo_have='1']"
   },
   {
-    "field_label": "[1010] Please specify your body site which is WORST affected\nby psoriasis",
+    "field_label": "Please specify your body site which is WORST affected\nby psoriasis",
     "field_type": "text",
     "field_name": "photo_other",
     "required_field": "y",
     "branching_logic": "[photo_area]='35'"
   },
   {
-    "field_label": "[741] The earliest date that you can take your next injection is: [t2_injdtenxt_str_calc]",
+    "field_label": "The earliest date that you can take your next injection is: [t2_injdtenxt_str_calc]",
     "field_type": "descriptive",
     "field_name": "t2_injdtenxt"
   },
   {
-    "field_label": "[742] Do you have any other comments?",
+    "field_label": "Do you have any other comments?",
     "field_type": "notes",
     "field_name": "t2_cmt",
     "required_field": "false"
