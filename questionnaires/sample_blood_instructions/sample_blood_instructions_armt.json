@@ -1,0 +1,86 @@
+[
+  {
+    "field_label": "<p>Please wash your hands before starting.<br><br>Dry them with a clean towel.<img class='my-4' src='assets/imgs/sample-blood/1.jpg' alt=''></p>",
+    "field_type": "descriptive",
+    "field_name": "sb_pre1",
+    "section_header": "1. Preparation",
+    "required_field": "false"
+  },
+  {
+    "field_label": "<p>Sit down at a clean table and lay the test kit out.<br><br>The kit contains: 2 microtubes, 2 lancets, 1 alcohol wipe, 1 sterile gauze, 2 plasters and 1 postal kit.<img class='my-4' src='assets/imgs/sample-blood/2.jpg' alt=''></p>",
+    "field_type": "descriptive",
+    "field_name": "sb_pre2",
+    "section_header": "1. Preparation",
+    "required_field": "false"
+  },
+  {
+    "field_label": "<p>Disinfect your middle or ring finger with the alcohol wipe.<br><br>Let it dry in the air.<img class='my-4' src='assets/imgs/sample-blood/3.jpg' alt=''></p>",
+    "field_type": "descriptive",
+    "field_name": "sb_pre3",
+    "section_header": "1. Preparation",
+    "required_field": "false"
+  },
+  {
+    "field_label": "<p>Remove the yellow caps from both microtubes.<br><br>Place the microtubes upright in the grooves of the plastic case.<img class='my-4' src='assets/imgs/sample-blood/4.jpg' alt=''></p>",
+    "field_type": "descriptive",
+    "field_name": "sb_pre4",
+    "section_header": "1. Preparation",
+    "required_field": "false"
+  },
+  {
+    "field_label": "<p>Twist and pull the blue cap off the lancet.<br><br>Don’t touch the newly exposed white part as this will activate the lancet.<img class='my-4' src='assets/imgs/sample-blood/5.jpg' alt=''></p>",
+    "field_type": "descriptive",
+    "field_name": "sb_col1",
+    "section_header": "2. Sample collection",
+    "required_field": "false"
+  },
+  {
+    "field_label": "<p>Press your fingertip with your thumb so it turns pink.<br><br>With your thumb in place, press the lancet firmly into the side of your finger until you hear a click.<img class='my-4' src='assets/imgs/sample-blood/6.jpg' alt=''></p>",
+    "field_type": "descriptive",
+    "field_name": "sb_col2",
+    "section_header": "2. Sample collection",
+    "required_field": "false"
+  },
+  {
+    "field_label": "<p>Massage your finger towards the tip, until a blood droplet forms. Wipe this away with the gauze.<br><br>Massage until another droplet forms.<img class='my-4' src='assets/imgs/sample-blood/7.jpg' alt=''></p>",
+    "field_type": "descriptive",
+    "field_name": "sb_col3",
+    "section_header": "2. Sample collection",
+    "required_field": "false"
+  },
+  {
+    "field_label": "<p>Fill the 1st microtube to the 600 mark, then fill the 2nd microtube to the 600 mark.<br><br>Use the 2nd lancet on a different finger if required.<img class='my-4' src='assets/imgs/sample-blood/8.jpg' alt=''></p>",
+    "field_type": "descriptive",
+    "field_name": "sb_col4",
+    "section_header": "2. Sample collection",
+    "required_field": "false"
+  },
+  {
+    "field_label": "<p>Apply the plaster.<br><br>Push the yellow caps back onto the microtubes.<br><br>Gently turn each microtube upside down 5 times.<img class='my-4' src='assets/imgs/sample-blood/9.jpg' alt=''></p>",
+    "field_type": "descriptive",
+    "field_name": "sb_send1",
+    "section_header": "3. Sending samples",
+    "required_field": "false"
+  },
+  {
+    "field_label": "<p>Apply the sticky labels to the microtubes.<br><br>Make sure all the writing is visible.<br><br>Put both microtubes in the plastic case. Close the case so it snaps shut.<img class='my-4' src='assets/imgs/sample-blood/10.jpg' alt=''></p>",
+    "field_type": "descriptive",
+    "field_name": "sb_send2",
+    "section_header": "3. Sending samples",
+    "required_field": "false"
+  },
+  {
+    "field_label": "<p>Write the date and time on the return form.<br><br>Put the return form and plastic case containing your samples into the grey postal bag. Seal the bag shut.<img class='my-4' src='assets/imgs/sample-blood/11.jpg' alt=''></p>",
+    "field_type": "descriptive",
+    "field_name": "sb_send3",
+    "section_header": "3. Sending samples",
+    "required_field": "false"
+  },
+  {
+    "field_label": "<p>Stick the Royal Mail label onto the grey postal bag.<br><br>Post it on the same day the sample was taken. In summer, avoid postboxes exposed to the sun.<img class='my-4' src='assets/imgs/sample-blood/12.jpg' alt=''></p>",
+    "field_type": "descriptive",
+    "field_name": "sb_send4",
+    "section_header": "3. Sending samples",
+    "required_field": "false"
+  }
+]

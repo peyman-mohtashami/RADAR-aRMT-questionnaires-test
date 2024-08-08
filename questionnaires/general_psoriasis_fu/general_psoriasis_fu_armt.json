@@ -1,0 +1,2031 @@
+[
+  {
+    "field_label": "<b><u>CURRENTLY</u></b> is your psoriasis:",
+    "field_type": "radio",
+    "field_name": "blpso_currently",
+    "required_field": "y",
+    "section_header": "Psoriasis",
+    "select_choices_or_calculations": [
+      {
+        "code": "0",
+        "label": "Clear"
+      },
+      {
+        "code": "1",
+        "label": "Nearly clear"
+      },
+      {
+        "code": "2",
+        "label": "Mild"
+      },
+      {
+        "code": "3",
+        "label": "Moderate"
+      },
+      {
+        "code": "4",
+        "label": "Moderate-severe"
+      },
+      {
+        "code": "5",
+        "label": "Severe"
+      }
+    ],
+    "report": {
+      "longitudinal": {
+        "name": "x_currently",
+        "title": "Your psoriasis status",
+        "type": "line_chart",
+        "value": "value",
+        "yaxis": {
+          "min": 0,
+          "max": 5,
+          "step": 1,
+          "fn": {
+            "0": "Clear",
+            "1": "Nearly clear",
+            "2": "Mild",
+            "3": "Moderate",
+            "4": "Moderate-severe",
+            "5": "Severe"
+          }
+        }
+      }
+    }
+  },
+  {
+    "field_label": "Over the last week, how itchy, sore, painful or stinging has your skin been?",
+    "field_type": "radio",
+    "field_name": "blpso_dlqi1",
+    "required_field": "y",
+    "section_header": "Psoriasis",
+    "select_choices_or_calculations": [
+      {
+        "code": "1",
+        "label": "Very much"
+      },
+      {
+        "code": "2",
+        "label": "A lot"
+      },
+      {
+        "code": "3",
+        "label": "A little"
+      },
+      {
+        "code": "4",
+        "label": "Not at all"
+      },
+      {
+        "code": "5",
+        "label": "Not relevant"
+      }
+    ]
+  },
+  {
+    "field_label": "Over the last week, how embarrassed or self-conscious have you been because of your skin?",
+    "field_type": "radio",
+    "field_name": "blpso_dlqi2",
+    "section_header": "Psoriasis",
+    "required_field": "y",
+    "select_choices_or_calculations": [
+      {
+        "code": "1",
+        "label": "Very much"
+      },
+      {
+        "code": "2",
+        "label": "A lot"
+      },
+      {
+        "code": "3",
+        "label": "A little"
+      },
+      {
+        "code": "4",
+        "label": "Not at all"
+      },
+      {
+        "code": "5",
+        "label": "Not relevant"
+      }
+    ]
+  },
+  {
+    "field_label": "Over the last week, how much has your skin interfered with you going shopping or looking after your home or garden?",
+    "field_type": "radio",
+    "field_name": "blpso_dlqi3",
+    "required_field": "y",
+    "section_header": "Psoriasis",
+    "select_choices_or_calculations": [
+      {
+        "code": "1",
+        "label": "Very much"
+      },
+      {
+        "code": "2",
+        "label": "A lot"
+      },
+      {
+        "code": "3",
+        "label": "A little"
+      },
+      {
+        "code": "4",
+        "label": "Not at all"
+      },
+      {
+        "code": "5",
+        "label": "Not relevant"
+      }
+    ]
+  },
+  {
+    "field_label": "Over the last week, how much has your skin influenced the clothes you wear?",
+    "field_type": "radio",
+    "field_name": "blpso_dlqi4",
+    "required_field": "y",
+    "section_header": "Psoriasis",
+    "select_choices_or_calculations": [
+      {
+        "code": "1",
+        "label": "Very much"
+      },
+      {
+        "code": "2",
+        "label": "A lot"
+      },
+      {
+        "code": "3",
+        "label": "A little"
+      },
+      {
+        "code": "4",
+        "label": "Not at all"
+      },
+      {
+        "code": "5",
+        "label": "Not relevant"
+      }
+    ]
+  },
+  {
+    "field_label": "Over the last week, how much has your skin affected any social or leisure activities?",
+    "field_type": "radio",
+    "field_name": "blpso_dlqi5",
+    "section_header": "Psoriasis",
+    "required_field": "y",
+    "select_choices_or_calculations": [
+      {
+        "code": "1",
+        "label": "Very much"
+      },
+      {
+        "code": "2",
+        "label": "A lot"
+      },
+      {
+        "code": "3",
+        "label": "A little"
+      },
+      {
+        "code": "4",
+        "label": "Not at all"
+      },
+      {
+        "code": "5",
+        "label": "Not relevant"
+      }
+    ]
+  },
+  {
+    "field_label": "Over the last week, how much has your skin made it difficult for you to do any sport?",
+    "field_type": "radio",
+    "field_name": "blpso_dlqi6",
+    "section_header": "Psoriasis",
+    "required_field": "y",
+    "select_choices_or_calculations": [
+      {
+        "code": "1",
+        "label": "Very much"
+      },
+      {
+        "code": "2",
+        "label": "A lot"
+      },
+      {
+        "code": "3",
+        "label": "A little"
+      },
+      {
+        "code": "4",
+        "label": "Not at all"
+      },
+      {
+        "code": "5",
+        "label": "Not relevant"
+      }
+    ]
+  },
+  {
+    "field_label": "Over the last week, has your skin prevented you from working or studying?",
+    "field_type": "radio",
+    "field_name": "blpso_dlqi7",
+    "section_header": "Psoriasis",
+    "required_field": "y",
+    "select_choices_or_calculations": [
+      {
+        "code": "1",
+        "label": "Yes"
+      },
+      {
+        "code": "2",
+        "label": "No"
+      },
+      {
+        "code": "3",
+        "label": "Not relevant"
+      }
+    ]
+  },
+  {
+    "field_label": "Over the last week how much has your skin been a problem at work or studying?",
+    "field_type": "radio",
+    "field_name": "blpso_dlqi7a",
+    "section_header": "Psoriasis",
+    "required_field": "y",
+    "select_choices_or_calculations": [
+      {
+        "code": "1",
+        "label": "Very much"
+      },
+      {
+        "code": "2",
+        "label": "A lot"
+      },
+      {
+        "code": "3",
+        "label": "A little"
+      },
+      {
+        "code": "4",
+        "label": "Not at all"
+      },
+      {
+        "code": "5",
+        "label": "Not relevant"
+      }
+    ],
+    "branching_logic": "[blpso_dlqi7]='2'"
+  },
+  {
+    "field_label": "Over the last week, how much has your skin created problems with your partner or any of your close friends or relatives?",
+    "field_type": "radio",
+    "field_name": "blpso_dlqi8",
+    "section_header": "Psoriasis",
+    "required_field": "y",
+    "select_choices_or_calculations": [
+      {
+        "code": "1",
+        "label": "Very much"
+      },
+      {
+        "code": "2",
+        "label": "A lot"
+      },
+      {
+        "code": "3",
+        "label": "A little"
+      },
+      {
+        "code": "4",
+        "label": "Not at all"
+      },
+      {
+        "code": "5",
+        "label": "Not relevant"
+      }
+    ]
+  },
+  {
+    "field_label": "Over the last week, how much has your skin caused any sexual difficulties?",
+    "field_type": "radio",
+    "field_name": "blpso_dlqi9",
+    "section_header": "Psoriasis",
+    "required_field": "y",
+    "select_choices_or_calculations": [
+      {
+        "code": "1",
+        "label": "Very much"
+      },
+      {
+        "code": "2",
+        "label": "A lot"
+      },
+      {
+        "code": "3",
+        "label": "A little"
+      },
+      {
+        "code": "4",
+        "label": "Not at all"
+      },
+      {
+        "code": "5",
+        "label": "Not relevant"
+      }
+    ]
+  },
+  {
+    "field_label": "Over the last week, how much of a problem has the treatment for your skin been, for example by making your home messy, or by taking up time?",
+    "field_type": "radio",
+    "field_name": "blpso_dlqi10",
+    "section_header": "Psoriasis",
+    "required_field": "y",
+    "select_choices_or_calculations": [
+      {
+        "code": "1",
+        "label": "Very much"
+      },
+      {
+        "code": "2",
+        "label": "A lot"
+      },
+      {
+        "code": "3",
+        "label": "A little"
+      },
+      {
+        "code": "4",
+        "label": "Not at all"
+      },
+      {
+        "code": "5",
+        "label": "Not relevant"
+      }
+    ]
+  },
+  {
+    "field_label": "dlqi_calc",
+    "field_type": "calc",
+    "field_name": "blpso_dlqi_calc",
+    "required_field": "y",
+    "calculation_fn": "const sum = (+blpso_dlqi1 > 4 ? 4 : +blpso_dlqi1) +(+blpso_dlqi2 > 4 ? 4 : +blpso_dlqi2) +(+blpso_dlqi3 > 4 ? 4 : +blpso_dlqi3) +(+blpso_dlqi4 > 4 ? 4 : +blpso_dlqi4) +(+blpso_dlqi5 > 4 ? 4 : +blpso_dlqi5) +(+blpso_dlqi6 > 4 ? 4 : +blpso_dlqi6) +(+blpso_dlqi7a ? (+blpso_dlqi7a > 4 ? 4 : +blpso_dlqi7a) : 4) +(+blpso_dlqi8 > 4 ? 4 : +blpso_dlqi8) +(+blpso_dlqi9 > 4 ? 4 : +blpso_dlqi9) +(+blpso_dlqi10 > 4 ? 4 : +blpso_dlqi10);console.log('***** = ', sum);const res = 40 - sum;console.log('***** = ', res<0 ? 0 : res);return res<0 ? 0 : res;",
+    "calculation_args": "['blpso_dlqi1', 'blpso_dlqi2', 'blpso_dlqi3', 'blpso_dlqi4', 'blpso_dlqi5', 'blpso_dlqi6', 'blpso_dlqi7a', 'blpso_dlqi8', 'blpso_dlqi9', 'blpso_dlqi10']",
+    "report": {
+      "longitudinal": {
+        "name": "x_dlqi",
+        "title": "How much has your psoriasis affected your life over the last week?",
+        "type": "line_chart",
+        "value": "value",
+        "yaxis": {
+          "min": 0,
+          "max": 30,
+          "step": 5,
+          "title": "Quality-of-life score",
+          "fn": {
+            "0": "[min] 0",
+            "5": "5",
+            "10": "10",
+            "15": "15",
+            "20": "20",
+            "25": "25",
+            "30": "[max] 30"
+          }
+        }
+      }
+    },
+    "section_header": "Psoriasis"
+  },
+  {
+    "field_label": "How much does your psoriasis affect your life?",
+    "field_type": "radio",
+    "field_name": "blpso_bipq1",
+    "required_field": "y",
+    "section_header": "Please provide your views on your psoriasis:",
+    "select_choices_or_calculations": [
+      {
+        "code": "0",
+        "label": "0 - no effect at all"
+      },
+      {
+        "code": "1",
+        "label": "1"
+      },
+      {
+        "code": "2",
+        "label": "2"
+      },
+      {
+        "code": "3",
+        "label": "3"
+      },
+      {
+        "code": "4",
+        "label": "4"
+      },
+      {
+        "code": "5",
+        "label": "5"
+      },
+      {
+        "code": "6",
+        "label": "6"
+      },
+      {
+        "code": "7",
+        "label": "7"
+      },
+      {
+        "code": "8",
+        "label": "8"
+      },
+      {
+        "code": "9",
+        "label": "9"
+      },
+      {
+        "code": "10",
+        "label": "10 - severely affects my life"
+      }
+    ]
+  },
+  {
+    "field_label": "How long do you think your psoriasis will continue?",
+    "field_type": "radio",
+    "field_name": "blpso_bipq2",
+    "required_field": "y",
+    "section_header": "Please provide your views on your psoriasis:",
+    "select_choices_or_calculations": [
+      {
+        "code": "0",
+        "label": "0 - a very short time"
+      },
+      {
+        "code": "1",
+        "label": "1"
+      },
+      {
+        "code": "2",
+        "label": "2"
+      },
+      {
+        "code": "3",
+        "label": "3"
+      },
+      {
+        "code": "4",
+        "label": "4"
+      },
+      {
+        "code": "5",
+        "label": "5"
+      },
+      {
+        "code": "6",
+        "label": "6"
+      },
+      {
+        "code": "7",
+        "label": "7"
+      },
+      {
+        "code": "8",
+        "label": "8"
+      },
+      {
+        "code": "9",
+        "label": "9"
+      },
+      {
+        "code": "10",
+        "label": "10 - forever"
+      }
+    ]
+  },
+  {
+    "field_label": "How much control do you feel you have over your psoriasis?",
+    "field_type": "radio",
+    "field_name": "blpso_bipq3",
+    "section_header": "Please provide your views on your psoriasis:",
+    "required_field": "y",
+    "select_choices_or_calculations": [
+      {
+        "code": "0",
+        "label": "0 - absolutely no control"
+      },
+      {
+        "code": "1",
+        "label": "1"
+      },
+      {
+        "code": "2",
+        "label": "2"
+      },
+      {
+        "code": "3",
+        "label": "3"
+      },
+      {
+        "code": "4",
+        "label": "4"
+      },
+      {
+        "code": "5",
+        "label": "5"
+      },
+      {
+        "code": "6",
+        "label": "6"
+      },
+      {
+        "code": "7",
+        "label": "7"
+      },
+      {
+        "code": "8",
+        "label": "8"
+      },
+      {
+        "code": "9",
+        "label": "9"
+      },
+      {
+        "code": "10",
+        "label": "10 - extreme amount of control"
+      }
+    ]
+  },
+  {
+    "field_label": "How much do you think your treatment can help your psoriasis?",
+    "field_type": "radio",
+    "field_name": "blpso_bipq4",
+    "section_header": "Please provide your views on your psoriasis:",
+    "required_field": "y",
+    "select_choices_or_calculations": [
+      {
+        "code": "0",
+        "label": "0 - not at all"
+      },
+      {
+        "code": "1",
+        "label": "1"
+      },
+      {
+        "code": "2",
+        "label": "2"
+      },
+      {
+        "code": "3",
+        "label": "3"
+      },
+      {
+        "code": "4",
+        "label": "4"
+      },
+      {
+        "code": "5",
+        "label": "5"
+      },
+      {
+        "code": "6",
+        "label": "6"
+      },
+      {
+        "code": "7",
+        "label": "7"
+      },
+      {
+        "code": "8",
+        "label": "8"
+      },
+      {
+        "code": "9",
+        "label": "9"
+      },
+      {
+        "code": "10",
+        "label": "10 - extremely helpful"
+      }
+    ]
+  },
+  {
+    "field_label": "How much do you experience symptoms from your psoriasis?",
+    "field_type": "radio",
+    "field_name": "blpso_bipq5",
+    "section_header": "Please provide your views on your psoriasis:",
+    "required_field": "y",
+    "select_choices_or_calculations": [
+      {
+        "code": "0",
+        "label": "0 - no symptoms at all"
+      },
+      {
+        "code": "1",
+        "label": "1"
+      },
+      {
+        "code": "2",
+        "label": "2"
+      },
+      {
+        "code": "3",
+        "label": "3"
+      },
+      {
+        "code": "4",
+        "label": "4"
+      },
+      {
+        "code": "5",
+        "label": "5"
+      },
+      {
+        "code": "6",
+        "label": "6"
+      },
+      {
+        "code": "7",
+        "label": "7"
+      },
+      {
+        "code": "8",
+        "label": "8"
+      },
+      {
+        "code": "9",
+        "label": "9"
+      },
+      {
+        "code": "10",
+        "label": "10 - many severe symptoms"
+      }
+    ]
+  },
+  {
+    "field_label": "How concerned are you about your psoriasis?",
+    "field_type": "radio",
+    "field_name": "blpso_bipq6",
+    "section_header": "Please provide your views on your psoriasis:",
+    "required_field": "y",
+    "select_choices_or_calculations": [
+      {
+        "code": "0",
+        "label": "0 - not at all concerned"
+      },
+      {
+        "code": "1",
+        "label": "1"
+      },
+      {
+        "code": "2",
+        "label": "2"
+      },
+      {
+        "code": "3",
+        "label": "3"
+      },
+      {
+        "code": "4",
+        "label": "4"
+      },
+      {
+        "code": "5",
+        "label": "5"
+      },
+      {
+        "code": "6",
+        "label": "6"
+      },
+      {
+        "code": "7",
+        "label": "7"
+      },
+      {
+        "code": "8",
+        "label": "8"
+      },
+      {
+        "code": "9",
+        "label": "9"
+      },
+      {
+        "code": "10",
+        "label": "10 - extremely concerned"
+      }
+    ]
+  },
+  {
+    "field_label": "How well do you feel you understand your psoriasis?",
+    "field_type": "radio",
+    "field_name": "blpso_bipq7",
+    "section_header": "Please provide your views on your psoriasis:",
+    "required_field": "y",
+    "select_choices_or_calculations": [
+      {
+        "code": "0",
+        "label": "0 - don't understand at all"
+      },
+      {
+        "code": "1",
+        "label": "1"
+      },
+      {
+        "code": "2",
+        "label": "2"
+      },
+      {
+        "code": "3",
+        "label": "3"
+      },
+      {
+        "code": "4",
+        "label": "4"
+      },
+      {
+        "code": "5",
+        "label": "5"
+      },
+      {
+        "code": "6",
+        "label": "6"
+      },
+      {
+        "code": "7",
+        "label": "7"
+      },
+      {
+        "code": "8",
+        "label": "8"
+      },
+      {
+        "code": "9",
+        "label": "9"
+      },
+      {
+        "code": "10",
+        "label": "10 - understand very clearly"
+      }
+    ]
+  },
+  {
+    "field_label": "How much does your psoriasis affect you emotionally? (e.g., does it make you angry, scared, upset or depressed?)",
+    "field_type": "radio",
+    "field_name": "blpso_bipq8",
+    "section_header": "Please provide your views on your psoriasis:",
+    "required_field": "y",
+    "select_choices_or_calculations": [
+      {
+        "code": "0",
+        "label": "0 - not at all affected emotionally"
+      },
+      {
+        "code": "1",
+        "label": "1"
+      },
+      {
+        "code": "2",
+        "label": "2"
+      },
+      {
+        "code": "3",
+        "label": "3"
+      },
+      {
+        "code": "4",
+        "label": "4"
+      },
+      {
+        "code": "5",
+        "label": "5"
+      },
+      {
+        "code": "6",
+        "label": "6"
+      },
+      {
+        "code": "7",
+        "label": "7"
+      },
+      {
+        "code": "8",
+        "label": "8"
+      },
+      {
+        "code": "9",
+        "label": "9"
+      },
+      {
+        "code": "10",
+        "label": "10 - extremely affected emotionally"
+      }
+    ]
+  },
+  {
+    "field_label": "Select the number that best describes your worst level of itching due to psoriasis in the <b>PAST 24 HOURS</b>.",
+    "field_type": "radio",
+    "field_name": "blpso_itch",
+    "required_field": "y",
+    "section_header": "Please provide your views on your psoriasis:",
+    "select_choices_or_calculations": [
+      {
+        "code": "0",
+        "label": "0 - no itching"
+      },
+      {
+        "code": "1",
+        "label": "1"
+      },
+      {
+        "code": "2",
+        "label": "2"
+      },
+      {
+        "code": "3",
+        "label": "3"
+      },
+      {
+        "code": "4",
+        "label": "4"
+      },
+      {
+        "code": "5",
+        "label": "5"
+      },
+      {
+        "code": "6",
+        "label": "6"
+      },
+      {
+        "code": "7",
+        "label": "7"
+      },
+      {
+        "code": "8",
+        "label": "8"
+      },
+      {
+        "code": "9",
+        "label": "9"
+      },
+      {
+        "code": "10",
+        "label": "10 - worst itch imaginable"
+      }
+    ]
+  },
+  {
+    "field_label": "<b>Mobility</b>",
+    "field_type": "radio",
+    "field_name": "blpso_eq5d_mob",
+    "required_field": "y",
+    "section_header": "Please select what best describes your health <u>TODAY</u>",
+    "select_choices_or_calculations": [
+      {
+        "code": "1",
+        "label": "I have no problems walking about"
+      },
+      {
+        "code": "2",
+        "label": "I have slight problems in walking about"
+      },
+      {
+        "code": "3",
+        "label": "I have moderate problems in walking about"
+      },
+      {
+        "code": "4",
+        "label": "I have severe problems in walking about"
+      },
+      {
+        "code": "5",
+        "label": "I am unable to walk about"
+      }
+    ]
+  },
+  {
+    "field_label": "<b>Self-care</b>",
+    "field_type": "radio",
+    "field_name": "blpso_eq5d_scare",
+    "section_header": "Please select what best describes your health <u>TODAY</u>",
+    "required_field": "y",
+    "select_choices_or_calculations": [
+      {
+        "code": "1",
+        "label": "I have no problems washing or dressing myself"
+      },
+      {
+        "code": "2",
+        "label": "I have slight problems washing or dressing myself"
+      },
+      {
+        "code": "3",
+        "label": "I have moderate problems washing or dressing myself"
+      },
+      {
+        "code": "4",
+        "label": "I have severe problems washing or dressing myself"
+      },
+      {
+        "code": "5",
+        "label": "I am unable to wash or dress myself"
+      }
+    ]
+  },
+  {
+    "field_label": "<b>Usual activities (e.g., work, study, housework, family or leisure activities)</b>",
+    "field_type": "radio",
+    "field_name": "blpso_eq5d_uactive",
+    "section_header": "Please select what best describes your health <u>TODAY</u>",
+    "required_field": "y",
+    "select_choices_or_calculations": [
+      {
+        "code": "1",
+        "label": "I have no problems doing my usual activities"
+      },
+      {
+        "code": "2",
+        "label": "I have slight problems doing my usual activities"
+      },
+      {
+        "code": "3",
+        "label": "I have moderate problems doing my usual activities"
+      },
+      {
+        "code": "4",
+        "label": "I have severe problems doing my usual activities"
+      },
+      {
+        "code": "5",
+        "label": "I am unable to do my usual activities"
+      }
+    ]
+  },
+  {
+    "field_label": "Pain/discomfort",
+    "field_type": "radio",
+    "field_name": "blpso_eq5d_pain",
+    "section_header": "Please select what best describes your health <u>TODAY</u>",
+    "required_field": "y",
+    "select_choices_or_calculations": [
+      {
+        "code": "1",
+        "label": "I have no pain or discomfort"
+      },
+      {
+        "code": "2",
+        "label": "I have slight pain or discomfort"
+      },
+      {
+        "code": "3",
+        "label": "I have moderate pain or discomfort"
+      },
+      {
+        "code": "4",
+        "label": "I have severe pain or discomfort"
+      },
+      {
+        "code": "5",
+        "label": "I have extreme pain or discomfort"
+      }
+    ]
+  },
+  {
+    "field_label": "Anxiety/Depression",
+    "field_type": "radio",
+    "field_name": "blpso_eq5d_anx",
+    "section_header": "Please select what best describes your health <u>TODAY</u>",
+    "required_field": "y",
+    "select_choices_or_calculations": [
+      {
+        "code": "1",
+        "label": "I am not anxious or depressed"
+      },
+      {
+        "code": "2",
+        "label": "I am slightly anxious or depressed"
+      },
+      {
+        "code": "3",
+        "label": "I am moderately anxious or depressed"
+      },
+      {
+        "code": "4",
+        "label": "I am severely anxious or depressed"
+      },
+      {
+        "code": "5",
+        "label": "I am extremely anxious or depressed"
+      }
+    ]
+  },
+  {
+    "field_label": "<p>We would like to know how good or bad your health is <u>TODAY</u>.</p><p class='mt-2 text-sm text-gray-500'>The scale is numbered from 0 to 100.<br>100 means the best health you can imagine.<br>0 means the worst health you can imagine.<br>Select on the scale to indicate how your health is today.</p>",
+    "field_type": "slider",
+    "field_name": "blpso_eq5d_vas",
+    "required_field": "y",
+    "text_validation_type_or_show_slider_number": "number",
+    "select_choices_or_calculations": [
+      {
+        "code": "0",
+        "label": "Worst health"
+      },
+      {
+        "code": "100",
+        "label": "Best health"
+      }
+    ],
+    "section_header": "Please select what best describes your health <u>TODAY</u>"
+  },
+  {
+    "field_label": "Has a doctor ever told you that you have psoriatic arthritis?",
+    "field_type": "radio",
+    "field_name": "blpso_psoarth_doc",
+    "required_field": "y",
+    "section_header": "Psoriatic arthritis",
+    "select_choices_or_calculations": [
+      {
+        "code": "1",
+        "label": "Yes"
+      },
+      {
+        "code": "0",
+        "label": "No"
+      },
+      {
+        "code": "2",
+        "label": "Not sure"
+      }
+    ]
+  },
+  {
+    "field_label": "How old were you when you first developed psoriatic arthritis? ",
+    "field_type": "text",
+    "field_name": "blpso_psoarth_age",
+    "section_header": "Psoriatic arthritis",
+    "field_note": "years",
+    "required_field": "y",
+    "text_validation_type_or_show_slider_number": "integer",
+    "branching_logic": "[blpso_psoarth_doc]='1'",
+    "validations": [
+      {
+        "name": "min",
+        "value": "0",
+        "error": "Enter a number greater than 0",
+        "hint": ""
+      },
+      {
+        "name": "max",
+        "value": "100",
+        "error": "Enter a number less than 100",
+        "hint": ""
+      },
+      {
+        "name": "less_than_age_year",
+        "value": "",
+        "error": "The age when you first developed psoriatic arthritis cannot be larger than your age.",
+        "hint": ""
+      }
+    ]
+  },
+  {
+    "field_label": "Does your psoriatic arthritis affect your joints in your arms or legs (e.g. fingers, knees, shoulders)?",
+    "field_type": "radio",
+    "field_name": "blpso_psoarth_joint",
+    "section_header": "Psoriatic arthritis",
+    "required_field": "y",
+    "select_choices_or_calculations": [
+      {
+        "code": "1",
+        "label": "Yes"
+      },
+      {
+        "code": "0",
+        "label": "No"
+      },
+      {
+        "code": "2",
+        "label": "Not sure"
+      }
+    ],
+    "branching_logic": "[blpso_psoarth_doc]='1'"
+  },
+  {
+    "field_label": "Does your psoriatic arthritis affect your spine (back) causing back pain and stiffness?",
+    "field_type": "radio",
+    "field_name": "blpso_psoarth_spine",
+    "section_header": "Psoriatic arthritis",
+    "required_field": "y",
+    "select_choices_or_calculations": [
+      {
+        "code": "1",
+        "label": "Yes"
+      },
+      {
+        "code": "0",
+        "label": "No"
+      },
+      {
+        "code": "2",
+        "label": "Not sure"
+      }
+    ],
+    "branching_logic": "[blpso_psoarth_doc]='1'"
+  },
+  {
+    "field_label": "<p><i>Pain</i><br>Select the number that best describes the pain you felt due to your psoriatic arthritis during the last week:</p>",
+    "field_type": "radio",
+    "field_name": "blpso_psaid1",
+    "select_choices_or_calculations": [
+      {
+        "code": "0",
+        "label": "0 - None"
+      },
+      {
+        "code": "1",
+        "label": "1"
+      },
+      {
+        "code": "2",
+        "label": "2"
+      },
+      {
+        "code": "3",
+        "label": "3"
+      },
+      {
+        "code": "4",
+        "label": "4"
+      },
+      {
+        "code": "5",
+        "label": "5"
+      },
+      {
+        "code": "6",
+        "label": "6"
+      },
+      {
+        "code": "7",
+        "label": "7"
+      },
+      {
+        "code": "8",
+        "label": "8"
+      },
+      {
+        "code": "9",
+        "label": "9"
+      },
+      {
+        "code": "10",
+        "label": "10 - Extreme"
+      }
+    ],
+    "branching_logic": "[blpso_psoarth_doc]='1'",
+    "section_header": "Psoriatic arthritis"
+  },
+  {
+    "field_label": "<p><i>Fatigue</i><br>Select the number that best describes the overall level of fatigue due to your psoriatic arthritis you have experienced during the last week:</p>",
+    "field_type": "radio",
+    "field_name": "blpso_psaid2",
+    "select_choices_or_calculations": [
+      {
+        "code": "0",
+        "label": "0 - No fatigue"
+      },
+      {
+        "code": "1",
+        "label": "1"
+      },
+      {
+        "code": "2",
+        "label": "2"
+      },
+      {
+        "code": "3",
+        "label": "3"
+      },
+      {
+        "code": "4",
+        "label": "4"
+      },
+      {
+        "code": "5",
+        "label": "5"
+      },
+      {
+        "code": "6",
+        "label": "6"
+      },
+      {
+        "code": "7",
+        "label": "7"
+      },
+      {
+        "code": "8",
+        "label": "8"
+      },
+      {
+        "code": "9",
+        "label": "9"
+      },
+      {
+        "code": "10",
+        "label": "10 - Totally exhausted"
+      }
+    ],
+    "branching_logic": "[blpso_psoarth_doc]='1'",
+    "section_header": "Psoriatic arthritis"
+  },
+  {
+    "field_label": "<p><i>Skin problems</i><br>Select the number that best describes the skin problems including itching you felt due to your psoriatic arthritis during the last week:</p>",
+    "field_type": "radio",
+    "field_name": "blpso_psaid3",
+    "select_choices_or_calculations": [
+      {
+        "code": "0",
+        "label": "0 - None"
+      },
+      {
+        "code": "1",
+        "label": "1"
+      },
+      {
+        "code": "2",
+        "label": "2"
+      },
+      {
+        "code": "3",
+        "label": "3"
+      },
+      {
+        "code": "4",
+        "label": "4"
+      },
+      {
+        "code": "5",
+        "label": "5"
+      },
+      {
+        "code": "6",
+        "label": "6"
+      },
+      {
+        "code": "7",
+        "label": "7"
+      },
+      {
+        "code": "8",
+        "label": "8"
+      },
+      {
+        "code": "9",
+        "label": "9"
+      },
+      {
+        "code": "10",
+        "label": "10 - Extreme"
+      }
+    ],
+    "branching_logic": "[blpso_psoarth_doc]='1'",
+    "section_header": "Psoriatic arthritis"
+  },
+  {
+    "field_label": "<p><i>Work and/or leisure activities</i><br>Select the number that best describes the difficulties you had to participate fully in work and/or leisure activities due to your psoriatic arthritis during the last week:</p>",
+    "field_type": "radio",
+    "field_name": "blpso_psaid4",
+    "select_choices_or_calculations": [
+      {
+        "code": "0",
+        "label": "0 - None"
+      },
+      {
+        "code": "1",
+        "label": "1"
+      },
+      {
+        "code": "2",
+        "label": "2"
+      },
+      {
+        "code": "3",
+        "label": "3"
+      },
+      {
+        "code": "4",
+        "label": "4"
+      },
+      {
+        "code": "5",
+        "label": "5"
+      },
+      {
+        "code": "6",
+        "label": "6"
+      },
+      {
+        "code": "7",
+        "label": "7"
+      },
+      {
+        "code": "8",
+        "label": "8"
+      },
+      {
+        "code": "9",
+        "label": "9"
+      },
+      {
+        "code": "10",
+        "label": "10 - Extreme"
+      }
+    ],
+    "branching_logic": "[blpso_psoarth_doc]='1'",
+    "section_header": "Psoriatic arthritis"
+  },
+  {
+    "field_label": "<p><i>Functional capacity</i><br>Select the number that best describes the difficulty you had in doing daily physical activities due to your psoriatic arthritis during the last week:</p>",
+    "field_type": "radio",
+    "form_name": "baseline",
+    "field_name": "blpso_psaid5",
+    "custom_alignment": "LH",
+    "select_choices_or_calculations": [
+      {
+        "code": "0",
+        "label": "0 - No difficulty"
+      },
+      {
+        "code": "1",
+        "label": "1"
+      },
+      {
+        "code": "2",
+        "label": "2"
+      },
+      {
+        "code": "3",
+        "label": "3"
+      },
+      {
+        "code": "4",
+        "label": "4"
+      },
+      {
+        "code": "5",
+        "label": "5"
+      },
+      {
+        "code": "6",
+        "label": "6"
+      },
+      {
+        "code": "7",
+        "label": "7"
+      },
+      {
+        "code": "8",
+        "label": "8"
+      },
+      {
+        "code": "9",
+        "label": "9"
+      },
+      {
+        "code": "10",
+        "label": "10 - Extreme difficulty"
+      }
+    ],
+    "branching_logic": "[blpso_psoarth_doc]='1'",
+    "section_header": "Psoriatic arthritis"
+  },
+  {
+    "field_label": "<p><i>Discomfort</i><br>Select the number that best describes the feeling of discomfort and annoyance with everyday tasks due to your psoriatic arthritis during the last week:</p>",
+    "field_type": "radio",
+    "form_name": "baseline",
+    "field_name": "blpso_psaid6",
+    "custom_alignment": "LH",
+    "select_choices_or_calculations": [
+      {
+        "code": "0",
+        "label": "0 - None"
+      },
+      {
+        "code": "1",
+        "label": "1"
+      },
+      {
+        "code": "2",
+        "label": "2"
+      },
+      {
+        "code": "3",
+        "label": "3"
+      },
+      {
+        "code": "4",
+        "label": "4"
+      },
+      {
+        "code": "5",
+        "label": "5"
+      },
+      {
+        "code": "6",
+        "label": "6"
+      },
+      {
+        "code": "7",
+        "label": "7"
+      },
+      {
+        "code": "8",
+        "label": "8"
+      },
+      {
+        "code": "9",
+        "label": "9"
+      },
+      {
+        "code": "10",
+        "label": "10 - Extreme"
+      }
+    ],
+    "branching_logic": "[blpso_psoarth_doc]='1'",
+    "section_header": "Psoriatic arthritis"
+  },
+  {
+    "field_label": "<p><i>Sleep disturbance</i><br>Select the number that best describes the sleep difficulties (i.e., resting at night) you felt due to your psoriatic arthritis during the last week:</p>",
+    "field_type": "radio",
+    "form_name": "baseline",
+    "field_name": "blpso_psaid7",
+    "custom_alignment": "LH",
+    "select_choices_or_calculations": [
+      {
+        "code": "0",
+        "label": "0 - No difficulty"
+      },
+      {
+        "code": "1",
+        "label": "1"
+      },
+      {
+        "code": "2",
+        "label": "2"
+      },
+      {
+        "code": "3",
+        "label": "3"
+      },
+      {
+        "code": "4",
+        "label": "4"
+      },
+      {
+        "code": "5",
+        "label": "5"
+      },
+      {
+        "code": "6",
+        "label": "6"
+      },
+      {
+        "code": "7",
+        "label": "7"
+      },
+      {
+        "code": "8",
+        "label": "8"
+      },
+      {
+        "code": "9",
+        "label": "9"
+      },
+      {
+        "code": "10",
+        "label": "10 - Extreme difficulty"
+      }
+    ],
+    "branching_logic": "[blpso_psoarth_doc]='1'",
+    "section_header": "Psoriatic arthritis"
+  },
+  {
+    "field_label": "<p><i>Coping</i><br>Considering your psoriatic arthritis overall, how well did you cope (manage, deal, make do) with your psoriatic arthritis during the last week?</p>",
+    "field_type": "radio",
+    "form_name": "baseline",
+    "field_name": "blpso_psaid8",
+    "custom_alignment": "LH",
+    "select_choices_or_calculations": [
+      {
+        "code": "0",
+        "label": "0 - Very well"
+      },
+      {
+        "code": "1",
+        "label": "1"
+      },
+      {
+        "code": "2",
+        "label": "2"
+      },
+      {
+        "code": "3",
+        "label": "3"
+      },
+      {
+        "code": "4",
+        "label": "4"
+      },
+      {
+        "code": "5",
+        "label": "5"
+      },
+      {
+        "code": "6",
+        "label": "6"
+      },
+      {
+        "code": "7",
+        "label": "7"
+      },
+      {
+        "code": "8",
+        "label": "8"
+      },
+      {
+        "code": "9",
+        "label": "9"
+      },
+      {
+        "code": "10",
+        "label": "10 - Very poorly"
+      }
+    ],
+    "branching_logic": "[blpso_psoarth_doc]='1'",
+    "section_header": "Psoriatic arthritis"
+  },
+  {
+    "field_label": "<p><i>Anxiety, fear and uncertainty</i><br>Select the number that best describes the level of anxiety, fear and uncertainty (for example about the future, treatments, fears of loneliness) due to your psoriatic arthritis you have experienced during the last week:</p>",
+    "field_type": "radio",
+    "field_name": "blpso_psaid9",
+    "select_choices_or_calculations": [
+      {
+        "code": "0",
+        "label": "0 - None"
+      },
+      {
+        "code": "1",
+        "label": "1"
+      },
+      {
+        "code": "2",
+        "label": "2"
+      },
+      {
+        "code": "3",
+        "label": "3"
+      },
+      {
+        "code": "4",
+        "label": "4"
+      },
+      {
+        "code": "5",
+        "label": "5"
+      },
+      {
+        "code": "6",
+        "label": "6"
+      },
+      {
+        "code": "7",
+        "label": "7"
+      },
+      {
+        "code": "8",
+        "label": "8"
+      },
+      {
+        "code": "9",
+        "label": "9"
+      },
+      {
+        "code": "10",
+        "label": "10 - Extreme"
+      }
+    ],
+    "branching_logic": "[blpso_psoarth_doc]='1'",
+    "section_header": "Psoriatic arthritis"
+  },
+  {
+    "field_label": "Please select the joints that have caused you discomfort (i.e. stiff, swollen or painful joints)",
+    "field_type": "checkbox",
+    "field_name": "blpest",
+    "select_choices_or_calculations": [
+      {
+        "code": "1",
+        "label": "Neck"
+      },
+      {
+        "code": "2",
+        "label": "Upper back"
+      },
+      {
+        "code": "3",
+        "label": "Lower back"
+      },
+      {
+        "code": "4",
+        "label": "Left shoulder"
+      },
+      {
+        "code": "5",
+        "label": "Left elbow"
+      },
+      {
+        "code": "6",
+        "label": "Left wrist"
+      },
+      {
+        "code": "7",
+        "label": "Left hand/fingers"
+      },
+      {
+        "code": "8",
+        "label": "Left thumb"
+      },
+      {
+        "code": "12",
+        "label": "Left hip"
+      },
+      {
+        "code": "11",
+        "label": "Left knee"
+      },
+      {
+        "code": "10",
+        "label": "Left ankle"
+      },
+      {
+        "code": "9",
+        "label": "Left foot/toes"
+      },
+      {
+        "code": "13",
+        "label": "Right shoulder"
+      },
+      {
+        "code": "14",
+        "label": "Right elbow"
+      },
+      {
+        "code": "15",
+        "label": "Right wrist"
+      },
+      {
+        "code": "16",
+        "label": "Right hand/fingers"
+      },
+      {
+        "code": "17",
+        "label": "Right thumb"
+      },
+      {
+        "code": "18",
+        "label": "Right hip"
+      },
+      {
+        "code": "19",
+        "label": "Right knee"
+      },
+      {
+        "code": "20",
+        "label": "Right ankle"
+      },
+      {
+        "code": "21",
+        "label": "Right foot/toes"
+      },
+      {
+        "code": "0",
+        "label": "None"
+      }
+    ],
+    "branching_logic": "[blpso_psoarth_doc]='0' or [blpso_psoarth_doc]='2'",
+    "section_header": "Psoriatic arthritis"
+  },
+  {
+    "field_label": "Have you ever had a swollen joint (or joints)?",
+    "field_type": "yesno",
+    "field_name": "blpest_joint",
+    "required_field": "y",
+    "branching_logic": "[blpso_psoarth_doc]='0' or [blpso_psoarth_doc]='2'",
+    "section_header": "Psoriatic arthritis"
+  },
+  {
+    "field_label": "Has a doctor ever told you that you have arthritis?",
+    "field_type": "yesno",
+    "field_name": "blpest_arth",
+    "required_field": "y",
+    "branching_logic": "[blpso_psoarth_doc]='0' or [blpso_psoarth_doc]='2'",
+    "section_header": "Psoriatic arthritis"
+  },
+  {
+    "field_label": "Do your fingernails or toenails have holes or pits?",
+    "field_type": "yesno",
+    "field_name": "blpest_nailhole",
+    "required_field": "y",
+    "branching_logic": "[blpso_psoarth_doc]='0' or [blpso_psoarth_doc]='2'",
+    "section_header": "Psoriatic arthritis"
+  },
+  {
+    "field_label": "Have you had pain in your heel?",
+    "field_type": "yesno",
+    "field_name": "blpest_heelpain",
+    "required_field": "y",
+    "branching_logic": "[blpso_psoarth_doc]='0' or [blpso_psoarth_doc]='2'",
+    "section_header": "Psoriatic arthritis"
+  },
+  {
+    "field_label": "Have you had a finger or toe that was completely swollen and painful for no apparent reason?",
+    "field_type": "yesno",
+    "field_name": "blpest_swollen",
+    "required_field": "y",
+    "branching_logic": "[blpso_psoarth_doc]='0' or [blpso_psoarth_doc]='2'",
+    "section_header": "Psoriatic arthritis"
+  },
+  {
+    "field_label": "Overall, how satisfied are you with your life nowadays?",
+    "field_type": "radio",
+    "field_name": "blwbg_satis",
+    "required_field": "y",
+    "section_header": "Wellbeing",
+    "select_choices_or_calculations": [
+      {
+        "code": "0",
+        "label": "0 - not at all"
+      },
+      {
+        "code": "1",
+        "label": "1"
+      },
+      {
+        "code": "2",
+        "label": "2"
+      },
+      {
+        "code": "3",
+        "label": "3"
+      },
+      {
+        "code": "4",
+        "label": "4"
+      },
+      {
+        "code": "5",
+        "label": "5"
+      },
+      {
+        "code": "6",
+        "label": "6"
+      },
+      {
+        "code": "7",
+        "label": "7"
+      },
+      {
+        "code": "8",
+        "label": "8"
+      },
+      {
+        "code": "9",
+        "label": "9"
+      },
+      {
+        "code": "10",
+        "label": "10 - completely"
+      }
+    ],
+    "report": {
+      "longitudinal": {
+        "name": "x_well_being",
+        "title": "Overall, how satisfied are you with your life nowadays?",
+        "type": "line_chart",
+        "value": "value",
+        "yaxis": {
+          "min": 0,
+          "max": 10,
+          "step": 2,
+          "fn": {
+            "0": "Not at all - 0",
+            "2": "2",
+            "4": "4",
+            "6": "6",
+            "8": "8",
+            "10": "Completely - 10"
+          }
+        }
+      }
+    }
+  },
+  {
+    "field_label": "Little interest or pleasure in doing things",
+    "field_type": "radio",
+    "field_name": "blwbg_lt2w_little",
+    "required_field": "y",
+    "matrix_group_name": "blwbg_lt2w",
+    "section_header": "<b>OVER THE LAST 2 WEEKS</b>, how often have you been bothered by the following problems?",
+    "select_choices_or_calculations": [
+      {
+        "code": "1",
+        "label": "Not at all"
+      },
+      {
+        "code": "2",
+        "label": "Several days"
+      },
+      {
+        "code": "3",
+        "label": "More than half the days"
+      },
+      {
+        "code": "4",
+        "label": "Nearly everyday"
+      }
+    ],
+    "report": {
+      "longitudinal": {
+        "name": "x_problem",
+        "title": "Little interest/pleasure in doing things",
+        "type": "line_chart",
+        "value": "value",
+        "group": {
+          "name": "a",
+          "title": "How often have you been bothered by.....?"
+        },
+        "height": "300",
+        "yaxis": {
+          "min": 1,
+          "max": 4,
+          "step": 1,
+          "fn": {
+            "1": "Not at all",
+            "2": "Several days",
+            "3": "More than one half the days",
+            "4": "Nearly everyday"
+          }
+        }
+      }
+    }
+  },
+  {
+    "field_label": "Feeling down, depressed, or hopeless",
+    "field_type": "radio",
+    "field_name": "blwbg_lt2w_down",
+    "required_field": "y",
+    "matrix_group_name": "blwbg_lt2w",
+    "select_choices_or_calculations": [
+      {
+        "code": "1",
+        "label": "Not at all"
+      },
+      {
+        "code": "2",
+        "label": "Several days"
+      },
+      {
+        "code": "3",
+        "label": "More than half the days"
+      },
+      {
+        "code": "4",
+        "label": "Nearly everyday"
+      }
+    ],
+    "report": {
+      "longitudinal": {
+        "name": "x_problem",
+        "title": "Feeling down, depressed or hopeless",
+        "type": "line_chart",
+        "value": "value",
+        "group": {
+          "name": "a",
+          "title": "How often have you been bothered by.....?"
+        },
+        "height": "300",
+        "yaxis": {
+          "min": 1,
+          "max": 4,
+          "step": 1,
+          "fn": {
+            "1": "Not at all",
+            "2": "Several days",
+            "3": "More than one half the days",
+            "4": "Nearly everyday"
+          }
+        }
+      }
+    },
+    "section_header": "<b>OVER THE LAST 2 WEEKS</b>, how often have you been bothered by the following problems?"
+  },
+  {
+    "field_label": "Feeling nervous, anxious or on edge",
+    "field_type": "radio",
+    "field_name": "blwbg_lt2w_nervous",
+    "required_field": "y",
+    "matrix_group_name": "blwbg_lt2w",
+    "select_choices_or_calculations": [
+      {
+        "code": "1",
+        "label": "Not at all"
+      },
+      {
+        "code": "2",
+        "label": "Several days"
+      },
+      {
+        "code": "3",
+        "label": "More than half the days"
+      },
+      {
+        "code": "4",
+        "label": "Nearly everyday"
+      }
+    ],
+    "report": {
+      "longitudinal": {
+        "name": "x_problem",
+        "title": "Feeling nervous, anxious or on edge",
+        "type": "line_chart",
+        "value": "value",
+        "group": {
+          "name": "a",
+          "title": "How often have you been bothered by.....?"
+        },
+        "height": "300",
+        "yaxis": {
+          "min": 1,
+          "max": 4,
+          "step": 1,
+          "fn": {
+            "1": "Not at all",
+            "2": "Several days",
+            "3": "More than one half the days",
+            "4": "Nearly everyday"
+          }
+        }
+      }
+    },
+    "section_header": "<b>OVER THE LAST 2 WEEKS</b>, how often have you been bothered by the following problems?"
+  },
+  {
+    "field_label": "Not being able to stop or control worrying",
+    "field_type": "radio",
+    "field_name": "blwbg_lt2w_worry",
+    "required_field": "y",
+    "matrix_group_name": "blwbg_lt2w",
+    "select_choices_or_calculations": [
+      {
+        "code": "1",
+        "label": "Not at all"
+      },
+      {
+        "code": "2",
+        "label": "Several days"
+      },
+      {
+        "code": "3",
+        "label": "More than half the days"
+      },
+      {
+        "code": "4",
+        "label": "Nearly everyday"
+      }
+    ],
+    "report": {
+      "longitudinal": {
+        "name": "x_problem",
+        "title": "Not being able to stop or control worrying",
+        "type": "line_chart",
+        "value": "value",
+        "group": {
+          "name": "a",
+          "title": "How often have you been bothered by.....?"
+        },
+        "height": "300",
+        "yaxis": {
+          "min": 1,
+          "max": 4,
+          "step": 1,
+          "fn": {
+            "1": "Not at all",
+            "2": "Several days",
+            "3": "More than one half the days",
+            "4": "Nearly everyday"
+          }
+        }
+      }
+    },
+    "section_header": "<b>OVER THE LAST 2 WEEKS</b>, how often have you been bothered by the following problems?"
+  }
+]

@@ -1,0 +1,1204 @@
+[
+  {
+    "field_label": "I completely understand how and when I should take my biologic injection during the study.",
+    "field_type": "radio",
+    "field_name": "blexp_blgtke",
+    "required_field": "y",
+    "section_header": " ",
+    "select_choices_or_calculations": [
+      {
+        "code": "1",
+        "label": "Strongly Agree"
+      },
+      {
+        "code": "2",
+        "label": "Agree"
+      },
+      {
+        "code": "3",
+        "label": "No opinion"
+      },
+      {
+        "code": "4",
+        "label": "Disagree"
+      },
+      {
+        "code": "5",
+        "label": "Strongly disagree"
+      }
+    ]
+  },
+  {
+    "field_label": "In your usual dermatology centre, are you able to request an appointment with your psoriasis doctor when you need it (i.e., 'ad hoc' appointment or patient-initiated follow-up/PIFU)?",
+    "field_type": "yesno",
+    "field_name": "blexp_appt",
+    "required_field": "y",
+    "custom_alignment": "RH",
+    "section_header": " "
+  },
+  {
+    "field_label": "Over the past 3 months, how many times did you request to have an appointment with your psoriasis doctor?",
+    "field_type": "radio",
+    "field_name": "blexp_appt_no",
+    "required_field": "y",
+    "select_choices_or_calculations": [
+      {
+        "code": "0",
+        "label": "0"
+      },
+      {
+        "code": "1",
+        "label": "1"
+      },
+      {
+        "code": "2",
+        "label": "2"
+      },
+      {
+        "code": "3",
+        "label": "3"
+      },
+      {
+        "code": "4",
+        "label": "4"
+      },
+      {
+        "code": "5",
+        "label": "5"
+      },
+      {
+        "code": "6",
+        "label": "6"
+      },
+      {
+        "code": "7",
+        "label": "7"
+      },
+      {
+        "code": "8",
+        "label": "8"
+      },
+      {
+        "code": "9",
+        "label": "9"
+      },
+      {
+        "code": "10",
+        "label": "10"
+      },
+      {
+        "code": "11",
+        "label": "11 or more"
+      }
+    ],
+    "branching_logic": "[blexp_appt]='1'",
+    "section_header": " "
+  },
+  {
+    "field_label": "Why did you request this appointment(s)? <br><span class='text-[#A99A83] text-sm'>Tick all that apply</span>",
+    "field_type": "checkbox",
+    "field_name": "blexp_appt_why",
+    "required_field": "y",
+    "select_choices_or_calculations": [
+      {
+        "code": "1",
+        "label": "My psoriasis got worse"
+      },
+      {
+        "code": "2",
+        "label": "I was worried about side effects from my psoriasis medication"
+      },
+      {
+        "code": "3",
+        "label": "I was worried that I had developed (new onset) psoriatic arthritis"
+      },
+      {
+        "code": "4",
+        "label": "My (existing) psoriatic arthritis had worsened"
+      },
+      {
+        "code": "5",
+        "label": "I developed a new skin problem (please state)"
+      },
+      {
+        "code": "6",
+        "label": "Other (please state)"
+      }
+    ],
+    "branching_logic": "[blexp_appt_no]<>'0'",
+    "section_header": " "
+  },
+  {
+    "field_label": "<p>Why did you request this appointment(s)?<br><br></p><p>Please state new skin problem developed.</p>",
+    "field_type": "text",
+    "form_name": "baseline",
+    "field_name": "blexp_appt_why_skin",
+    "required_field": "y",
+    "branching_logic": "[blexp_appt_why]='5'",
+    "section_header": " "
+  },
+  {
+    "field_label": "<p>Why did you request this appointment(s)?<br><br>Please state other.</p>",
+    "field_type": "text",
+    "form_name": "baseline",
+    "field_name": "blexp_appt_why_oth",
+    "required_field": "y",
+    "branching_logic": "[blexp_appt_why]='6'",
+    "section_header": " "
+  },
+  {
+    "field_label": "Following your request for your appointment, were you invited to psoriasis clinic with 5 working days?",
+    "field_type": "radio",
+    "form_name": "baseline",
+    "field_name": "blexp_appt_inv5d",
+    "required_field": "y",
+    "select_choices_or_calculations": [
+      {
+        "code": "1",
+        "label": "Yes"
+      },
+      {
+        "code": "2",
+        "label": "No, it was more than 5 working days"
+      },
+      {
+        "code": "3",
+        "label": "No, I was not offered an appointment"
+      },
+      {
+        "code": "4",
+        "label": "Unsure"
+      }
+    ],
+    "branching_logic": "[blexp_appt_no]<>'0'",
+    "section_header": " "
+  },
+  {
+    "field_label": "Was this clinic review by telephone or person?",
+    "field_type": "radio",
+    "field_name": "blexp_appt_inv5d_crev",
+    "required_field": "y",
+    "select_choices_or_calculations": [
+      {
+        "code": "1",
+        "label": "Telephone"
+      },
+      {
+        "code": "2",
+        "label": "In person"
+      }
+    ],
+    "branching_logic": "[blexp_appt_inv5d]='1' or [blexp_appt_inv5d]='2' or [blexp_appt_inv5d]='4'",
+    "section_header": " "
+  },
+  {
+    "field_label": "Did you attend (either in person or by telephone) the appointment offered?",
+    "field_type": "yesno",
+    "field_name": "blexp_appt_inv5d_atd",
+    "required_field": "y",
+    "branching_logic": "[blexp_appt_inv5d]='1' or [blexp_appt_inv5d]='2' or [blexp_appt_inv5d]='4'",
+    "section_header": " "
+  },
+  {
+    "field_label": "Why did you not attend? <br><span class='text-[#A99A83] text-sm'>Tick all that apply</span>",
+    "field_type": "checkbox",
+    "field_name": "blexp_appt_inv5d_atd_no",
+    "required_field": "y",
+    "select_choices_or_calculations": [
+      {
+        "code": "1",
+        "label": "My problem improved so I didn't think I needed the appointment anymore"
+      },
+      {
+        "code": "2",
+        "label": "I couldn't afford the time to attend"
+      },
+      {
+        "code": "3",
+        "label": "I didn't want to travel to the appointment"
+      },
+      {
+        "code": "4",
+        "label": "I didn't want to have blood tests"
+      },
+      {
+        "code": "5",
+        "label": "I don't enjoy the appointments"
+      },
+      {
+        "code": "6",
+        "label": "I forgot to attend"
+      },
+      {
+        "code": "7",
+        "label": "I didn't want to burden my healthcare team"
+      },
+      {
+        "code": "8",
+        "label": "Other (please state)"
+      }
+    ],
+    "branching_logic": "[blexp_appt_inv5d_atd]='0'",
+    "section_header": " "
+  },
+  {
+    "field_label": "<p>Why did you not attend?<br><br>Other (please state)</p>",
+    "field_type": "text",
+    "field_name": "blexp_appt_inv5d_atd_nooth",
+    "required_field": "y",
+    "branching_logic": "[blexp_appt_inv5d_atd_no]='8'",
+    "section_header": " "
+  },
+  {
+    "field_label": "Over the last 3 months, did you delay or not book an appointment with your doctor, even when your psoriasis got worse?",
+    "field_type": "yesno",
+    "field_name": "blexp_appt_dly",
+    "required_field": "y",
+    "branching_logic": "[blexp_appt]='1'",
+    "section_header": " "
+  },
+  {
+    "field_label": "Why did you delay or not book an appointment? <br><span class='text-[#A99A83] text-sm'>Tick all that apply</span>",
+    "field_type": "checkbox",
+    "field_name": "blexp_appt_dly_yes",
+    "required_field": "y",
+    "select_choices_or_calculations": [
+      {
+        "code": "1",
+        "label": "I didn't think I needed it"
+      },
+      {
+        "code": "2",
+        "label": "I couldn't afford the time to attend"
+      },
+      {
+        "code": "3",
+        "label": "I didn't want to travel to the appointment"
+      },
+      {
+        "code": "4",
+        "label": "I didn't want to have blood tests"
+      },
+      {
+        "code": "5",
+        "label": "I don't enjoy the appointments"
+      },
+      {
+        "code": "6",
+        "label": "I couldn't arrange an appointment"
+      },
+      {
+        "code": "7",
+        "label": "I didn't want to burden my healthcare team"
+      },
+      {
+        "code": "8",
+        "label": "Other (please state)"
+      }
+    ],
+    "branching_logic": "[blexp_appt_dly]='1'",
+    "section_header": " "
+  },
+  {
+    "field_label": "<p>Why did you delay or not book an appointment?<br><br>Other (please state)</p>",
+    "field_type": "text",
+    "field_name": "blexp_appt_dly_yesoth",
+    "required_field": "y",
+    "branching_logic": "[blexp_appt_dly_yes]='8'",
+    "section_header": " "
+  },
+  {
+    "field_label": "Do you like or dislike the biologic treatment plan selected for you in the study?",
+    "field_type": "radio",
+    "field_name": "blacpts_blglke",
+    "required_field": "y",
+    "select_choices_or_calculations": [
+      {
+        "code": "1",
+        "label": "Strongly like"
+      },
+      {
+        "code": "2",
+        "label": "Like"
+      },
+      {
+        "code": "3",
+        "label": "No opinion"
+      },
+      {
+        "code": "4",
+        "label": "Dislike"
+      },
+      {
+        "code": "5",
+        "label": "Strongly dislike"
+      }
+    ],
+    "section_header": " "
+  },
+  {
+    "field_label": "How much effort will it be to take your biologic injection according to your treatment plan?",
+    "field_type": "radio",
+    "field_name": "blacpts_blgeft",
+    "required_field": "y",
+    "select_choices_or_calculations": [
+      {
+        "code": "1",
+        "label": "No effort at all"
+      },
+      {
+        "code": "2",
+        "label": "A little effort"
+      },
+      {
+        "code": "3",
+        "label": "No opinion"
+      },
+      {
+        "code": "4",
+        "label": "A lot of effort"
+      },
+      {
+        "code": "5",
+        "label": "Huge effort"
+      }
+    ],
+    "section_header": " "
+  },
+  {
+    "field_label": "How fair is it (to people with psoriasis) to take your biologic injection according to your treatment plan?",
+    "field_type": "radio",
+    "field_name": "blacpts_blgfre",
+    "required_field": "y",
+    "select_choices_or_calculations": [
+      {
+        "code": "1",
+        "label": "Very fair"
+      },
+      {
+        "code": "2",
+        "label": "Fair"
+      },
+      {
+        "code": "3",
+        "label": "No opinion"
+      },
+      {
+        "code": "4",
+        "label": "Unfair"
+      },
+      {
+        "code": "5",
+        "label": "Very unfair"
+      }
+    ],
+    "section_header": " "
+  },
+  {
+    "field_label": "Taking my biologic injection according to my treatment plan will improve my health",
+    "field_type": "radio",
+    "field_name": "blacpts_blgimp",
+    "required_field": "y",
+    "select_choices_or_calculations": [
+      {
+        "code": "1",
+        "label": "Strongly agree"
+      },
+      {
+        "code": "2",
+        "label": "Agree"
+      },
+      {
+        "code": "3",
+        "label": "No opinion"
+      },
+      {
+        "code": "4",
+        "label": "Disagree"
+      },
+      {
+        "code": "5",
+        "label": "Strongly disagree"
+      }
+    ],
+    "section_header": " "
+  },
+  {
+    "field_label": "It is clear to me how my treatment plan could help improve my health",
+    "field_type": "radio",
+    "field_name": "blacpts_trtimp",
+    "required_field": "y",
+    "select_choices_or_calculations": [
+      {
+        "code": "1",
+        "label": "Strongly agree"
+      },
+      {
+        "code": "2",
+        "label": "Agree"
+      },
+      {
+        "code": "3",
+        "label": "No opinion"
+      },
+      {
+        "code": "4",
+        "label": "Disagree"
+      },
+      {
+        "code": "5",
+        "label": "Strongly disagree"
+      }
+    ],
+    "section_header": " "
+  },
+  {
+    "field_label": "How confident are you that you can take your biologic injection according to your treatment plan?",
+    "field_type": "radio",
+    "field_name": "blacpts_blgcfd",
+    "required_field": "y",
+    "select_choices_or_calculations": [
+      {
+        "code": "1",
+        "label": "Very confident"
+      },
+      {
+        "code": "2",
+        "label": "Confident"
+      },
+      {
+        "code": "3",
+        "label": "No opinion"
+      },
+      {
+        "code": "4",
+        "label": "Unconfident"
+      },
+      {
+        "code": "5",
+        "label": "Very unconfident"
+      }
+    ],
+    "section_header": " "
+  },
+  {
+    "field_label": "Taking my biologic injection according to my treatment plan will interfere with my other priorities",
+    "field_type": "radio",
+    "field_name": "blacpts_blgitf",
+    "required_field": "y",
+    "select_choices_or_calculations": [
+      {
+        "code": "1",
+        "label": "Strongly agree"
+      },
+      {
+        "code": "2",
+        "label": "Agree"
+      },
+      {
+        "code": "3",
+        "label": "No opinion"
+      },
+      {
+        "code": "4",
+        "label": "Disagree"
+      },
+      {
+        "code": "5",
+        "label": "Strongly disagree"
+      }
+    ],
+    "section_header": " "
+  },
+  {
+    "field_label": "How acceptable to you is taking your biologic injection according to your treatment plan?",
+    "field_type": "radio",
+    "field_name": "blacpts_blgacp",
+    "required_field": "y",
+    "select_choices_or_calculations": [
+      {
+        "code": "1",
+        "label": "Completely acceptable"
+      },
+      {
+        "code": "2",
+        "label": "Acceptable"
+      },
+      {
+        "code": "3",
+        "label": "No opinion"
+      },
+      {
+        "code": "4",
+        "label": "Unacceptable"
+      },
+      {
+        "code": "5",
+        "label": "Completely unacceptable"
+      }
+    ],
+    "section_header": " "
+  },
+  {
+    "field_label": "I would like to continue taking my biologic injection according to my treatment plan after the study ends",
+    "field_type": "radio",
+    "field_name": "blacpts_blgaft",
+    "required_field": "y",
+    "select_choices_or_calculations": [
+      {
+        "code": "1",
+        "label": "Strongly agree"
+      },
+      {
+        "code": "2",
+        "label": "Agree"
+      },
+      {
+        "code": "3",
+        "label": "No opinion"
+      },
+      {
+        "code": "4",
+        "label": "Disagree"
+      },
+      {
+        "code": "5",
+        "label": "Strongly disagree"
+      }
+    ],
+    "section_header": " "
+  },
+  {
+    "field_label": "How much control do you feel that you have over the treatment plan that you will be following during the study?",
+    "field_type": "radio",
+    "field_name": "blacpts_blgctltp",
+    "required_field": "y",
+    "select_choices_or_calculations": [
+      {
+        "code": "1",
+        "label": "A great deal"
+      },
+      {
+        "code": "2",
+        "label": "Some"
+      },
+      {
+        "code": "3",
+        "label": "A little"
+      },
+      {
+        "code": "4",
+        "label": "None"
+      }
+    ],
+    "section_header": " "
+  },
+  {
+    "field_label": "How much control do you feel that you have over your usual treatment strategy (before taking part in the study)?",
+    "field_type": "radio",
+    "field_name": "blacpts_blgctlts",
+    "required_field": "y",
+    "select_choices_or_calculations": [
+      {
+        "code": "1",
+        "label": "A great deal"
+      },
+      {
+        "code": "2",
+        "label": "Some"
+      },
+      {
+        "code": "3",
+        "label": "A little"
+      },
+      {
+        "code": "4",
+        "label": "None"
+      }
+    ],
+    "section_header": " "
+  },
+  {
+    "field_label": "Do you like or dislike being able to request an appointment with your psoriasis doctor when you need it?",
+    "field_type": "radio",
+    "field_name": "blacppifu_lke",
+    "required_field": "y",
+    "select_choices_or_calculations": [
+      {
+        "code": "1",
+        "label": "Strongly like"
+      },
+      {
+        "code": "2",
+        "label": "Like"
+      },
+      {
+        "code": "3",
+        "label": "No opinion"
+      },
+      {
+        "code": "4",
+        "label": "Dislike"
+      },
+      {
+        "code": "5",
+        "label": "Strongly dislike"
+      }
+    ],
+    "section_header": " "
+  },
+  {
+    "field_label": "How much effort is it to request your appointment with your psoriasis doctor when you need it?",
+    "field_type": "radio",
+    "field_name": "blacppifu_eft",
+    "required_field": "y",
+    "select_choices_or_calculations": [
+      {
+        "code": "1",
+        "label": "No effort at all"
+      },
+      {
+        "code": "2",
+        "label": "A little effort"
+      },
+      {
+        "code": "3",
+        "label": "No opinion"
+      },
+      {
+        "code": "4",
+        "label": "A lot of effort"
+      },
+      {
+        "code": "5",
+        "label": "Huge effort"
+      }
+    ],
+    "section_header": " "
+  },
+  {
+    "field_label": "How fair is it (to people with psoriasis) for you to request an appointment with your psoriasis doctor whenever you need it?",
+    "field_type": "radio",
+    "field_name": "blacppifu_fre",
+    "select_choices_or_calculations": [
+      {
+        "code": "1",
+        "label": "Very fair"
+      },
+      {
+        "code": "2",
+        "label": "Fair"
+      },
+      {
+        "code": "3",
+        "label": "No opinion"
+      },
+      {
+        "code": "4",
+        "label": "Unfair"
+      },
+      {
+        "code": "5",
+        "label": "Very unfair"
+      }
+    ],
+    "section_header": " "
+  },
+  {
+    "field_label": "Requesting an appointment with my psoriasis doctor whenever I need it improves my health",
+    "field_type": "radio",
+    "field_name": "blacppifu_whnappt_hlth",
+    "required_field": "y",
+    "select_choices_or_calculations": [
+      {
+        "code": "1",
+        "label": "Strongly agree"
+      },
+      {
+        "code": "2",
+        "label": "Agree"
+      },
+      {
+        "code": "3",
+        "label": "No opinion"
+      },
+      {
+        "code": "4",
+        "label": "Disagree"
+      },
+      {
+        "code": "5",
+        "label": "Strongly disagree"
+      }
+    ],
+    "section_header": " "
+  },
+  {
+    "field_label": "It is clear to me how requesting an appointment with my psoriasis doctor whenever I need it could help improve my health",
+    "field_type": "radio",
+    "field_name": "blacppifu_reqappt_hlth",
+    "required_field": "y",
+    "select_choices_or_calculations": [
+      {
+        "code": "1",
+        "label": "Strongly agree"
+      },
+      {
+        "code": "2",
+        "label": "Agree"
+      },
+      {
+        "code": "3",
+        "label": "No opinion"
+      },
+      {
+        "code": "4",
+        "label": "Disagree"
+      },
+      {
+        "code": "5",
+        "label": "Strongly disagree"
+      }
+    ],
+    "section_header": " "
+  },
+  {
+    "field_label": "How confident are you that you can request an appointment with your psoriasis doctor whenever you need one?",
+    "field_type": "radio",
+    "field_name": "blacppifu_reqappt_cfd",
+    "required_field": "y",
+    "select_choices_or_calculations": [
+      {
+        "code": "1",
+        "label": "Very confident"
+      },
+      {
+        "code": "2",
+        "label": "Confident"
+      },
+      {
+        "code": "3",
+        "label": "No opinion"
+      },
+      {
+        "code": "4",
+        "label": "Unconfident"
+      },
+      {
+        "code": "5",
+        "label": "Very unconfident"
+      }
+    ],
+    "branching_logic": "[blexp_appt]='1'",
+    "section_header": " "
+  },
+  {
+    "field_label": "How confident are you that you can get an appointment with your psoriasis doctor whenever you need one?",
+    "field_type": "radio",
+    "field_name": "blacppifu_getappt_cfd",
+    "required_field": "y",
+    "select_choices_or_calculations": [
+      {
+        "code": "1",
+        "label": "Very confident"
+      },
+      {
+        "code": "2",
+        "label": "Confident"
+      },
+      {
+        "code": "3",
+        "label": "No opinion"
+      },
+      {
+        "code": "4",
+        "label": "Unconfident"
+      },
+      {
+        "code": "5",
+        "label": "Very unconfident"
+      }
+    ],
+    "branching_logic": "[blexp_appt]='1'",
+    "section_header": " "
+  },
+  {
+    "field_label": "Requesting an appointment with my psoriasis doctor whenever I need it interferes with my other priorities",
+    "field_type": "radio",
+    "field_name": "blacppifu_appt_itf",
+    "required_field": "y",
+    "select_choices_or_calculations": [
+      {
+        "code": "1",
+        "label": "Strongly agree"
+      },
+      {
+        "code": "2",
+        "label": "Agree"
+      },
+      {
+        "code": "3",
+        "label": "No opinion"
+      },
+      {
+        "code": "4",
+        "label": "Disagree"
+      },
+      {
+        "code": "5",
+        "label": "Strongly disagree"
+      }
+    ],
+    "section_header": " "
+  },
+  {
+    "field_label": "How acceptable to you is requesting an appointment with your psoriasis doctor whenever you need it?",
+    "field_type": "radio",
+    "field_name": "blacppifu_appt_whever",
+    "required_field": "y",
+    "select_choices_or_calculations": [
+      {
+        "code": "1",
+        "label": "Completely acceptable"
+      },
+      {
+        "code": "2",
+        "label": "Acceptable"
+      },
+      {
+        "code": "3",
+        "label": "No opinion"
+      },
+      {
+        "code": "4",
+        "label": "Unacceptable"
+      },
+      {
+        "code": "5",
+        "label": "Completely unacceptable"
+      }
+    ],
+    "section_header": " "
+  },
+  {
+    "field_label": "I would like to choose when I can have an appointment with my psoriasis doctor",
+    "field_type": "radio",
+    "field_name": "blacppifu_apptchse",
+    "required_field": "y",
+    "select_choices_or_calculations": [
+      {
+        "code": "1",
+        "label": "Strongly Agree"
+      },
+      {
+        "code": "2",
+        "label": "Agree"
+      },
+      {
+        "code": "3",
+        "label": "No opinion"
+      },
+      {
+        "code": "4",
+        "label": "Disagree"
+      },
+      {
+        "code": "5",
+        "label": "Strongly disagree"
+      }
+    ],
+    "section_header": " "
+  },
+  {
+    "field_label": "How much control do you feel that you currently have over when you have appointments (in routine care)?",
+    "field_type": "radio",
+    "field_name": "blacppifu_apptctl",
+    "required_field": "y",
+    "select_choices_or_calculations": [
+      {
+        "code": "1",
+        "label": "A great deal"
+      },
+      {
+        "code": "2",
+        "label": "Some"
+      },
+      {
+        "code": "3",
+        "label": "A little"
+      },
+      {
+        "code": "4",
+        "label": "None"
+      }
+    ],
+    "section_header": " "
+  },
+  {
+    "field_label": "How acceptable to you is having a regular 12 monthly appointment with your psoriasis doctor?",
+    "field_type": "radio",
+    "field_name": "blacppifu_appt12m",
+    "required_field": "y",
+    "select_choices_or_calculations": [
+      {
+        "code": "1",
+        "label": "Completely acceptable"
+      },
+      {
+        "code": "2",
+        "label": "Acceptable"
+      },
+      {
+        "code": "3",
+        "label": "No opinion"
+      },
+      {
+        "code": "4",
+        "label": "Unacceptable"
+      },
+      {
+        "code": "5",
+        "label": "Completely unacceptable"
+      }
+    ],
+    "section_header": " "
+  },
+  {
+    "field_label": "<p><u>Acceptability of genetic testing</u></p><p>Your blood sample is helping us investigate whether people's genes affect how they respond to different treatment strategies. In the future, this information may help us to better tailor different strategies according to a person's 'genetic makeup'. We will only look at genes related to psoriasis and other inflammatory disease research (e.g. arthritis, inflammatory bowel disease).<br>Please answer the following questions about how you feel about providing this blood sample to look at your genes.</p>",
+    "field_type": "descriptive",
+    "field_name": "blaccpgt_txt",
+    "section_header": " "
+  },
+  {
+    "field_label": "Do you like or dislike providing a blood sample to look at your genes?",
+    "field_type": "radio",
+    "field_name": "blacpgt_bldlke",
+    "required_field": "y",
+    "select_choices_or_calculations": [
+      {
+        "code": "1",
+        "label": "Strongly like"
+      },
+      {
+        "code": "2",
+        "label": "Like"
+      },
+      {
+        "code": "3",
+        "label": "No opinion"
+      },
+      {
+        "code": "4",
+        "label": "Dislike"
+      },
+      {
+        "code": "5",
+        "label": "Strongly dislike"
+      }
+    ],
+    "section_header": " "
+  },
+  {
+    "field_label": "How much effort is it to provide a blood sample to look at your genes?",
+    "field_type": "radio",
+    "field_name": "blacpgt_bldeft",
+    "required_field": "y",
+    "select_choices_or_calculations": [
+      {
+        "code": "1",
+        "label": "No effort at all"
+      },
+      {
+        "code": "2",
+        "label": "A little effort"
+      },
+      {
+        "code": "3",
+        "label": "No opinion"
+      },
+      {
+        "code": "4",
+        "label": "A lot of effort"
+      },
+      {
+        "code": "5",
+        "label": "Huge effort"
+      }
+    ],
+    "section_header": " "
+  },
+  {
+    "field_label": "How fair is it (to people with psoriasis) for you to provide a blood sample to look at your genes?",
+    "field_type": "radio",
+    "field_name": "blacpgt_bldfre",
+    "required_field": "y",
+    "select_choices_or_calculations": [
+      {
+        "code": "1",
+        "label": "Very fair"
+      },
+      {
+        "code": "2",
+        "label": "Fair"
+      },
+      {
+        "code": "3",
+        "label": "No opinion"
+      },
+      {
+        "code": "4",
+        "label": "Unfair"
+      },
+      {
+        "code": "5",
+        "label": "Very unfair"
+      }
+    ],
+    "section_header": " "
+  },
+  {
+    "field_label": "How confident are you that you can provide a blood sample to look at your genes?",
+    "field_type": "radio",
+    "field_name": "bldacpgt_bldcfd",
+    "required_field": "y",
+    "select_choices_or_calculations": [
+      {
+        "code": "1",
+        "label": "Very confident"
+      },
+      {
+        "code": "2",
+        "label": "Confident"
+      },
+      {
+        "code": "3",
+        "label": "No opinion"
+      },
+      {
+        "code": "4",
+        "label": "Unconfident"
+      },
+      {
+        "code": "5",
+        "label": "Very unconfident"
+      }
+    ],
+    "section_header": " "
+  },
+  {
+    "field_label": "Providing a blood sample to look at my genes could help improve my health",
+    "field_type": "radio",
+    "field_name": "blacpgt_bldimp",
+    "required_field": "y",
+    "select_choices_or_calculations": [
+      {
+        "code": "1",
+        "label": "Strongly Agree"
+      },
+      {
+        "code": "2",
+        "label": "Agree"
+      },
+      {
+        "code": "3",
+        "label": "No opinion"
+      },
+      {
+        "code": "4",
+        "label": "Disagree"
+      },
+      {
+        "code": "5",
+        "label": "Strongly disagree"
+      }
+    ],
+    "section_header": " "
+  },
+  {
+    "field_label": "It is clear to me how providing a blood sample to look at my genes might improve my health",
+    "field_type": "radio",
+    "field_name": "blacpgt_bldimpclr",
+    "required_field": "y",
+    "select_choices_or_calculations": [
+      {
+        "code": "1",
+        "label": "Strongly Agree"
+      },
+      {
+        "code": "2",
+        "label": "Agree"
+      },
+      {
+        "code": "3",
+        "label": "No opinion"
+      },
+      {
+        "code": "4",
+        "label": "Disagree"
+      },
+      {
+        "code": "5",
+        "label": "Strongly disagree"
+      }
+    ],
+    "section_header": " "
+  },
+  {
+    "field_label": "Providing a blood sample to look at my genes will interfere with my other priorities",
+    "field_type": "radio",
+    "field_name": "blacpgt_blditf",
+    "required_field": "y",
+    "select_choices_or_calculations": [
+      {
+        "code": "1",
+        "label": "Strongly Agree"
+      },
+      {
+        "code": "2",
+        "label": "Agree"
+      },
+      {
+        "code": "3",
+        "label": "No opinion"
+      },
+      {
+        "code": "4",
+        "label": "Disagree"
+      },
+      {
+        "code": "5",
+        "label": "Strongly disagree"
+      }
+    ],
+    "section_header": " "
+  },
+  {
+    "field_label": "How acceptable to you is providing a blood test to look at your genes?",
+    "field_type": "radio",
+    "field_name": "blacpgt_bldacp",
+    "required_field": "y",
+    "select_choices_or_calculations": [
+      {
+        "code": "1",
+        "label": "Completely acceptable"
+      },
+      {
+        "code": "2",
+        "label": "Acceptable"
+      },
+      {
+        "code": "3",
+        "label": "No opinion"
+      },
+      {
+        "code": "4",
+        "label": "Unacceptable"
+      },
+      {
+        "code": "5",
+        "label": "Completely unacceptable"
+      }
+    ],
+    "section_header": " "
+  }
+]

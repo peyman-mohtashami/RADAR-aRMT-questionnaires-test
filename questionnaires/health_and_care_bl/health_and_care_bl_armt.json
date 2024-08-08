@@ -1,0 +1,1239 @@
+[
+  {
+    "field_label": "<p>In the last 3 months have you had an appointment with any of the below <b>community-based</b> health professionals as a result of your psoriasis or treatment for your psoriasis?</p><p class='text-sm text-gray-500 mt-2'>Press 'Next' if none applied.</p>",
+    "field_type": "checkbox",
+    "select_choices_or_calculations": [
+      {
+        "code": "1",
+        "label": "General practitioner"
+      },
+      {
+        "code": "2",
+        "label": "Practice nurse"
+      },
+      {
+        "code": "3",
+        "label": "Health care assistant"
+      },
+      {
+        "code": "4",
+        "label": "NHS Walk in centre"
+      },
+      {
+        "code": "5",
+        "label": "Community dermatology service"
+      },
+      {
+        "code": "6",
+        "label": "Other, please specify who"
+      }
+    ],
+    "field_name": "blhcn1a",
+    "required_field": "false"
+  },
+  {
+    "field_label": "General Practitioner - Number of virtual/telephone visits in the last 3 months?",
+    "field_type": "text",
+    "field_name": "blhcn1a_gpvrt",
+    "required_field": "y",
+    "text_validation_type_or_show_slider_number": "integer",
+    "validations": [
+      {
+        "name": "min",
+        "value": "0",
+        "error": "Enter a number greater than 0",
+        "hint": ""
+      },
+      {
+        "name": "max",
+        "value": "50",
+        "error": "Enter a number less than 50",
+        "hint": ""
+      }
+    ],
+    "text_validation_max": "50",
+    "text_validation_min": "0",
+    "branching_logic": "[blhcn1a]='1'"
+  },
+  {
+    "field_label": "General Practitioner - Number of in-person visits in the last 3 months?",
+    "field_type": "text",
+    "field_name": "blhcn1a_gpipv",
+    "required_field": "y",
+    "text_validation_type_or_show_slider_number": "integer",
+    "text_validation_max": "50",
+    "text_validation_min": "0",
+    "validations": [
+      {
+        "name": "min",
+        "value": "0",
+        "error": "Enter a number greater than 0",
+        "hint": ""
+      },
+      {
+        "name": "max",
+        "value": "50",
+        "error": "Enter a number less than 50",
+        "hint": ""
+      }
+    ],
+    "branching_logic": "[blhcn1a]='1'"
+  },
+  {
+    "field_label": "Practice nurse -Number of virtual/telephone visits in the last 3 months?",
+    "field_type": "text",
+    "field_name": "blhcn1a_pnvrt",
+    "required_field": "y",
+    "text_validation_type_or_show_slider_number": "integer",
+    "text_validation_max": "50",
+    "text_validation_min": "0",
+    "validations": [
+      {
+        "name": "min",
+        "value": "0",
+        "error": "Enter a number greater than 0",
+        "hint": ""
+      },
+      {
+        "name": "max",
+        "value": "50",
+        "error": "Enter a number less than 50",
+        "hint": ""
+      }
+    ],
+    "branching_logic": "[blhcn1a]='2'"
+  },
+  {
+    "field_label": "Practice nurse - Number of in-person visits in the last 3 months?",
+    "field_type": "text",
+    "field_name": "blhcn1a_pnipv",
+    "required_field": "y",
+    "text_validation_type_or_show_slider_number": "integer",
+    "text_validation_max": "50",
+    "text_validation_min": "0",
+    "validations": [
+      {
+        "name": "min",
+        "value": "0",
+        "error": "Enter a number greater than 0",
+        "hint": ""
+      },
+      {
+        "name": "max",
+        "value": "50",
+        "error": "Enter a number less than 50",
+        "hint": ""
+      }
+    ],
+    "branching_logic": "[blhcn1a]='2'"
+  },
+  {
+    "field_label": "Health care assistant - Number of virtual/telephone visits in the last 3 months?",
+    "field_type": "text",
+    "field_name": "blhcn1a_hcavrt",
+    "required_field": "y",
+    "text_validation_type_or_show_slider_number": "integer",
+    "text_validation_min": "0",
+    "validations": [
+      {
+        "name": "min",
+        "value": "0",
+        "error": "Enter a number greater than 0",
+        "hint": ""
+      }
+    ],
+    "branching_logic": "[blhcn1a]='3'"
+  },
+  {
+    "field_label": "Health care assistant - Number of in-person visits in the last 3 months?",
+    "field_type": "text",
+    "field_name": "blhcn1a_hcaipv",
+    "required_field": "y",
+    "text_validation_type_or_show_slider_number": "integer",
+    "text_validation_max": "50",
+    "text_validation_min": "0",
+    "validations": [
+      {
+        "name": "min",
+        "value": "0",
+        "error": "Enter a number greater than 0",
+        "hint": ""
+      },
+      {
+        "name": "max",
+        "value": "50",
+        "error": "Enter a number less than 50",
+        "hint": ""
+      }
+    ],
+    "branching_logic": "[blhcn1a]='3'"
+  },
+  {
+    "field_label": "NHS Walk in centre - Number of virtual/telephone visits in the last 3 months?",
+    "field_type": "text",
+    "field_name": "blhcn1a_nhsvrt",
+    "required_field": "y",
+    "text_validation_type_or_show_slider_number": "integer",
+    "text_validation_max": "50",
+    "text_validation_min": "0",
+    "validations": [
+      {
+        "name": "min",
+        "value": "0",
+        "error": "Enter a number greater than 0",
+        "hint": ""
+      },
+      {
+        "name": "max",
+        "value": "50",
+        "error": "Enter a number less than 50",
+        "hint": ""
+      }
+    ],
+    "branching_logic": "[blhcn1a]='4'"
+  },
+  {
+    "field_label": "NHS Walk in centre - Number of in-person visits in the last 3 months?",
+    "field_type": "text",
+    "field_name": "blhcn1a_nhsipv",
+    "required_field": "y",
+    "text_validation_type_or_show_slider_number": "integer",
+    "text_validation_max": "50",
+    "text_validation_min": "0",
+    "validations": [
+      {
+        "name": "min",
+        "value": "0",
+        "error": "Enter a number greater than 0",
+        "hint": ""
+      },
+      {
+        "name": "max",
+        "value": "50",
+        "error": "Enter a number less than 50",
+        "hint": ""
+      }
+    ],
+    "branching_logic": "[blhcn1a]='4'"
+  },
+  {
+    "field_label": "Community dermatology service - Number of virtual/telephone visits in the last 3 months?",
+    "field_type": "text",
+    "field_name": "blhcn1a_cdsvrt",
+    "required_field": "y",
+    "text_validation_type_or_show_slider_number": "integer",
+    "text_validation_max": "50",
+    "text_validation_min": "0",
+    "validations": [
+      {
+        "name": "min",
+        "value": "0",
+        "error": "Enter a number greater than 0",
+        "hint": ""
+      },
+      {
+        "name": "max",
+        "value": "50",
+        "error": "Enter a number less than 50",
+        "hint": ""
+      }
+    ],
+    "branching_logic": "[blhcn1a]='5'"
+  },
+  {
+    "field_label": "Community dermatology service - Number of in-person visits in the last 3 months?",
+    "field_type": "text",
+    "field_name": "blhcn1a_cdsipv",
+    "required_field": "y",
+    "text_validation_type_or_show_slider_number": "integer",
+    "text_validation_max": "50",
+    "text_validation_min": "0",
+    "validations": [
+      {
+        "name": "min",
+        "value": "0",
+        "error": "Enter a number greater than 0",
+        "hint": ""
+      },
+      {
+        "name": "max",
+        "value": "50",
+        "error": "Enter a number less than 50",
+        "hint": ""
+      }
+    ],
+    "branching_logic": "[blhcn1a]='5'"
+  },
+  {
+    "field_label": "Other, please specify who:",
+    "field_type": "text",
+    "field_name": "blhcn1a_oth1_txt",
+    "branching_logic": "[blhcn1a]='6'"
+  },
+  {
+    "field_label": "[blhcn1a_oth1_txt] - How many times virtual/telephone?",
+    "field_type": "text",
+    "field_name": "blhcn1a_oth1vrt",
+    "required_field": "y",
+    "text_validation_type_or_show_slider_number": "integer",
+    "text_validation_min": "0",
+    "validations": [
+      {
+        "name": "min",
+        "value": "0",
+        "error": "Enter a number greater than 0",
+        "hint": ""
+      }
+    ],
+    "branching_logic": "[blhcn1a]='6'"
+  },
+  {
+    "field_label": "[blhcn1a_oth1_txt] - How many times in-person?",
+    "field_type": "text",
+    "field_name": "blhcn1a_oth1ipv",
+    "required_field": "y",
+    "text_validation_type_or_show_slider_number": "integer",
+    "text_validation_min": "0",
+    "validations": [
+      {
+        "name": "min",
+        "value": "0",
+        "error": "Enter a number greater than 0",
+        "hint": ""
+      }
+    ],
+    "branching_logic": "[blhcn1a]='6'"
+  },
+  {
+    "field_label": "<p>In the last 3 months have you had an outpatient <b>hospital appointment</b> (either virtual/telephone or in-person) with any of the following as a result of your psoriasis or treatment for your psoriasis? </p><p class='text-sm text-gray-500 mt-2'>Press 'Next' if none applied.</p>",
+    "field_type": "checkbox",
+    "field_name": "blhcn2a",
+    "select_choices_or_calculations": [
+      {
+        "code": "1",
+        "label": "Dermatologist"
+      },
+      {
+        "code": "2",
+        "label": "Dermatology nurse"
+      },
+      {
+        "code": "3",
+        "label": "Other, please specify who"
+      }
+    ],
+    "required_field": "false"
+  },
+  {
+    "field_label": "Dermatologist - Number of outpatient visits virtual/telephone",
+    "field_type": "text",
+    "field_name": "blhcn2a_dmvrt",
+    "required_field": "y",
+    "text_validation_type_or_show_slider_number": "integer",
+    "text_validation_min": "0",
+    "validations": [
+      {
+        "name": "min",
+        "value": "0",
+        "error": "Enter a number greater than 0",
+        "hint": ""
+      }
+    ],
+    "branching_logic": "[blhcn2a]='1'"
+  },
+  {
+    "field_label": "Dermatologist - Number of outpatient visits in-person",
+    "field_type": "text",
+    "field_name": "blhcn2a_dmipv",
+    "required_field": "y",
+    "text_validation_type_or_show_slider_number": "integer",
+    "text_validation_min": "0",
+    "branching_logic": "[blhcn2a]='1'"
+  },
+  {
+    "field_label": "Dermatology nurse - Number of outpatient visits virtual/telephone",
+    "field_type": "text",
+    "field_name": "blhcn2a_dmnvrt",
+    "required_field": "y",
+    "text_validation_type_or_show_slider_number": "integer",
+    "text_validation_min": "0",
+    "validations": [
+      {
+        "name": "min",
+        "value": "0",
+        "error": "Enter a number greater than 0",
+        "hint": ""
+      }
+    ],
+    "branching_logic": "[blhcn2a]='2'"
+  },
+  {
+    "field_label": "Dermatology nurse - Number of outpatient visits in-person",
+    "field_type": "text",
+    "field_name": "blhcn2a_dmnipv",
+    "required_field": "y",
+    "text_validation_type_or_show_slider_number": "integer",
+    "text_validation_min": "0",
+    "validations": [
+      {
+        "name": "min",
+        "value": "0",
+        "error": "Enter a number greater than 0",
+        "hint": ""
+      }
+    ],
+    "branching_logic": "[blhcn2a]='2'"
+  },
+  {
+    "field_label": "Other, please specify other health professional you saw",
+    "field_type": "text",
+    "field_name": "blhcn2a_oth1_txt",
+    "branching_logic": "[blhcn2a]='3'",
+    "required_field": "false"
+  },
+  {
+    "field_label": "[blhcn2a_oth1_txt] - Number of virtual/telephone visits in the last 3 months",
+    "field_type": "text",
+    "field_name": "blhcn2a_oth1vrt",
+    "required_field": "y",
+    "text_validation_type_or_show_slider_number": "integer",
+    "text_validation_max": "50",
+    "text_validation_min": "0",
+    "validations": [
+      {
+        "name": "min",
+        "value": "0",
+        "error": "Enter a number greater than 0",
+        "hint": ""
+      },
+      {
+        "name": "max",
+        "value": "50",
+        "error": "Enter a number less than 50",
+        "hint": ""
+      }
+    ],
+    "branching_logic": "[blhcn2a]='3'"
+  },
+  {
+    "field_label": "[blhcn2a_oth1_txt] - Number of in-person visits in the last 3 months",
+    "field_type": "text",
+    "field_name": "blhcn2a_oth1ipv",
+    "required_field": "y",
+    "text_validation_type_or_show_slider_number": "integer",
+    "text_validation_max": "50",
+    "text_validation_min": "0",
+    "validations": [
+      {
+        "name": "min",
+        "value": "0",
+        "error": "Enter a number greater than 0",
+        "hint": ""
+      },
+      {
+        "name": "max",
+        "value": "50",
+        "error": "Enter a number less than 50",
+        "hint": ""
+      }
+    ],
+    "branching_logic": "[blhcn2a]='3'"
+  },
+  {
+    "field_label": "In the last 3 months, did you attend Accident and Emergency Services as a result of your psoriasis or treatment for your psoriasis?",
+    "field_type": "yesno",
+    "field_name": "blhcn2b",
+    "required_field": "y"
+  },
+  {
+    "field_label": "Number of A&E visits in the last 3 months:",
+    "field_type": "text",
+    "field_name": "blhcn2b_vsts",
+    "required_field": "y",
+    "text_validation_type_or_show_slider_number": "integer",
+    "text_validation_min": "0",
+    "validations": [
+      {
+        "name": "min",
+        "value": "0",
+        "error": "Enter a number greater than 0",
+        "hint": ""
+      }
+    ],
+    "branching_logic": "[blhcn2b]='1'"
+  },
+  {
+    "field_label": "In the last 3 months, have you been admitted to hospital as a day case or inpatient as a result of your psoriasis or treatment for your psoriasis?",
+    "field_type": "yesno",
+    "field_name": "blhcn2c",
+    "required_field": "y"
+  },
+  {
+    "field_label": "Please state how many admissions in the last 3 months:",
+    "field_type": "text",
+    "field_name": "blhcn2c_vsts",
+    "required_field": "y",
+    "text_validation_type_or_show_slider_number": "integer",
+    "text_validation_min": "0",
+    "validations": [
+      {
+        "name": "min",
+        "value": "1",
+        "error": "Enter a number greater than 0",
+        "hint": ""
+      },
+      {
+        "name": "max",
+        "value": "3",
+        "error": "Enter a number smaller than 4",
+        "hint": ""
+      }
+    ],
+    "branching_logic": "[blhcn2c]='1'"
+  },
+  {
+    "field_label": "For each day case/inpatient visit you have had as a result of your psoriasis or treatment for your psoriasis, please record the type of ward you were admitted to and the duration of your stay. Please include any day case procedures.",
+    "field_type": "descriptive",
+    "field_name": "blhcn2c_txt",
+    "branching_logic": "[blhcn2c]='1'"
+  },
+  {
+    "field_label": "Admission 1 - The type of department or ward  or reason for admission",
+    "field_type": "text",
+    "field_name": "blhcn2c_dep1txt",
+    "required_field": "y",
+    "branching_logic": "[blhcn2c]='1'"
+  },
+  {
+    "field_label": "Admission 1 - Duration of stay (number of days) in [blhcn2c_dep1txt]",
+    "field_type": "text",
+    "field_name": "blhcn2c_dep1dys",
+    "required_field": "y",
+    "text_validation_type_or_show_slider_number": "integer",
+    "text_validation_min": "0",
+    "validations": [
+      {
+        "name": "min",
+        "value": "0",
+        "error": "Enter a number greater than 0",
+        "hint": ""
+      }
+    ],
+    "branching_logic": "[blhcn2c_dep1txt]<>'undefined' and [blhcn2c_dep1txt]<>''"
+  },
+  {
+    "field_label": "Admission 2 - The type of department or ward  or reason for admission",
+    "field_type": "text",
+    "field_name": "blhcn2c_dep2txt",
+    "branching_logic": "[blhcn2c_vsts]>1",
+    "required_field": "false"
+  },
+  {
+    "field_label": "Admission 2 - Duration of stay (number of days) in [blhcn2c_dep2txt]",
+    "field_type": "text",
+    "field_name": "blhcn2c_dep2dys",
+    "required_field": "y",
+    "text_validation_type_or_show_slider_number": "integer",
+    "text_validation_min": "0",
+    "validations": [
+      {
+        "name": "min",
+        "value": "0",
+        "error": "Enter a number greater than 0",
+        "hint": ""
+      }
+    ],
+    "branching_logic": "[blhcn2c_dep2txt]<>'undefined' and [blhcn2c_dep2txt]<>''"
+  },
+  {
+    "field_label": "Admission 3 - The type of department or ward  or reason for admission",
+    "field_type": "text",
+    "field_name": "blhcn2c_dep3txt",
+    "branching_logic": "blhcn2c_vsts",
+    "required_field": "false"
+  },
+  {
+    "field_label": "Admission 3 - Duration of stay (number of days) in [blhcn2c_dep3txt]",
+    "field_type": "text",
+    "field_name": "blhcn2c_dep3dys",
+    "required_field": "y",
+    "text_validation_type_or_show_slider_number": "integer",
+    "text_validation_min": "0",
+    "validations": [
+      {
+        "name": "min",
+        "value": "0",
+        "error": "Enter a number greater than 0",
+        "hint": ""
+      }
+    ],
+    "branching_logic": "[blhcn2c_dep3txt]<>'undefined' and [blhcn2c_dep3txt]<>''"
+  },
+  {
+    "field_label": "In the last 3 months have you received any other publicly provided services as a result of your psoriasis or treatment for your psoriasis?",
+    "section_header": "<b>Other services</b>",
+    "field_type": "yesno",
+    "field_name": "blhcn3",
+    "required_field": "y"
+  },
+  {
+    "field_label": "Please give details including type and how many times received",
+    "field_type": "notes",
+    "field_name": "blhcn3_det",
+    "required_field": "y",
+    "branching_logic": "[blhcn3]='1'",
+    "section_header": "<b>Other services</b>"
+  },
+  {
+    "field_label": "<p>In the last 3 months have you or your family/friends incurred any other costs as a result of your psoriasis or treatment for your psoriasis?</p><p class='text-sm text-gray-500 mt-2'>Press 'Next' if none applied.</p>",
+    "field_name": "blhcn4a",
+    "section_header": " ",
+    "required_field": "false",
+    "field_type": "checkbox",
+    "select_choices_or_calculations": [
+      {
+        "code": "1",
+        "label": "Private health care or Complementary therapy"
+      },
+      {
+        "code": "2",
+        "label": "Non-prescribed medication"
+      },
+      {
+        "code": "3",
+        "label": "Travel costs to health care appointments (including parking costs, petrol costs or bus/train fares for instance)"
+      },
+      {
+        "code": "4",
+        "label": "Cosmetic and skin care products"
+      },
+      {
+        "code": "5",
+        "label": "Special foods or dietary supplements (please specify)"
+      },
+      {
+        "code": "6",
+        "label": "Special clothing or bedding (please specify)"
+      },
+      {
+        "code": "7",
+        "label": "Mental health support e.g., counselling (please specify)"
+      },
+      {
+        "code": "8",
+        "label": "Other (please specify)"
+      }
+    ]
+  },
+  {
+    "field_label": "Private health care or Complementary therapy - number of items or visits",
+    "field_type": "text",
+    "field_name": "blhcn4a_ph",
+    "section_header": "Personal costs in the last 3 months as a result of your psoriasis or treatment for your psoriasis.",
+    "text_validation_type_or_show_slider_number": "number",
+    "text_validation_min": "0",
+    "validations": [
+      {
+        "name": "min",
+        "value": "0",
+        "error": "Enter a number greater than 0",
+        "hint": ""
+      }
+    ],
+    "branching_logic": "[blhcn4a]='1'",
+    "required_field": "false"
+  },
+  {
+    "field_label": "Private health care or Complementary therapy - overall cost (£)",
+    "field_type": "text",
+    "field_name": "blhcn4a_phcst",
+    "text_validation_type_or_show_slider_number": "number",
+    "text_validation_min": "0",
+    "validations": [
+      {
+        "name": "min",
+        "value": "0",
+        "error": "Enter a number greater than 0",
+        "hint": ""
+      }
+    ],
+    "branching_logic": "[blhcn4a]='1'",
+    "required_field": "false",
+    "section_header": "Personal costs in the last 3 months as a result of your psoriasis or treatment for your psoriasis."
+  },
+  {
+    "field_label": "Non-prescribed medication - number of items",
+    "field_type": "text",
+    "field_name": "blhcn4a_npm",
+    "text_validation_type_or_show_slider_number": "number",
+    "text_validation_min": "0",
+    "validations": [
+      {
+        "name": "min",
+        "value": "0",
+        "error": "Enter a number greater than 0",
+        "hint": ""
+      }
+    ],
+    "branching_logic": "[blhcn4a]='2'",
+    "required_field": "false",
+    "section_header": "Personal costs in the last 3 months as a result of your psoriasis or treatment for your psoriasis."
+  },
+  {
+    "field_label": "Non-prescribed medication - overall cost (£)",
+    "field_type": "text",
+    "field_name": "blhcn4a_npmcst",
+    "text_validation_type_or_show_slider_number": "number",
+    "text_validation_min": "0",
+    "validations": [
+      {
+        "name": "min",
+        "value": "0",
+        "error": "Enter a number greater than 0",
+        "hint": ""
+      }
+    ],
+    "branching_logic": "[blhcn4a]='2'",
+    "required_field": "false",
+    "section_header": "Personal costs in the last 3 months as a result of your psoriasis or treatment for your psoriasis."
+  },
+  {
+    "field_label": "Travel costs to health care appointments (including parking costs, petrol costs or bus/train fares for instance) - number of visits",
+    "field_type": "text",
+    "field_name": "blhcn4a_tvl",
+    "text_validation_type_or_show_slider_number": "number",
+    "text_validation_min": "0",
+    "validations": [
+      {
+        "name": "min",
+        "value": "0",
+        "error": "Enter a number greater than 0",
+        "hint": ""
+      }
+    ],
+    "branching_logic": "[blhcn4a]='3'",
+    "required_field": "false",
+    "section_header": "Personal costs in the last 3 months as a result of your psoriasis or treatment for your psoriasis."
+  },
+  {
+    "field_label": "Travel costs to health care appointments (including parking costs, petrol costs or bus/train fares for instance) - overall cost (£)",
+    "field_type": "text",
+    "field_name": "blhcn4a_tvlcst",
+    "text_validation_type_or_show_slider_number": "number",
+    "text_validation_min": "0",
+    "validations": [
+      {
+        "name": "min",
+        "value": "0",
+        "error": "Enter a number greater than 0",
+        "hint": ""
+      }
+    ],
+    "branching_logic": "[blhcn4a]='3'",
+    "required_field": "false",
+    "section_header": "Personal costs in the last 3 months as a result of your psoriasis or treatment for your psoriasis."
+  },
+  {
+    "field_label": "Cosmetic and skin care products - number of items or visits",
+    "field_type": "text",
+    "field_name": "blhcn4a_skc",
+    "text_validation_type_or_show_slider_number": "number",
+    "text_validation_min": "0",
+    "validations": [
+      {
+        "name": "min",
+        "value": "0",
+        "error": "Enter a number greater than 0",
+        "hint": ""
+      }
+    ],
+    "branching_logic": "[blhcn4a]='4'",
+    "required_field": "false",
+    "section_header": "Personal costs in the last 3 months as a result of your psoriasis or treatment for your psoriasis."
+  },
+  {
+    "field_label": "Cosmetic and skin care products - overall cost (£)",
+    "field_type": "text",
+    "field_name": "blhcn4a_skccst",
+    "text_validation_type_or_show_slider_number": "number",
+    "text_validation_min": "0",
+    "validations": [
+      {
+        "name": "min",
+        "value": "0",
+        "error": "Enter a number greater than 0",
+        "hint": ""
+      }
+    ],
+    "branching_logic": "[blhcn4a]='4'",
+    "required_field": "false",
+    "section_header": "Personal costs in the last 3 months as a result of your psoriasis or treatment for your psoriasis."
+  },
+  {
+    "field_label": "Special foods or dietary supplements (please specify)",
+    "field_type": "notes",
+    "field_name": "blhcn4a_sf_txt",
+    "branching_logic": "[blhcn4a]='5'",
+    "required_field": "false",
+    "section_header": "Personal costs in the last 3 months as a result of your psoriasis or treatment for your psoriasis."
+  },
+  {
+    "field_label": "Special foods or dietary supplements - number of items",
+    "field_type": "text",
+    "field_name": "blhcn4a_sf",
+    "text_validation_type_or_show_slider_number": "number",
+    "text_validation_min": "0",
+    "validations": [
+      {
+        "name": "min",
+        "value": "0",
+        "error": "Enter a number greater than 0",
+        "hint": ""
+      }
+    ],
+    "branching_logic": "[blhcn4a]='5'",
+    "required_field": "false",
+    "section_header": "Personal costs in the last 3 months as a result of your psoriasis or treatment for your psoriasis."
+  },
+  {
+    "field_label": "Special foods or dietary supplements - overall cost (£)",
+    "field_type": "text",
+    "field_name": "blhcn4a_sfcst",
+    "text_validation_type_or_show_slider_number": "number",
+    "text_validation_min": "0",
+    "validations": [
+      {
+        "name": "min",
+        "value": "0",
+        "error": "Enter a number greater than 0",
+        "hint": ""
+      }
+    ],
+    "branching_logic": "[blhcn4a]='5'",
+    "required_field": "false",
+    "section_header": "Personal costs in the last 3 months as a result of your psoriasis or treatment for your psoriasis."
+  },
+  {
+    "field_label": "Special clothing or bedding (please specify)",
+    "field_type": "notes",
+    "field_name": "blhcn4a_sc_txt",
+    "branching_logic": "[blhcn4a]='6'",
+    "required_field": "false",
+    "section_header": "Personal costs in the last 3 months as a result of your psoriasis or treatment for your psoriasis."
+  },
+  {
+    "field_label": "Special clothing or bedding - number of items",
+    "field_type": "text",
+    "field_name": "blhcn4a_sc",
+    "text_validation_type_or_show_slider_number": "number",
+    "text_validation_min": "0",
+    "validations": [
+      {
+        "name": "min",
+        "value": "0",
+        "error": "Enter a number greater than 0",
+        "hint": ""
+      }
+    ],
+    "branching_logic": "[blhcn4a]='6'",
+    "required_field": "false",
+    "section_header": "Personal costs in the last 3 months as a result of your psoriasis or treatment for your psoriasis."
+  },
+  {
+    "field_label": "Special clothing or bedding - overall cost (£)",
+    "field_type": "text",
+    "field_name": "blhcn4a_sccst",
+    "text_validation_type_or_show_slider_number": "number",
+    "text_validation_min": "0",
+    "validations": [
+      {
+        "name": "min",
+        "value": "0",
+        "error": "Enter a number greater than 0",
+        "hint": ""
+      }
+    ],
+    "branching_logic": "[blhcn4a]='6'",
+    "required_field": "false",
+    "section_header": "Personal costs in the last 3 months as a result of your psoriasis or treatment for your psoriasis."
+  },
+  {
+    "field_label": "Mental health support e.g., counselling (please specify)",
+    "field_type": "notes",
+    "field_name": "blhcn4a_mhs_txt",
+    "branching_logic": "[blhcn4a]='7'",
+    "required_field": "false",
+    "section_header": "Personal costs in the last 3 months as a result of your psoriasis or treatment for your psoriasis."
+  },
+  {
+    "field_label": "Mental health support e.g. counselling - number visits",
+    "field_type": "text",
+    "field_name": "blhcn4a_mhs",
+    "text_validation_type_or_show_slider_number": "number",
+    "text_validation_min": "0",
+    "validations": [
+      {
+        "name": "min",
+        "value": "0",
+        "error": "Enter a number greater than 0",
+        "hint": ""
+      }
+    ],
+    "required_field": "false",
+    "branching_logic": "[blhcn4a]='7'",
+    "section_header": "Personal costs in the last 3 months as a result of your psoriasis or treatment for your psoriasis."
+  },
+  {
+    "field_label": "Mental health  support e.g., counselling - overall cost (£)",
+    "field_type": "text",
+    "field_name": "blhcn4a_mhscst",
+    "text_validation_type_or_show_slider_number": "number",
+    "validations": [
+      {
+        "name": "min",
+        "value": "0",
+        "error": "Enter a number greater than 0",
+        "hint": ""
+      }
+    ],
+    "text_validation_min": "0",
+    "branching_logic": "[blhcn4a]='7'",
+    "required_field": "false",
+    "section_header": "Personal costs in the last 3 months as a result of your psoriasis or treatment for your psoriasis."
+  },
+  {
+    "field_label": "Other (please specify)",
+    "field_type": "notes",
+    "field_name": "blhcn4a_oth1_txt",
+    "branching_logic": "[blhcn4a]='8'",
+    "required_field": "false",
+    "section_header": "Personal costs in the last 3 months as a result of your psoriasis or treatment for your psoriasis."
+  },
+  {
+    "field_label": "Other - number of items or visits",
+    "field_type": "text",
+    "field_name": "blhcn4a_oth1",
+    "text_validation_type_or_show_slider_number": "number",
+    "text_validation_min": "0",
+    "validations": [
+      {
+        "name": "min",
+        "value": "0",
+        "error": "Enter a number greater than 0",
+        "hint": ""
+      }
+    ],
+    "branching_logic": "[blhcn4a]='8'",
+    "required_field": "false",
+    "section_header": "Personal costs in the last 3 months as a result of your psoriasis or treatment for your psoriasis."
+  },
+  {
+    "field_label": "Other - overall cost (£)",
+    "field_type": "text",
+    "field_name": "blhcn4a_oth1cst",
+    "text_validation_type_or_show_slider_number": "number",
+    "text_validation_min": "0",
+    "validations": [
+      {
+        "name": "min",
+        "value": "0",
+        "error": "Enter a number greater than 0",
+        "hint": ""
+      }
+    ],
+    "branching_logic": "[blhcn4a]='8'",
+    "required_field": "false",
+    "section_header": "Personal costs in the last 3 months as a result of your psoriasis or treatment for your psoriasis."
+  },
+  {
+    "field_label": "In the last 3 months have you been in any type of paid employment?",
+    "field_type": "yesno",
+    "field_name": "blhcn4b",
+    "required_field": "y",
+    "section_header": " "
+  },
+  {
+    "field_label": "Which type of paid employment?",
+    "field_type": "radio",
+    "field_name": "blhcn4b_wrk",
+    "required_field": "y",
+    "select_choices_or_calculations": [
+      {
+        "code": "1",
+        "label": "I work full-time"
+      },
+      {
+        "code": "2",
+        "label": "I work part-time"
+      }
+    ],
+    "branching_logic": "[blhcn4b]='1'",
+    "section_header": " "
+  },
+  {
+    "field_label": "Which of the following best describes your situation?",
+    "field_type": "radio",
+    "form_name": "baseline",
+    "field_name": "blhcn4b_wrksit",
+    "required_field": "y",
+    "select_choices_or_calculations": [
+      {
+        "code": "1",
+        "label": "Unable to work because of my psoriasis"
+      },
+      {
+        "code": "2",
+        "label": "Unable to work because of other sickness or disability (NOT my psoriasis)"
+      },
+      {
+        "code": "3",
+        "label": "Doing unpaid or voluntary work"
+      },
+      {
+        "code": "4",
+        "label": "Full or part-time student"
+      },
+      {
+        "code": "5",
+        "label": "Looking after home and/or family/carer"
+      },
+      {
+        "code": "6",
+        "label": "Unemployed but looking for paid employment"
+      },
+      {
+        "code": "7",
+        "label": "Unemployed and NOT looking for paid employment"
+      },
+      {
+        "code": "8",
+        "label": "Full or part-time student"
+      },
+      {
+        "code": "9",
+        "label": "Retired"
+      },
+      {
+        "code": "10",
+        "label": "None of the above"
+      },
+      {
+        "code": "11",
+        "label": "Prefer not to say"
+      }
+    ],
+    "branching_logic": "[blhcn4b]='0'",
+    "section_header": " "
+  },
+  {
+    "field_label": "<p>In the last 3 months, how much did your psoriasis or treatment for your psoriasis affect your productivity while you were working?</p><p class='text-sm text-gray-500 mt-2'>Think about days you were limited in the amount or kind of work you could do, days you accomplished less than you would like, or days you could not do your work as carefully as usual.</p>",
+    "field_type": "radio",
+    "form_name": "baseline",
+    "field_name": "blhcn4b_wrkafft",
+    "required_field": "y",
+    "select_choices_or_calculations": [
+      {
+        "code": "0",
+        "label": "0 - Psoriasis or psoriasis treatment had no effect on my work"
+      },
+      {
+        "code": "1",
+        "label": "1"
+      },
+      {
+        "code": "2",
+        "label": "2"
+      },
+      {
+        "code": "3",
+        "label": "3"
+      },
+      {
+        "code": "4",
+        "label": "4"
+      },
+      {
+        "code": "5",
+        "label": "5"
+      },
+      {
+        "code": "6",
+        "label": "6"
+      },
+      {
+        "code": "7",
+        "label": "7"
+      },
+      {
+        "code": "8",
+        "label": "8"
+      },
+      {
+        "code": "9",
+        "label": "9"
+      },
+      {
+        "code": "10",
+        "label": "10 - Psoriasis or psoriasis treatment completely prevented me from working"
+      }
+    ],
+    "branching_logic": "[blhcn4b]='1'",
+    "section_header": " "
+  },
+  {
+    "field_label": "In the last 3 months, has your psoriasis or treatment for your psoriasis resulted in you changing the number of hours you work?",
+    "field_type": "yesno",
+    "field_name": "blhcn4b_wrk3mchg",
+    "required_field": "y",
+    "branching_logic": "[blhcn4b]='1'",
+    "section_header": " "
+  },
+  {
+    "field_label": "In the last 3 months, what has the impact on number of hours worked been as a result of your psoriasis or treatment for your psoriasis or treatment for your psoriasis (e.g., due to sick leave related to you psoriasis, to attend appointments etc)?",
+    "field_type": "radio",
+    "field_name": "blhcn4b_wrk3m",
+    "required_field": "y",
+    "select_choices_or_calculations": [
+      {
+        "code": "1",
+        "label": "I have worked LESS hours over the last 3 months (please specify)"
+      },
+      {
+        "code": "2",
+        "label": "I have worked MORE hours over the last 3 months (please specify)"
+      }
+    ],
+    "branching_logic": "[blhcn4b_wrk3mchg]='1'",
+    "section_header": " "
+  },
+  {
+    "field_label": "Please specify how many LESS hours you have worked over the last 3 months",
+    "field_type": "text",
+    "field_name": "blhcn4b_wrk3mles",
+    "field_note": "hours",
+    "required_field": "y",
+    "text_validation_type_or_show_slider_number": "number",
+    "text_validation_min": "0",
+    "validations": [
+      {
+        "name": "min",
+        "value": "0",
+        "error": "Enter a number greater than 0",
+        "hint": ""
+      }
+    ],
+    "branching_logic": "[blhcn4b_wrk3m]='1'",
+    "section_header": " "
+  },
+  {
+    "field_label": "Please specify how many MORE hours you have worked over the last 3 months",
+    "field_type": "text",
+    "form_name": "baseline",
+    "field_name": "blhcn4b_wrk3mmre",
+    "field_note": "hours",
+    "required_field": "y",
+    "text_validation_type_or_show_slider_number": "number",
+    "text_validation_min": "0",
+    "validations": [
+      {
+        "name": "min",
+        "value": "0",
+        "error": "Enter a number greater than 0",
+        "hint": ""
+      }
+    ],
+    "branching_logic": "[blhcn4b_wrk3m]='2'",
+    "section_header": " "
+  },
+  {
+    "field_label": "In the last 3 months, have you had a family member or friend who has had to take time off paid work to accompany you to health care appointments related to your psoriasis or treatment for your psoriasis?",
+    "field_type": "yesno",
+    "form_name": "baseline",
+    "field_name": "blhcn4c",
+    "required_field": "y",
+    "custom_alignment": "LH",
+    "section_header": " "
+  },
+  {
+    "field_label": "In the last 3 months, how much leave (number of hours) have they had to take to accompany you to appointments related to your psoriasis or treatment for your psoriasis?",
+    "field_type": "text",
+    "field_name": "blhcn4c_hrs3m",
+    "field_note": "hours",
+    "required_field": "y",
+    "text_validation_type_or_show_slider_number": "number",
+    "text_validation_min": "0",
+    "validations": [
+      {
+        "name": "min",
+        "value": "0",
+        "error": "Enter a number greater than 0",
+        "hint": ""
+      }
+    ],
+    "branching_logic": "[blhcn4c]='1'",
+    "section_header": " "
+  },
+  {
+    "field_label": "In the <b>last 3 months</b>, have you received support or attended support groups (such as The Psoriasis Association, helplines etc)?",
+    "field_type": "yesno",
+    "field_name": "blhcn4d",
+    "required_field": "y",
+    "section_header": " "
+  },
+  {
+    "field_label": "Type of support",
+    "field_type": "notes",
+    "field_name": "blhcn4d_sup1",
+    "branching_logic": "[blhcn4d]='1'",
+    "required_field": "false",
+    "section_header": " "
+  },
+  {
+    "field_label": "Cost incurred (£)",
+    "field_type": "text",
+    "field_name": "blhcn4d_sup1cst",
+    "text_validation_type_or_show_slider_number": "number",
+    "text_validation_min": "0",
+    "validations": [
+      {
+        "name": "min",
+        "value": "0",
+        "error": "Enter a number greater than 0",
+        "hint": ""
+      }
+    ],
+    "branching_logic": "[blhcn4d]='1'",
+    "required_field": "false",
+    "section_header": " "
+  },
+  {
+    "field_label": "Are you part of any of the following studies? <br><span class='text-[#A99A83] text-sm'>Tick all that apply</span>",
+    "field_type": "checkbox",
+    "form_name": "baseline",
+    "field_name": "blostds",
+    "section_header": "Other studies",
+    "select_choices_or_calculations": [
+      {
+        "code": "1",
+        "label": "BSTOP"
+      },
+      {
+        "code": "2",
+        "label": "BADBIR"
+      },
+      {
+        "code": "3",
+        "label": "UK Biobank"
+      },
+      {
+        "code": "4",
+        "label": "Twins UK"
+      },
+      {
+        "code": "5",
+        "label": "Our Future Health"
+      }
+    ],
+    "required_field": "false"
+  }
+]
