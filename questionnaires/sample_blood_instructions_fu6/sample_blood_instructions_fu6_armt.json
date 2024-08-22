@@ -58,5 +58,25 @@
     "field_type": "descriptive",
     "field_name": "sb_send1",
     "required_field": "false"
+  },
+  {
+    "field_label": "Have you collected and posted your blood sample?<br><span class='text-[#A99A83] text-sm font-bold'>This is optional and does not affect your medical care or the rest of your participation in the study.</span>",
+    "field_type": "radio",
+    "field_name": "blsamp_sent",
+    "required_field": "y",
+    "select_choices_or_calculations": [
+      {
+        "code": "1",
+        "label": "Yes"
+      },
+      {
+        "code": "2",
+        "label": "Not yet, but I plan to provide a blood sample."
+      },
+      {
+        "code": "3",
+        "label": "No, I will not provide a blood sample."
+      }
+    ]
   }
 ]

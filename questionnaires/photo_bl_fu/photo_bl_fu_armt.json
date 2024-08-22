@@ -1,5 +1,22 @@
 [
   {
+    "field_label": "<p>Would you like to submit photos?</p><p class='text-sm text-[#A99A83] font-bold mt-4'>This is optional and does not affect your medical care or the rest of your participation in the study.</p>",
+    "field_type": "radio",
+    "field_name": "photo_have",
+    "required_field": "y",
+    "section_header": "",
+    "select_choices_or_calculations": [
+      {
+        "code": "1",
+        "label": "Yes"
+      },
+      {
+        "code": "0",
+        "label": "No"
+      }
+    ]
+  },
+  {
     "field_name": "photo_inst1",
     "field_type": "descriptive",
     "field_label": "<p>Take a photo of your <b>worst affected site</b>.<br><br>Hold your smartphone in front of you to take the photo.<br><br>If you find it difficult, please ask someone to help.<br><br>Check the image to ensure it is in focus and your entire worst affected site is included as per the example below.<br><br><img class='w-1/2 m-auto' src='assets/imgs/photo-upload/worst_affected.png' alt=''>Once you are happy with the photo you have taken, upload it.<br><br></p>",

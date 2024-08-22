@@ -23,39 +23,30 @@
     "field_label": "Over the past 3 months, how many infections have you had?",
     "field_type": "text",
     "field_name": "fuwb_pt3m_infno",
-    "field_note": "maximum ten infections",
     "required_field": "y",
     "text_validation_type_or_show_slider_number": "integer",
-    "text_validation_max": "10",
+    "text_validation_max": "6",
     "text_validation_min": "0",
     "branching_logic": "[fuwb_pt3m_inf]='1'",
     "validations": [
       {
         "name": "min",
-        "value": "0",
+        "value": "1",
         "error": "Enter a number greater than 0",
         "hint": ""
       },
       {
         "name": "max",
-        "value": "10",
-        "error": "Enter a number less than 10",
+        "value": "6",
+        "error": "Enter a number less than 7",
         "hint": ""
       }
     ]
   },
   {
-    "field_label": "<u>1<sup>st</sup> Infection</u>",
-    "field_type": "descriptive",
-    "form_name": "followup",
-    "field_name": "fuwb_pt3m_inftxt1",
-    "required_field": "false",
-    "branching_logic": "[fuwb_pt3m_infno]>0"
-  },
-  {
     "field_label": "What infection was it?",
+    "section_header": "Infection 1",
     "field_type": "radio",
-    "form_name": "followup",
     "field_name": "fuwb_pt3m_infwht1",
     "required_field": "y",
     "select_choices_or_calculations": [
@@ -77,7 +68,7 @@
       },
       {
         "code": "5",
-        "label": "Other (please specify)"
+        "label": "Other"
       },
       {
         "code": "6",
@@ -89,68 +80,66 @@
   {
     "field_label": "What infection was it?<br>Please specify other.",
     "field_type": "text",
-    "form_name": "followup",
     "field_name": "fuwb_pt3m_infwhtoth1",
     "required_field": "y",
-    "custom_alignment": "RH",
-    "branching_logic": "[fuwb_pt3m_infwht1]='5'"
+    "branching_logic": "[fuwb_pt3m_infwht1]='5'",
+    "section_header": "Infection 1"
   },
   {
     "field_label": "Did you go to hospital due to your infection?",
     "field_type": "radio",
-    "form_name": "followup",
     "field_name": "fuwb_pt3m_infhsp1",
     "required_field": "y",
     "select_choices_or_calculations": [
       {
         "code": "1",
-        "label": "Yes"
+        "label": "Yes, I went to hospital Accident & Emergency (Emergency Room)"
       },
       {
         "code": "2",
-        "label": "Yes"
+        "label": "Yes, I stayed in hospital"
       },
       {
         "code": "0",
         "label": "No"
       }
     ],
-    "branching_logic": "[fuwb_pt3m_infno]>0"
+    "branching_logic": "[fuwb_pt3m_infno]>0",
+    "section_header": "Infection 1"
   },
   {
     "field_label": "Were you given any medications to treat your infection?",
     "field_type": "radio",
-    "form_name": "followup",
     "field_name": "fuwb_pt3m_infmed1",
     "required_field": "y",
     "select_choices_or_calculations": [
       {
         "code": "1",
-        "label": "Yes"
+        "label": "Yes, I was given antibiotics"
       },
       {
         "code": "2",
-        "label": "Yes"
+        "label": "Yes, I was given another medication"
       },
       {
         "code": "0",
         "label": "No"
       }
     ],
-    "branching_logic": "[fuwb_pt3m_infno]>0"
+    "branching_logic": "[fuwb_pt3m_infno]>0",
+    "section_header": "Infection 1"
   },
   {
     "field_label": "What other medication were you given?",
     "field_type": "text",
-    "form_name": "followup",
     "field_name": "fuwb_pt3m_infmedoth1",
     "required_field": "y",
-    "branching_logic": "[fuwb_pt3m_infmed1]='2'"
+    "branching_logic": "[fuwb_pt3m_infmed1]='2'",
+    "section_header": "Infection 1"
   },
   {
     "field_label": "Has your infection got better?",
     "field_type": "radio",
-    "form_name": "followup",
     "field_name": "fuwb_pt3m_infbet1",
     "required_field": "y",
     "select_choices_or_calculations": [
@@ -167,12 +156,12 @@
         "label": "Not sure"
       }
     ],
-    "branching_logic": "[fuwb_pt3m_infno]>0"
+    "branching_logic": "[fuwb_pt3m_infno]>0",
+    "section_header": "Infection 1"
   },
   {
     "field_label": "Why has your infection not got better?",
     "field_type": "radio",
-    "form_name": "followup",
     "field_name": "fuwb_pt3m_infbetno1",
     "required_field": "y",
     "select_choices_or_calculations": [
@@ -182,43 +171,36 @@
       },
       {
         "code": "2",
-        "label": "I have other medical problems from the infection (please specify)"
+        "label": "I have other medical problems from the infection"
       },
       {
         "code": "3",
-        "label": "Other (please specify)"
+        "label": "Other"
       }
     ],
-    "branching_logic": "[fuwb_pt3m_infbet1]='0'"
+    "branching_logic": "[fuwb_pt3m_infbet1]='0'",
+    "section_header": "Infection 1"
   },
   {
     "field_label": "Please specify what other medical problems you have from the infection",
     "field_type": "text",
-    "form_name": "followup",
     "field_name": "fuwb_pt3m_infbetno_med1",
     "required_field": "y",
-    "branching_logic": "[fuwb_pt3m_infbetno1]='2'"
+    "branching_logic": "[fuwb_pt3m_infbetno1]='2'",
+    "section_header": "Infection 1"
   },
   {
     "field_label": "Please specify other reasons why the infection has not got better",
     "field_type": "text",
-    "form_name": "followup",
     "field_name": "fuwb_pt3m_infbetno_oth1",
     "required_field": "y",
-    "branching_logic": "[fuwb_pt3m_infbetno1]='3'"
-  },
-  {
-    "field_label": "<u>2<sup>nd</sup> Infection</u>",
-    "field_type": "descriptive",
-    "form_name": "followup",
-    "field_name": "fuwb_pt3m_inftxt2",
-    "required_field": "false",
-    "branching_logic": "[fuwb_pt3m_infno]>1"
+    "branching_logic": "[fuwb_pt3m_infbetno1]='3'",
+    "section_header": "Infection 1"
   },
   {
     "field_label": "What infection was it?",
+    "section_header": "Infection 2",
     "field_type": "radio",
-    "form_name": "followup",
     "field_name": "fuwb_pt3m_infwht2",
     "required_field": "y",
     "select_choices_or_calculations": [
@@ -240,7 +222,7 @@
       },
       {
         "code": "5",
-        "label": "Other (please specify)"
+        "label": "Other"
       },
       {
         "code": "6",
@@ -252,68 +234,67 @@
   {
     "field_label": "What infection was it?<br>Please specify other.",
     "field_type": "text",
-    "form_name": "followup",
     "field_name": "fuwb_pt3m_infwhtoth2",
     "required_field": "y",
     "custom_alignment": "RH",
-    "branching_logic": "[fuwb_pt3m_infwht2]='5'"
+    "branching_logic": "[fuwb_pt3m_infwht2]='5'",
+    "section_header": "Infection 2"
   },
   {
     "field_label": "Did you go to hospital due to your infection?",
     "field_type": "radio",
-    "form_name": "followup",
     "field_name": "fuwb_pt3m_infhsp2",
     "required_field": "y",
     "select_choices_or_calculations": [
       {
         "code": "1",
-        "label": "Yes"
+        "label": "Yes, I went to hospital Accident & Emergency (Emergency Room)"
       },
       {
         "code": "2",
-        "label": "Yes"
+        "label": "Yes, I stayed in hospital"
       },
       {
         "code": "0",
         "label": "No"
       }
     ],
-    "branching_logic": "[fuwb_pt3m_infno]>1"
+    "branching_logic": "[fuwb_pt3m_infno]>1",
+    "section_header": "Infection 2"
   },
   {
     "field_label": "Were you given any medications to treat your infection?",
     "field_type": "radio",
-    "form_name": "followup",
     "field_name": "fuwb_pt3m_infmed2",
     "required_field": "y",
     "select_choices_or_calculations": [
       {
         "code": "1",
-        "label": "Yes"
+        "label": "Yes, I was given antibiotics"
       },
       {
         "code": "2",
-        "label": "Yes"
+        "label": "Yes, I was given another medication"
       },
       {
         "code": "0",
         "label": "No"
       }
     ],
-    "branching_logic": "[fuwb_pt3m_infno]>1"
+    "branching_logic": "[fuwb_pt3m_infno]>1",
+    "section_header": "Infection 2"
   },
   {
     "field_label": "What other medication were you given?",
     "field_type": "text",
-    "form_name": "followup",
     "field_name": "fuwb_pt3m_infmedoth2",
     "required_field": "y",
-    "branching_logic": "[fuwb_pt3m_infmed2]='2'"
+    "branching_logic": "[fuwb_pt3m_infmed2]='2'",
+    "section_header": "Infection 2"
   },
   {
     "field_label": "Has your infection got better?",
     "field_type": "radio",
-    "form_name": "followup",
     "field_name": "fuwb_pt3m_infbet2",
     "required_field": "y",
     "select_choices_or_calculations": [
@@ -330,12 +311,12 @@
         "label": "Not sure"
       }
     ],
-    "branching_logic": "[fuwb_pt3m_infno]>1"
+    "branching_logic": "[fuwb_pt3m_infno]>1",
+    "section_header": "Infection 2"
   },
   {
     "field_label": "Why has your infection not got better?",
     "field_type": "radio",
-    "form_name": "followup",
     "field_name": "fuwb_pt3m_infbetno2",
     "required_field": "y",
     "select_choices_or_calculations": [
@@ -345,43 +326,36 @@
       },
       {
         "code": "2",
-        "label": "I have other medical problems from the infection (please specify)"
+        "label": "I have other medical problems from the infection"
       },
       {
         "code": "3",
-        "label": "Other (please specify)"
+        "label": "Other"
       }
     ],
-    "branching_logic": "[fuwb_pt3m_infbet2]='0'"
+    "branching_logic": "[fuwb_pt3m_infbet2]='0'",
+    "section_header": "Infection 2"
   },
   {
     "field_label": "Please specify what other medical problems you have from the infection",
     "field_type": "text",
-    "form_name": "followup",
     "field_name": "fuwb_pt3m_infbetno_med2",
     "required_field": "y",
-    "branching_logic": "[fuwb_pt3m_infbetno2]='2'"
+    "branching_logic": "[fuwb_pt3m_infbetno2]='2'",
+    "section_header": "Infection 2"
   },
   {
     "field_label": "Please specify other reasons why the infection has not got better",
     "field_type": "text",
-    "form_name": "followup",
     "field_name": "fuwb_pt3m_infbetno_oth2",
     "required_field": "y",
-    "branching_logic": "[fuwb_pt3m_infbetno2]='3'"
-  },
-  {
-    "field_label": "<u>3<sup>rd</sup> Infection</u>",
-    "field_type": "descriptive",
-    "form_name": "followup",
-    "field_name": "fuwb_pt3m_inftxt3",
-    "required_field": "false",
-    "branching_logic": "[fuwb_pt3m_infno]>2"
+    "branching_logic": "[fuwb_pt3m_infbetno2]='3'",
+    "section_header": "Infection 2"
   },
   {
     "field_label": "What infection was it?",
+    "section_header": "Infection 3",
     "field_type": "radio",
-    "form_name": "followup",
     "field_name": "fuwb_pt3m_infwht3",
     "required_field": "y",
     "select_choices_or_calculations": [
@@ -403,7 +377,7 @@
       },
       {
         "code": "5",
-        "label": "Other (please specify)"
+        "label": "Other"
       },
       {
         "code": "6",
@@ -415,68 +389,66 @@
   {
     "field_label": "What infection was it?<br>Please specify other.",
     "field_type": "text",
-    "form_name": "followup",
     "field_name": "fuwb_pt3m_infwhtoth3",
     "required_field": "y",
-    "custom_alignment": "RH",
-    "branching_logic": "[fuwb_pt3m_infwht3]='5'"
+    "branching_logic": "[fuwb_pt3m_infwht3]='5'",
+    "section_header": "Infection 3"
   },
   {
     "field_label": "Did you go to hospital due to your infection?",
     "field_type": "radio",
-    "form_name": "followup",
     "field_name": "fuwb_pt3m_infhsp3",
     "required_field": "y",
     "select_choices_or_calculations": [
       {
         "code": "1",
-        "label": "Yes"
+        "label": "Yes, I went to hospital Accident & Emergency (Emergency Room)"
       },
       {
         "code": "2",
-        "label": "Yes"
+        "label": "Yes, I stayed in hospital"
       },
       {
         "code": "0",
         "label": "No"
       }
     ],
-    "branching_logic": "[fuwb_pt3m_infno]>2"
+    "branching_logic": "[fuwb_pt3m_infno]>2",
+    "section_header": "Infection 3"
   },
   {
     "field_label": "Were you given any medications to treat your infection?",
     "field_type": "radio",
-    "form_name": "followup",
     "field_name": "fuwb_pt3m_infmed3",
     "required_field": "y",
     "select_choices_or_calculations": [
       {
         "code": "1",
-        "label": "Yes"
+        "label": "Yes, I was given antibiotics"
       },
       {
         "code": "2",
-        "label": "Yes"
+        "label": "Yes, I was given another medication"
       },
       {
         "code": "0",
         "label": "No"
       }
     ],
-    "branching_logic": "[fuwb_pt3m_infno]>2"
+    "branching_logic": "[fuwb_pt3m_infno]>2",
+    "section_header": "Infection 3"
   },
   {
     "field_label": "What other medication were you given?",
     "field_type": "text",
-    "form_name": "followup",
     "field_name": "fuwb_pt3m_infmedoth3",
     "required_field": "y",
-    "branching_logic": "[fuwb_pt3m_infmed3]='2'"
+    "branching_logic": "[fuwb_pt3m_infmed3]='2'",
+    "section_header": "Infection 3"
   },
   {
     "field_label": "Has your infection got better?",
     "field_type": "radio",
-    "form_name": "followup",
     "field_name": "fuwb_pt3m_infbet3",
     "required_field": "y",
     "select_choices_or_calculations": [
@@ -493,12 +465,12 @@
         "label": "Not sure"
       }
     ],
-    "branching_logic": "[fuwb_pt3m_infno]>2"
+    "branching_logic": "[fuwb_pt3m_infno]>2",
+    "section_header": "Infection 3"
   },
   {
     "field_label": "Why has your infection not got better?",
     "field_type": "radio",
-    "form_name": "followup",
     "field_name": "fuwb_pt3m_infbetno3",
     "required_field": "y",
     "select_choices_or_calculations": [
@@ -508,43 +480,36 @@
       },
       {
         "code": "2",
-        "label": "I have other medical problems from the infection (please specify)"
+        "label": "I have other medical problems from the infection"
       },
       {
         "code": "3",
-        "label": "Other (please specify)"
+        "label": "Other"
       }
     ],
-    "branching_logic": "[fuwb_pt3m_infbet3]='0'"
+    "branching_logic": "[fuwb_pt3m_infbet3]='0'",
+    "section_header": "Infection 3"
   },
   {
     "field_label": "Please specify what other medical problems you have from the infection",
     "field_type": "text",
-    "form_name": "followup",
     "field_name": "fuwb_pt3m_infbetno_med3",
     "required_field": "y",
-    "branching_logic": "[fuwb_pt3m_infbetno3]='2'"
+    "branching_logic": "[fuwb_pt3m_infbetno3]='2'",
+    "section_header": "Infection 3"
   },
   {
     "field_label": "Please specify other reasons why the infection has not got better",
     "field_type": "text",
-    "form_name": "followup",
     "field_name": "fuwb_pt3m_infbetno_oth3",
     "required_field": "y",
-    "branching_logic": "[fuwb_pt3m_infbetno3]='3'"
-  },
-  {
-    "field_label": "<u>4<sup>th</sup> Infection</u>",
-    "field_type": "descriptive",
-    "form_name": "followup",
-    "field_name": "fuwb_pt3m_inftxt4",
-    "required_field": "false",
-    "branching_logic": "[fuwb_pt3m_infno]>3"
+    "branching_logic": "[fuwb_pt3m_infbetno3]='3'",
+    "section_header": "Infection 3"
   },
   {
     "field_label": "What infection was it?",
+    "section_header": "Infection 4",
     "field_type": "radio",
-    "form_name": "followup",
     "field_name": "fuwb_pt3m_infwht4",
     "required_field": "y",
     "select_choices_or_calculations": [
@@ -566,7 +531,7 @@
       },
       {
         "code": "5",
-        "label": "Other (please specify)"
+        "label": "Other"
       },
       {
         "code": "6",
@@ -578,68 +543,67 @@
   {
     "field_label": "What infection was it?<br>Please specify other.",
     "field_type": "text",
-    "form_name": "followup",
     "field_name": "fuwb_pt3m_infwhtoth4",
     "required_field": "y",
     "custom_alignment": "RH",
-    "branching_logic": "[fuwb_pt3m_infwht4]='5'"
+    "branching_logic": "[fuwb_pt3m_infwht4]='5'",
+    "section_header": "Infection 4"
   },
   {
     "field_label": "Did you go to hospital due to your infection?",
     "field_type": "radio",
-    "form_name": "followup",
     "field_name": "fuwb_pt3m_infhsp4",
     "required_field": "y",
     "select_choices_or_calculations": [
       {
         "code": "1",
-        "label": "Yes"
+        "label": "Yes, I went to hospital Accident & Emergency (Emergency Room)"
       },
       {
         "code": "2",
-        "label": "Yes"
+        "label": "Yes, I stayed in hospital"
       },
       {
         "code": "0",
         "label": "No"
       }
     ],
-    "branching_logic": "[fuwb_pt3m_infno]>3"
+    "branching_logic": "[fuwb_pt3m_infno]>3",
+    "section_header": "Infection 4"
   },
   {
     "field_label": "Were you given any medications to treat your infection?",
     "field_type": "radio",
-    "form_name": "followup",
     "field_name": "fuwb_pt3m_infmed4",
     "required_field": "y",
     "select_choices_or_calculations": [
       {
         "code": "1",
-        "label": "Yes"
+        "label": "Yes, I was given antibiotics"
       },
       {
         "code": "2",
-        "label": "Yes"
+        "label": "Yes, I was given another medication"
       },
       {
         "code": "0",
         "label": "No"
       }
     ],
-    "branching_logic": "[fuwb_pt3m_infno]>3"
+    "branching_logic": "[fuwb_pt3m_infno]>3",
+    "section_header": "Infection 4"
   },
   {
     "field_label": "What other medication were you given?",
     "field_type": "text",
-    "form_name": "followup",
     "field_name": "fuwb_pt3m_infmedoth4",
     "required_field": "y",
-    "branching_logic": "[fuwb_pt3m_infmed4]='2'"
+    "branching_logic": "[fuwb_pt3m_infmed4]='2'",
+    "section_header": "Infection 4"
   },
   {
     "field_label": "Has your infection got better?",
     "field_type": "radio",
-    "form_name": "followup",
     "field_name": "fuwb_pt3m_infbet4",
     "required_field": "y",
     "select_choices_or_calculations": [
@@ -656,12 +620,12 @@
         "label": "Not sure"
       }
     ],
-    "branching_logic": "[fuwb_pt3m_infno]>3"
+    "branching_logic": "[fuwb_pt3m_infno]>3",
+    "section_header": "Infection 4"
   },
   {
     "field_label": "Why has your infection not got better?",
     "field_type": "radio",
-    "form_name": "followup",
     "field_name": "fuwb_pt3m_infbetno4",
     "required_field": "y",
     "select_choices_or_calculations": [
@@ -671,43 +635,36 @@
       },
       {
         "code": "2",
-        "label": "I have other medical problems from the infection (please specify)"
+        "label": "I have other medical problems from the infection"
       },
       {
         "code": "3",
-        "label": "Other (please specify)"
+        "label": "Other"
       }
     ],
-    "branching_logic": "[fuwb_pt3m_infbet4]='0'"
+    "branching_logic": "[fuwb_pt3m_infbet4]='0'",
+    "section_header": "Infection 4"
   },
   {
     "field_label": "Please specify what other medical problems you have from the infection",
     "field_type": "text",
-    "form_name": "followup",
     "field_name": "fuwb_pt3m_infbetno_med4",
     "required_field": "y",
-    "branching_logic": "[fuwb_pt3m_infbetno4]='2'"
+    "branching_logic": "[fuwb_pt3m_infbetno4]='2'",
+    "section_header": "Infection 4"
   },
   {
     "field_label": "Please specify other reasons why the infection has not got better",
     "field_type": "text",
-    "form_name": "followup",
     "field_name": "fuwb_pt3m_infbetno_oth4",
     "required_field": "y",
-    "branching_logic": "[fuwb_pt3m_infbetno4]='3'"
-  },
-  {
-    "field_label": "<u>5<sup>th</sup> Infection</u>",
-    "field_type": "descriptive",
-    "form_name": "followup",
-    "field_name": "fuwb_pt3m_inftxt5",
-    "required_field": "false",
-    "branching_logic": "[fuwb_pt3m_infno]>4"
+    "branching_logic": "[fuwb_pt3m_infbetno4]='3'",
+    "section_header": "Infection 4"
   },
   {
     "field_label": "What infection was it?",
+    "section_header": "Infection 5",
     "field_type": "radio",
-    "form_name": "followup",
     "field_name": "fuwb_pt3m_infwht5",
     "required_field": "y",
     "select_choices_or_calculations": [
@@ -729,7 +686,7 @@
       },
       {
         "code": "5",
-        "label": "Other (please specify)"
+        "label": "Other"
       },
       {
         "code": "6",
@@ -741,68 +698,67 @@
   {
     "field_label": "What infection was it?<br>Please specify other.",
     "field_type": "text",
-    "form_name": "followup",
     "field_name": "fuwb_pt3m_infwhtoth5",
     "required_field": "y",
     "custom_alignment": "RH",
-    "branching_logic": "[fuwb_pt3m_infwht5]='5'"
+    "branching_logic": "[fuwb_pt3m_infwht5]='5'",
+    "section_header": "Infection 5"
   },
   {
     "field_label": "Did you go to hospital due to your infection?",
     "field_type": "radio",
-    "form_name": "followup",
     "field_name": "fuwb_pt3m_infhsp5",
     "required_field": "y",
     "select_choices_or_calculations": [
       {
         "code": "1",
-        "label": "Yes"
+        "label": "Yes, I went to hospital Accident & Emergency (Emergency Room)"
       },
       {
         "code": "2",
-        "label": "Yes"
+        "label": "Yes, I stayed in hospital"
       },
       {
         "code": "0",
         "label": "No"
       }
     ],
-    "branching_logic": "[fuwb_pt3m_infno]>4"
+    "branching_logic": "[fuwb_pt3m_infno]>4",
+    "section_header": "Infection 5"
   },
   {
     "field_label": "Were you given any medications to treat your infection?",
     "field_type": "radio",
-    "form_name": "followup",
     "field_name": "fuwb_pt3m_infmed5",
     "required_field": "y",
     "select_choices_or_calculations": [
       {
         "code": "1",
-        "label": "Yes"
+        "label": "Yes, I was given antibiotics"
       },
       {
         "code": "2",
-        "label": "Yes"
+        "label": "Yes, I was given another medication"
       },
       {
         "code": "0",
         "label": "No"
       }
     ],
-    "branching_logic": "[fuwb_pt3m_infno]>4"
+    "branching_logic": "[fuwb_pt3m_infno]>4",
+    "section_header": "Infection 5"
   },
   {
     "field_label": "What other medication were you given?",
     "field_type": "text",
-    "form_name": "followup",
     "field_name": "fuwb_pt3m_infmedoth5",
     "required_field": "y",
-    "branching_logic": "[fuwb_pt3m_infmed5]='2'"
+    "branching_logic": "[fuwb_pt3m_infmed5]='2'",
+    "section_header": "Infection 5"
   },
   {
     "field_label": "Has your infection got better?",
     "field_type": "radio",
-    "form_name": "followup",
     "field_name": "fuwb_pt3m_infbet5",
     "required_field": "y",
     "select_choices_or_calculations": [
@@ -819,12 +775,12 @@
         "label": "Not sure"
       }
     ],
-    "branching_logic": "[fuwb_pt3m_infno]>4"
+    "branching_logic": "[fuwb_pt3m_infno]>4",
+    "section_header": "Infection 5"
   },
   {
     "field_label": "Why has your infection not got better?",
     "field_type": "radio",
-    "form_name": "followup",
     "field_name": "fuwb_pt3m_infbetno5",
     "required_field": "y",
     "select_choices_or_calculations": [
@@ -834,43 +790,36 @@
       },
       {
         "code": "2",
-        "label": "I have other medical problems from the infection (please specify)"
+        "label": "I have other medical problems from the infection"
       },
       {
         "code": "3",
-        "label": "Other (please specify)"
+        "label": "Other"
       }
     ],
-    "branching_logic": "[fuwb_pt3m_infbet5]='0'"
+    "branching_logic": "[fuwb_pt3m_infbet5]='0'",
+    "section_header": "Infection 5"
   },
   {
     "field_label": "Please specify what other medical problems you have from the infection",
     "field_type": "text",
-    "form_name": "followup",
     "field_name": "fuwb_pt3m_infbetno_med5",
     "required_field": "y",
-    "branching_logic": "[fuwb_pt3m_infbetno5]='2'"
+    "branching_logic": "[fuwb_pt3m_infbetno5]='2'",
+    "section_header": "Infection 5"
   },
   {
     "field_label": "Please specify other reasons why the infection has not got better",
     "field_type": "text",
-    "form_name": "followup",
     "field_name": "fuwb_pt3m_infbetno_oth5",
     "required_field": "y",
-    "branching_logic": "[fuwb_pt3m_infbetno5]='3'"
-  },
-  {
-    "field_label": "<u>6<sup>th</sup> Infection</u>",
-    "field_type": "descriptive",
-    "form_name": "followup",
-    "field_name": "fuwb_pt3m_inftxt6",
-    "required_field": "false",
-    "branching_logic": "[fuwb_pt3m_infno]>5"
+    "branching_logic": "[fuwb_pt3m_infbetno5]='3'",
+    "section_header": "Infection 5"
   },
   {
     "field_label": "What infection was it?",
+    "section_header": "Infection 6",
     "field_type": "radio",
-    "form_name": "followup",
     "field_name": "fuwb_pt3m_infwht6",
     "required_field": "y",
     "select_choices_or_calculations": [
@@ -892,7 +841,7 @@
       },
       {
         "code": "5",
-        "label": "Other (please specify)"
+        "label": "Other"
       },
       {
         "code": "6",
@@ -904,68 +853,67 @@
   {
     "field_label": "What infection was it?<br>Please specify other.",
     "field_type": "text",
-    "form_name": "followup",
     "field_name": "fuwb_pt3m_infwhtoth6",
     "required_field": "y",
     "custom_alignment": "RH",
-    "branching_logic": "[fuwb_pt3m_infwht6]='5'"
+    "branching_logic": "[fuwb_pt3m_infwht6]='5'",
+    "section_header": "Infection 6"
   },
   {
     "field_label": "Did you go to hospital due to your infection?",
     "field_type": "radio",
-    "form_name": "followup",
     "field_name": "fuwb_pt3m_infhsp6",
     "required_field": "y",
     "select_choices_or_calculations": [
       {
         "code": "1",
-        "label": "Yes"
+        "label": "Yes, I went to hospital Accident & Emergency (Emergency Room)"
       },
       {
         "code": "2",
-        "label": "Yes"
+        "label": "Yes, I stayed in hospital"
       },
       {
         "code": "0",
         "label": "No"
       }
     ],
-    "branching_logic": "[fuwb_pt3m_infno]>5"
+    "branching_logic": "[fuwb_pt3m_infno]>5",
+    "section_header": "Infection 6"
   },
   {
     "field_label": "Were you given any medications to treat your infection?",
     "field_type": "radio",
-    "form_name": "followup",
     "field_name": "fuwb_pt3m_infmed6",
     "required_field": "y",
     "select_choices_or_calculations": [
       {
         "code": "1",
-        "label": "Yes"
+        "label": "Yes, I was given antibiotics"
       },
       {
         "code": "2",
-        "label": "Yes"
+        "label": "Yes, I was given another medication"
       },
       {
         "code": "0",
         "label": "No"
       }
     ],
-    "branching_logic": "[fuwb_pt3m_infno]>5"
+    "branching_logic": "[fuwb_pt3m_infno]>5",
+    "section_header": "Infection 6"
   },
   {
     "field_label": "What other medication were you given?",
     "field_type": "text",
-    "form_name": "followup",
     "field_name": "fuwb_pt3m_infmedoth6",
     "required_field": "y",
-    "branching_logic": "[fuwb_pt3m_infmed6]='2'"
+    "branching_logic": "[fuwb_pt3m_infmed6]='2'",
+    "section_header": "Infection 6"
   },
   {
     "field_label": "Has your infection got better?",
     "field_type": "radio",
-    "form_name": "followup",
     "field_name": "fuwb_pt3m_infbet6",
     "required_field": "y",
     "select_choices_or_calculations": [
@@ -982,12 +930,12 @@
         "label": "Not sure"
       }
     ],
-    "branching_logic": "[fuwb_pt3m_infno]>5"
+    "branching_logic": "[fuwb_pt3m_infno]>5",
+    "section_header": "Infection 6"
   },
   {
     "field_label": "Why has your infection not got better?",
     "field_type": "radio",
-    "form_name": "followup",
     "field_name": "fuwb_pt3m_infbetno6",
     "required_field": "y",
     "select_choices_or_calculations": [
@@ -997,39 +945,41 @@
       },
       {
         "code": "2",
-        "label": "I have other medical problems from the infection (please specify)"
+        "label": "I have other medical problems from the infection"
       },
       {
         "code": "3",
-        "label": "Other (please specify)"
+        "label": "Other"
       }
     ],
-    "branching_logic": "[fuwb_pt3m_infbet6]='0'"
+    "branching_logic": "[fuwb_pt3m_infbet6]='0'",
+    "section_header": "Infection 6"
   },
   {
     "field_label": "Please specify what other medical problems you have from the infection",
     "field_type": "text",
-    "form_name": "followup",
     "field_name": "fuwb_pt3m_infbetno_med6",
     "required_field": "y",
-    "branching_logic": "[fuwb_pt3m_infbetno6]='2'"
+    "branching_logic": "[fuwb_pt3m_infbetno6]='2'",
+    "section_header": "Infection 6"
   },
   {
     "field_label": "Please specify other reasons why the infection has not got better",
     "field_type": "text",
-    "form_name": "followup",
     "field_name": "fuwb_pt3m_infbetno_oth6",
     "required_field": "y",
-    "branching_logic": "[fuwb_pt3m_infbetno6]='3'"
+    "branching_logic": "[fuwb_pt3m_infbetno6]='3'",
+    "section_header": "Infection 6"
   },
   {
     "field_label": "Over the past 3 months, have you been diagnosed with a new health problem (not an infection) by a doctor or other health professional?",
     "field_type": "yesno",
     "field_name": "fuwb_pt3m_diag",
+    "section_header": " ",
     "required_field": "y"
   },
   {
-    "field_label": "What health problem is it? (<br><span class='text-[#A99A83] text-sm'>Tick all that apply</span>)",
+    "field_label": "What health problem is it? <br><span class='text-[#A99A83] text-sm font-bold'>Tick all that apply</span>",
     "field_type": "checkbox",
     "field_name": "fuwb_pt3m_diagwht",
     "required_field": "y",
@@ -1040,7 +990,7 @@
       },
       {
         "code": "2",
-        "label": "Joint or bone problems"
+        "label": "Joint or bone problem"
       },
       {
         "code": "3",
@@ -1048,28 +998,29 @@
       },
       {
         "code": "4",
-        "label": "Mental health problems"
+        "label": "Mental health problem"
       },
       {
         "code": "5",
-        "label": "Cancer (please specify)"
+        "label": "Cancer"
       },
       {
         "code": "6",
-        "label": "Other (please specify)"
+        "label": "Other"
       }
     ],
-    "branching_logic": "[fuwb_pt3m_diag]='1'"
+    "branching_logic": "[fuwb_pt3m_diag]='1'",
+    "section_header": " "
   },
   {
-    "field_label": "Heart or metabolic problem (<br><span class='text-[#A99A83] text-sm'>Tick all that apply</span>)",
+    "field_label": "Heart or metabolic problem <br><span class='text-[#A99A83] text-sm font-bold'>Tick all that apply</span>",
     "field_type": "checkbox",
     "field_name": "fuwb_pt3m_diagwht_hrt",
     "required_field": "y",
     "select_choices_or_calculations": [
       {
         "code": "1",
-        "label": "Ischaemic heart disease (angina"
+        "label": "Ischaemic heart disease (angina)"
       },
       {
         "code": "2",
@@ -1096,10 +1047,11 @@
         "label": "Metabolic syndrome"
       }
     ],
-    "branching_logic": "[fuwb_pt3m_diagwht]='1'"
+    "branching_logic": "[fuwb_pt3m_diagwht]='1'",
+    "section_header": " "
   },
   {
-    "field_label": "Joint or bone problems (<br><span class='text-[#A99A83] text-sm'>Tick all that apply</span>)",
+    "field_label": "Joint or bone problems <br><span class='text-[#A99A83] text-sm font-bold'>Tick all that apply</span>",
     "field_type": "checkbox",
     "field_name": "fuwb_pt3m_diagwht_jnt",
     "required_field": "y",
@@ -1122,22 +1074,23 @@
       },
       {
         "code": "5",
-        "label": "Other joint or bone problem (please specify)"
+        "label": "Other joint or bone problem"
       }
     ],
-    "branching_logic": "[fuwb_pt3m_diagwht]='2'"
+    "branching_logic": "[fuwb_pt3m_diagwht]='2'",
+    "section_header": " "
   },
   {
     "field_label": "Please specify other joint or bone problem",
     "field_type": "text",
     "field_name": "fuwb_pt3m_diagwht_jntoth",
     "required_field": "y",
-    "branching_logic": "[fuwb_pt3m_diagwht_jnt]='5'"
+    "branching_logic": "[fuwb_pt3m_diagwht_jnt]='5'",
+    "section_header": " "
   },
   {
-    "field_label": "Inflammatory bowel disease (<br><span class='text-[#A99A83] text-sm'>Tick all that apply</span>)",
+    "field_label": "Inflammatory bowel disease <br><span class='text-[#A99A83] text-sm font-bold'>Tick all that apply</span>",
     "field_type": "checkbox",
-    "form_name": "followup",
     "field_name": "fuwb_pt3m_diagwht_inf",
     "required_field": "y",
     "select_choices_or_calculations": [
@@ -1151,34 +1104,38 @@
       },
       {
         "code": "3",
-        "label": "Other (please specify)"
+        "label": "Other"
       }
     ],
-    "branching_logic": "[fuwb_pt3m_diagwht]='3'"
+    "branching_logic": "[fuwb_pt3m_diagwht]='3'",
+    "section_header": " "
   },
   {
     "field_label": "Please specify other inflammatory bowel disease",
     "field_type": "text",
     "field_name": "fuwb_pt3m_diagwht_infoth",
     "required_field": "y",
-    "branching_logic": "[fuwb_pt3m_diagwht_inf]='3'"
+    "branching_logic": "[fuwb_pt3m_diagwht_inf]='3'",
+    "section_header": " "
   },
   {
     "field_label": "Please specify type of cancer",
     "field_type": "text",
     "field_name": "fuwb_pt3m_diagwht_can",
     "required_field": "y",
-    "branching_logic": "[fuwb_pt3m_diagwht]='5'"
+    "branching_logic": "[fuwb_pt3m_diagwht]='5'",
+    "section_header": " "
   },
   {
     "field_label": "Please specify your other health problems",
     "field_type": "text",
     "field_name": "fuwb_pt3m_diagwht_oth",
     "required_field": "y",
-    "branching_logic": "[fuwb_pt3m_diagwht]='6'"
+    "branching_logic": "[fuwb_pt3m_diagwht]='6'",
+    "section_header": " "
   },
   {
-    "field_label": "Mental health problems (<br><span class='text-[#A99A83] text-sm'>Tick all that apply</span>)",
+    "field_label": "Mental health problems <br><span class='text-[#A99A83] text-sm font-bold'>Tick all that apply</span>",
     "field_type": "checkbox",
     "field_name": "fuwb_pt3m_diagwht_men",
     "required_field": "y",
@@ -1193,35 +1150,39 @@
       },
       {
         "code": "3",
-        "label": "Other mental health problem (please specify)"
+        "label": "Other mental health problem"
       }
     ],
-    "branching_logic": "[fuwb_pt3m_diagwht]='4'"
+    "branching_logic": "[fuwb_pt3m_diagwht]='4'",
+    "section_header": " "
   },
   {
     "field_label": "Please specify other mental health problems",
     "field_type": "text",
     "field_name": "fuwb_pt3_diagwht_menoth",
     "required_field": "y",
-    "branching_logic": "[fuwb_pt3m_diagwht_men]='3'"
+    "branching_logic": "[fuwb_pt3m_diagwht_men]='3'",
+    "section_header": " "
   },
   {
     "field_label": "Over the past 3 months, have you started any new medications?",
     "field_type": "yesno",
     "field_name": "fuwb_pt3m_med",
-    "required_field": "y"
+    "required_field": "y",
+    "section_header": " "
   },
   {
     "field_label": "Please list your new medications",
     "field_type": "notes",
     "field_name": "fuwb_pt3m_medoth",
     "required_field": "y",
-    "branching_logic": "[fuwb_pt3m_med]='1'"
+    "branching_logic": "[fuwb_pt3m_med]='1'",
+    "section_header": " "
   },
   {
     "field_label": "I completely understand how and when I should take my biologic injection during the study.",
     "field_type": "radio",
-    "field_name": "blexp_blgtke",
+    "field_name": "fuexp_blgtke",
     "required_field": "y",
     "section_header": " ",
     "select_choices_or_calculations": [
@@ -1248,17 +1209,91 @@
     ]
   },
   {
-    "field_label": "In your usual dermatology centre, are you able to request an appointment with your psoriasis doctor when you need it (i.e., 'ad hoc' appointment or patient-initiated follow-up/PIFU)?",
+    "field_label": "Over the past 3 months, did you take your biologic injection according to the treatment plan selected for you in the study?",
     "field_type": "yesno",
-    "field_name": "blexp_appt",
+    "field_name": "fuexp_blgtp",
     "required_field": "y",
-    "custom_alignment": "RH",
+    "section_header": " "
+  },
+  {
+    "field_label": "Why did you not take your biologic injection according to the treatment plan selected for you in the study? <br><span class='text-[#A99A83] text-sm font-bold'>Tick all that apply</span>",
+    "field_type": "checkbox",
+    "field_name": "fuexp_blgtpno",
+    "required_field": "y",
+    "select_choices_or_calculations": [
+      {
+        "code": "1",
+        "label": "I did not understand the advice that I was given by the study team"
+      },
+      {
+        "code": "2",
+        "label": "I was told to take it differently by my doctor/nurse"
+      },
+      {
+        "code": "3",
+        "label": "I took it when I did not have any psoriasis symptoms"
+      },
+      {
+        "code": "4",
+        "label": "I took it after my psoriasis started to flare"
+      },
+      {
+        "code": "5",
+        "label": "I had concerns about the treatment strategy"
+      },
+      {
+        "code": "6",
+        "label": "Other"
+      }
+    ],
+    "branching_logic": "[fuexp_blgtp]='0'",
+    "section_header": " "
+  },
+  {
+    "field_label": "Other reason why you did not take your biologic injection according to the treatment plan selected for you in the study.",
+    "field_type": "text",
+    "field_name": "fuexp_blgtpnooth",
+    "required_field": "y",
+    "branching_logic": "[fuexp_blgtpno]='6'",
+    "section_header": " "
+  },
+  {
+    "field_label": "Over the past 3 months, how many times have you taken your biologic injection?",
+    "field_type": "radio",
+    "field_name": "fuexp_blgno",
+    "required_field": "y",
+    "select_choices_or_calculations": [
+      {
+        "code": "0",
+        "label": "0"
+      },
+      {
+        "code": "1",
+        "label": "1"
+      },
+      {
+        "code": "2",
+        "label": "2"
+      },
+      {
+        "code": "3",
+        "label": "3"
+      },
+      {
+        "code": "4",
+        "label": "4"
+      },
+      {
+        "code": "5",
+        "label": "more than 4 times"
+      }
+    ],
     "section_header": " "
   },
   {
     "field_label": "Over the past 3 months, how many times did you request to have an appointment with your psoriasis doctor?",
     "field_type": "radio",
-    "field_name": "blexp_appt_no",
+    "field_name": "fuexp_appt_no",
     "required_field": "y",
     "select_choices_or_calculations": [
       {
@@ -1310,66 +1345,12 @@
         "label": "11 or more"
       }
     ],
-    "branching_logic": "[blexp_appt]='1'",
-    "section_header": " "
-  },
-  {
-    "field_label": "Why did you request this appointment(s)? <br><span class='text-[#A99A83] text-sm'>Tick all that apply</span>",
-    "field_type": "checkbox",
-    "field_name": "blexp_appt_why",
-    "required_field": "y",
-    "select_choices_or_calculations": [
-      {
-        "code": "1",
-        "label": "My psoriasis got worse"
-      },
-      {
-        "code": "2",
-        "label": "I was worried about side effects from my psoriasis medication"
-      },
-      {
-        "code": "3",
-        "label": "I was worried that I had developed (new onset) psoriatic arthritis"
-      },
-      {
-        "code": "4",
-        "label": "My (existing) psoriatic arthritis had worsened"
-      },
-      {
-        "code": "5",
-        "label": "I developed a new skin problem (please state)"
-      },
-      {
-        "code": "6",
-        "label": "Other (please state)"
-      }
-    ],
-    "branching_logic": "[blexp_appt_no]<>'0'",
-    "section_header": " "
-  },
-  {
-    "field_label": "<p>Why did you request this appointment(s)?<br><br></p><p>Please state new skin problem developed.</p>",
-    "field_type": "text",
-    "form_name": "baseline",
-    "field_name": "blexp_appt_why_skin",
-    "required_field": "y",
-    "branching_logic": "[blexp_appt_why]='5'",
-    "section_header": " "
-  },
-  {
-    "field_label": "<p>Why did you request this appointment(s)?<br><br>Please state other.</p>",
-    "field_type": "text",
-    "form_name": "baseline",
-    "field_name": "blexp_appt_why_oth",
-    "required_field": "y",
-    "branching_logic": "[blexp_appt_why]='6'",
     "section_header": " "
   },
   {
     "field_label": "Following your request for your appointment, were you invited to psoriasis clinic with 5 working days?",
     "field_type": "radio",
-    "form_name": "baseline",
-    "field_name": "blexp_appt_inv5d",
+    "field_name": "fuexp_appt_inv5d",
     "required_field": "y",
     "select_choices_or_calculations": [
       {
@@ -1389,13 +1370,13 @@
         "label": "Unsure"
       }
     ],
-    "branching_logic": "[blexp_appt_no]<>'0'",
+    "branching_logic": "[fuexp_appt_no]>0",
     "section_header": " "
   },
   {
     "field_label": "Was this clinic review by telephone or person?",
     "field_type": "radio",
-    "field_name": "blexp_appt_inv5d_crev",
+    "field_name": "fuexp_appt_inv5d_crev",
     "required_field": "y",
     "select_choices_or_calculations": [
       {
@@ -1407,21 +1388,21 @@
         "label": "In person"
       }
     ],
-    "branching_logic": "[blexp_appt_inv5d]='1' or [blexp_appt_inv5d]='2' or [blexp_appt_inv5d]='4'",
+    "branching_logic": "[fuexp_appt_inv5d]='1' or [fuexp_appt_inv5d]='2' or [fuexp_appt_inv5d]='4'",
     "section_header": " "
   },
   {
     "field_label": "Did you attend (either in person or by telephone) the appointment offered?",
     "field_type": "yesno",
-    "field_name": "blexp_appt_inv5d_atd",
+    "field_name": "fuexp_appt_inv5d_atd",
     "required_field": "y",
-    "branching_logic": "[blexp_appt_inv5d]='1' or [blexp_appt_inv5d]='2' or [blexp_appt_inv5d]='4'",
+    "branching_logic": "[fuexp_appt_inv5d]='1' or [fuexp_appt_inv5d]='2' or [fuexp_appt_inv5d]='4'",
     "section_header": " "
   },
   {
-    "field_label": "Why did you not attend? <br><span class='text-[#A99A83] text-sm'>Tick all that apply</span>",
+    "field_label": "Why did you not attend? <br><span class='text-[#A99A83] text-sm font-bold'>Tick all that apply</span>",
     "field_type": "checkbox",
-    "field_name": "blexp_appt_inv5d_atd_no",
+    "field_name": "fuexp_appt_inv5d_atd_no",
     "required_field": "y",
     "select_choices_or_calculations": [
       {
@@ -1454,32 +1435,31 @@
       },
       {
         "code": "8",
-        "label": "Other (please state)"
+        "label": "Other"
       }
     ],
-    "branching_logic": "[blexp_appt_inv5d_atd]='0'",
+    "branching_logic": "[fuexp_appt_inv5d_atd]='0'",
     "section_header": " "
   },
   {
-    "field_label": "<p>Why did you not attend?<br><br>Other (please state)</p>",
+    "field_label": "Why did you not attend?<br><br>Please state other reason.",
     "field_type": "text",
-    "field_name": "blexp_appt_inv5d_atd_nooth",
+    "field_name": "fuexp_appt_inv5d_atd_nooth",
     "required_field": "y",
-    "branching_logic": "[blexp_appt_inv5d_atd_no]='8'",
+    "branching_logic": "[fuexp_appt_inv5d_atd_no]='8'",
     "section_header": " "
   },
   {
     "field_label": "Over the last 3 months, did you delay or not book an appointment with your doctor, even when your psoriasis got worse?",
     "field_type": "yesno",
-    "field_name": "blexp_appt_dly",
+    "field_name": "fuexp_appt_dly",
     "required_field": "y",
-    "branching_logic": "[blexp_appt]='1'",
     "section_header": " "
   },
   {
-    "field_label": "Why did you delay or not book an appointment? <br><span class='text-[#A99A83] text-sm'>Tick all that apply</span>",
+    "field_label": "Why did you delay or not book an appointment? Tick all that apply.",
     "field_type": "checkbox",
-    "field_name": "blexp_appt_dly_yes",
+    "field_name": "fuexp_appt_dly_yes",
     "required_field": "y",
     "select_choices_or_calculations": [
       {
@@ -1512,24 +1492,24 @@
       },
       {
         "code": "8",
-        "label": "Other (please state)"
+        "label": "Other"
       }
     ],
-    "branching_logic": "[blexp_appt_dly]='1'",
+    "branching_logic": "[fuexp_appt_dly]='1'",
     "section_header": " "
   },
   {
-    "field_label": "<p>Why did you delay or not book an appointment?<br><br>Other (please state)</p>",
+    "field_label": "Why did you delay or not book an appointment?<br><br>Please state other reason.",
     "field_type": "text",
-    "field_name": "blexp_appt_dly_yesoth",
+    "field_name": "fuexp_appt_dly_yesoth",
     "required_field": "y",
-    "branching_logic": "[blexp_appt_dly_yes]='8'",
+    "branching_logic": "[fuexp_appt_dly_yes]='8'",
     "section_header": " "
   },
   {
     "field_label": "Do you like or dislike the biologic treatment plan selected for you in the study?",
     "field_type": "radio",
-    "field_name": "blacpts_blglke",
+    "field_name": "fuacpts_blglke",
     "required_field": "y",
     "select_choices_or_calculations": [
       {
@@ -1556,9 +1536,9 @@
     "section_header": " "
   },
   {
-    "field_label": "How much effort will it be to take your biologic injection according to your treatment plan?",
+    "field_label": "How much effort was it to take your biologic injection according to your treatment plan?",
     "field_type": "radio",
-    "field_name": "blacpts_blgeft",
+    "field_name": "fuacpts_blgeft",
     "required_field": "y",
     "select_choices_or_calculations": [
       {
@@ -1587,7 +1567,7 @@
   {
     "field_label": "How fair is it (to people with psoriasis) to take your biologic injection according to your treatment plan?",
     "field_type": "radio",
-    "field_name": "blacpts_blgfre",
+    "field_name": "fuacpts_blgfre",
     "required_field": "y",
     "select_choices_or_calculations": [
       {
@@ -1614,9 +1594,9 @@
     "section_header": " "
   },
   {
-    "field_label": "Taking my biologic injection according to my treatment plan will improve my health",
+    "field_label": "Taking my biologic injection according to my treatment plan has improved my health",
     "field_type": "radio",
-    "field_name": "blacpts_blgimp",
+    "field_name": "fuacpts_blgimp",
     "required_field": "y",
     "select_choices_or_calculations": [
       {
@@ -1645,7 +1625,7 @@
   {
     "field_label": "It is clear to me how my treatment plan could help improve my health",
     "field_type": "radio",
-    "field_name": "blacpts_trtimp",
+    "field_name": "fuacpts_trtimp",
     "required_field": "y",
     "select_choices_or_calculations": [
       {
@@ -1674,7 +1654,7 @@
   {
     "field_label": "How confident are you that you can take your biologic injection according to your treatment plan?",
     "field_type": "radio",
-    "field_name": "blacpts_blgcfd",
+    "field_name": "fuacpts_blgcfd",
     "required_field": "y",
     "select_choices_or_calculations": [
       {
@@ -1701,9 +1681,9 @@
     "section_header": " "
   },
   {
-    "field_label": "Taking my biologic injection according to my treatment plan will interfere with my other priorities",
+    "field_label": "Taking my biologic injection according to my treatment plan interferes with my other priorities",
     "field_type": "radio",
-    "field_name": "blacpts_blgitf",
+    "field_name": "fuacpts_blgitf",
     "required_field": "y",
     "select_choices_or_calculations": [
       {
@@ -1732,7 +1712,7 @@
   {
     "field_label": "How acceptable to you is taking your biologic injection according to your treatment plan?",
     "field_type": "radio",
-    "field_name": "blacpts_blgacp",
+    "field_name": "fuacpts_blgacp",
     "required_field": "y",
     "select_choices_or_calculations": [
       {
@@ -1759,9 +1739,9 @@
     "section_header": " "
   },
   {
-    "field_label": "I would like to continue taking my biologic injection according to my treatment plan after the study ends",
+    "field_label": "I would like to continue taking my biologic injection according to my treatment plan",
     "field_type": "radio",
-    "field_name": "blacpts_blgaft",
+    "field_name": "fuacpts_blgaft",
     "required_field": "y",
     "select_choices_or_calculations": [
       {
@@ -1788,34 +1768,9 @@
     "section_header": " "
   },
   {
-    "field_label": "How much control do you feel that you have over the treatment plan that you will be following during the study?",
+    "field_label": "How much control do you feel that you have over your current treatment?",
     "field_type": "radio",
-    "field_name": "blacpts_blgctltp",
-    "required_field": "y",
-    "select_choices_or_calculations": [
-      {
-        "code": "1",
-        "label": "A great deal"
-      },
-      {
-        "code": "2",
-        "label": "Some"
-      },
-      {
-        "code": "3",
-        "label": "A little"
-      },
-      {
-        "code": "4",
-        "label": "None"
-      }
-    ],
-    "section_header": " "
-  },
-  {
-    "field_label": "How much control do you feel that you have over your usual treatment strategy (before taking part in the study)?",
-    "field_type": "radio",
-    "field_name": "blacpts_blgctlts",
+    "field_name": "fuacpts_blgctltp",
     "required_field": "y",
     "select_choices_or_calculations": [
       {
@@ -1840,7 +1795,7 @@
   {
     "field_label": "Do you like or dislike being able to request an appointment with your psoriasis doctor when you need it?",
     "field_type": "radio",
-    "field_name": "blacppifu_lke",
+    "field_name": "fuacppifu_lke",
     "required_field": "y",
     "select_choices_or_calculations": [
       {
@@ -1869,7 +1824,7 @@
   {
     "field_label": "How much effort is it to request your appointment with your psoriasis doctor when you need it?",
     "field_type": "radio",
-    "field_name": "blacppifu_eft",
+    "field_name": "fuacppifu_eft",
     "required_field": "y",
     "select_choices_or_calculations": [
       {
@@ -1898,7 +1853,8 @@
   {
     "field_label": "How fair is it (to people with psoriasis) for you to request an appointment with your psoriasis doctor whenever you need it?",
     "field_type": "radio",
-    "field_name": "blacppifu_fre",
+    "field_name": "fuacppifu_fre",
+    "required_field": "false",
     "select_choices_or_calculations": [
       {
         "code": "1",
@@ -1926,7 +1882,7 @@
   {
     "field_label": "Requesting an appointment with my psoriasis doctor whenever I need it improves my health",
     "field_type": "radio",
-    "field_name": "blacppifu_whnappt_hlth",
+    "field_name": "fuacppifu_whnappt_hlth",
     "required_field": "y",
     "select_choices_or_calculations": [
       {
@@ -1955,7 +1911,7 @@
   {
     "field_label": "It is clear to me how requesting an appointment with my psoriasis doctor whenever I need it could help improve my health",
     "field_type": "radio",
-    "field_name": "blacppifu_reqappt_hlth",
+    "field_name": "fuacppifu_reqappt_hlth",
     "required_field": "y",
     "select_choices_or_calculations": [
       {
@@ -1984,7 +1940,7 @@
   {
     "field_label": "How confident are you that you can request an appointment with your psoriasis doctor whenever you need one?",
     "field_type": "radio",
-    "field_name": "blacppifu_reqappt_cfd",
+    "field_name": "fuacppifu_reqappt_cfd",
     "required_field": "y",
     "select_choices_or_calculations": [
       {
@@ -2008,13 +1964,12 @@
         "label": "Very unconfident"
       }
     ],
-    "branching_logic": "[blexp_appt]='1'",
     "section_header": " "
   },
   {
     "field_label": "How confident are you that you can get an appointment with your psoriasis doctor whenever you need one?",
     "field_type": "radio",
-    "field_name": "blacppifu_getappt_cfd",
+    "field_name": "fuacppifu_getappt_cfd",
     "required_field": "y",
     "select_choices_or_calculations": [
       {
@@ -2038,13 +1993,12 @@
         "label": "Very unconfident"
       }
     ],
-    "branching_logic": "[blexp_appt]='1'",
     "section_header": " "
   },
   {
     "field_label": "Requesting an appointment with my psoriasis doctor whenever I need it interferes with my other priorities",
     "field_type": "radio",
-    "field_name": "blacppifu_appt_itf",
+    "field_name": "fuacppifu_appt_itf",
     "required_field": "y",
     "select_choices_or_calculations": [
       {
@@ -2073,7 +2027,7 @@
   {
     "field_label": "How acceptable to you is requesting an appointment with your psoriasis doctor whenever you need it?",
     "field_type": "radio",
-    "field_name": "blacppifu_appt_whever",
+    "field_name": "fuacppifu_appt_whever",
     "required_field": "y",
     "select_choices_or_calculations": [
       {
@@ -2100,9 +2054,9 @@
     "section_header": " "
   },
   {
-    "field_label": "I would like to choose when I can have an appointment with my psoriasis doctor",
+    "field_label": "I would like to continue to be able to request an appointment with my psoriasis doctor when I need it.",
     "field_type": "radio",
-    "field_name": "blacppifu_apptchse",
+    "field_name": "fuacppifu_apptchse",
     "required_field": "y",
     "select_choices_or_calculations": [
       {
@@ -2129,9 +2083,9 @@
     "section_header": " "
   },
   {
-    "field_label": "How much control do you feel that you currently have over when you have appointments (in routine care)?",
+    "field_label": "How much control do you feel that you have over when you have appointments?",
     "field_type": "radio",
-    "field_name": "blacppifu_apptctl",
+    "field_name": "fuacppifu_apptctl",
     "required_field": "y",
     "select_choices_or_calculations": [
       {
@@ -2154,43 +2108,8 @@
     "section_header": " "
   },
   {
-    "field_label": "How acceptable to you is having a regular 12 monthly appointment with your psoriasis doctor?",
-    "field_type": "radio",
-    "field_name": "blacppifu_appt12m",
-    "required_field": "y",
-    "select_choices_or_calculations": [
-      {
-        "code": "1",
-        "label": "Completely acceptable"
-      },
-      {
-        "code": "2",
-        "label": "Acceptable"
-      },
-      {
-        "code": "3",
-        "label": "No opinion"
-      },
-      {
-        "code": "4",
-        "label": "Unacceptable"
-      },
-      {
-        "code": "5",
-        "label": "Completely unacceptable"
-      }
-    ],
-    "section_header": " "
-  },
-  {
-    "field_label": "<p><u>Acceptability of self-taken blood test <span style=\"color: green;\">[at 6 months ONLY]</span></u></p>",
-    "field_type": "descriptive",
-    "field_name": "fuacpsbt_txt",
-    "required_field": "false",
-    "section_header": " "
-  },
-  {
     "field_label": "Do you like or dislike being able to provide a self-taken blood sample?",
+    "section_header": " ",
     "field_type": "radio",
     "field_name": "fuacpsbt_lke",
     "required_field": "y",
@@ -2215,8 +2134,7 @@
         "code": "5",
         "label": "Strongly dislike"
       }
-    ],
-    "section_header": " "
+    ]
   },
   {
     "field_label": "How much effort is it to provide a self-taken blood sample?",
@@ -2474,5 +2392,17 @@
       }
     ],
     "section_header": " "
+  },
+  {
+    "field_label": "<p>Would you like to submit this section?</p><p class='text-sm text-[#A99A83] font-bold mt-4'>If no, please go BACK and review your answers.</p>",
+    "field_type": "radio",
+    "section_header": " ",
+    "field_name": "finish",
+    "select_choices_or_calculations": [
+      {
+        "code": "1",
+        "label": "Yes, submit"
+      }
+    ]
   }
 ]

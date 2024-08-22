@@ -1,6 +1,6 @@
 [
   {
-    "field_label": "Your biologic injection (risankizumab) should be taken every 12 weeks throughout the study.\n\nEvery time you take your biologic injection during the study, please record this in the injection log.",
+    "field_label": "Your biologic injection (risankizumab) should be taken every 12 weeks throughout the study.",
     "field_type": "descriptive",
     "field_name": "t3_txt"
   },
@@ -38,7 +38,7 @@
     "field_name": "t3_schdte"
   },
   {
-    "field_label": "When did you take your biologic injection?",
+    "field_label": "When did you last take your biologic injection?",
     "field_type": "text",
     "field_name": "t3_injdte",
     "required_field": "y",
@@ -50,7 +50,7 @@
     "field_type": "calc",
     "field_name": "t3_injdelay",
     "required_field": "y",
-    "calculation_fn": "return Math.ceil((new Date(t3_injdte).getTime() - t3_injdte_calc)/(24*60*60*1000))",
+    "calculation_fn": "return Math.floor(new Date(t3_injdte).getTime()/(24*60*60*1000)) - Math.floor(t3_injdte_calc/(24*60*60*1000))",
     "calculation_args": "['t3_injdte', 't3_injdte_calc']"
   },
   {
@@ -61,13 +61,13 @@
     "calculation_args": "['t3_injdelay']"
   },
   {
-    "field_label": "<p style='color: red;'>Your injection is delayed by [t3_injdelay] days</p>",
+    "field_label": "<p>Your injection is delayed by [t3_injdelay] day(s)</p>",
     "field_type": "descriptive",
     "field_name": "t3_injdelaytxt",
     "branching_logic": "[t3_injdelay]>0"
   },
   {
-    "field_label": "<p style='color: red;'>Your injection is early by [t3_injdelay_abs] days</p>",
+    "field_label": "<p>Your injection is early by [t3_injdelay_abs] day(s)</p>",
     "field_type": "descriptive",
     "field_name": "t3_injearlytxt",
     "branching_logic": "[t3_injdelay]<0"
@@ -112,7 +112,7 @@
       },
       {
         "code": "9",
-        "label": "Other (if other, please specify)"
+        "label": "Other"
       }
     ],
     "branching_logic": "[t3_injdelay]>0"
@@ -173,7 +173,7 @@
     ]
   },
   {
-    "field_label": "Please specify problems you developed at the site of your injection? <br><span class='text-[#A99A83] text-sm'>Tick all that apply</span>",
+    "field_label": "Please specify the problems you developed at the site of your injection? <br><span class='text-[#A99A83] text-sm font-bold'>Tick all that apply</span>",
     "field_type": "checkbox",
     "field_name": "t3_injprbyes",
     "required_field": "y",
@@ -196,7 +196,7 @@
       },
       {
         "code": "5",
-        "label": "Other (please specify)"
+        "label": "Other"
       }
     ]
   },
@@ -217,5 +217,17 @@
     "field_type": "notes",
     "field_name": "t3_cmt",
     "required_field": "false"
+  },
+  {
+    "field_label": "<p>Would you like to submit this section?</p><p class='text-sm text-[#A99A83] font-bold mt-4'>If no, please go BACK and review your answers.</p>",
+    "field_type": "radio",
+    "section_header": " ",
+    "field_name": "finish",
+    "select_choices_or_calculations": [
+      {
+        "code": "1",
+        "label": "Yes, submit"
+      }
+    ]
   }
 ]

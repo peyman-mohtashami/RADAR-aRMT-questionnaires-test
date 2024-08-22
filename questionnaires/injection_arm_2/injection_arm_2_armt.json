@@ -1,57 +1,133 @@
 [
   {
-    "field_label": "Every time you decide to take your biologic injection (risankizumab) during the study please record this in the injection log. The interval between each injection must be <b><u>12 weeks or longer</u></b>.",
+    "field_label": "Your biologic injection (risankizumab) should be taken every [arm2RepeatQuestionnaire] weeks during the study.",
     "field_type": "descriptive",
-    "field_name": "t1_txt"
+    "field_name": "t2_txt"
   },
   {
-    "field_label": "When did your psoriasis start to recur?",
+    "field_label": "[728_1]",
+    "field_type": "calc",
+    "field_name": "t2_injdte_calc",
+    "calculation_fn": "return _start_timestamp",
+    "calculation_args": "['_start_timestamp']"
+  },
+  {
+    "field_label": "[728_2]",
+    "field_type": "calc",
+    "field_name": "t2_injdtenxt_calc",
+    "calculation_fn": "return _next_start_timestamp",
+    "calculation_args": "['_next_start_timestamp']"
+  },
+  {
+    "field_label": "",
+    "field_type": "calc",
+    "field_name": "t2_injdte_str_calc",
+    "calculation_fn": "var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric'};return new Date(+t2_injdte_calc).toLocaleString('en', options);",
+    "calculation_args": "['t2_injdte_calc']"
+  },
+  {
+    "field_label": "",
+    "field_type": "calc",
+    "field_name": "t2_injdtenxt_str_calc",
+    "calculation_fn": "var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric'};return new Date(+t2_injdtenxt_calc).toLocaleString('en', options);",
+    "calculation_args": "['t2_injdtenxt_calc']"
+  },
+  {
+    "field_label": "Scheduled date of biologic injection: [t2_injdte_str_calc]",
+    "field_type": "descriptive",
+    "field_name": "t2_schdte"
+  },
+  {
+    "field_label": "When did you last take your biologic injection?",
     "field_type": "text",
-    "field_name": "t1_precur",
+    "field_name": "t2_injdte",
     "required_field": "y",
     "text_validation_type_or_show_slider_number": "date_dmy",
     "field_annotation": "@NOTFUTURE"
   },
   {
-    "field_label": "When did you take your biologic injection?",
-    "field_type": "text",
-    "field_name": "t1_injdte",
+    "field_label": "_t2_injdelay",
+    "field_type": "calc",
+    "field_name": "t2_injdelay",
     "required_field": "y",
-    "text_validation_type_or_show_slider_number": "date_dmy",
-    "field_annotation": "@NOTFUTURE"
+    "calculation_fn": "return Math.floor(new Date(t2_injdte).getTime()/(24*60*60*1000)) - Math.floor(t2_injdte_calc/(24*60*60*1000))",
+    "calculation_args": "['t2_injdte', 't2_injdte_calc']"
   },
   {
-    "field_label": "",
+    "field_label": "_t2_injdelay_abs",
     "field_type": "calc",
-    "field_name": "t1_injdte_calc",
-    "calculation_fn": "return new Date((new Date(t1_injdte+'Z').getTime())).getTime()",
-    "calculation_args": "['t1_injdte']"
+    "field_name": "t2_injdelay_abs",
+    "calculation_fn": "return Math.abs(+t2_injdelay)",
+    "calculation_args": "['t2_injdelay']"
   },
   {
-    "field_label": "",
-    "field_type": "calc",
-    "field_name": "t1_injdte_str_calc",
-    "calculation_fn": "var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric'};return new Date(+t1_injdte_calc).toLocaleString('en', options);",
-    "calculation_args": "['t1_injdte_calc']"
+    "field_label": "<p>Your injection is delayed by [t2_injdelay] day(s)</p>",
+    "field_type": "descriptive",
+    "field_name": "t2_injdelaytxt",
+    "branching_logic": "[t2_injdelay]>0"
   },
   {
-    "field_label": "",
-    "field_type": "calc",
-    "field_name": "t1_injdtenxt_calc",
-    "calculation_fn": "return new Date((new Date(t1_injdte+'Z').getTime() + 12*7*24*60*60*1000)).getTime()",
-    "calculation_args": "['t1_injdte']"
+    "field_label": "<p>Your injection is early by [t2_injdelay_abs] day(s)</p></div>",
+    "field_type": "descriptive",
+    "field_name": "t2_injearlytxt",
+    "branching_logic": "[t2_injdelay]<0"
   },
   {
-    "field_label": "",
-    "field_type": "calc",
-    "field_name": "t1_injdtenxt_str_calc",
-    "calculation_fn": "var options = { year: 'numeric', month: 'short', day: 'numeric'};return new Date(+t1_injdtenxt_calc).toLocaleString('en', options);",
-    "calculation_args": "['t1_injdtenxt_calc']"
+    "field_label": "Why did you delay taking your biologic injection? ",
+    "field_name": "t2_injdly",
+    "field_type": "radio",
+    "required_field": "y",
+    "select_choices_or_calculations": [
+      {
+        "code": "1",
+        "label": "I did not have a supply (prescription/delivery/supply issues)"
+      },
+      {
+        "code": "2",
+        "label": "I had side effects"
+      },
+      {
+        "code": "3",
+        "label": "I didn't want to affect my immunity"
+      },
+      {
+        "code": "4",
+        "label": "I had an infection"
+      },
+      {
+        "code": "5",
+        "label": "I was unwell (not with an infection)"
+      },
+      {
+        "code": "6",
+        "label": "My doctor told me to stop/delay it"
+      },
+      {
+        "code": "7",
+        "label": "I forgot to take it"
+      },
+      {
+        "code": "8",
+        "label": "It was not effective for my psoriasis"
+      },
+      {
+        "code": "9",
+        "label": "Other"
+      }
+    ],
+    "branching_logic": "[t2_injdelay]>0"
+  },
+  {
+    "field_label": "Please specify other reason why you delayed taking your biologic injection",
+    "field_type": "text",
+    "field_name": "t2_injdlyoth",
+    "required_field": "y",
+    "branching_logic": "[t2_injdly]='9'"
   },
   {
     "field_label": "When you took your biologic injection, was your psoriasis:",
     "field_type": "radio",
-    "field_name": "t1_psoriasis",
+    "field_name": "t2_psoriasis",
     "required_field": "y",
     "select_choices_or_calculations": [
       {
@@ -81,40 +157,9 @@
     ]
   },
   {
-    "field_label": "Why did you take your biologic injection?",
-    "field_type": "radio",
-    "field_name": "t1_injwhy",
-    "required_field": "y",
-    "select_choices_or_calculations": [
-      {
-        "code": "1",
-        "label": "I could see my psoriasis recurring"
-      },
-      {
-        "code": "2",
-        "label": "I could feel (but not see) my psoriasis recurring (e.g. itch)"
-      },
-      {
-        "code": "3",
-        "label": "I developed joint pains"
-      },
-      {
-        "code": "4",
-        "label": "Other (please specify)"
-      }
-    ]
-  },
-  {
-    "field_label": "Please specify other reason why you took your biologic injection?",
-    "field_type": "text",
-    "field_name": "t1_injwhyoth",
-    "required_field": "y",
-    "branching_logic": "[t1_injwhy]='4'"
-  },
-  {
     "field_label": "After you took your injection, did you develop any problems at the site of your injection?",
     "field_type": "radio",
-    "field_name": "t1_injprb",
+    "field_name": "t2_injprb",
     "required_field": "y",
     "select_choices_or_calculations": [
       {
@@ -128,9 +173,9 @@
     ]
   },
   {
-    "field_label": "Please specify problems you developed at the site of your injection? <br><span class='text-[#A99A83] text-sm'>Tick all that apply</span>",
+    "field_label": "Please specify the problems you developed at the site of your injection? <br><span class='text-[#A99A83] text-sm font-bold'>Tick all that apply</span>",
     "field_type": "checkbox",
-    "field_name": "t1_injprbyes",
+    "field_name": "t2_injprbyes",
     "required_field": "y",
     "select_choices_or_calculations": [
       {
@@ -151,27 +196,38 @@
       },
       {
         "code": "5",
-        "label": "Other (please specify)"
+        "label": "Other"
       }
-    ],
-    "branching_logic": "[t1_injprb]='1'"
+    ]
   },
   {
     "field_label": "Please specify other problems you developed at the site of your injection?",
     "field_type": "text",
-    "field_name": "t1_injprbyesoth",
+    "field_name": "t2_injprbyesoth",
     "required_field": "y",
-    "branching_logic": "[t1_injprbyes]='5'"
+    "branching_logic": "[t2_injprbyes]='5'"
   },
   {
-    "field_label": "<div><p>The earliest date that you can take your next injection is:</p><p class='mt-2 bg-gray-300 p-4'>[t1_injdtenxt_str_calc]</p></div>",
+    "field_label": "The earliest date that you can take your next injection is: [t2_injdtenxt_str_calc]",
     "field_type": "descriptive",
-    "field_name": "t1_injdtenxt"
+    "field_name": "t2_injdtenxt"
   },
   {
     "field_label": "Do you have any other comments?",
     "field_type": "notes",
-    "field_name": "t1_cmt",
+    "field_name": "t2_cmt",
     "required_field": "false"
+  },
+  {
+    "field_label": "<p>Would you like to submit this section?</p><p class='text-sm text-[#A99A83] font-bold mt-4'>If no, please go BACK and review your answers.</p>",
+    "field_type": "radio",
+    "section_header": " ",
+    "field_name": "finish",
+    "select_choices_or_calculations": [
+      {
+        "code": "1",
+        "label": "Yes, submit"
+      }
+    ]
   }
 ]

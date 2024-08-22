@@ -29,11 +29,10 @@
     ]
   },
   {
-    "field_label": "In your usual dermatology centre, are you able to request an appointment with your psoriasis doctor when you need it (i.e., 'ad hoc' appointment or patient-initiated follow-up/PIFU)?",
+    "field_label": "In your usual dermatology centre, are you able to request an appointment with your psoriasis doctor when you need it (i.e. 'ad hoc' appointment or patient-initiated follow-up/PIFU)?",
     "field_type": "yesno",
     "field_name": "blexp_appt",
     "required_field": "y",
-    "custom_alignment": "RH",
     "section_header": " "
   },
   {
@@ -95,7 +94,7 @@
     "section_header": " "
   },
   {
-    "field_label": "Why did you request this appointment(s)? <br><span class='text-[#A99A83] text-sm'>Tick all that apply</span>",
+    "field_label": "Why did you request the appointment(s)? <br><span class='text-[#A99A83] text-sm font-bold'>Tick all that apply</span>",
     "field_type": "checkbox",
     "field_name": "blexp_appt_why",
     "required_field": "y",
@@ -118,18 +117,18 @@
       },
       {
         "code": "5",
-        "label": "I developed a new skin problem (please state)"
+        "label": "I developed a new skin problem"
       },
       {
         "code": "6",
-        "label": "Other (please state)"
+        "label": "Other"
       }
     ],
-    "branching_logic": "[blexp_appt_no]<>'0'",
+    "branching_logic": "[blexp_appt_no]<>'0' and [blexp_appt]='1'",
     "section_header": " "
   },
   {
-    "field_label": "<p>Why did you request this appointment(s)?<br><br></p><p>Please state new skin problem developed.</p>",
+    "field_label": "<p>Why did you request the appointment(s)?<br><br></p><p>Please state new skin problem developed.</p>",
     "field_type": "text",
     "form_name": "baseline",
     "field_name": "blexp_appt_why_skin",
@@ -138,7 +137,7 @@
     "section_header": " "
   },
   {
-    "field_label": "<p>Why did you request this appointment(s)?<br><br>Please state other.</p>",
+    "field_label": "<p>Why did you request the appointment(s)?<br><br>Please state other reason.</p>",
     "field_type": "text",
     "form_name": "baseline",
     "field_name": "blexp_appt_why_oth",
@@ -147,7 +146,7 @@
     "section_header": " "
   },
   {
-    "field_label": "Following your request for your appointment, were you invited to psoriasis clinic with 5 working days?",
+    "field_label": "Following your request for your appointment, were you invited to psoriasis clinic within 5 working days?",
     "field_type": "radio",
     "form_name": "baseline",
     "field_name": "blexp_appt_inv5d",
@@ -170,7 +169,7 @@
         "label": "Unsure"
       }
     ],
-    "branching_logic": "[blexp_appt_no]<>'0'",
+    "branching_logic": "[blexp_appt_no]<>'0' and [blexp_appt]='1'",
     "section_header": " "
   },
   {
@@ -200,7 +199,7 @@
     "section_header": " "
   },
   {
-    "field_label": "Why did you not attend? <br><span class='text-[#A99A83] text-sm'>Tick all that apply</span>",
+    "field_label": "Why did you not attend? <br><span class='text-[#A99A83] text-sm font-bold'>Tick all that apply</span>",
     "field_type": "checkbox",
     "field_name": "blexp_appt_inv5d_atd_no",
     "required_field": "y",
@@ -235,14 +234,14 @@
       },
       {
         "code": "8",
-        "label": "Other (please state)"
+        "label": "Other"
       }
     ],
     "branching_logic": "[blexp_appt_inv5d_atd]='0'",
     "section_header": " "
   },
   {
-    "field_label": "<p>Why did you not attend?<br><br>Other (please state)</p>",
+    "field_label": "<p>Why did you not attend?<br><br>Please state other reason</p>",
     "field_type": "text",
     "field_name": "blexp_appt_inv5d_atd_nooth",
     "required_field": "y",
@@ -258,7 +257,7 @@
     "section_header": " "
   },
   {
-    "field_label": "Why did you delay or not book an appointment? <br><span class='text-[#A99A83] text-sm'>Tick all that apply</span>",
+    "field_label": "Why did you delay or not book an appointment? <br><span class='text-[#A99A83] text-sm font-bold'>Tick all that apply</span>",
     "field_type": "checkbox",
     "field_name": "blexp_appt_dly_yes",
     "required_field": "y",
@@ -293,14 +292,14 @@
       },
       {
         "code": "8",
-        "label": "Other (please state)"
+        "label": "Other"
       }
     ],
     "branching_logic": "[blexp_appt_dly]='1'",
     "section_header": " "
   },
   {
-    "field_label": "<p>Why did you delay or not book an appointment?<br><br>Other (please state)</p>",
+    "field_label": "<p>Why did you delay or not book an appointment?<br><br>Please state other reason</p>",
     "field_type": "text",
     "field_name": "blexp_appt_dly_yesoth",
     "required_field": "y",
@@ -424,7 +423,7 @@
     "section_header": " "
   },
   {
-    "field_label": "It is clear to me how my treatment plan could help improve my health",
+    "field_label": "It is clear to me how taking my biologic injection according to my treatment plan could help improve my health.",
     "field_type": "radio",
     "field_name": "blacpts_trtimp",
     "required_field": "y",
@@ -594,7 +593,7 @@
     "section_header": " "
   },
   {
-    "field_label": "How much control do you feel that you have over your usual treatment strategy (before taking part in the study)?",
+    "field_label": "How much control do you feel that you had over your usual treatment strategy (before taking part in this study)?",
     "field_type": "radio",
     "field_name": "blacpts_blgctlts",
     "required_field": "y",
@@ -910,69 +909,16 @@
     "section_header": " "
   },
   {
-    "field_label": "How much control do you feel that you currently have over when you have appointments (in routine care)?",
-    "field_type": "radio",
-    "field_name": "blacppifu_apptctl",
-    "required_field": "y",
-    "select_choices_or_calculations": [
-      {
-        "code": "1",
-        "label": "A great deal"
-      },
-      {
-        "code": "2",
-        "label": "Some"
-      },
-      {
-        "code": "3",
-        "label": "A little"
-      },
-      {
-        "code": "4",
-        "label": "None"
-      }
-    ],
-    "section_header": " "
-  },
-  {
-    "field_label": "How acceptable to you is having a regular 12 monthly appointment with your psoriasis doctor?",
-    "field_type": "radio",
-    "field_name": "blacppifu_appt12m",
-    "required_field": "y",
-    "select_choices_or_calculations": [
-      {
-        "code": "1",
-        "label": "Completely acceptable"
-      },
-      {
-        "code": "2",
-        "label": "Acceptable"
-      },
-      {
-        "code": "3",
-        "label": "No opinion"
-      },
-      {
-        "code": "4",
-        "label": "Unacceptable"
-      },
-      {
-        "code": "5",
-        "label": "Completely unacceptable"
-      }
-    ],
-    "section_header": " "
-  },
-  {
-    "field_label": "<p><u>Acceptability of genetic testing</u></p><p>Your blood sample is helping us investigate whether people's genes affect how they respond to different treatment strategies. In the future, this information may help us to better tailor different strategies according to a person's 'genetic makeup'. We will only look at genes related to psoriasis and other inflammatory disease research (e.g. arthritis, inflammatory bowel disease).<br>Please answer the following questions about how you feel about providing this blood sample to look at your genes.</p>",
+    "field_label": "<p>Your blood sample is helping us investigate whether people's genes affect how they respond to different treatment strategies. In the future, this information may help us to better tailor different strategies according to a person's 'genetic makeup'. We will only look at genes related to psoriasis and other inflammatory disease research (e.g. arthritis, inflammatory bowel disease).<br><br>Please answer the following questions about how you feel about providing this blood sample to look at your genes.</p>",
     "field_type": "descriptive",
     "field_name": "blaccpgt_txt",
-    "section_header": " "
+    "section_header": "Acceptability of genetic testing"
   },
   {
     "field_label": "Do you like or dislike providing a blood sample to look at your genes?",
     "field_type": "radio",
     "field_name": "blacpgt_bldlke",
+    "section_header": " ",
     "required_field": "y",
     "select_choices_or_calculations": [
       {
@@ -995,8 +941,7 @@
         "code": "5",
         "label": "Strongly dislike"
       }
-    ],
-    "section_header": " "
+    ]
   },
   {
     "field_label": "How much effort is it to provide a blood sample to look at your genes?",
@@ -1200,5 +1145,17 @@
       }
     ],
     "section_header": " "
+  },
+  {
+    "field_label": "<p>Would you like to submit this section?</p><p class='text-sm text-[#A99A83] font-bold mt-4'>If no, please go BACK and review your answers.</p>",
+    "field_type": "radio",
+    "section_header": " ",
+    "field_name": "finish",
+    "select_choices_or_calculations": [
+      {
+        "code": "1",
+        "label": "Yes, submit"
+      }
+    ]
   }
 ]

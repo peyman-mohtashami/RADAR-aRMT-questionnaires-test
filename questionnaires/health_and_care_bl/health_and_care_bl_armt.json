@@ -1,6 +1,6 @@
 [
   {
-    "field_label": "<p>In the last 3 months have you had an appointment with any of the below <b>community-based</b> health professionals as a result of your psoriasis or treatment for your psoriasis?</p><p class='text-sm text-gray-500 mt-2'>Press 'Next' if none applied.</p>",
+    "field_label": "<p>In the last 3 months have you had an appointment with any of the below <b>community-based</b> health professionals as a result of your psoriasis or treatment for your psoriasis?</p><p class='text-sm text-[#A99A83] mt-2 font-bold'>Press Next if none apply.</p>",
     "field_type": "checkbox",
     "select_choices_or_calculations": [
       {
@@ -25,7 +25,7 @@
       },
       {
         "code": "6",
-        "label": "Other, please specify who"
+        "label": "Other"
       }
     ],
     "field_name": "blhcn1a",
@@ -80,7 +80,7 @@
     "branching_logic": "[blhcn1a]='1'"
   },
   {
-    "field_label": "Practice nurse -Number of virtual/telephone visits in the last 3 months?",
+    "field_label": "Practice nurse - Number of virtual/telephone visits in the last 3 months?",
     "field_type": "text",
     "field_name": "blhcn1a_pnvrt",
     "required_field": "y",
@@ -271,7 +271,7 @@
     "branching_logic": "[blhcn1a]='6'"
   },
   {
-    "field_label": "[blhcn1a_oth1_txt] - How many times virtual/telephone?",
+    "field_label": "[blhcn1a_oth1_txt] - Number of virtual/telephone visits in the last 3 months?",
     "field_type": "text",
     "field_name": "blhcn1a_oth1vrt",
     "required_field": "y",
@@ -288,7 +288,7 @@
     "branching_logic": "[blhcn1a]='6'"
   },
   {
-    "field_label": "[blhcn1a_oth1_txt] - How many times in-person?",
+    "field_label": "[blhcn1a_oth1_txt] - Number of in-person visits in the last 3 months?",
     "field_type": "text",
     "field_name": "blhcn1a_oth1ipv",
     "required_field": "y",
@@ -305,7 +305,7 @@
     "branching_logic": "[blhcn1a]='6'"
   },
   {
-    "field_label": "<p>In the last 3 months have you had an outpatient <b>hospital appointment</b> (either virtual/telephone or in-person) with any of the following as a result of your psoriasis or treatment for your psoriasis? </p><p class='text-sm text-gray-500 mt-2'>Press 'Next' if none applied.</p>",
+    "field_label": "<p>In the last 3 months have you had an outpatient <b>hospital appointment</b> (either virtual/telephone or in-person) with any of the following as a result of your psoriasis or treatment for your psoriasis? </p><p class='text-sm text-[#A99A83] mt-2 font-bold'>Press Next if none apply.</p>",
     "field_type": "checkbox",
     "field_name": "blhcn2a",
     "select_choices_or_calculations": [
@@ -319,13 +319,13 @@
       },
       {
         "code": "3",
-        "label": "Other, please specify who"
+        "label": "Other"
       }
     ],
     "required_field": "false"
   },
   {
-    "field_label": "Dermatologist - Number of outpatient visits virtual/telephone",
+    "field_label": "Dermatologist - Number of virtual/telephone visits in the last 3 months?",
     "field_type": "text",
     "field_name": "blhcn2a_dmvrt",
     "required_field": "y",
@@ -342,7 +342,7 @@
     "branching_logic": "[blhcn2a]='1'"
   },
   {
-    "field_label": "Dermatologist - Number of outpatient visits in-person",
+    "field_label": "Dermatologist - Number of in-person visits in the last 3 months?",
     "field_type": "text",
     "field_name": "blhcn2a_dmipv",
     "required_field": "y",
@@ -351,7 +351,7 @@
     "branching_logic": "[blhcn2a]='1'"
   },
   {
-    "field_label": "Dermatology nurse - Number of outpatient visits virtual/telephone",
+    "field_label": "Dermatology nurse - Number of virtual/telephone visits in the last 3 months?",
     "field_type": "text",
     "field_name": "blhcn2a_dmnvrt",
     "required_field": "y",
@@ -368,7 +368,7 @@
     "branching_logic": "[blhcn2a]='2'"
   },
   {
-    "field_label": "Dermatology nurse - Number of outpatient visits in-person",
+    "field_label": "Dermatology nurse - Number of in-person visits in the last 3 months?",
     "field_type": "text",
     "field_name": "blhcn2a_dmnipv",
     "required_field": "y",
@@ -440,7 +440,7 @@
     "branching_logic": "[blhcn2a]='3'"
   },
   {
-    "field_label": "In the last 3 months, did you attend Accident and Emergency Services as a result of your psoriasis or treatment for your psoriasis?",
+    "field_label": "In the last 3 months, did you attend Accident and Emergency Services (A&E) as a result of your psoriasis or treatment for your psoriasis?",
     "field_type": "yesno",
     "field_name": "blhcn2b",
     "required_field": "y"
@@ -571,7 +571,7 @@
   },
   {
     "field_label": "In the last 3 months have you received any other publicly provided services as a result of your psoriasis or treatment for your psoriasis?",
-    "section_header": "<b>Other services</b>",
+    "section_header": "Other services",
     "field_type": "yesno",
     "field_name": "blhcn3",
     "required_field": "y"
@@ -582,10 +582,10 @@
     "field_name": "blhcn3_det",
     "required_field": "y",
     "branching_logic": "[blhcn3]='1'",
-    "section_header": "<b>Other services</b>"
+    "section_header": "Other services"
   },
   {
-    "field_label": "<p>In the last 3 months have you or your family/friends incurred any other costs as a result of your psoriasis or treatment for your psoriasis?</p><p class='text-sm text-gray-500 mt-2'>Press 'Next' if none applied.</p>",
+    "field_label": "<p>In the last 3 months have you or your family/friends incurred any other costs as a result of your psoriasis or treatment for your psoriasis?</p><p class='text-sm text-[#A99A83] mt-2 font-bold'>Press Next if none apply.</p>",
     "field_name": "blhcn4a",
     "section_header": " ",
     "required_field": "false",
@@ -609,19 +609,19 @@
       },
       {
         "code": "5",
-        "label": "Special foods or dietary supplements (please specify)"
+        "label": "Special foods or dietary supplements"
       },
       {
         "code": "6",
-        "label": "Special clothing or bedding (please specify)"
+        "label": "Special clothing or bedding"
       },
       {
         "code": "7",
-        "label": "Mental health support e.g., counselling (please specify)"
+        "label": "Mental health support e.g. counselling"
       },
       {
         "code": "8",
-        "label": "Other (please specify)"
+        "label": "Other"
       }
     ]
   },
@@ -770,7 +770,7 @@
     "section_header": "Personal costs in the last 3 months as a result of your psoriasis or treatment for your psoriasis."
   },
   {
-    "field_label": "Special foods or dietary supplements (please specify)",
+    "field_label": "Special foods or dietary supplements",
     "field_type": "notes",
     "field_name": "blhcn4a_sf_txt",
     "branching_logic": "[blhcn4a]='5'",
@@ -858,7 +858,7 @@
     "section_header": "Personal costs in the last 3 months as a result of your psoriasis or treatment for your psoriasis."
   },
   {
-    "field_label": "Mental health support e.g., counselling (please specify)",
+    "field_label": "Mental health support e.g. counselling (please specify)",
     "field_type": "notes",
     "field_name": "blhcn4a_mhs_txt",
     "branching_logic": "[blhcn4a]='7'",
@@ -884,7 +884,7 @@
     "section_header": "Personal costs in the last 3 months as a result of your psoriasis or treatment for your psoriasis."
   },
   {
-    "field_label": "Mental health  support e.g., counselling - overall cost (£)",
+    "field_label": "Mental health  support e.g. counselling - overall cost (£)",
     "field_type": "text",
     "field_name": "blhcn4a_mhscst",
     "text_validation_type_or_show_slider_number": "number",
@@ -1026,7 +1026,7 @@
     "section_header": " "
   },
   {
-    "field_label": "<p>In the last 3 months, how much did your psoriasis or treatment for your psoriasis affect your productivity while you were working?</p><p class='text-sm text-gray-500 mt-2'>Think about days you were limited in the amount or kind of work you could do, days you accomplished less than you would like, or days you could not do your work as carefully as usual.</p>",
+    "field_label": "<p>In the last 3 months, how much did your psoriasis or treatment for your psoriasis affect your productivity while you were working?</p><p class='text-sm text-[#A99A83] font-bold mt-2'>Think about days you were limited in the amount or kind of work you could do, days you accomplished less than you would like, or days you could not do your work as carefully as usual.</p>",
     "field_type": "radio",
     "form_name": "baseline",
     "field_name": "blhcn4b_wrkafft",
@@ -1089,18 +1089,18 @@
     "section_header": " "
   },
   {
-    "field_label": "In the last 3 months, what has the impact on number of hours worked been as a result of your psoriasis or treatment for your psoriasis or treatment for your psoriasis (e.g., due to sick leave related to you psoriasis, to attend appointments etc)?",
+    "field_label": "In the last 3 months, what has the impact on number of hours worked been as a result of your psoriasis or treatment for your psoriasis or treatment for your psoriasis (e.g. due to sick leave related to you psoriasis, to attend appointments etc)?",
     "field_type": "radio",
     "field_name": "blhcn4b_wrk3m",
     "required_field": "y",
     "select_choices_or_calculations": [
       {
         "code": "1",
-        "label": "I have worked LESS hours over the last 3 months (please specify)"
+        "label": "I have worked LESS hours over the last 3 months"
       },
       {
         "code": "2",
-        "label": "I have worked MORE hours over the last 3 months (please specify)"
+        "label": "I have worked MORE hours over the last 3 months"
       }
     ],
     "branching_logic": "[blhcn4b_wrk3mchg]='1'",
@@ -1207,7 +1207,7 @@
     "section_header": " "
   },
   {
-    "field_label": "Are you part of any of the following studies? <br><span class='text-[#A99A83] text-sm'>Tick all that apply</span>",
+    "field_label": "Are you part of any of the following studies? <br><span class='text-[#A99A83] text-sm  font-bold'>Tick all that apply.<br>Press Next if none apply</span>",
     "field_type": "checkbox",
     "form_name": "baseline",
     "field_name": "blostds",
@@ -1235,5 +1235,17 @@
       }
     ],
     "required_field": "false"
+  },
+  {
+    "field_label": "<p>Would you like to submit this section?</p><p class='text-sm text-[#A99A83] font-bold mt-4'>If no, please go BACK and review your answers.</p>",
+    "field_type": "radio",
+    "section_header": " ",
+    "field_name": "finish",
+    "select_choices_or_calculations": [
+      {
+        "code": "1",
+        "label": "Yes, submit"
+      }
+    ]
   }
 ]

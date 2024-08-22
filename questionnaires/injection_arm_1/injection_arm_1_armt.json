@@ -1,10 +1,5 @@
 [
   {
-    "field_label": "Every time you decide to take your biologic injection (risankizumab) during the study please record this in the injection log. The interval between each injection must be <b><u>12 weeks or longer</u></b>.",
-    "field_type": "descriptive",
-    "field_name": "t1_txt"
-  },
-  {
     "field_label": "When did your psoriasis start to recur?",
     "field_type": "text",
     "field_name": "t1_precur",
@@ -100,7 +95,7 @@
       },
       {
         "code": "4",
-        "label": "Other (please specify)"
+        "label": "Other"
       }
     ]
   },
@@ -128,7 +123,7 @@
     ]
   },
   {
-    "field_label": "Please specify problems you developed at the site of your injection? <br><span class='text-[#A99A83] text-sm'>Tick all that apply</span>",
+    "field_label": "Please specify the problems you developed at the site of your injection: <br><span class='text-[#A99A83] text-sm font-bold'>Tick all that apply</span>",
     "field_type": "checkbox",
     "field_name": "t1_injprbyes",
     "required_field": "y",
@@ -151,13 +146,13 @@
       },
       {
         "code": "5",
-        "label": "Other (please specify)"
+        "label": "Other"
       }
     ],
     "branching_logic": "[t1_injprb]='1'"
   },
   {
-    "field_label": "Please specify other problems you developed at the site of your injection?",
+    "field_label": "Please specify the problems you developed at the site of your injection:",
     "field_type": "text",
     "field_name": "t1_injprbyesoth",
     "required_field": "y",
@@ -173,5 +168,17 @@
     "field_type": "notes",
     "field_name": "t1_cmt",
     "required_field": "false"
+  },
+  {
+    "field_label": "<p>Would you like to submit this section?</p><p class='text-sm text-[#A99A83] font-bold mt-4'>If no, please go BACK and review your answers.</p>",
+    "field_type": "radio",
+    "section_header": " ",
+    "field_name": "finish",
+    "select_choices_or_calculations": [
+      {
+        "code": "1",
+        "label": "Yes, submit"
+      }
+    ]
   }
 ]
