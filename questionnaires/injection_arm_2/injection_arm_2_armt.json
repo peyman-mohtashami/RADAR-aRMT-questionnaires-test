@@ -198,7 +198,8 @@
         "code": "5",
         "label": "Other"
       }
-    ]
+    ],
+    "branching_logic": "[t2_injprb]='1'"
   },
   {
     "field_label": "Please specify other problems you developed at the site of your injection?",

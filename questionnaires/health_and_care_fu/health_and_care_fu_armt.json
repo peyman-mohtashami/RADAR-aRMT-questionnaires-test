@@ -451,11 +451,11 @@
     "field_name": "blhcn2b_vsts",
     "required_field": "y",
     "text_validation_type_or_show_slider_number": "integer",
-    "text_validation_min": "0",
+    "text_validation_min": "1",
     "validations": [
       {
         "name": "min",
-        "value": "0",
+        "value": "1",
         "error": "Enter a number greater than 0",
         "hint": ""
       }
@@ -1119,6 +1119,12 @@
         "name": "min",
         "value": "0",
         "error": "Enter a number greater than 0",
+        "hint": ""
+      },
+      {
+        "name": "max",
+        "value": "1000",
+        "error": "Enter a number less than 1000",
         "hint": ""
       }
     ],

@@ -4,7 +4,7 @@
     "field_type": "descriptive",
     "field_label": "<p>Take a photo of your <b>worst affected site</b>.<br><br>Hold your smartphone in front of you to take the photo.<br><br>If you find it difficult, please ask someone to help.<br><br>Check the image to ensure it is in focus and your entire worst affected site is included as per the example below.<br><br><img class='w-1/2 m-auto' src='assets/imgs/photo-upload/worst_affected.png' alt=''>Once you are happy with the photo you have taken, upload it.<br><br></p>",
     "required_field": "true",
-    "branching_logic": "[photo_have]='1'",
+    "branching_logic": "[photo_have]<>'0'",
     "section_header": ""
   },
   {
@@ -12,7 +12,7 @@
     "field_type": "photo",
     "field_label": "Take a photo of your <b>worst affected site</b>.",
     "required_field": "y",
-    "branching_logic": "[photo_have]='1'",
+    "branching_logic": "[photo_have]<>'0'",
     "section_header": ""
   },
   {
@@ -154,7 +154,7 @@
         "label": "Other"
       }
     ],
-    "branching_logic": "[photo_have]='1'",
+    "branching_logic": "[photo_have]<>'0'",
     "section_header": ""
   },
   {
@@ -170,7 +170,7 @@
     "field_type": "descriptive",
     "field_label": "<p>Take a photo of your <b>chest and stomach</b>.<br><br>Hold your smartphone in front of you to take the photo.<br><br>If you find it difficult, please ask someone to help.<br><br>Don't worry if it is a duplicate photo or if there is no psoriasis present.<br><br>Check the image to ensure it is in focus and your entire chest and stomach are included as per the example below.<br><br><img class='w-1/2 m-auto' src='assets/imgs/photo-upload/chest.png' alt=''>Once you are happy with the photo you have taken, upload it.<br><br></p>",
     "required_field": "y",
-    "branching_logic": "[photo_have]='1'",
+    "branching_logic": "[photo_have]<>'0'",
     "section_header": ""
   },
   {
@@ -178,7 +178,7 @@
     "field_type": "photo",
     "field_label": "Take a photo of your <b>chest and stomach</b>.",
     "required_field": "y",
-    "branching_logic": "[photo_have]='1'",
+    "branching_logic": "[photo_have]<>'0'",
     "section_header": ""
   },
   {
@@ -186,7 +186,7 @@
     "field_type": "descriptive",
     "field_label": "<p>Take a photo of both your <b>legs</b>.<br><br>Hold your smartphone in front of you to take the photo.<br><br>If you find it difficult, please ask someone to help.<br><br>Don't worry if it is a duplicate photo or if there is no psoriasis present.<br><br>Check the image to ensure it is in focus and your entire legs are included as per the example below.<br><br><img class='w-1/2 m-auto' src='assets/imgs/photo-upload/legs.png' alt=''>Once you are happy with the photo you have taken, upload it.<br><br></p>",
     "required_field": "y",
-    "branching_logic": "[photo_have]='1'",
+    "branching_logic": "[photo_have]<>'0'",
     "section_header": ""
   },
   {
@@ -194,7 +194,7 @@
     "field_type": "photo",
     "field_label": "Take a photo of both your <b>legs</b>.",
     "required_field": "y",
-    "branching_logic": "[photo_have]='1'",
+    "branching_logic": "[photo_have]<>'0'",
     "section_header": ""
   },
   {
