@@ -474,7 +474,7 @@
     "field_name": "blhcn2c_vsts",
     "required_field": "y",
     "text_validation_type_or_show_slider_number": "integer",
-    "text_validation_min": "0",
+    "text_validation_min": "1",
     "validations": [
       {
         "name": "min",
@@ -510,11 +510,11 @@
     "field_name": "blhcn2c_dep1dys",
     "required_field": "y",
     "text_validation_type_or_show_slider_number": "integer",
-    "text_validation_min": "0",
+    "text_validation_min": "1",
     "validations": [
       {
         "name": "min",
-        "value": "0",
+        "value": "1",
         "error": "Enter a number greater than 0",
         "hint": ""
       }
@@ -534,11 +534,11 @@
     "field_name": "blhcn2c_dep2dys",
     "required_field": "y",
     "text_validation_type_or_show_slider_number": "integer",
-    "text_validation_min": "0",
+    "text_validation_min": "1",
     "validations": [
       {
         "name": "min",
-        "value": "0",
+        "value": "1",
         "error": "Enter a number greater than 0",
         "hint": ""
       }
@@ -549,7 +549,7 @@
     "field_label": "Admission 3 - The type of department or ward  or reason for admission",
     "field_type": "text",
     "field_name": "blhcn2c_dep3txt",
-    "branching_logic": "blhcn2c_vsts",
+    "branching_logic": "[blhcn2c_vsts]>2",
     "required_field": "false"
   },
   {
@@ -558,11 +558,11 @@
     "field_name": "blhcn2c_dep3dys",
     "required_field": "y",
     "text_validation_type_or_show_slider_number": "integer",
-    "text_validation_min": "0",
+    "text_validation_min": "1",
     "validations": [
       {
         "name": "min",
-        "value": "0",
+        "value": "1",
         "error": "Enter a number greater than 0",
         "hint": ""
       }
@@ -631,11 +631,11 @@
     "field_name": "blhcn4a_ph",
     "section_header": "Personal costs in the last 3 months as a result of your psoriasis or treatment for your psoriasis.",
     "text_validation_type_or_show_slider_number": "number",
-    "text_validation_min": "0",
+    "text_validation_min": "1",
     "validations": [
       {
         "name": "min",
-        "value": "0",
+        "value": "1",
         "error": "Enter a number greater than 0",
         "hint": ""
       }
@@ -653,7 +653,7 @@
       {
         "name": "min",
         "value": "0",
-        "error": "Enter a number greater than 0",
+        "error": "Enter a number greater than or equal to 0",
         "hint": ""
       }
     ],
@@ -666,11 +666,11 @@
     "field_type": "text",
     "field_name": "blhcn4a_npm",
     "text_validation_type_or_show_slider_number": "number",
-    "text_validation_min": "0",
+    "text_validation_min": "1",
     "validations": [
       {
         "name": "min",
-        "value": "0",
+        "value": "1",
         "error": "Enter a number greater than 0",
         "hint": ""
       }
@@ -689,7 +689,7 @@
       {
         "name": "min",
         "value": "0",
-        "error": "Enter a number greater than 0",
+        "error": "Enter a number greater than or equal to 0",
         "hint": ""
       }
     ],
@@ -702,11 +702,11 @@
     "field_type": "text",
     "field_name": "blhcn4a_tvl",
     "text_validation_type_or_show_slider_number": "number",
-    "text_validation_min": "0",
+    "text_validation_min": "1",
     "validations": [
       {
         "name": "min",
-        "value": "0",
+        "value": "1",
         "error": "Enter a number greater than 0",
         "hint": ""
       }
@@ -725,7 +725,7 @@
       {
         "name": "min",
         "value": "0",
-        "error": "Enter a number greater than 0",
+        "error": "Enter a number greater than or equal to 0",
         "hint": ""
       }
     ],
@@ -738,11 +738,11 @@
     "field_type": "text",
     "field_name": "blhcn4a_skc",
     "text_validation_type_or_show_slider_number": "number",
-    "text_validation_min": "0",
+    "text_validation_min": "1",
     "validations": [
       {
         "name": "min",
-        "value": "0",
+        "value": "1",
         "error": "Enter a number greater than 0",
         "hint": ""
       }
@@ -761,7 +761,7 @@
       {
         "name": "min",
         "value": "0",
-        "error": "Enter a number greater than 0",
+        "error": "Enter a number greater than or equal to 0",
         "hint": ""
       }
     ],
@@ -782,12 +782,12 @@
     "field_type": "text",
     "field_name": "blhcn4a_sf",
     "text_validation_type_or_show_slider_number": "number",
-    "text_validation_min": "0",
+    "text_validation_min": "1",
     "validations": [
       {
         "name": "min",
-        "value": "0",
-        "error": "Enter a number greater than 0",
+        "value": "1",
+        "error": "Enter a number greater than or equal to 0",
         "hint": ""
       }
     ],
@@ -805,7 +805,7 @@
       {
         "name": "min",
         "value": "0",
-        "error": "Enter a number greater than 0",
+        "error": "Enter a number greater than or equal to 0",
         "hint": ""
       }
     ],
@@ -826,11 +826,11 @@
     "field_type": "text",
     "field_name": "blhcn4a_sc",
     "text_validation_type_or_show_slider_number": "number",
-    "text_validation_min": "0",
+    "text_validation_min": "1",
     "validations": [
       {
         "name": "min",
-        "value": "0",
+        "value": "1",
         "error": "Enter a number greater than 0",
         "hint": ""
       }
@@ -849,7 +849,7 @@
       {
         "name": "min",
         "value": "0",
-        "error": "Enter a number greater than 0",
+        "error": "Enter a number greater than or equal to 0",
         "hint": ""
       }
     ],
@@ -870,11 +870,11 @@
     "field_type": "text",
     "field_name": "blhcn4a_mhs",
     "text_validation_type_or_show_slider_number": "number",
-    "text_validation_min": "0",
+    "text_validation_min": "1",
     "validations": [
       {
         "name": "min",
-        "value": "0",
+        "value": "1",
         "error": "Enter a number greater than 0",
         "hint": ""
       }
@@ -892,7 +892,7 @@
       {
         "name": "min",
         "value": "0",
-        "error": "Enter a number greater than 0",
+        "error": "Enter a number greater than or equal to 0",
         "hint": ""
       }
     ],
@@ -914,11 +914,11 @@
     "field_type": "text",
     "field_name": "blhcn4a_oth1",
     "text_validation_type_or_show_slider_number": "number",
-    "text_validation_min": "0",
+    "text_validation_min": "1",
     "validations": [
       {
         "name": "min",
-        "value": "0",
+        "value": "1",
         "error": "Enter a number greater than 0",
         "hint": ""
       }
@@ -937,7 +937,7 @@
       {
         "name": "min",
         "value": "0",
-        "error": "Enter a number greater than 0",
+        "error": "Enter a number greater than or equal to 0",
         "hint": ""
       }
     ],
@@ -1167,11 +1167,11 @@
     "field_note": "hours",
     "required_field": "y",
     "text_validation_type_or_show_slider_number": "number",
-    "text_validation_min": "0",
+    "text_validation_min": "1",
     "validations": [
       {
         "name": "min",
-        "value": "0",
+        "value": "1",
         "error": "Enter a number greater than 0",
         "hint": ""
       }
