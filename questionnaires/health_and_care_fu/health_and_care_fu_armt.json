@@ -494,6 +494,7 @@
   {
     "field_label": "For each day case/inpatient visit you have had as a result of your psoriasis or treatment for your psoriasis, please record the type of ward you were admitted to and the duration of your stay. Please include any day case procedures.",
     "field_type": "descriptive",
+    "required_field": "false",
     "field_name": "blhcn2c_txt",
     "branching_logic": "[blhcn2c]='1'"
   },
