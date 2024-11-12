@@ -1291,7 +1291,7 @@
     "section_header": " "
   },
   {
-    "field_label": "Over the past 3 months, how many times did you request to have an appointment with your psoriasis doctor?",
+    "field_label": "Over the past 3 months, how many times did you request to have an appointment with your psoriasis team?",
     "field_type": "radio",
     "field_name": "fuexp_appt_no",
     "required_field": "y",

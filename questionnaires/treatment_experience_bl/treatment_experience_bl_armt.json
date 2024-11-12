@@ -29,14 +29,14 @@
     ]
   },
   {
-    "field_label": "In your usual dermatology centre, are you able to request an appointment with your psoriasis doctor when you need it (i.e. 'ad hoc' appointment or patient-initiated follow-up/PIFU)?",
+    "field_label": "In your usual dermatology centre, are you able to request an appointment with your psoriasis team when you need it (i.e. 'ad hoc' appointment or patient-initiated follow-up/PIFU)?",
     "field_type": "yesno",
     "field_name": "blexp_appt",
     "required_field": "y",
     "section_header": " "
   },
   {
-    "field_label": "Over the past 3 months, how many times did you request to have an appointment with your psoriasis doctor?",
+    "field_label": "Over the past 3 months, how many times did you request to have an appointment with your psoriasis team?",
     "field_type": "radio",
     "field_name": "blexp_appt_no",
     "required_field": "y",
@@ -618,7 +618,7 @@
     "section_header": " "
   },
   {
-    "field_label": "Do you like or dislike being able to request an appointment with your psoriasis doctor when you need it?",
+    "field_label": "Do you like or dislike being able to request an appointment with your psoriasis team when you need it?",
     "field_type": "radio",
     "field_name": "blacppifu_lke",
     "required_field": "y",
@@ -647,7 +647,7 @@
     "section_header": " "
   },
   {
-    "field_label": "How much effort is it to request your appointment with your psoriasis doctor when you need it?",
+    "field_label": "How much effort is it to request your appointment with your psoriasis team when you need it?",
     "field_type": "radio",
     "field_name": "blacppifu_eft",
     "required_field": "y",
@@ -676,7 +676,7 @@
     "section_header": " "
   },
   {
-    "field_label": "How fair is it (to people with psoriasis) for you to request an appointment with your psoriasis doctor whenever you need it?",
+    "field_label": "How fair is it (to people with psoriasis) for you to request an appointment with your psoriasis team whenever you need it?",
     "field_type": "radio",
     "field_name": "blacppifu_fre",
     "select_choices_or_calculations": [
@@ -704,7 +704,7 @@
     "section_header": " "
   },
   {
-    "field_label": "Requesting an appointment with my psoriasis doctor whenever I need it improves my health",
+    "field_label": "Requesting an appointment with my psoriasis team whenever I need it improves my health",
     "field_type": "radio",
     "field_name": "blacppifu_whnappt_hlth",
     "required_field": "y",
@@ -733,7 +733,7 @@
     "section_header": " "
   },
   {
-    "field_label": "It is clear to me how requesting an appointment with my psoriasis doctor whenever I need it could help improve my health",
+    "field_label": "It is clear to me how requesting an appointment with my psoriasis team whenever I need it could help improve my health",
     "field_type": "radio",
     "field_name": "blacppifu_reqappt_hlth",
     "required_field": "y",
@@ -762,7 +762,7 @@
     "section_header": " "
   },
   {
-    "field_label": "How confident are you that you can request an appointment with your psoriasis doctor whenever you need one?",
+    "field_label": "How confident are you that you can request an appointment with your psoriasis team whenever you need one?",
     "field_type": "radio",
     "field_name": "blacppifu_reqappt_cfd",
     "required_field": "y",
@@ -792,7 +792,7 @@
     "section_header": " "
   },
   {
-    "field_label": "How confident are you that you can get an appointment with your psoriasis doctor whenever you need one?",
+    "field_label": "How confident are you that you can get an appointment with your psoriasis team whenever you need one?",
     "field_type": "radio",
     "field_name": "blacppifu_getappt_cfd",
     "required_field": "y",
@@ -822,7 +822,7 @@
     "section_header": " "
   },
   {
-    "field_label": "Requesting an appointment with my psoriasis doctor whenever I need it interferes with my other priorities",
+    "field_label": "Requesting an appointment with my psoriasis team whenever I need it interferes with my other priorities",
     "field_type": "radio",
     "field_name": "blacppifu_appt_itf",
     "required_field": "y",
@@ -851,7 +851,7 @@
     "section_header": " "
   },
   {
-    "field_label": "How acceptable to you is requesting an appointment with your psoriasis doctor whenever you need it?",
+    "field_label": "How acceptable to you is requesting an appointment with your psoriasis team whenever you need it?",
     "field_type": "radio",
     "field_name": "blacppifu_appt_whever",
     "required_field": "y",
@@ -880,7 +880,7 @@
     "section_header": " "
   },
   {
-    "field_label": "I would like to choose when I can have an appointment with my psoriasis doctor",
+    "field_label": "I would like to choose when I can have an appointment with my psoriasis team",
     "field_type": "radio",
     "field_name": "blacppifu_apptchse",
     "required_field": "y",

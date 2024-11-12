@@ -255,10 +255,6 @@
     "required_field": "y",
     "select_choices_or_calculations": [
       {
-        "code": "1",
-        "label": "Very much"
-      },
-      {
         "code": "2",
         "label": "A lot"
       },
@@ -269,10 +265,6 @@
       {
         "code": "4",
         "label": "Not at all"
-      },
-      {
-        "code": "5",
-        "label": "Not relevant"
       }
     ],
     "branching_logic": "[blpso_dlqi7]='2'",

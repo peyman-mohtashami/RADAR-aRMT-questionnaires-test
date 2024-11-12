@@ -133,12 +133,19 @@
     "field_name": "blhcn1a_hcavrt",
     "required_field": "y",
     "text_validation_type_or_show_slider_number": "integer",
+    "text_validation_max": "50",
     "text_validation_min": "0",
     "validations": [
       {
         "name": "min",
         "value": "0",
         "error": "Enter a number greater than 0",
+        "hint": ""
+      },
+      {
+        "name": "max",
+        "value": "50",
+        "error": "Enter a number less than 50",
         "hint": ""
       }
     ],
@@ -330,12 +337,19 @@
     "field_name": "blhcn2a_dmvrt",
     "required_field": "y",
     "text_validation_type_or_show_slider_number": "integer",
+    "text_validation_max": "50",
     "text_validation_min": "0",
     "validations": [
       {
         "name": "min",
         "value": "0",
         "error": "Enter a number greater than 0",
+        "hint": ""
+      },
+      {
+        "name": "max",
+        "value": "50",
+        "error": "Enter a number less than 50",
         "hint": ""
       }
     ],
@@ -347,7 +361,22 @@
     "field_name": "blhcn2a_dmipv",
     "required_field": "y",
     "text_validation_type_or_show_slider_number": "integer",
+    "text_validation_max": "50",
     "text_validation_min": "0",
+    "validations": [
+      {
+        "name": "min",
+        "value": "0",
+        "error": "Enter a number greater than 0",
+        "hint": ""
+      },
+      {
+        "name": "max",
+        "value": "50",
+        "error": "Enter a number less than 50",
+        "hint": ""
+      }
+    ],
     "branching_logic": "[blhcn2a]='1'"
   },
   {
@@ -356,12 +385,19 @@
     "field_name": "blhcn2a_dmnvrt",
     "required_field": "y",
     "text_validation_type_or_show_slider_number": "integer",
+    "text_validation_max": "50",
     "text_validation_min": "0",
     "validations": [
       {
         "name": "min",
         "value": "0",
         "error": "Enter a number greater than 0",
+        "hint": ""
+      },
+      {
+        "name": "max",
+        "value": "50",
+        "error": "Enter a number less than 50",
         "hint": ""
       }
     ],
@@ -373,12 +409,19 @@
     "field_name": "blhcn2a_dmnipv",
     "required_field": "y",
     "text_validation_type_or_show_slider_number": "integer",
+    "text_validation_max": "50",
     "text_validation_min": "0",
     "validations": [
       {
         "name": "min",
         "value": "0",
         "error": "Enter a number greater than 0",
+        "hint": ""
+      },
+      {
+        "name": "max",
+        "value": "50",
+        "error": "Enter a number less than 50",
         "hint": ""
       }
     ],
@@ -451,12 +494,19 @@
     "field_name": "blhcn2b_vsts",
     "required_field": "y",
     "text_validation_type_or_show_slider_number": "integer",
+    "text_validation_max": "50",
     "text_validation_min": "1",
     "validations": [
       {
         "name": "min",
         "value": "1",
         "error": "Enter a number greater than 0",
+        "hint": ""
+      },
+      {
+        "name": "max",
+        "value": "50",
+        "error": "Enter a number less than 50",
         "hint": ""
       }
     ],
@@ -511,12 +561,19 @@
     "field_name": "blhcn2c_dep1dys",
     "required_field": "y",
     "text_validation_type_or_show_slider_number": "integer",
+    "text_validation_max": "100",
     "text_validation_min": "1",
     "validations": [
       {
         "name": "min",
         "value": "1",
         "error": "Enter a number greater than 0",
+        "hint": ""
+      },
+      {
+        "name": "max",
+        "value": "100",
+        "error": "Enter a number less than 100",
         "hint": ""
       }
     ],
@@ -535,12 +592,19 @@
     "field_name": "blhcn2c_dep2dys",
     "required_field": "y",
     "text_validation_type_or_show_slider_number": "integer",
+    "text_validation_max": "100",
     "text_validation_min": "1",
     "validations": [
       {
         "name": "min",
         "value": "1",
         "error": "Enter a number greater than 0",
+        "hint": ""
+      },
+      {
+        "name": "max",
+        "value": "100",
+        "error": "Enter a number less than 100",
         "hint": ""
       }
     ],
@@ -559,12 +623,19 @@
     "field_name": "blhcn2c_dep3dys",
     "required_field": "y",
     "text_validation_type_or_show_slider_number": "integer",
+    "text_validation_max": "100",
     "text_validation_min": "1",
     "validations": [
       {
         "name": "min",
         "value": "1",
         "error": "Enter a number greater than 0",
+        "hint": ""
+      },
+      {
+        "name": "max",
+        "value": "100",
+        "error": "Enter a number less than 100",
         "hint": ""
       }
     ],
@@ -867,7 +938,7 @@
     "section_header": "Personal costs in the last 3 months as a result of your psoriasis or treatment for your psoriasis."
   },
   {
-    "field_label": "Mental health support e.g. counselling - number visits",
+    "field_label": "Mental health support e.g. counselling - number of visits",
     "field_type": "text",
     "field_name": "blhcn4a_mhs",
     "text_validation_type_or_show_slider_number": "number",
@@ -1168,12 +1239,19 @@
     "field_note": "hours",
     "required_field": "y",
     "text_validation_type_or_show_slider_number": "number",
+    "text_validation_max": "1000",
     "text_validation_min": "1",
     "validations": [
       {
         "name": "min",
         "value": "1",
         "error": "Enter a number greater than 0",
+        "hint": ""
+      },
+      {
+        "name": "max",
+        "value": "1000",
+        "error": "Enter a number less than 1000",
         "hint": ""
       }
     ],
@@ -1214,7 +1292,7 @@
     "section_header": " "
   },
   {
-    "field_label": "Are you part of any of the following studies? <br><span class='text-[#A99A83] text-sm  font-bold'>Tick all that apply.<br>Press Next if none apply</span>",
+    "field_label": "Are you part of any of the following studies? <br><span class='text-[#A99A83] text-sm  font-bold'>Tick all that apply.</span>",
     "field_type": "checkbox",
     "form_name": "baseline",
     "field_name": "blostds",
@@ -1239,6 +1317,10 @@
       {
         "code": "5",
         "label": "Our Future Health"
+      },
+      {
+        "code": "6",
+        "label": "None of the above"
       }
     ],
     "required_field": "false"
