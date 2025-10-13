@@ -1,5 +1,29 @@
 [
   {
+    "field_label": "<p>How old were you when you first developed eczema?</p><p class='text-sm text-[#A99A83] mt-2 font-bold'>Please provide a best guess if you are unsure.</p>",
+    "field_type": "text",
+    "field_name": "blpso_age",
+    "text_validation_type_or_show_slider_number": "integer",
+    "required_field": "y",
+    "validations": [
+      {
+        "name": "min",
+        "value": "0",
+        "error": "Enter a number greater than 0",
+        "hint": ""
+      },
+      {
+        "name": "max",
+        "value": "100",
+        "error": "Enter a number less than 100",
+        "hint": ""
+      }
+    ],
+    "text_validation_max": "100",
+    "text_validation_min": "0",
+    "section_header": "Eczema"
+  },
+  {
     "field_label": "<b><u>CURRENTLY</u></b> is your eczema:",
     "field_type": "radio",
     "field_name": "blpso_currently",
@@ -27,6 +51,31 @@
       }
     ],
     "section_header": "Eczema"
+  },
+  {
+    "field_label": "<p>How old were you when you first developed more severe (moderate or severe) eczema?</p><p class='text-sm text-[#A99A83] mt-2 font-bold'>Please provide a best guess if you are unsure.</p>",
+    "field_type": "text",
+    "field_name": "blpso_age_severe",
+    "text_validation_type_or_show_slider_number": "integer",
+    "required_field": "y",
+    "validations": [
+      {
+        "name": "min",
+        "value": "0",
+        "error": "Enter a number greater than 0",
+        "hint": ""
+      },
+      {
+        "name": "max",
+        "value": "100",
+        "error": "Enter a number less than 100",
+        "hint": ""
+      }
+    ],
+    "text_validation_max": "100",
+    "text_validation_min": "0",
+    "section_header": "Eczema",
+    "branching_logic": "[blpso_currently]='3' or [blpso_currently]='4'"
   },
   {
     "field_label": "<p>Would you like to submit photos?</p><p class='text-sm text-[#A99A83] font-bold mt-4'>This is optional and does not affect your medical care or the rest of your participation in the study.</p>",
